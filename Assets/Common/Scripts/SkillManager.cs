@@ -10,7 +10,7 @@ public class SkillManager : MonoBehaviour
     {
         if (null != instance)
         {
-            Destroy(instance.gameObject);
+            Destroy(gameObject);
         }
         else
         {
