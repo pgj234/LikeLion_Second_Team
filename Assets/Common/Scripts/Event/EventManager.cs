@@ -4,6 +4,9 @@ public class EventManager : MonoBehaviour
 {
     public static EventManager instance = null;
 
+    public PlayerEvents playerEvents;
+    public EnemyEvents EnemyEvents;
+
     void Awake()
     {
         if (null == instance)
@@ -16,5 +19,8 @@ public class EventManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+
+        playerEvents = new PlayerEvents();
+        EnemyEvents = new EnemyEvents();
     }
 }
