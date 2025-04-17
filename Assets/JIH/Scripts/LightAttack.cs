@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class Light : LightCollisionState
+public class LightAttack : LightCollisionState
 {
-    
 
     public override void Start()
     {

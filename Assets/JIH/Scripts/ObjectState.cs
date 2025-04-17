@@ -12,7 +12,15 @@ public class ObjectState : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Hit Player");
+            Debug.Log("Hit Player (3D Collision)");
+        }
+    }
+
+    public virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Hit Player (2D Trigger)");
         }
     }
 }
