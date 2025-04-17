@@ -1,5 +1,12 @@
 fileFormatVersion: 2
-guid: 93826cef7d9c5f14ea92c9f92e0d5d76
+guid: 65c0f2775ee38bc45aee2c3f2ea37f1e
+AssetOrigin:
+  serializedVersion: 1
+  productId: 93499
+  packageName: 2D Forest Tileset Pack Toon Style
+  packageVersion: 1.02
+  assetPath: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Moon.png
+  uploadId: 199138
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,19 +102,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 4
     buildTarget: WebGL
-    maxTextureSize: 1024
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 4
-    buildTarget: iOS
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1

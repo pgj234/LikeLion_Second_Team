@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b4cf9a2dae82094db4c93a9409f3e73
+guid: 2876e378d7a1ce34096f1fd144d468fa
 timeCreated: 1497919737
 licenseType: Store
 NativeFormatImporter:
@@ -7,3 +7,10 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 93499
+  packageName: 2D Forest Tileset Pack Toon Style
+  packageVersion: 1.02
+  assetPath: Assets/2D Forest Tileset Pack Toon Style/Night/Prefabs/NIght Hills Far.prefab
+  uploadId: 199138

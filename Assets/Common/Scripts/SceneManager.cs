@@ -10,13 +10,12 @@ public class SceneMaster : MonoBehaviour
         if (null == instance)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
-
-        DontDestroyOnLoad(gameObject);
     }
 
     internal void SceneLoad(string _sceneName)

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/JIH/Material.meta
 guid: 4c62ab86c7820cb43b1a9ff321a78fc1
+========
+guid: 1b55217f9ac65ba4a9d8ffdf5e76b208
+>>>>>>>> PGJ:Assets/PGJ/Mat.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

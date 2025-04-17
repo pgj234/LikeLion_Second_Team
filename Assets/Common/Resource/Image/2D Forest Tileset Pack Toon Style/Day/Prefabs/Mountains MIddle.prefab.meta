@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c5680b57e9b3d9f4299cd76cf9868899
+guid: 23152a7fbe758d44c8a0c77e1693f554
 timeCreated: 1497905894
 licenseType: Store
 NativeFormatImporter:
@@ -7,3 +7,10 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 93499
+  packageName: 2D Forest Tileset Pack Toon Style
+  packageVersion: 1.02
+  assetPath: Assets/2D Forest Tileset Pack Toon Style/Day/Prefabs/Mountains MIddle.prefab
+  uploadId: 199138
