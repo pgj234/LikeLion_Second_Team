@@ -5,7 +5,6 @@ public class PlayerJumpState : PlayerState
     bool jumpIng;
 
     float jumpTime = 0.4f;
-    float jumpValue;
 
     public PlayerJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
@@ -18,7 +17,6 @@ public class PlayerJumpState : PlayerState
         jumpIng = true;
 
         stateTimer = jumpTime;
-        jumpValue = 0;
     }
 
     public override void Update()
@@ -28,10 +26,8 @@ public class PlayerJumpState : PlayerState
         if (true == jumpIng)
         {
             // 점프키 누르고 있는 동안
-            if (jumpValue <= InputManager.instance.jump)
+            if (1 == InputManager.instance.jump)
             {
-                jumpValue = InputManager.instance.jump;
-
                 if (0 < stateTimer)
                 {
                     rb.linearVelocity = new Vector2(rb.linearVelocityX, player.jumpPower * (0.5f + stateTimer * 0.3f));
@@ -40,6 +36,13 @@ public class PlayerJumpState : PlayerState
             else        // 점프키 뗌
             {
                 jumpIng = false;
+            }
+        }
+        else        // 점프키 뗐을 때 2단 점프 가능
+        {
+            if (1 == InputManager.instance.jump)    // 점프키 또 누르면 2단 점프
+            {
+                stateMachine.ChangeState(player.doubleJumpState);
             }
         }
 

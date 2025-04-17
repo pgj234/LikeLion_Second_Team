@@ -26,6 +26,6 @@ public class InputManager : MonoBehaviour
     {
         xInput = Input.GetAxis("Horizontal");
         yInput = Input.GetAxis("Vertical");
-        jump = Input.GetAxis("Jump");
+        jump = Input.GetAxisRaw("Jump");
     }
 }
