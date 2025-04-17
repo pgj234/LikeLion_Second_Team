@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Layer 1 clound anim1_0: 2882173930840797515
+      Layer 1 clound anim1_1: 1943536469205845407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bdc26a30fd0b0e34c88a18e898992ac0
+guid: 26bf544cce391144d9462c0f883910ec
 timeCreated: 1497905894
 licenseType: Store
 NativeFormatImporter:
@@ -7,3 +7,11 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 93499
+  packageName: 2D Forest Tileset Pack Toon Style
+  packageVersion: 1.02
+  assetPath: Assets/2D Forest Tileset Pack Toon Style/Night/Prefabs/NIght Mountains
+    MIddle 1.prefab
+  uploadId: 199138
