@@ -1,12 +1,12 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class LaserReceiver : MonoBehaviour
 {
-    public GameObject door; // ¹®ÀÌ³ª ¾î¶² ¹İÀÀÇÒ ¿ÀºêÁ§Æ®
+    public GameObject door; // ë¬¸ì´ë‚˜ ì–´ë–¤ ë°˜ì‘í•  ì˜¤ë¸Œì íŠ¸
 
     public void Activate()
     {
-        Debug.Log("¼ö½Å±â ÀÛµ¿µÊ!");
-        door.SetActive(false); // ¹® ¿­¸®°Ô ÇÑ´Ùµç°¡
+        Debug.Log("ìˆ˜ì‹ ê¸° ì‘ë™ë¨!");
+        door.SetActive(false); // ë¬¸ ì—´ë¦¬ê²Œ í•œë‹¤ë“ ê°€
     }
 }

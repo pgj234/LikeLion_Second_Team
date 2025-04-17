@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
@@ -15,13 +15,13 @@ public class LaserBeam : MonoBehaviour
         Vector2 direction = laserTransform.right;
 
         List<Vector3> points = new List<Vector3>();
-        points.Add(origin);  // Vector2µµ Vector3 ¸®½ºÆ®¿¡ ÀÚµ¿ º¯È¯ °¡´É
+        points.Add(origin);  // Vector2ë„ Vector3 ë¦¬ìŠ¤íŠ¸ì— ìë™ ë³€í™˜ ê°€ëŠ¥
 
         for (int i = 0; i < maxReflections; i++)
         {
             RaycastHit2D hit = Physics2D.Raycast(origin, direction, maxDistance);
 
-            //Debug.DrawRay(origin, direction * maxDistance, Color.red); // ¾Àºä¿¡¼­ ·¹ÀÌ È®ÀÎ
+            //Debug.DrawRay(origin, direction * maxDistance, Color.red); // ì”¬ë·°ì—ì„œ ë ˆì´ í™•ì¸
             //Debug.Log("Hit: " + hit.collider?.name);
 
             if (hit.collider != null)
