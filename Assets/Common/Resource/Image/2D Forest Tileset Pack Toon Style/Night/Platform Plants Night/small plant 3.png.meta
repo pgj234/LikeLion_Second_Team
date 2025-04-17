@@ -1,5 +1,13 @@
 fileFormatVersion: 2
-guid: 44467252d7e02f744abb108777b15e0b
+guid: 0fda46f51e7afa84cbc68db343eab647
+AssetOrigin:
+  serializedVersion: 1
+  productId: 93499
+  packageName: 2D Forest Tileset Pack Toon Style
+  packageVersion: 1.02
+  assetPath: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/small
+    plant 3.png
+  uploadId: 199138
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,19 +103,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 4
     buildTarget: WebGL
-    maxTextureSize: 128
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 4
-    buildTarget: iOS
     maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1

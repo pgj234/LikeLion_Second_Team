@@ -34,13 +34,12 @@ public class SoundManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            audioSource = GetComponent<AudioSource>();
         }
         else
         {
             Destroy(gameObject);
         }
-
-        audioSource = GetComponent<AudioSource>();
     }
 
     public void PlayBGM(BGM bgm)

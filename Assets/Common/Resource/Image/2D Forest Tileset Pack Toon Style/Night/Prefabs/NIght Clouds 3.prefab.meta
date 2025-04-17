@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 11ca0db9134731547bfa9164a8328a98
+guid: c000a789eb3a8984c981ef68d15df9fc
 timeCreated: 1497917628
 licenseType: Store
 NativeFormatImporter:
@@ -7,3 +7,11 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 93499
+  packageName: 2D Forest Tileset Pack Toon Style
+  packageVersion: 1.02
+  assetPath: Assets/2D Forest Tileset Pack Toon Style/Night/Prefabs/NIght Clouds
+    3.prefab
+  uploadId: 199138

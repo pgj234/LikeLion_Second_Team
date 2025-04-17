@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 754ef64699b7ae9408b41ec5341cd7ba
+guid: 8f5990b0aeb2c5d43ab018031684aba7
 timeCreated: 1497905695
 licenseType: Store
 NativeFormatImporter:
@@ -7,3 +7,10 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 93499
+  packageName: 2D Forest Tileset Pack Toon Style
+  packageVersion: 1.02
+  assetPath: Assets/2D Forest Tileset Pack Toon Style/Day/Prefabs/Hills Far.prefab
+  uploadId: 199138

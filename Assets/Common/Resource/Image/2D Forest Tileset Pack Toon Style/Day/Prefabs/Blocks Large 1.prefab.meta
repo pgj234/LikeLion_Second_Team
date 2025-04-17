@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 05c91bf2fc4b25d4b9feb1c67852ef02
+guid: 25f52e9077efd7d4c90fe92bac7e6820
 timeCreated: 1497904875
 licenseType: Store
 NativeFormatImporter:
@@ -7,3 +7,10 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 93499
+  packageName: 2D Forest Tileset Pack Toon Style
+  packageVersion: 1.02
+  assetPath: Assets/2D Forest Tileset Pack Toon Style/Day/Prefabs/Blocks Large 1.prefab
+  uploadId: 199138

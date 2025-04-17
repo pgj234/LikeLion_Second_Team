@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerState : MonoBehaviour
+public class PlayerState
 {
     protected PlayerStateMachine stateMachine;
     protected Player player;
@@ -32,6 +32,8 @@ public class PlayerState : MonoBehaviour
     public virtual void Update()
     {
         stateTimer -= Time.deltaTime;
+        
+        player.anim.SetFloat("yVelocity", rb.linearVelocityY);
     }
 
     public virtual void Exit()

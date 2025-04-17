@@ -17,6 +17,16 @@ public class Entity : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    protected virtual void Start()
+    {
+
+    }
+
+    protected virtual void Update()
+    {
+    
+    }
+
     internal void Damage()
     {
 
