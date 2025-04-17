@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bc8bb842b39224647a39876c8c85f180
+guid: 96007914994b8514b87c835104b855e1
 timeCreated: 1497905653
 licenseType: Store
 NativeFormatImporter:
@@ -7,3 +7,10 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 93499
+  packageName: 2D Forest Tileset Pack Toon Style
+  packageVersion: 1.02
+  assetPath: Assets/2D Forest Tileset Pack Toon Style/Day/Prefabs/Hills CLose.prefab
+  uploadId: 199138
