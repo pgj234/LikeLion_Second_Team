@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 23b520c05fa6f0f49b30c7890211e1c0
+guid: 3b5fcda09aa6ded469d09818f19b0c7c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5213229242370633579
-    second: Door_0
+      213: -8771275695640893583
+    second: SwordEffect0_0
   - first:
-      213: 436563815456543028
-    second: Door_1
+      213: 3931517995988725408
+    second: SwordEffect0_1
   - first:
-      213: -8689009931745917929
-    second: Door_2
+      213: 6727121717830724161
+    second: SwordEffect0_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 1024
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -145,67 +145,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Door_0
+      name: SwordEffect0_0
       rect:
         serializedVersion: 2
-        x: 85
-        y: 113
-        width: 441
-        height: 824
+        x: 106
+        y: 189
+        width: 896
+        height: 513
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6f2e24006c195840800000000000000
-      internalID: 5213229242370633579
+      spriteID: 177ae4e1a3b264680800000000000000
+      internalID: -8771275695640893583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door_1
+      name: SwordEffect0_2
       rect:
         serializedVersion: 2
-        x: 607
-        y: 103
-        width: 440
-        height: 835
+        x: 698
+        y: 707
+        width: 7
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43193162a7cfe0600800000000000000
-      internalID: 436563815456543028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Door_2
-      rect:
-        serializedVersion: 2
-        x: 1099
-        y: 114
-        width: 437
-        height: 823
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7148170e08f6a6780800000000000000
-      internalID: -8689009931745917929
+      spriteID: 14aad108f898b5d50800000000000000
+      internalID: 6727121717830724161
       vertices: []
       indices: 
       edges: []
@@ -214,7 +192,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 533b82ec06e3a6b4cbcaf6b73084a5c9
     internalID: 0
     vertices: []
     indices: 
@@ -224,9 +202,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Door_0: 5213229242370633579
-      Door_1: 436563815456543028
-      Door_2: -8689009931745917929
+      SwordEffect0_0: -8771275695640893583
+      SwordEffect0_1: 3931517995988725408
+      SwordEffect0_2: 6727121717830724161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
