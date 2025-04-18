@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerGroundedState : PlayerState
 {
@@ -8,6 +8,7 @@ public class PlayerGroundedState : PlayerState
 
     public override void Enter()
     {
+        player.jumpCount = player.MaxjumpCount;//땅state에 도달하면 점프횟수초기화
         base.Enter();
     }
 
@@ -15,7 +16,9 @@ public class PlayerGroundedState : PlayerState
     {
         base.Update();
 
-        if (0 < InputManager.instance.jump)
+
+
+        if (InputManager.instance.jumpPressed)
         {
             stateMachine.ChangeState(player.jumpState);
             return;

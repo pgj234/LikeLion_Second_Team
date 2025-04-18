@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerState
 {
@@ -32,7 +32,8 @@ public class PlayerState
     public virtual void Update()
     {
         stateTimer -= Time.deltaTime;
-        
+
+
         player.anim.SetFloat("yVelocity", rb.linearVelocityY);
     }
 

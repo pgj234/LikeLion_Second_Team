@@ -2,16 +2,26 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
+    [SerializeField] protected int maxHP;
+    [SerializeField] protected int maxStamina;
+    protected int curHP;        // 현재 체력
+    protected int curStamina;   // 현재 스태미너
+
     internal Animator anim { get; private set; }
     internal Rigidbody2D rb { get; private set; }
 
+    [SerializeField] protected float groundChkDistance;
+    [SerializeField] protected float wallChkDistance;
+
     protected LayerMask groundLayerMask;
+    protected LayerMask wallLayerMask;
 
     internal int faceDir { get; private set; } = 1;             // 왼쪽 -1, 오른쪽 1
 
     protected virtual void Awake()
     {
         groundLayerMask = LayerMask.GetMask("Ground");
+        wallLayerMask = LayerMask.GetMask("Wall");
 
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();

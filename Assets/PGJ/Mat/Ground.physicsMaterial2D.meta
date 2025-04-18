@@ -1,8 +1,15 @@
 fileFormatVersion: 2
-guid: 93f9a18efa4e2754691b537a8628dcc7
+<<<<<<<< HEAD:Assets/PGJ/Mat/Ground.physicsMaterial2D.meta
+guid: ba5ef150885777f41a1d80219ac93e28
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 0
+  mainObjectFileID: 6200000
+========
+guid: 6a0a6a393bacadf43b416e7a9a60ffce
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+>>>>>>>> origin/JIH:Assets/JIH/Material/LightAttack.mat.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
