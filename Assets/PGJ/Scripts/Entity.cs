@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
+    [SerializeField] protected int maxHP;
+    [SerializeField] protected int maxStamina;
+    protected int curHP;        // 현재 체력
+    protected int curStamina;   // 현재 스태미너
+
     internal Animator anim { get; private set; }
     internal Rigidbody2D rb { get; private set; }
 
