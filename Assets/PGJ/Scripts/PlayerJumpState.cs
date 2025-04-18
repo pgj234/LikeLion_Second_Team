@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerJumpState : PlayerState
 {
-    bool jumpIng;
+    internal bool jumpIng;
 
     float jumpTime = 0.4f;
 

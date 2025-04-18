@@ -15,7 +15,14 @@ public class PlayerGroundedState : PlayerState
     {
         base.Update();
 
-        if (0 < InputManager.instance.jump)
+
+
+        if (0 == InputManager.instance.jump && true == player.jumpState.jumpIng)
+        {
+            player.jumpState.jumpIng = false;
+        }
+
+        if (0 < InputManager.instance.jump && false == player.jumpState.jumpIng)
         {
             stateMachine.ChangeState(player.jumpState);
             return;
