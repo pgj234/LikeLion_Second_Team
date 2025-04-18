@@ -22,7 +22,7 @@ public class PlayerDoubleJumpState : PlayerState
             player.SetVelocity(InputManager.instance.xInput * player.moveSpd , rb.linearVelocityY);
         }
 
-        if (0 == rb.linearVelocityY)
+        if (0 == rb.linearVelocityY && player.IsGroundDetected())
         {
             stateMachine.ChangeState(player.idleState);
         }

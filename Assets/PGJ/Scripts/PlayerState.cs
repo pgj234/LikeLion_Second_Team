@@ -32,7 +32,8 @@ public class PlayerState
     public virtual void Update()
     {
         stateTimer -= Time.deltaTime;
-        
+
+
         player.anim.SetFloat("yVelocity", rb.linearVelocityY);
     }
 

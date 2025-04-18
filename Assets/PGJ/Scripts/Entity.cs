@@ -10,13 +10,18 @@ public class Entity : MonoBehaviour
     internal Animator anim { get; private set; }
     internal Rigidbody2D rb { get; private set; }
 
+    [SerializeField] protected float groundChkDistance;
+    [SerializeField] protected float wallChkDistance;
+
     protected LayerMask groundLayerMask;
+    protected LayerMask wallLayerMask;
 
     internal int faceDir { get; private set; } = 1;             // ¿ÞÂÊ -1, ¿À¸¥ÂÊ 1
 
     protected virtual void Awake()
     {
         groundLayerMask = LayerMask.GetMask("Ground");
+        wallLayerMask = LayerMask.GetMask("Wall");
 
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
