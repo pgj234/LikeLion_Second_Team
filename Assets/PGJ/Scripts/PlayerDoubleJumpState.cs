@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerDoubleJumpState : PlayerState
 {
@@ -19,12 +19,17 @@ public class PlayerDoubleJumpState : PlayerState
 
         if (0 != InputManager.instance.xInput)
         {
-            player.SetVelocity(InputManager.instance.xInput * player.moveSpd * 0.85f, rb.linearVelocityY);
+            player.SetVelocity(InputManager.instance.xInput * player.moveSpd , rb.linearVelocityY);
         }
 
         if (0 == rb.linearVelocityY)
         {
             stateMachine.ChangeState(player.idleState);
+        }
+        //하강 감지 → 낙하 상태로 전환
+        if (rb.linearVelocityY < 0f)
+        {
+            stateMachine.ChangeState(player.fallState);
         }
     }
 

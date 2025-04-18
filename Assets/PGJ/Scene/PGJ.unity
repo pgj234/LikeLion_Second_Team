@@ -345,7 +345,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 576319889
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 2146325261911611826, guid: ff4ae650aaaf67147b41d935d08c5a44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -765,7 +765,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 496716111
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.3999644, g: 0.7924528, b: 0.40488783, a: 1}
@@ -1038,9 +1038,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25945d51480af2741b18c6e904001c36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHP: 0
+  maxStamina: 0
   moveSpd: 5
-  jumpPower: 8
+  jumpPower: 7
   doubleJumpPower: 7
+  fallGravity: 3
+  defaultGravity: 1
+  jumpTime: 0.2
+  MaxjumpCount: 2
+  jumpCount: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

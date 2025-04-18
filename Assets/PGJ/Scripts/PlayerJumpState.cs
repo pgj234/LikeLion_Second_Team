@@ -1,10 +1,7 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class PlayerJumpState : PlayerState
 {
-    internal bool jumpIng;
-
-    float jumpTime = 0.4f;
 
     public PlayerJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
@@ -14,47 +11,60 @@ public class PlayerJumpState : PlayerState
     {
         base.Enter();
 
-        jumpIng = true;
-
-        stateTimer = jumpTime;
+        stateTimer = player.jumpTime;
     }
 
     public override void Update()
     {
         base.Update();
-
-        if (true == jumpIng)
+        // ì í”„ ì‹œì‘
+        if (InputManager.instance.jumpPressed)
         {
-            // Á¡ÇÁÅ° ´©¸£°í ÀÖ´Â µ¿¾È
-            if (1 == InputManager.instance.jump)
-            {
-                if (0 < stateTimer)
-                {
-                    rb.linearVelocity = new Vector2(rb.linearVelocityX, player.jumpPower * (0.5f + stateTimer * 0.3f));
-                }
-            }
-            else        // Á¡ÇÁÅ° ¶À
-            {
-                jumpIng = false;
-            }
+            stateTimer = player.jumpTime;
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, player.jumpPower);
+            player.jumpCount--;
         }
-        else        // Á¡ÇÁÅ° ¶ÃÀ» ¶§ 2´Ü Á¡ÇÁ °¡´É
+
+        // ì í”„ ìœ ì§€ ì¤‘
+        if (InputManager.instance.jumpHeld && stateTimer > 0)
         {
-            if (1 == InputManager.instance.jump)    // Á¡ÇÁÅ° ¶Ç ´©¸£¸é 2´Ü Á¡ÇÁ
-            {
-                stateMachine.ChangeState(player.doubleJumpState);
-            }
+            // ì í”„ í˜ ë³´ê°„: ì ì  ì¤„ì–´ë“¦
+            float jumpForce = player.jumpPower * (stateTimer / player.jumpTime);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, player.jumpPower + jumpForce);
+
+            //stateTimer -= Time.deltaTime;
+        }
+
+        // ì í”„ í‚¤ ë—ì„ ë•Œ ê°•ì œ ì»·
+        if (InputManager.instance.jumpReleased)
+        {
+            stateTimer = 0f;
+        }
+
+        // ì í”„ ì¹´ìš´íŠ¸ ë‚¨ì•„ìˆìœ¼ë©´ ëˆ„ë¥¼ë•Œ 2ë‹¨ ì í”„ ê°€ëŠ¥
+
+        if (InputManager.instance.jumpPressed && player.jumpCount>=1&& player.jumpCount<player.MaxjumpCount)    // ì í”„í‚¤ ë˜ ëˆ„ë¥´ë©´ 2ë‹¨ ì í”„
+        {
+            player.jumpCount--;//ì í”„ì¹´ìš´íŠ¸--
+            stateMachine.ChangeState(player.doubleJumpState);
         }
 
         if (0 != InputManager.instance.xInput)
         {
-            player.SetVelocity(InputManager.instance.xInput * player.moveSpd * 0.85f, rb.linearVelocityY);
+            player.SetVelocity(InputManager.instance.xInput * player.moveSpd, rb.linearVelocityY);
         }
 
-        if (0 == rb.linearVelocityY)
+        //í•˜ê°• ê°ì§€ â†’ ë‚™í•˜ ìƒíƒœë¡œ ì „í™˜
+        if (rb.linearVelocityY < 0f)
         {
-            stateMachine.ChangeState(player.idleState);
+            stateMachine.ChangeState(player.fallState);
         }
+        
+        //fallstateì—ì„œ idlestateë¡œ ê°ˆêº¼ë¼ ì£¼ì„ì²˜ë¦¬
+        //if (0 == rb.linearVelocityY)
+        //{
+        //    stateMachine.ChangeState(player.idleState);
+        //}
     }
 
     public override void Exit()

@@ -6,7 +6,10 @@ public class InputManager : MonoBehaviour
 
     internal float xInput { get; private set; }
     internal float yInput { get; private set; }
-    internal float jump { get; private set; }
+
+    public bool jumpPressed { get; private set; }    
+    public bool jumpHeld { get; private set; }      
+    public bool jumpReleased { get; private set; }  
 
     internal bool leftClick { get; private set; }
     internal bool rightClick { get; private set; }
@@ -33,15 +36,22 @@ public class InputManager : MonoBehaviour
         {
             xInput = 0f;
             yInput = 0f;
-            jump = 0f;
+
+            jumpPressed = false;
+            jumpHeld = false;
+            jumpReleased = false;
+
             leftClick = false;
             rightClick = false;
             return;
         }//인풋안받을때는 초기화
 
-        xInput = Input.GetAxis("Horizontal");
-        yInput = Input.GetAxis("Vertical");
-        jump = Input.GetAxisRaw("Jump");
+        xInput = Input.GetAxisRaw("Horizontal");
+        yInput = Input.GetAxisRaw("Vertical");
+
+        jumpPressed = Input.GetButtonDown("Jump");    // 한 번만 true
+        jumpHeld = Input.GetButton("Jump");           // 누르고 있는 동안 true
+        jumpReleased = Input.GetButtonUp("Jump");     // 떼는 순간 true
 
         //좌우클릭 했는지
         leftClick = Input.GetMouseButtonDown(0);
