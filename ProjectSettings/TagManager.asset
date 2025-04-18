@@ -41,13 +41,13 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
+  - name: Enemy
     uniqueID: 496716111
     locked: 0
-  - name: Enemy
+  - name: Player
     uniqueID: 2491061173
     locked: 0
-  - name: Player
+  - name: Ground
     uniqueID: 576319889
     locked: 0
   m_RenderingLayers:

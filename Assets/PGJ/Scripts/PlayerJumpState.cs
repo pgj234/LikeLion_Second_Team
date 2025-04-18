@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerJumpState : PlayerState
 {
     internal bool jumpIng;
+    internal bool dashCome = false;         
 
     float jumpTime = 0.4f;
 
@@ -26,11 +27,11 @@ public class PlayerJumpState : PlayerState
         if (true == jumpIng)
         {
             // 점프키 누르고 있는 동안
-            if (1 == InputManager.instance.jump)
+            if (1 == InputManager.instance.jumpInput)
             {
                 if (0 < stateTimer)
                 {
-                    rb.linearVelocity = new Vector2(rb.linearVelocityX, player.jumpPower * (0.5f + stateTimer * 0.3f));
+                    player.SetVelocity(rb.linearVelocityX, player.jumpPower * (0.5f + stateTimer * 0.3f));
                 }
             }
             else        // 점프키 뗌
@@ -40,7 +41,7 @@ public class PlayerJumpState : PlayerState
         }
         else        // 점프키 뗐을 때 2단 점프 가능
         {
-            if (1 == InputManager.instance.jump)    // 점프키 또 누르면 2단 점프
+            if (1 == InputManager.instance.jumpInput)    // 점프키 또 누르면 2단 점프
             {
                 stateMachine.ChangeState(player.doubleJumpState);
             }
@@ -48,10 +49,17 @@ public class PlayerJumpState : PlayerState
 
         if (0 != InputManager.instance.xInput)
         {
-            player.SetVelocity(InputManager.instance.xInput * player.moveSpd * 0.85f, rb.linearVelocityY);
+            if (player.IsWallDetected())
+            {
+                stateMachine.ChangeState(player.playerWallStickState);
+            }
+            else
+            {
+                player.SetVelocity(InputManager.instance.xInput * player.moveSpd * 0.85f, rb.linearVelocityY);
+            }
         }
 
-        if (0 == rb.linearVelocityY)
+        if (0 == rb.linearVelocityY && player.IsGroundDetected())
         {
             stateMachine.ChangeState(player.idleState);
         }

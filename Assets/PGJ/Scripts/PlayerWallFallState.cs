@@ -1,16 +1,14 @@
 using UnityEngine;
 
-public class PlayerDoubleJumpState : PlayerState
+public class PlayerWallFallState : PlayerState
 {
-    public PlayerDoubleJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
+    public PlayerWallFallState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
 
     public override void Enter()
     {
         base.Enter();
-
-        rb.linearVelocity = new Vector2(rb.linearVelocityX, player.doubleJumpPower);
     }
 
     public override void Update()
@@ -31,5 +29,5 @@ public class PlayerDoubleJumpState : PlayerState
     public override void Exit()
     {
         base.Exit();
-    }
+    }    
 }

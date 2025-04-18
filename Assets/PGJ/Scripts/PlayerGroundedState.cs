@@ -9,20 +9,20 @@ public class PlayerGroundedState : PlayerState
     public override void Enter()
     {
         base.Enter();
+
+        player.jumpPower = player.originalJumpPower;
     }
 
     public override void Update()
     {
         base.Update();
 
-
-
-        if (0 == InputManager.instance.jump && true == player.jumpState.jumpIng)
+        if (0 == InputManager.instance.jumpInput && true == player.jumpState.jumpIng)
         {
             player.jumpState.jumpIng = false;
         }
 
-        if (0 < InputManager.instance.jump && false == player.jumpState.jumpIng)
+        if (0 < InputManager.instance.jumpInput && false == player.jumpState.jumpIng)
         {
             stateMachine.ChangeState(player.jumpState);
             return;

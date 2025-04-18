@@ -5,8 +5,11 @@ public class InputManager : MonoBehaviour
     public static InputManager instance;
 
     internal float xInput { get; private set; }
+    internal float xInputRaw { get; private set; }
     internal float yInput { get; private set; }
-    internal float jump { get; private set; }
+    internal float jumpInput { get; private set; }
+
+    internal bool dashInput { get; private set; }
 
     void Awake()
     {
@@ -25,7 +28,10 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         xInput = Input.GetAxis("Horizontal");
+        xInputRaw = Input.GetAxisRaw("Horizontal");
         yInput = Input.GetAxis("Vertical");
-        jump = Input.GetAxisRaw("Jump");
+        jumpInput = Input.GetAxisRaw("Jump");
+
+        dashInput = Input.GetKeyDown(KeyCode.LeftShift);
     }
 }
