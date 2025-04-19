@@ -2,6 +2,7 @@
 
 public class PlayerDoubleJumpState : PlayerState
 {
+    private float Jumptimer;
     public PlayerDoubleJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -9,23 +10,32 @@ public class PlayerDoubleJumpState : PlayerState
     public override void Enter()
     {
         base.Enter();
-
-        rb.linearVelocity = new Vector2(rb.linearVelocityX, player.doubleJumpPower);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, player.doubleJumpPower);
+        Jumptimer = player.DoubleJumpTime;
     }
 
     public override void Update()
     {
         base.Update();
 
-        if (0 != InputManager.instance.xInput)
+        // 점프 유지 중
+        if (InputManager.instance.jumpHold && Jumptimer > 0)
         {
-            player.SetVelocity(InputManager.instance.xInput * player.moveSpd , rb.linearVelocityY);
+            // 점프 힘 보간: 점점 줄어듦
+            float t = 1 - (Jumptimer / player.DoubleJumpTime); // 0 → 1
+            float jumpForce = Mathf.Lerp(player.doubleJumpPower, 0, t); // 점점 줄어듦
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+            Jumptimer -= Time.deltaTime;
         }
 
-        if (0 == rb.linearVelocityY && player.IsGroundDetected())
+        // 점프 키 뗐을 때 강제 컷
+        if (InputManager.instance.jumpReleased)
         {
-            stateMachine.ChangeState(player.idleState);
+            Jumptimer = 0f;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         }
+
         //하강 감지 → 낙하 상태로 전환
         if (rb.linearVelocityY < 0f)
         {

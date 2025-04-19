@@ -1,34 +1,33 @@
+Ôªøusing System.Collections;
 using UnityEngine;
 
 public class PlayerDashState : PlayerState
 {
-    public PlayerDashState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
-    {
-    }
+    float dashTimer;
+    public PlayerDashState(Player player, PlayerStateMachine stateMachine, string animBoolName)
+        : base(player, stateMachine, animBoolName) { }
 
     public override void Enter()
     {
         base.Enter();
+        rb.gravityScale = 0;
+        dashTimer = player.dashDuration;
 
-        stateTimer = player.player_Dash_Skill.dashDuration;
+        // Î∞©Ìñ• ÏÑ§Ï†ï
+        // ÏûÖÎ†• Î∞©Ìñ• or Î∞îÎùºÎ≥¥Îäî Î∞©Ìñ•
+        player.dashDirection = new Vector2(InputManager.instance.xInput, 0).normalized;
+        if (player.dashDirection == Vector2.zero)
+            player.dashDirection = Vector2.right * player.faceDir;
     }
-
     public override void Update()
     {
-        base.Update();
+        dashTimer -= Time.deltaTime;
+        rb.linearVelocity = player.dashDirection * player.dashSpeed;
 
-        player.SetVelocity(player.player_Dash_Skill.dashSpd * player.dashDir, 0);
-
-        if (stateTimer < 0)     // ¥ÎΩ¨ ≥°
+        if (dashTimer <= 0f)
         {
-            if (false == player.IsGroundDetected())       // ∞¯¡ﬂ
-            {
-                stateMachine.ChangeState(player.jumpState);
-            }
-            else if (true == player.IsGroundDetected())       // ∂•
-            {
-                stateMachine.ChangeState(player.idleState);
-            }
+            rb.gravityScale = player.JumpGravity;
+            stateMachine.ChangeState(player.fallState);
         }
     }
 

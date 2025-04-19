@@ -1,6 +1,6 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerMoveState : PlayerGroundedState
+public class PlayerMoveState : PlayerState
 {
     public PlayerMoveState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
@@ -9,17 +9,22 @@ public class PlayerMoveState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
+        player.DoubleJumpCount = player.MaxDoubleJumpCount;
     }
 
     public override void Update()
     {
         base.Update();
-        
-        player.SetVelocity(InputManager.instance.xInput * player.moveSpd, rb.linearVelocityY);
+       
 
-        if (0 == InputManager.instance.xInput)
+        if (InputManager.instance.xInput == 0)
         {
             stateMachine.ChangeState(player.idleState);
+        }
+
+        if (InputManager.instance.jumpPressed)
+        {
+            player.stateMachine.ChangeState(player.jumpState);
         }
     }
 
