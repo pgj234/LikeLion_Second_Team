@@ -43,8 +43,19 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
   - name: BlackArea
     uniqueID: 277551381
+=======
+  - name: Ground
+    uniqueID: 496716111
+    locked: 0
+  - name: Enemy
+    uniqueID: 2491061173
+    locked: 0
+  - name: Player
+    uniqueID: 576319889
+>>>>>>> parent of 12ed817 (PGJ)
     locked: 0
   m_RenderingLayers:
   - Default
