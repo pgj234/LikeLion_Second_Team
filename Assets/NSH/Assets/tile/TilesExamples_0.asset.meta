@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/NSH/Assets/tile/TilesExamples_0.asset.meta
+guid: 8cda3b6e5893e1e4c982d6df0bfc7dd0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+========
+guid: 1faf6f450291991438eb33e96009924e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+>>>>>>>> JIH:Assets/JIH/Shader/Shader Graphs_2D Glow.mat.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
