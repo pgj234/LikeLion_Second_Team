@@ -22,10 +22,10 @@ public class PlayerDoubleJumpState : PlayerState
             player.SetVelocity(InputManager.instance.xInput * player.moveSpd , rb.linearVelocityY);
         }
 
-        if (0 == rb.linearVelocityY && player.IsGroundDetected())
-        {
-            stateMachine.ChangeState(player.idleState);
-        }
+        // if (0 == rb.linearVelocityY && player.IsGroundDetected())
+        // {
+        //     stateMachine.ChangeState(player.idleState);
+        // }
         //하강 감지 → 낙하 상태로 전환
         if (rb.linearVelocityY < 0f)
         {

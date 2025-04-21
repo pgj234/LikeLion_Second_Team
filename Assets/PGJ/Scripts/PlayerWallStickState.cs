@@ -17,40 +17,40 @@ public class PlayerWallStickState : PlayerState
         player.rb.gravityScale = 0;
     }
 
-    public override void Update()
-    {
-        base.Update();
+    // public override void Update()
+    // {
+    //     base.Update();
 
-        if (player.faceDir * -1 == InputManager.instance.xInput || 0 > InputManager.instance.yInput)
-        {
-            stateMachine.ChangeState(player.playerWallFallState);
-            return;
-        }
+    //     if (player.faceDir * -1 == InputManager.instance.xInput || 0 > InputManager.instance.yInput)
+    //     {
+    //         stateMachine.ChangeState(player.playerWallFallState);
+    //         return;
+    //     }
 
-        if (0 > stateTimer)         // º®¿¡ ¿À·¡ ºÙ¾îÀÖ¾î¼­ ÀÚµ¿À¸·Î ¶³¾îÁü
-        {
-            stateMachine.ChangeState(player.playerWallFallState);
-            return;
-        }
+    //     if (0 > stateTimer)         // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¾ï¿½ï¿½Ö¾î¼­ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    //     {
+    //         stateMachine.ChangeState(player.playerWallFallState);
+    //         return;
+    //     }
 
-        player.ZeroVelocity();
+    //     player.ZeroVelocity();
 
-        //if (0 == InputManager.instance.jump && true == player.jumpState.jumpIng)
-        //{
-        //    player.jumpState.jumpIng = false;
-        //}
+    //     //if (0 == InputManager.instance.jump && true == player.jumpState.jumpIng)
+    //     //{
+    //     //    player.jumpState.jumpIng = false;
+    //     //}
 
-        //if (0 < InputManager.instance.jump && false == player.jumpState.jumpIng)
-        //{
-        //    stateMachine.ChangeState(player.jumpState);
-        //    return;
-        //}
-    }
+    //     //if (0 < InputManager.instance.jump && false == player.jumpState.jumpIng)
+    //     //{
+    //     //    stateMachine.ChangeState(player.jumpState);
+    //     //    return;
+    //     //}
+    // }
 
-    public override void Exit()
-    {
-        base.Exit();
+    // public override void Exit()
+    // {
+    //     base.Exit();
 
-        player.rb.gravityScale = player.originalGravityScale;
-    }
+    //     player.rb.gravityScale = player.originalGravityScale;
+    // }
 }

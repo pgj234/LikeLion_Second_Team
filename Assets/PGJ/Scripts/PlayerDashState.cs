@@ -6,31 +6,31 @@ public class PlayerDashState : PlayerState
     {
     }
 
-    public override void Enter()
-    {
-        base.Enter();
+    // public override void Enter()
+    // {
+    //     base.Enter();
 
-        stateTimer = player.player_Dash_Skill.dashDuration;
-    }
+    //     stateTimer = player.player_Dash_Skill.dashDuration;
+    // }
 
-    public override void Update()
-    {
-        base.Update();
+    // public override void Update()
+    // {
+    //     base.Update();
 
-        player.SetVelocity(player.player_Dash_Skill.dashSpd * player.dashDir, 0);
+    //     player.SetVelocity(player.player_Dash_Skill.dashSpd * player.dashDir, 0);
 
-        if (stateTimer < 0)     // ´ë½¬ ³¡
-        {
-            if (false == player.IsGroundDetected())       // °øÁß
-            {
-                stateMachine.ChangeState(player.jumpState);
-            }
-            else if (true == player.IsGroundDetected())       // ¶¥
-            {
-                stateMachine.ChangeState(player.idleState);
-            }
-        }
-    }
+    //     if (stateTimer < 0)     // ï¿½ë½¬ ï¿½ï¿½
+    //     {
+    //         if (false == player.IsGroundDetected())       // ï¿½ï¿½ï¿½ï¿½
+    //         {
+    //             stateMachine.ChangeState(player.jumpState);
+    //         }
+    //         else if (true == player.IsGroundDetected())       // ï¿½ï¿½
+    //         {
+    //             stateMachine.ChangeState(player.idleState);
+    //         }
+    //     }
+    // }
 
     public override void Exit()
     {

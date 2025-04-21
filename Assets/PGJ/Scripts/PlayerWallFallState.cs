@@ -20,10 +20,10 @@ public class PlayerWallFallState : PlayerState
             player.SetVelocity(InputManager.instance.xInput * player.moveSpd * 0.85f, rb.linearVelocityY);
         }
 
-        if (0 == rb.linearVelocityY && player.IsGroundDetected())
-        {
-            stateMachine.ChangeState(player.idleState);
-        }
+        // if (0 == rb.linearVelocityY && player.IsGroundDetected())
+        // {
+        //     stateMachine.ChangeState(player.idleState);
+        // }
     }
 
     public override void Exit()
