@@ -31,10 +31,10 @@ public class Sword : MonoBehaviour
         isSwinging = true;
 
         // 이펙트 생성
-
-        // 이펙트 생성
-        EffectManager.instance.SpawnDashEffect(effectSpawnPoint.position, effectSpawnPoint.rotation);
-
+        if (effectPrefab && effectSpawnPoint)
+        {
+            Instantiate(effectPrefab, effectSpawnPoint.position, effectSpawnPoint.rotation);
+        }
 
         // DOTween으로 회전 후 복귀
         swordPoint

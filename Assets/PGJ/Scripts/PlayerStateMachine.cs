@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class PlayerStateMachine
 {
     public PlayerState currentState { get; private set; }
 
-    // 초기화
+    // �ʱ�ȭ
     public void Init(PlayerState _startState)
     {
         currentState = _startState;

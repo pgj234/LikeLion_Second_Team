@@ -8,6 +8,7 @@ public class PlayerFallState : PlayerState
     public override void Enter()
     {
         base.Enter();
+
         // 낙하 시작 시 중력 증가
         rb.gravityScale = player.fallGravity;
     }
@@ -16,22 +17,22 @@ public class PlayerFallState : PlayerState
     {
         base.Update();
 
-        // 착지감지
-        if (player.isGrounded)
+        // 좌우 입력에 따라 이동
+        if (InputManager.instance.xInput != 0)
+        {
+            player.SetVelocity(InputManager.instance.xInput * player.moveSpd, rb.linearVelocityY);
+        }
+
+        // 착지 감지
+        if (0 == rb.linearVelocityY)
         {
             stateMachine.ChangeState(player.idleState);
         }
 
-        // 벽감지
-        if (player.isWalled)
-        {
-            stateMachine.ChangeState(player.wallslideState);
-        }
-
         // 2단 점프 감지
-        if (InputManager.instance.jumpPressed && player.DoubleJumpCount>0)    // 만약 점프횟수가 남아있으면 점프키 또 누르면 2단 점프
+        if (InputManager.instance.jumpPressed && player.jumpCount>0)    // 만약 점프횟수가 남아있으면 점프키 또 누르면 2단 점프
         {
-            player.DoubleJumpCount--;//점프할때 점프카운트-1
+            player.jumpCount--;//점프할때 점프카운트-1
             stateMachine.ChangeState(player.doubleJumpState);
         }
     }
@@ -41,6 +42,6 @@ public class PlayerFallState : PlayerState
         base.Exit();
 
         // 중력 원래대로 복원
-        rb.gravityScale = player.JumpGravity;
+        rb.gravityScale = player.defaultGravity;
     }
 }
