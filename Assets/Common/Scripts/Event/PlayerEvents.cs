@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class PlayerEvents
 {
-    //internal event Action tmpAction;
+    internal event Action playerGetDamageAction;
 
-    //public void TmpAction()
-    //{
-    //    tmpAction?.Invoke();
-    //}
+    public void PlayerGetDamageAction()
+    {
+        playerGetDamageAction?.Invoke();
+    }
 }
