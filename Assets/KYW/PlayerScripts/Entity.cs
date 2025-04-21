@@ -1,24 +1,30 @@
-ï»¿using Unity.VisualScripting;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    //[SerializeField] protected int maxHP;
-    //[SerializeField] protected int maxStamina;
-    //protected int curHP;        // í˜„ìž¬ ì²´ë ¥
-    //protected int curStamina;   // í˜„ìž¬ ìŠ¤íƒœë¯¸ë„ˆ
+    [SerializeField] protected int maxHP;
+    [SerializeField] protected int maxStamina;
+    protected int curHP;        // ÇöÀç Ã¼·Â
+    protected int curStamina;   // ÇöÀç ½ºÅÂ¹Ì³Ê
 
     internal Animator anim { get; private set; }
     internal Rigidbody2D rb { get; private set; }
-    internal int faceDir { get; set; } = 1;   // ì™¼ìª½ -1, ì˜¤ë¥¸ìª½ 1
+
+    protected LayerMask groundLayerMask;
+
+    internal int faceDir { get; private set; } = 1;             // ¿ÞÂÊ -1, ¿À¸¥ÂÊ 1
+
     protected virtual void Awake()
     {
+        groundLayerMask = LayerMask.GetMask("Ground");
+
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
     protected virtual void Start()
     {
+
     }
 
     protected virtual void Update()
@@ -48,6 +54,7 @@ public class Entity : MonoBehaviour
             Flip();
         }
     }
+
     internal void Flip()
     {
         faceDir = faceDir * -1;

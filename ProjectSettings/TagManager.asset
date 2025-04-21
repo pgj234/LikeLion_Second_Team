@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Mirror
   - Sword
+  - Wall
   layers:
   - Default
   - TransparentFX

@@ -12,12 +12,13 @@ public class EventManager : MonoBehaviour
         if (null == instance)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
+
+        DontDestroyOnLoad(gameObject);
 
         playerEvents = new PlayerEvents();
         EnemyEvents = new EnemyEvents();
