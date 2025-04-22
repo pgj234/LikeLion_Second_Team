@@ -8,7 +8,7 @@ using UnityEditor.UIElements;
 using System.Runtime.CompilerServices;
 
 
-[RequireComponent(typeof(MeshRenderer), typeof(MeshRenderer), typeof(EdgeCollider2D))]
+[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(EdgeCollider2D))]
 [RequireComponent(typeof(WaterTriggerHandler))]
 public class InteractableWater : MonoBehaviour
 {
@@ -33,12 +33,7 @@ public class InteractableWater : MonoBehaviour
     private void Start()
     {
         GenerateMesh();
-        _coll = GetComponent<EdgeCollider2D>();
-        _coll.points = new Vector2[NumOfXVertices];
-        for (int i = 0; i < NumOfXVertices; i++)
-        {
-            _coll.points[i] = new Vector2(_vertices[i].x, _vertices[i].y);
-        }
+        
     }
     private void Reset()
     {
@@ -123,6 +118,9 @@ public class InteractableWater : MonoBehaviour
 
     }
 
+
+
+
 }
 
 [CustomEditor(typeof(InteractableWater))]
@@ -141,24 +139,81 @@ public class InteractableWaterEditor : Editor
         InspectorElement.FillDefaultInspector(root, serializedObject, this);
         root.Add(new VisualElement { style = { height = 10 } });
 
-        Button generateMeshButton = new Button(() => _water.GenerateMesh())
-        {
-            text = "Generate Mesh"
-        };
+        Button generateMeshButton = new Button(() => _water.GenerateMesh()) { text = "Generate Mesh" };
         root.Add(generateMeshButton);
-        Button placeEdgeColliderButton = new Button(() => _water.ResetEdgeCollider())
-        {
-            text = "Place Edge Collider"
-        };
+        Button placeEdgeColliderButton = new Button(() => _water.ResetEdgeCollider()) { text = "Place Edge Collider" };
         root.Add(placeEdgeColliderButton);
         return root;
-
     }
 
     private void ChangeDimenstions(ref float width, ref float height, float calculateWidthMax, float calculateHeightMax)
     {
-        width = Mathf.Max(0.1f, calculateWidthMax);
-        height = Mathf.Max(0.1f, calculateHeightMax);
+        width = Mathf.Max(0.1f, Mathf.Abs(calculateWidthMax));
+        height = Mathf.Max(0.1f, Mathf.Abs(calculateHeightMax));
+    }
+
+    private void OnSceneGUI()
+    {
+        Handles.color = _water.GizmoColor;
+        Vector3 center = _water.transform.position;
+        Vector3 size = new Vector3(_water.Width, _water.Height, 0.1f);
+        Handles.DrawWireCube(center, size);
+
+        float handleSize = HandleUtility.GetHandleSize(center) * 0.1f;
+        Vector3 snap = Vector3.one * 0.1f;
+
+        Vector3[] corners = new Vector3[4];
+        corners[0] = center + new Vector3(-_water.Width / 2, -_water.Height / 2, 0);
+        corners[1] = center + new Vector3(_water.Width / 2, -_water.Height / 2, 0);
+        corners[2] = center + new Vector3(_water.Width / 2, _water.Height / 2, 0);
+        corners[3] = center + new Vector3(-_water.Width / 2, _water.Height / 2, 0);
+
+        EditorGUI.BeginChangeCheck();
+        Vector3 newBottomLeft = Handles.FreeMoveHandle(corners[0], handleSize, snap, Handles.CubeHandleCap);
+        if (EditorGUI.EndChangeCheck())
+        {
+            float newWidth = corners[1].x - newBottomLeft.x;
+            float newHeight = corners[3].y - newBottomLeft.y;
+            ChangeDimenstions(ref _water.Width, ref _water.Height, newWidth, newHeight);
+            _water.transform.position += new Vector3((newBottomLeft.x - corners[0].x) / 2, (newBottomLeft.y - corners[0].y) / 2, 0);
+        }
+
+        EditorGUI.BeginChangeCheck();
+        Vector3 newBottomRight = Handles.FreeMoveHandle(corners[1], handleSize, snap, Handles.CubeHandleCap);
+        if (EditorGUI.EndChangeCheck())
+        {
+            float newWidth = newBottomRight.x - corners[0].x;
+            float newHeight = corners[3].y - newBottomRight.y;
+            ChangeDimenstions(ref _water.Width, ref _water.Height, newWidth, newHeight);
+            _water.transform.position += new Vector3((newBottomRight.x - corners[1].x) / 2, (newBottomRight.y - corners[1].y) / 2, 0);
+        }
+
+        EditorGUI.BeginChangeCheck();
+        Vector3 newTopLeft = Handles.FreeMoveHandle(corners[2], handleSize, snap, Handles.CubeHandleCap);
+        if (EditorGUI.EndChangeCheck())
+        {
+            float newWidth = corners[3].x - newTopLeft.x;
+            float newHeight = newTopLeft.y - corners[0].y;
+            ChangeDimenstions(ref _water.Width, ref _water.Height, newWidth, newHeight);
+            _water.transform.position += new Vector3((newTopLeft.x - corners[2].x) / 2, (newTopLeft.y - corners[2].y) / 2, 0);
+        }
+
+        EditorGUI.BeginChangeCheck();
+        Vector3 newTopRight = Handles.FreeMoveHandle(corners[3], handleSize, snap, Handles.CubeHandleCap);
+        if (EditorGUI.EndChangeCheck())
+        {
+            float newWidth = newTopRight.x - corners[2].x;
+            float newHeight = newTopRight.y - corners[1].y;
+            ChangeDimenstions(ref _water.Width, ref _water.Height, newWidth, newHeight);
+            _water.transform.position += new Vector3((newTopRight.x - corners[3].x) / 2, (newTopRight.y - corners[3].y) / 2, 0);
+        }
+
+        if (GUI.changed)
+        {
+            _water.GenerateMesh();
+            serializedObject.Update();
+            serializedObject.ApplyModifiedProperties();
+        }
     }
 }
 
