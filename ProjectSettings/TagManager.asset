@@ -15,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - Wall
-  - Object
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -48,14 +48,11 @@ TagManager:
   - name: BlackArea
     uniqueID: 277551381
     locked: 0
-  - name: Ground
-    uniqueID: 3571356175
+  - name: Enemy
+    uniqueID: 1710984957
     locked: 0
-  - name: Object
-    uniqueID: 2964385015
-    locked: 0
-  - name: Wall
-    uniqueID: 1089157317
+  - name: Player
+    uniqueID: 3859127553
     locked: 0
   m_RenderingLayers:
   - Default
