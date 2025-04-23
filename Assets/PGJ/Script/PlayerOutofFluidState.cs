@@ -39,7 +39,7 @@ public class PlayerOutofFluidState : PlayerState
         ghostTimer -= Time.deltaTime;
 
         // ¿Ø√º¿Ã≈ª ≈∞ ∂º∏È
-        if (InputManager.instance.ghostKeyReleased)
+        if (InputManager.instance.fInputReleased)
         {
             isGhostKeyReleased = true;
         }

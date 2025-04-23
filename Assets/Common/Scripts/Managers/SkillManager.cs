@@ -4,7 +4,8 @@ public class SkillManager : MonoBehaviour
 {
     public static SkillManager instance;
 
-    //internal OutofFluid_Skill outofFluid_Skill { get; private set; }
+    [Header("스킬 목록")]
+    [field: SerializeField] public DashSkill DashSkill { get; private set; }
 
     void Awake()
     {
@@ -18,7 +19,5 @@ public class SkillManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
-
-        //outofFluid_Skill = GetComponent<OutofFluid_Skill>();
     }
 }
