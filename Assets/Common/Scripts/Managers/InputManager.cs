@@ -12,6 +12,7 @@ public class InputManager : MonoBehaviour
     public bool qInput { get; private set; }
     public bool eInput { get; private set; }
     public bool fInput { get; private set; }
+    public bool fInputReleased { get; private set; }
     public bool rInput { get; private set; }
 
     public bool jumpPressed { get; private set; }    
@@ -51,6 +52,7 @@ public class InputManager : MonoBehaviour
             qInput = Input.GetKeyDown(KeyCode.Q);
             eInput = Input.GetKeyDown(KeyCode.E);
             fInput = Input.GetKeyDown(KeyCode.F);
+            fInputReleased = Input.GetKeyUp(KeyCode.F);
             rInput = Input.GetKeyDown(KeyCode.R);
 
             jumpPressed = Input.GetButtonDown("Jump");    // 한 번만 true

@@ -46,14 +46,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2D: {fileID: 5166339831764612642}
-  OuterRadius: 5
-  InnerRadius: 3
+  OuterRadius: 10
+  InnerRadius: 8
   isEnemy: 0
   player: {fileID: 0}
   startTime: 5
   remainTime: 5
   smoothTime: 0.1
-  isInBlackArea: 1
+  isInBlackArea: 0
   isInLight: 0
 --- !u!114 &5166339831764612642
 MonoBehaviour:

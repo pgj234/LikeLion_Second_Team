@@ -4,7 +4,7 @@ public class SkillManager : MonoBehaviour
 {
     public static SkillManager instance;
 
-    [Header("ìŠ¤í‚¬ ëª©ë¡")]
+    [Header("½ºÅ³ ¸ñ·Ï")]
     [field: SerializeField] public DashSkill DashSkill { get; private set; }
 
     void Awake()

@@ -53,6 +53,8 @@ public class Player : Entity
     internal PlayerWallSlideState wallslideState { get; private set; }
     internal PlayerWallJumpState wallJumpState { get; private set; }
     internal PlayerObjectJumpState objectJumpState {get; private set;}
+    
+    internal PlayerOutofFluidState outofFluidState {get; private set;}
 
     protected override void Awake()
     {
@@ -69,6 +71,7 @@ public class Player : Entity
         wallslideState = new PlayerWallSlideState(this, stateMachine, "WallSlide");
         wallJumpState = new PlayerWallJumpState(this, stateMachine, "WallJump");
         objectJumpState = new PlayerObjectJumpState(this, stateMachine, "Jump"); // 점프 애니메이션 그대로 사용하면
+        outofFluidState = new PlayerOutofFluidState (this, stateMachine, "Die");
     }
 
     protected void Start()
@@ -90,6 +93,8 @@ public class Player : Entity
             }
         }
     }
+    
+    internal GameObject ghostPlayerObj => transform.Find("Ghost_Player").gameObject;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -114,7 +119,7 @@ public class Player : Entity
             isGrounded = false;
         }
     }
-    internal GameObject ghostPlayerObj => transform.Find("Ghost_Player").gameObject;
+
     public void Damaged(int damage)
     {
         if (IsInvincible) return;

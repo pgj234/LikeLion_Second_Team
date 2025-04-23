@@ -39,8 +39,11 @@ public class BlackArea : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            player.isInBlackArea = false;
-            player = null;
+            if (player != null)
+            {
+                player.isInBlackArea = false;
+                player = null;
+            }
         }
     }
 }

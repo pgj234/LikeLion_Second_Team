@@ -15,7 +15,11 @@ public class PlayerMoveState : PlayerState
     public override void Update()
     {
         base.Update();
-       
+
+        if (InputManager.instance.fInput)
+        {
+            stateMachine.ChangeState(player.outofFluidState);
+        }
 
         if (InputManager.instance.xInput == 0)
         {
