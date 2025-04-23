@@ -7,6 +7,7 @@ TagManager:
   - Mirror
   - Sword
   - Wall
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -14,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Ground
+  - Wall
+  - Object
   - 
   - 
   - 
@@ -46,6 +47,15 @@ TagManager:
     locked: 0
   - name: BlackArea
     uniqueID: 277551381
+    locked: 0
+  - name: Ground
+    uniqueID: 3571356175
+    locked: 0
+  - name: Object
+    uniqueID: 2964385015
+    locked: 0
+  - name: Wall
+    uniqueID: 1089157317
     locked: 0
   m_RenderingLayers:
   - Default
