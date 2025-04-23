@@ -14,6 +14,11 @@ public class PlayerIdleState : PlayerState
 
     public override void Update()
     {
+        if (InputManager.instance.fInput)
+        {
+            stateMachine.ChangeState(player.outofFluidState);
+        }
+
         if (InputManager.instance.DashPressed)
         {
             stateMachine.ChangeState(player.dashState);
