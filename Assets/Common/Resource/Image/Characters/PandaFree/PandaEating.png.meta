@@ -448,7 +448,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PandaEating_0: -666411777060298420
+      PandaEating_1: -8609677631897219811
+      PandaEating_10: -2048313969902885527
+      PandaEating_11: -3830943174156852918
+      PandaEating_2: -3858006541298975077
+      PandaEating_3: 8272729278905688500
+      PandaEating_4: -8759438558759160201
+      PandaEating_5: 554535348898299735
+      PandaEating_6: 902819175822202452
+      PandaEating_7: -4297848968876344242
+      PandaEating_8: 4384570501558488342
+      PandaEating_9: 6911896072324555651
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

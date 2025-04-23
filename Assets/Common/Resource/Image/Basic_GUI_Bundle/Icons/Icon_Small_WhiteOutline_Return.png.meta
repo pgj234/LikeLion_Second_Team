@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon_Small_WhiteOutline_Return_0: -2629126322115682971
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

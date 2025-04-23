@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bambu_0: -4625020314357179071
+      Bambu_1: 1066857202978346917
+      Bambu_2: -3733501544534625067
+      Bambu_3: -3156719967879941956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
