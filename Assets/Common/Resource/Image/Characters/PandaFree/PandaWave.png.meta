@@ -448,7 +448,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PandaWave_0: -3207144883618284081
+      PandaWave_1: -1669885159977605062
+      PandaWave_10: 3599588070854643379
+      PandaWave_11: 4607473816431052628
+      PandaWave_2: -8088497808820730807
+      PandaWave_3: 4598997612145505248
+      PandaWave_4: -4011511357712414553
+      PandaWave_5: -7153117029468749231
+      PandaWave_6: 4921305709570498799
+      PandaWave_7: 8649492576050501940
+      PandaWave_8: -1679478379779271803
+      PandaWave_9: 2923061357087248613
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
