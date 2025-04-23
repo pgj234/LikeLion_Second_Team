@@ -30,7 +30,7 @@ public class PlayerOutofFluidState : PlayerState
         ghost = player.ghostPlayerObj;
         ghost.SetActive(true);
 
-        // Ä«¸Þ¶ó À¯·É¿¡ ºÙÀÌ±â
+        // Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½É¿ï¿½ ï¿½ï¿½ï¿½Ì±ï¿½
         SceneMaster.instance.cineCam.Follow = ghost.transform;
     }
 
@@ -38,7 +38,7 @@ public class PlayerOutofFluidState : PlayerState
     {
         ghostTimer -= Time.deltaTime;
 
-        // À¯Ã¼ÀÌÅ» Å° ¶¼¸é
+        // ï¿½ï¿½Ã¼ï¿½ï¿½Å» Å° ï¿½ï¿½ï¿½ï¿½
         if (InputManager.instance.fInputReleased)
         {
             isGhostKeyReleased = true;
@@ -46,13 +46,13 @@ public class PlayerOutofFluidState : PlayerState
 
         if (true == isGhostKeyReleased)
         {
-            if (maxGhostTime - minGhostTime > ghostTimer)       // Å°¸¦ maxGhostTimeº¸´Ù »¡¸® ¶¾ °æ¿ì µÇµ¹¾Æ°¡±â
+            if (maxGhostTime - minGhostTime > ghostTimer)       // Å°ï¿½ï¿½ maxGhostTimeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Çµï¿½ï¿½Æ°ï¿½ï¿½ï¿½
             {
                 ReturnGhost();
             }
         }
 
-        if (0 > ghostTimer)                            // Å°¸¦ maxGhostTimeº¸´Ù ´õ ´©¸£°í ÀÖ´Â °æ¿ì °­Á¦ µÇµ¹¾Æ°¡±â
+        if (0 > ghostTimer)                            // Å°ï¿½ï¿½ maxGhostTimeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Çµï¿½ï¿½Æ°ï¿½ï¿½ï¿½
         {
             ReturnGhost();
         }
@@ -64,7 +64,7 @@ public class PlayerOutofFluidState : PlayerState
     {
         base.Exit();
 
-        // ÇÃ·¹ÀÌ¾î¿¡ Ä«¸Þ¶ó ºÙÀÌ±â
+        // ï¿½Ã·ï¿½ï¿½Ì¾î¿¡ Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½Ì±ï¿½
         SceneMaster.instance.cineCam.Follow = player.transform;
 
         ghost.SetActive(false);
@@ -72,7 +72,7 @@ public class PlayerOutofFluidState : PlayerState
 
     void ReturnGhost()
     {
-        // ÂÞ¿Í¾Ð »¡·Áµé¾î°¡´Â ÀÌÆåÆ®°°Àº°Å ÁÖ¸é ÁÁÀ»µí
+        // ï¿½Þ¿Í¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î°¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
         ghost.transform.localPosition = originalLocalPos;
 
