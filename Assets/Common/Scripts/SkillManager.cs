@@ -4,7 +4,7 @@ public class SkillManager : MonoBehaviour
 {
     public static SkillManager instance;
 
-    //internal Dash_Skill dashSkill { get; private set; }
+    //internal OutofFluid_Skill outofFluid_Skill { get; private set; }
 
     void Awake()
     {
@@ -18,5 +18,7 @@ public class SkillManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+
+        //outofFluid_Skill = GetComponent<OutofFluid_Skill>();
     }
 }
