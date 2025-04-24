@@ -41,8 +41,11 @@ public class ObjectLight : LightInBlackArea
     {
         if (collision.CompareTag("Player"))
         {
-            player.isInLight = false;
-            player = null;
+            if (player != null)
+            {
+                player.isInLight = false;
+                player = null;
+            }
         }
     }
 }

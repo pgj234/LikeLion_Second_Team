@@ -12,7 +12,8 @@ public class PlayerLight : LightInBlackArea
     [SerializeField] private float startTime;
     [SerializeField] private float remainTime; // 남은 시간(남은 시간은 상위 콜라이더에서 줄일 것)
     [SerializeField] private float smoothTime = 0.1f; // 작을수록 즉각적인 크기 반영이 됨
-    private Vector3 refScaleVelocity;
+    private float refOuterVelocity;
+    private float refInnerVelocity;
 
     [Space, Header("조건")]
     public bool isInBlackArea = false; // 빛이 줄어드는 공간에 있는지 여부
@@ -50,9 +51,17 @@ public class PlayerLight : LightInBlackArea
 
     void UpdateScale()
     {
-        float percent = Mathf.Clamp01(remainTime / startTime); // 남은 시간의 비율을 구한 후
+        float percent = 0;
+        if (isInBlackArea == true)
+        {
+            percent = Mathf.Clamp01(remainTime / startTime); // 남은 시간의 비율을 구한 후
+        }
+        else
+        {
+            percent = 0;
+        }
 
-        light2D.pointLightOuterRadius = OuterRadius * percent;
-        light2D.pointLightInnerRadius = Mathf.Clamp(InnerRadius, 0, OuterRadius) * percent;
+        light2D.pointLightOuterRadius = Mathf.SmoothDamp(light2D.pointLightOuterRadius, OuterRadius * percent, ref refOuterVelocity, smoothTime);
+        light2D.pointLightInnerRadius = Mathf.SmoothDamp(light2D.pointLightInnerRadius, InnerRadius * percent, ref refInnerVelocity, smoothTime);
     }
 }

@@ -9,4 +9,6 @@ public class PlayerEvents
     //{
     //    tmpAction?.Invoke();
     //}
+
+    public const string OnPlayerDamaged = "OnPlayerDamaged";
 }
