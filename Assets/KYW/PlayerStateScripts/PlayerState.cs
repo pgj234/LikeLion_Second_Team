@@ -24,8 +24,13 @@ public class PlayerState
 
     public virtual void Update()
     {
+        if (InputManager.instance.ParryPressed)
+        {
+            stateMachine.ChangeState(player.parryingState);
+            return;
+        }
 
-        if(InputManager.instance.DashPressed)
+        if (InputManager.instance.DashPressed)
         {
             stateMachine.ChangeState(player.dashState);
         }
