@@ -293,8 +293,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780359175674580044}
-  - component: {fileID: 3941675353350981864}
   - component: {fileID: 2934460347029075924}
+  - component: {fileID: 7691737442926458620}
   m_Layer: 10
   m_Name: CollisionJumpCheck (1)
   m_TagString: CollisionJump
@@ -311,13 +311,25 @@ Transform:
   m_GameObject: {fileID: 3632507457691691621}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.75, y: -5.96, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8904382019132736330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &3941675353350981864
+--- !u!114 &2934460347029075924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632507457691691621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13abf3f3674beb42ade1b7a4384bfcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &7691737442926458620
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,24 +375,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.34192276, y: 0.33532822}
-      - {x: 0.31138787, y: 0.1464161}
-      - {x: 0.30696633, y: 0.040995926}
-      - {x: 0.30338347, y: -0.045283362}
-      - {x: 0.5388318, y: 0.09172054}
+    - - {x: 0.31284043, y: 0.11996562}
+      - {x: 0.28746313, y: 0.08630064}
+      - {x: 0.2963071, y: 0.043311894}
+      - {x: 0.33102763, y: 0.056547105}
+      - {x: 0.3548041, y: 0.073985994}
   m_UseDelaunayMesh: 0
---- !u!114 &2934460347029075924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3632507457691691621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c13abf3f3674beb42ade1b7a4384bfcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5448724867480904054
 GameObject:
   m_ObjectHideFlags: 0
