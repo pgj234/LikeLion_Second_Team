@@ -4,25 +4,44 @@ using TMPro;
 
 public class StoryManager : MonoBehaviour
 {
+    public static StoryManager instance { get; private set; }
+
     [Header("스토리 설정")]
     [SerializeField] private Story[] stories;  // 스토리 배열
     [SerializeField] private Image leftImage;       // 왼쪽 이미지 UI
     [SerializeField] private Image rightImage;      // 오른쪽 이미지 UI
     [SerializeField] private TextMeshProUGUI dialogueText;  // 대화 텍스트 UI
+    [SerializeField] private GameObject storyPanel;  // 스토리 패널
 
     private int currentStoryIndex = 0;  // 현재 스토리 인덱스
     private int currentDialogueIndex = 0;  // 현재 대화문 인덱스
+    private bool isStoryActive = false;  // 스토리가 활성화되어 있는지 여부
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {
-        // 초기 스토리 표시
-        ShowDialogue(currentStoryIndex, currentDialogueIndex);
+        // 초기에는 스토리 패널 비활성화
+        if (storyPanel != null)
+        {
+            storyPanel.SetActive(false);
+        }
     }
 
     private void Update()
     {
-        // 스페이스바를 누르면 다음 대화문으로 넘어감
-        if (Input.GetKeyDown(KeyCode.Space))
+        // 스토리가 활성화되어 있을 때만 스페이스바 입력 처리
+        if (isStoryActive && Input.GetKeyDown(KeyCode.Space))
         {
             NextDialogue();
         }
@@ -52,19 +71,16 @@ public class StoryManager : MonoBehaviour
     {
         currentDialogueIndex++;
         
-        // 현재 스토리의 모든 대화문을 다 보여줬으면 다음 스토리로 넘어감
+        // 현재 스토리의 모든 대화문을 다 보여줬으면 종료
         if (currentDialogueIndex >= stories[currentStoryIndex].dialogues.Length)
         {
-            currentStoryIndex++;
-            currentDialogueIndex = 0;
-            
-            // 모든 스토리를 다 보여줬으면 종료
-            if (currentStoryIndex >= stories.Length)
+            // 스토리 패널 비활성화
+            if (storyPanel != null)
             {
-                Debug.Log("모든 스토리가 끝났습니다.");
-                // 여기에 스토리 종료 후 처리할 로직 추가
-                return;
+                storyPanel.SetActive(false);
+                isStoryActive = false;
             }
+            return;
         }
 
         // 다음 대화문 표시
@@ -80,6 +96,14 @@ public class StoryManager : MonoBehaviour
             {
                 currentStoryIndex = i;
                 currentDialogueIndex = 0;
+                
+                // 스토리 패널 활성화
+                if (storyPanel != null)
+                {
+                    storyPanel.SetActive(true);
+                    isStoryActive = true;
+                }
+                
                 ShowDialogue(currentStoryIndex, currentDialogueIndex);
                 return;
             }

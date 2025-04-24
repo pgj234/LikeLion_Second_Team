@@ -3,7 +3,7 @@ using System;
 
 public class PlayerManager : MonoBehaviour
 {
-    public static PlayerManager Instance { get; private set; }
+    public static PlayerManager instance { get; private set; }
 
     [Header("체력 설정")]
     [SerializeField] private int maxHealth = 5;
@@ -22,9 +22,9 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
+        if (instance == null)
         {
-            Instance = this;
+            instance = this;
         }
         else
         {

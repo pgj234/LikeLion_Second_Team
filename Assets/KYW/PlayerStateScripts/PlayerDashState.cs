@@ -32,5 +32,6 @@ public class PlayerDashState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        SkillManager.instance.DashSkill.EndDash(player.rb, player.JumpGravity); 
     }
 }

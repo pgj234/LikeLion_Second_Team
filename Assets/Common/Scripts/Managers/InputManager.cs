@@ -7,6 +7,8 @@ public class InputManager : MonoBehaviour
 
     public float xInput { get; private set; }
     public float yInput { get; private set; }
+    public bool upHold { get; private set; }  // 위 버튼을 누르고 있는 상태
+    
     public bool jumpInput { get; private set; }
     public bool dashInput { get; private set; }
     public bool qInput { get; private set; }
@@ -21,7 +23,7 @@ public class InputManager : MonoBehaviour
 
     public bool DashPressed { get; private set; }
 
-    public bool upHold { get; private set; }  // 위 버튼을 누르고 있는 상태
+
 
     internal bool leftClick { get; private set; }
     internal bool rightClick { get; private set; }
@@ -47,6 +49,7 @@ public class InputManager : MonoBehaviour
         {
             xInput = Input.GetAxisRaw("Horizontal");
             yInput = Input.GetAxisRaw("Vertical");
+            upHold = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);  // 위 버튼을 누르고 있는 상태
             jumpInput = Input.GetKeyDown(KeyCode.Space);
             dashInput = Input.GetKeyDown(KeyCode.LeftShift);
             qInput = Input.GetKeyDown(KeyCode.Q);
@@ -61,7 +64,7 @@ public class InputManager : MonoBehaviour
 
             DashPressed = Input.GetKeyDown(KeyCode.LeftShift);
 
-            upHold = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);  // 위 버튼을 누르고 있는 상태
+
 
             //좌우클릭 했는지
             leftClick = Input.GetMouseButtonDown(0);
