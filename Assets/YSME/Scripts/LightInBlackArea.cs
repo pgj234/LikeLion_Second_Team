@@ -21,6 +21,7 @@ public abstract class LightInBlackArea : MonoBehaviour
         else
         {
             light2D = gameObject.AddComponent<Light2D>();
+            light2D.lightType = Light2D.LightType.Point;
         }
     }
 }
