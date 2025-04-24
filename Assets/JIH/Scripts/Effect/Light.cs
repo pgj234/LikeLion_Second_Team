@@ -1,74 +1,72 @@
+using System.Collections;
 using UnityEngine;
 
 public class Light : LightCollisionState
 {
-    public GameObject particlePrefab; // 인스펙터에서 할당할 파티클 프리팹
-    private GameObject particleInstance; // 생성된 파티클 인스턴스
+    private ParticleSystem particleSystem; // 자식 오브젝트의 파티클 시스템
+    private Light lightComponent; // 라이트 컴포넌트
     private bool isLightOn = false;
+    public float delayTime = 0.5f; // 빛 켜짐 딜레이 시간
 
     public override void Start()
     {
         base.Start();
+        // 자식 오브젝트에서 ParticleSystem 찾기
+        particleSystem = GetComponentInChildren<ParticleSystem>();
+        if (particleSystem == null)
+        {
+            Debug.LogWarning("자식 오브젝트에 ParticleSystem이 없습니다!");
+        }
+
+        // Light 컴포넌트 가져오기
+        lightComponent = GetComponent<Light>();
+        if (lightComponent == null)
+        {
+            Debug.LogWarning("Light 컴포넌트가 없습니다!");
+        }
     }
 
     public override void Update()
     {
         base.Update();
+    }
 
-        Light lightComponent = GetComponent<Light>();
-        if (lightComponent != null && lightComponent.enabled && !isLightOn)
+    // 외부에서 빛 켜기 호출
+    public void TurnOnLight()
+    {
+        if (!isLightOn)
         {
-            isLightOn = true;
-            SpawnParticle();
+            StartCoroutine(TurnOnLightWithDelay());
         }
-        else if (lightComponent != null && !lightComponent.enabled && isLightOn)
+    }
+
+    private IEnumerator TurnOnLightWithDelay()
+    {
+        yield return new WaitForSeconds(delayTime);
+
+        isLightOn = true;
+        if (lightComponent != null)
+        {
+            lightComponent.enabled = true; // 빛 켜기
+        }
+        if (particleSystem != null)
+        {
+            particleSystem.Play(); // 파티클 재생
+        }
+    }
+
+    public void TurnOffLight()
+    {
+        if (isLightOn)
         {
             isLightOn = false;
-            StopParticle();
-        }
-    }
-
-    public override void OnCollisionEnter(Collision collision)
-    {
-        base.OnCollisionEnter(collision);
-    }
-
-    private void SpawnParticle()
-    {
-        if (particlePrefab != null && particleInstance == null)
-        {
-            // 파티클 프리팹을 현재 오브젝트 위치에 생성
-            particleInstance = Instantiate(particlePrefab, transform.position, transform.rotation);
-            ParticleSystem ps = particleInstance.GetComponent<ParticleSystem>();
-            if (ps != null)
+            if (lightComponent != null)
             {
-                ps.Play(); // 파티클 재생
+                lightComponent.enabled = false; // 빛 끄기
             }
-        }
-        else if (particleInstance != null)
-        {
-            ParticleSystem ps = particleInstance.GetComponent<ParticleSystem>();
-            if (ps != null)
+            if (particleSystem != null)
             {
-                ps.Play(); // 이미 존재하면 재생
-            }
-        }
-        else
-        {
-            Debug.LogWarning("파티클 프리팹이 할당되지 않았습니다!");
-        }
-    }
-
-    private void StopParticle()
-    {
-        if (particleInstance != null)
-        {
-            ParticleSystem ps = particleInstance.GetComponent<ParticleSystem>();
-            if (ps != null)
-            {
-                ps.Stop(); // 파티클 멈춤
-                // 필요하면 파티클 오브젝트를 삭제하려면 아래 주석 해제
-                // Destroy(particleInstance, ps.main.duration);
+                particleSystem.Stop(); // 파티클 멈춤
             }
         }
     }

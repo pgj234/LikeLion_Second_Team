@@ -47,7 +47,7 @@ public class PlayerCollisionJumpState : PlayerState
                 Vector2 direction = (mousePos - (Vector2)player.transform.position).normalized;
 
                 // 화살표 위치를 플레이어 근처로 설정
-                player.directionArrow.transform.position = player.transform.position + (Vector3)(direction * 10f); // 0.5f는 플레이어와의 거리
+                player.directionArrow.transform.position = player.transform.position + (Vector3)(direction * 5f); // 0.5f는 플레이어와의 거리
 
                 // 화살표 회전 (2D에서 Z축 회전)
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;

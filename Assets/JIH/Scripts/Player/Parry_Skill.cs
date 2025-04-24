@@ -8,14 +8,12 @@ public class Parry_Skill : Skill
     [SerializeField] private GameObject dotPrefab;
     [SerializeField] private Transform dotsParent;
 
-    [Header("패링 방향 선")]
-    [SerializeField] private float lineWidth = 0.2f;
-    [SerializeField] private float lineLength = 2f;
-    [SerializeField] private Color lineColor = Color.cyan;
+    [Header("패링 방향 화살표")]
+    [SerializeField] private GameObject directionArrow; // 화살표 오브젝트
+    [SerializeField] private float arrowDistance = 10f; // 플레이어와 화살표 간 거리
+    [SerializeField] private float arrowScale = 1f; // 화살표 크기
 
     private GameObject[] dots;
-    private GameObject lineObject;
-    private LineRenderer lineRenderer;
     private Camera mainCamera;
 
     protected override void Start()
@@ -23,7 +21,6 @@ public class Parry_Skill : Skill
         player = PlayerManager.Instance.player;
         mainCamera = Camera.main;
         GenerateDots();
-        GenerateLine();
     }
 
     public void DotsActive(bool isActive)
@@ -76,52 +73,39 @@ public class Parry_Skill : Skill
 
     public void LineActive(bool isActive)
     {
-        if (lineRenderer == null)
+        if (directionArrow == null)
         {
-            Debug.LogWarning("LineRenderer is null in LineActive");
+            Debug.LogWarning("DirectionArrow is null in LineActive");
             return;
         }
-        lineRenderer.enabled = isActive;
-        Debug.Log($"LineRenderer active: {isActive}");
+        directionArrow.SetActive(isActive);
+        Debug.Log($"DirectionArrow active: {isActive}");
     }
 
     public void UpdateLine()
     {
-        if (lineRenderer == null || !lineRenderer.enabled) return;
+        if (directionArrow == null || !directionArrow.activeSelf) return;
+
         Vector3 mousePos = GetMouseWorldPosition();
         mousePos.z = player.ParryingCheck.position.z; // Z-축 동기화
         Vector3 direction = (mousePos - player.ParryingCheck.position).normalized;
-        lineRenderer.SetPosition(0, player.ParryingCheck.position);
-        lineRenderer.SetPosition(1, player.ParryingCheck.position + direction * lineLength);
+
+        // 화살표 위치 설정
+        directionArrow.transform.position = player.ParryingCheck.position + direction * arrowDistance;
+
+        // 화살표 회전
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        directionArrow.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        // 화살표 크기 설정
+        directionArrow.transform.localScale = Vector3.one * arrowScale;
     }
 
-    private void GenerateLine()
-    {
-        if (lineObject != null) return;
-        if (player == null)
-        {
-            Debug.LogError("Player is null in GenerateLine");
-            return;
-        }
-        lineObject = new GameObject("ParryDirectionLine");
-        lineObject.transform.SetParent(player.transform);
-        lineRenderer = lineObject.AddComponent<LineRenderer>();
-        lineRenderer.startWidth = lineWidth;
-        lineRenderer.endWidth = lineWidth;
-        lineRenderer.positionCount = 2;
-        Material lineMaterial = new Material(Shader.Find("Unlit/Color") ?? Shader.Find("Sprites/Default"));
-        lineRenderer.material = lineMaterial;
-        lineRenderer.startColor = lineColor;
-        lineRenderer.endColor = lineColor;
-        lineRenderer.sortingLayerName = "Default";
-        lineRenderer.sortingOrder = 10;
-        lineRenderer.enabled = false;
-        Debug.Log("LineRenderer initialized in Parry_Skill");
-    }
     public Vector3 GetMouseWorldPositionPublic()
     {
         return GetMouseWorldPosition();
     }
+
     private Vector3 GetMouseWorldPosition()
     {
         Vector2 mousePos = Input.mousePosition;

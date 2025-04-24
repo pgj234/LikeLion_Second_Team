@@ -202,7 +202,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -300,6 +300,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -307,10 +320,10 @@ TextureImporter:
       name: LargeSlime_Grey_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 1568
-        width: 275
-        height: 229
+        x: 0
+        y: 1550
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +342,10 @@ TextureImporter:
       name: LargeSlime_Grey_1
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1570
-        width: 285
-        height: 227
+        x: 310
+        y: 1550
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +364,10 @@ TextureImporter:
       name: LargeSlime_Grey_2
       rect:
         serializedVersion: 2
-        x: 625
-        y: 1571
-        width: 297
-        height: 223
+        x: 620
+        y: 1550
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +386,10 @@ TextureImporter:
       name: LargeSlime_Grey_3
       rect:
         serializedVersion: 2
-        x: 940
-        y: 1570
-        width: 285
-        height: 227
+        x: 930
+        y: 1550
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +408,10 @@ TextureImporter:
       name: LargeSlime_Grey_4
       rect:
         serializedVersion: 2
-        x: 31
-        y: 1261
-        width: 260
-        height: 235
+        x: 0
+        y: 1240
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,10 +430,10 @@ TextureImporter:
       name: LargeSlime_Grey_5
       rect:
         serializedVersion: 2
-        x: 428
-        y: 1465
-        width: 32
-        height: 48
+        x: 310
+        y: 1240
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +452,10 @@ TextureImporter:
       name: LargeSlime_Grey_6
       rect:
         serializedVersion: 2
-        x: 536
-        y: 1465
-        width: 26
-        height: 39
+        x: 620
+        y: 1240
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,10 +474,10 @@ TextureImporter:
       name: LargeSlime_Grey_7
       rect:
         serializedVersion: 2
-        x: 724
-        y: 1488
-        width: 28
-        height: 27
+        x: 930
+        y: 1240
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +496,10 @@ TextureImporter:
       name: LargeSlime_Grey_8
       rect:
         serializedVersion: 2
-        x: 749
-        y: 1472
-        width: 18
-        height: 18
+        x: 0
+        y: 930
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +518,10 @@ TextureImporter:
       name: LargeSlime_Grey_9
       rect:
         serializedVersion: 2
-        x: 858
-        y: 1481
-        width: 27
-        height: 24
+        x: 310
+        y: 930
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,10 +540,10 @@ TextureImporter:
       name: LargeSlime_Grey_10
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 1488
-        width: 20
-        height: 19
+        x: 620
+        y: 930
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +562,10 @@ TextureImporter:
       name: LargeSlime_Grey_11
       rect:
         serializedVersion: 2
-        x: 1191
-        y: 1477
-        width: 17
-        height: 17
+        x: 930
+        y: 930
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,10 +584,10 @@ TextureImporter:
       name: LargeSlime_Grey_12
       rect:
         serializedVersion: 2
-        x: 357
-        y: 1262
-        width: 242
-        height: 202
+        x: 0
+        y: 620
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +606,10 @@ TextureImporter:
       name: LargeSlime_Grey_13
       rect:
         serializedVersion: 2
-        x: 689
-        y: 1430
-        width: 19
-        height: 17
+        x: 310
+        y: 620
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,10 +628,10 @@ TextureImporter:
       name: LargeSlime_Grey_14
       rect:
         serializedVersion: 2
-        x: 691
-        y: 1273
-        width: 209
-        height: 162
+        x: 620
+        y: 620
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,10 +650,10 @@ TextureImporter:
       name: LargeSlime_Grey_15
       rect:
         serializedVersion: 2
-        x: 1063
-        y: 1414
-        width: 23
-        height: 27
+        x: 930
+        y: 620
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +672,10 @@ TextureImporter:
       name: LargeSlime_Grey_16
       rect:
         serializedVersion: 2
-        x: 895
-        y: 1403
-        width: 25
-        height: 23
+        x: 0
+        y: 310
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -681,10 +694,10 @@ TextureImporter:
       name: LargeSlime_Grey_17
       rect:
         serializedVersion: 2
-        x: 1221
-        y: 1393
-        width: 19
-        height: 19
+        x: 310
+        y: 310
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -703,10 +716,10 @@ TextureImporter:
       name: LargeSlime_Grey_18
       rect:
         serializedVersion: 2
-        x: 329
-        y: 1331
-        width: 32
-        height: 28
+        x: 620
+        y: 310
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,10 +738,10 @@ TextureImporter:
       name: LargeSlime_Grey_19
       rect:
         serializedVersion: 2
-        x: 625
-        y: 1329
-        width: 28
-        height: 24
+        x: 930
+        y: 310
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -747,10 +760,10 @@ TextureImporter:
       name: LargeSlime_Grey_20
       rect:
         serializedVersion: 2
-        x: 993
-        y: 1353
-        width: 27
-        height: 22
+        x: 0
+        y: 0
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,10 +782,10 @@ TextureImporter:
       name: LargeSlime_Grey_21
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 1293
-        width: 161
-        height: 102
+        x: 310
+        y: 0
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -791,10 +804,10 @@ TextureImporter:
       name: LargeSlime_Grey_22
       rect:
         serializedVersion: 2
-        x: 930
-        y: 1317
-        width: 17
-        height: 18
+        x: 620
+        y: 0
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -813,10 +826,10 @@ TextureImporter:
       name: LargeSlime_Grey_23
       rect:
         serializedVersion: 2
-        x: 1001
-        y: 1299
-        width: 32
-        height: 25
+        x: 930
+        y: 0
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -831,715 +844,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_24
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 945
-        width: 261
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12c2d2be637db5e80800000000000000
-      internalID: -8188714866569303007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_25
-      rect:
-        serializedVersion: 2
-        x: 332
-        y: 948
-        width: 266
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8657edff17b049390800000000000000
-      internalID: -7812606869328988824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_26
-      rect:
-        serializedVersion: 2
-        x: 638
-        y: 951
-        width: 273
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a77e86630151e090800000000000000
-      internalID: -8007029587440666716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_27
-      rect:
-        serializedVersion: 2
-        x: 952
-        y: 948
-        width: 266
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 620d62e0ae02cde10800000000000000
-      internalID: 2223688505646043174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_28
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 636
-        width: 256
-        height: 230
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58f72418da5fa5980800000000000000
-      internalID: -8549250817062699131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_29
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 827
-        width: 31
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed8c208ff659a0710800000000000000
-      internalID: 1660303720774289630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_30
-      rect:
-        serializedVersion: 2
-        x: 531
-        y: 839
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26b92ff87cfbc0ed0800000000000000
-      internalID: -2446369633734583454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_31
-      rect:
-        serializedVersion: 2
-        x: 855
-        y: 834
-        width: 18
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb0aaa89452fd8690800000000000000
-      internalID: -7598150551151664964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_32
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 643
-        width: 224
-        height: 184
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c134e029226175e0800000000000000
-      internalID: -1913640437870743101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_33
-      rect:
-        serializedVersion: 2
-        x: 644
-        y: 817
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff47d303d795a40d0800000000000000
-      internalID: -3437836971328834305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_34
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 789
-        width: 23
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7cd8d2137a57c38c0800000000000000
-      internalID: -4018207406576267833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_35
-      rect:
-        serializedVersion: 2
-        x: 647
-        y: 651
-        width: 226
-        height: 165
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3277393f2c22b2160800000000000000
-      internalID: 7001728266383095587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_36
-      rect:
-        serializedVersion: 2
-        x: 888
-        y: 781
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 128788df330bd33b0800000000000000
-      internalID: -5531071029997701087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_37
-      rect:
-        serializedVersion: 2
-        x: 992
-        y: 678
-        width: 160
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 178df5ab05959b660800000000000000
-      internalID: 7402045665819220081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_38
-      rect:
-        serializedVersion: 2
-        x: 952
-        y: 759
-        width: 18
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e5875117e1332ab0800000000000000
-      internalID: -5034125089971927582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_39
-      rect:
-        serializedVersion: 2
-        x: 947
-        y: 679
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77b8f3fa8defc98a0800000000000000
-      internalID: -6296877972364227721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_40
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 325
-        width: 261
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 026bba67c490d63e0800000000000000
-      internalID: -2058979230625319392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_41
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 328
-        width: 266
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0042d6527c69ea640800000000000000
-      internalID: 5093174010673177600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_42
-      rect:
-        serializedVersion: 2
-        x: 637
-        y: 331
-        width: 273
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e2941a11d927ffc0800000000000000
-      internalID: -3461251810548477214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_43
-      rect:
-        serializedVersion: 2
-        x: 950
-        y: 328
-        width: 266
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a396840f032a9ed0800000000000000
-      internalID: -2406572503468698720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_44
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 16
-        width: 256
-        height: 230
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86c92e5f9bf9bb4b0800000000000000
-      internalID: -5423565705194595224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_45
-      rect:
-        serializedVersion: 2
-        x: 382
-        y: 219
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f689206db44f085e0800000000000000
-      internalID: -1909257635454871441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_46
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 207
-        width: 31
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1518f9b76cd7c40a0800000000000000
-      internalID: -6895998637980024495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_47
-      rect:
-        serializedVersion: 2
-        x: 685
-        y: 214
-        width: 18
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c5ff46bc510a65c0800000000000000
-      internalID: -4221560202999106104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_48
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 23
-        width: 224
-        height: 184
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: afb3af90d22767c40800000000000000
-      internalID: 5509716731900869626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_49
-      rect:
-        serializedVersion: 2
-        x: 893
-        y: 197
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40bfcb6c2fdd60c10800000000000000
-      internalID: 2019545517708344068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_50
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 169
-        width: 23
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f764015b375680b0800000000000000
-      internalID: -5726793963881076744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_51
-      rect:
-        serializedVersion: 2
-        x: 653
-        y: 161
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d869a19d6e07608e0800000000000000
-      internalID: -1727569270262819187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_52
-      rect:
-        serializedVersion: 2
-        x: 685
-        y: 31
-        width: 226
-        height: 165
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae0ea12e46bf99530800000000000000
-      internalID: 3862394566155624682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_53
-      rect:
-        serializedVersion: 2
-        x: 1026
-        y: 58
-        width: 160
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19248212443631ec0800000000000000
-      internalID: -3597422533073681775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_54
-      rect:
-        serializedVersion: 2
-        x: 1208
-        y: 139
-        width: 18
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1926f8cb9fb7d7c90800000000000000
-      internalID: -7170438719163374959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeSlime_Grey_55
-      rect:
-        serializedVersion: 2
-        x: 1213
-        y: 59
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a92dea8d140e53d70800000000000000
-      internalID: 9022364001919488666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a5e581e81ec48d745b16720a0b2f011f
     internalID: 0
     vertices: []
     indices: 
@@ -1566,41 +875,9 @@ TextureImporter:
       LargeSlime_Grey_21: -6752883350654753745
       LargeSlime_Grey_22: -8883041728089383364
       LargeSlime_Grey_23: 1770678219425597476
-      LargeSlime_Grey_24: -8188714866569303007
-      LargeSlime_Grey_25: -7812606869328988824
-      LargeSlime_Grey_26: -8007029587440666716
-      LargeSlime_Grey_27: 2223688505646043174
-      LargeSlime_Grey_28: -8549250817062699131
-      LargeSlime_Grey_29: 1660303720774289630
       LargeSlime_Grey_3: 973129488513821410
-      LargeSlime_Grey_30: -2446369633734583454
-      LargeSlime_Grey_31: -7598150551151664964
-      LargeSlime_Grey_32: -1913640437870743101
-      LargeSlime_Grey_33: -3437836971328834305
-      LargeSlime_Grey_34: -4018207406576267833
-      LargeSlime_Grey_35: 7001728266383095587
-      LargeSlime_Grey_36: -5531071029997701087
-      LargeSlime_Grey_37: 7402045665819220081
-      LargeSlime_Grey_38: -5034125089971927582
-      LargeSlime_Grey_39: -6296877972364227721
       LargeSlime_Grey_4: 3618203731904653528
-      LargeSlime_Grey_40: -2058979230625319392
-      LargeSlime_Grey_41: 5093174010673177600
-      LargeSlime_Grey_42: -3461251810548477214
-      LargeSlime_Grey_43: -2406572503468698720
-      LargeSlime_Grey_44: -5423565705194595224
-      LargeSlime_Grey_45: -1909257635454871441
-      LargeSlime_Grey_46: -6895998637980024495
-      LargeSlime_Grey_47: -4221560202999106104
-      LargeSlime_Grey_48: 5509716731900869626
-      LargeSlime_Grey_49: 2019545517708344068
       LargeSlime_Grey_5: -9146619848076524925
-      LargeSlime_Grey_50: -5726793963881076744
-      LargeSlime_Grey_51: -1727569270262819187
-      LargeSlime_Grey_52: 3862394566155624682
-      LargeSlime_Grey_53: -3597422533073681775
-      LargeSlime_Grey_54: -7170438719163374959
-      LargeSlime_Grey_55: 9022364001919488666
       LargeSlime_Grey_6: 6659044539844997904
       LargeSlime_Grey_7: -3203135359198813150
       LargeSlime_Grey_8: -1725069157306565708

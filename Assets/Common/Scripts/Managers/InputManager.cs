@@ -60,7 +60,7 @@ public class InputManager : MonoBehaviour
             jumpReleased = Input.GetButtonUp("Jump");     // 떼는 순간 true
 
             DashPressed = Input.GetKeyDown(KeyCode.LeftShift);
-            ParryPressed = Input.GetKeyDown(KeyCode.H);
+            ParryPressed = Input.GetKey(KeyCode.H);
             upHold = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);  // 위 버튼을 누르고 있는 상태
 
             //좌우클릭 했는지
