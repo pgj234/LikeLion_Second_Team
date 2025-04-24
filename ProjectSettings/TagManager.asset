@@ -4,10 +4,13 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Mirror
   - Sword
   - Wall
   - Ground
+  - Spring
+  - Parryable
+  - CollisionJump
+  - SavePoint
   layers:
   - Default
   - TransparentFX
@@ -18,8 +21,8 @@ TagManager:
   - Ground
   - Wall
   - Object
-  - 
-  - 
+  - Parryable
+  - CollisionJump
   - 
   - 
   - 
@@ -44,6 +47,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1033022933
     locked: 0
   - name: BlackArea
     uniqueID: 277551381

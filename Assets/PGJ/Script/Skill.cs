@@ -11,6 +11,10 @@ public class Skill : MonoBehaviour
     {
         player = GetComponent<Player>();
     }
+    protected virtual void Start()
+    {
+        
+    }
 
     protected virtual void Update()
     {
