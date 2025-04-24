@@ -42,6 +42,10 @@ public class Player : Entity
 
     [Header("방향 표시")]
     [SerializeField] internal GameObject directionArrow;
+    
+    internal bool ghostAvailable = false;//유령체크
+
+    public Vector3 lastSavePointPos { get; private set; } 
 
     internal PlayerStateMachine stateMachine { get; private set; }
 
@@ -110,6 +114,13 @@ public class Player : Entity
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+        if (collision.gameObject.CompareTag("SavePoint"))
+        {
+            if (lastSavePointPos != collision.transform.position)
+            {
+                lastSavePointPos = collision.transform.position;
+            }
         }
     }
 

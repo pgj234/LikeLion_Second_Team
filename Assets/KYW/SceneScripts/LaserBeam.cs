@@ -6,7 +6,7 @@ public class LaserBeam : MonoBehaviour
 {
     public LineRenderer lineRenderer;
     public float maxDistance = 100f;
-    public int maxReflections = 5;
+    public int maxReflections = 10;
     public Transform laserTransform;
 
     void Update()
@@ -21,8 +21,8 @@ public class LaserBeam : MonoBehaviour
         {
             RaycastHit2D hit = Physics2D.Raycast(origin, direction, maxDistance);
 
-            //Debug.DrawRay(origin, direction * maxDistance, Color.red); // 씬뷰에서 레이 확인
-            //Debug.Log("Hit: " + hit.collider?.name);
+            // Debug.DrawRay(origin, direction * maxDistance, Color.red); // 씬뷰에서 레이 확인
+            // Debug.Log("Hit: " + hit.collider?.name);
 
             if (hit.collider != null)
             {
@@ -34,10 +34,7 @@ public class LaserBeam : MonoBehaviour
                     break;
                 }
 
-                if (hit.collider.CompareTag("Untagged"))
-                    break;
-
-                if (hit.collider.CompareTag("Mirror"))
+                if (hit.collider.GetComponent<Mirror>() != null)
                 {
                     direction = Vector2.Reflect(direction, hit.normal);
                     origin = hit.point + direction.normalized * 0.01f;

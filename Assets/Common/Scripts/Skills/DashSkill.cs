@@ -14,7 +14,7 @@ public class DashSkill : MonoBehaviour
     public void StartDash(Player player, Rigidbody2D rb)
     {
         // 스태미나가 충분한지 확인
-        if (!PlayerManager.instance.UseStamina(staminaCost))
+        if (!PlayerManager.Instance.UseStamina(staminaCost))
         {
             return; // 스태미나가 부족하면 대시를 시작하지 않음
         }

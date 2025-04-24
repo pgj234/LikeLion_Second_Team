@@ -111,7 +111,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1104722135648055076, guid: 0eb8c4b272b8df34d9f1511d7c5e618d, type: 3}
-  m_Color: {r: 1, g: 0.33018857, b: 0.33018857, a: 1}
+  m_Color: {r: 0.9924528, g: 0.23781411, b: 0.23781411, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 3247297023121990269}
-  maxDistance: 100
-  maxReflections: 5
+  maxDistance: 1000
+  maxReflections: 10
   laserTransform: {fileID: 8293345155103647791}
 --- !u!120 &3247297023121990269
 LineRenderer:
@@ -205,8 +205,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 0.60784316}
-      key1: {r: 1, g: 0, b: 0, a: 0.60784316}
+      key0: {r: 1, g: 0, b: 0, a: 0.78431374}
+      key1: {r: 1, g: 0, b: 0, a: 0.78431374}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}

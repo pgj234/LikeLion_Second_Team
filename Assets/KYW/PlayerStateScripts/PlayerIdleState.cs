@@ -19,7 +19,8 @@ public class PlayerIdleState : PlayerState
             stateMachine.ChangeState(player.parryingState);
             return;
         }
-        if (InputManager.instance.fInput)
+        
+        if (InputManager.instance.fInput && true == player.ghostAvailable)
         {
             stateMachine.ChangeState(player.outofFluidState);
         }

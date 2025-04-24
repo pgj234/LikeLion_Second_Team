@@ -16,7 +16,7 @@ public class PlayerMoveState : PlayerState
     {
         base.Update();
 
-        if (InputManager.instance.fInput)
+        if (InputManager.instance.fInput && true == player.ghostAvailable)
         {
             stateMachine.ChangeState(player.outofFluidState);
         }

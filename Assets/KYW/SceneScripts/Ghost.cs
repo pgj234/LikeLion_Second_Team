@@ -65,7 +65,7 @@ public class Ghost : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // 플레이어의 데미지 함수 호출
-            PlayerManager.instance.TakeDamage(1);
+            PlayerManager.Instance.TakeDamage(1);
         }
     }
 

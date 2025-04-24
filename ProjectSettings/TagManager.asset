@@ -11,6 +11,8 @@ TagManager:
   - Parryable
   - CollisionJump
   - SavePoint
+  - PlayerGhost
+  - GhostAvailablePoint
   layers:
   - Default
   - TransparentFX

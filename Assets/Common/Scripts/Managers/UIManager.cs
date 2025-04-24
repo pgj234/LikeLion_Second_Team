@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        playerManager = PlayerManager.instance;
+        playerManager = PlayerManager.Instance;
         if (playerManager != null)
         {
             // 이벤트 구독
