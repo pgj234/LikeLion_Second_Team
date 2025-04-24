@@ -14,6 +14,11 @@ public class PlayerIdleState : PlayerState
 
     public override void Update()
     {
+        if (InputManager.instance.ParryPressed)
+        {
+            stateMachine.ChangeState(player.parryingState);
+            return;
+        }
         if (InputManager.instance.fInput)
         {
             stateMachine.ChangeState(player.outofFluidState);

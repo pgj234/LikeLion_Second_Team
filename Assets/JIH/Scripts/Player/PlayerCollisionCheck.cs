@@ -12,7 +12,7 @@ public class PlayerCollisionCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("DoubleJumpTrigger"))
+        if (collision.gameObject.CompareTag("CollisionJump"))
         {
             player.collisionJumpState.SetTriggerCollider(collision);
             player.stateMachine.ChangeState(player.collisionJumpState);

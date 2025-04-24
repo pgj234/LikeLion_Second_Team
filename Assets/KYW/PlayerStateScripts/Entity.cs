@@ -6,6 +6,9 @@ public class Entity : MonoBehaviour
     internal Animator anim { get; private set; }
     internal Rigidbody2D rb { get; private set; }
     internal int faceDir { get; set; } = 1;   // 왼쪽 -1, 오른쪽 1
+    [Header("Parrying Check")]
+    public Transform ParryingCheck;
+    public float ParryingCheckRadius;
     protected virtual void Awake()
     {
         anim = GetComponentInChildren<Animator>();
@@ -17,7 +20,11 @@ public class Entity : MonoBehaviour
         rb.linearVelocity = new Vector2(_xVelocity, _yVelocity);
         FlipController(_xVelocity);
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(ParryingCheck.position, ParryingCheckRadius);
 
+    }
     protected void FlipController(float _x)
     {
         if (_x > 0 && -1 == faceDir)

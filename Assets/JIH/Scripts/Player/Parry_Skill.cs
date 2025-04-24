@@ -20,7 +20,7 @@ public class Parry_Skill : Skill
 
     protected override void Start()
     {
-        base.Start();
+        player = PlayerManager.Instance.player;
         mainCamera = Camera.main;
         GenerateDots();
         GenerateLine();

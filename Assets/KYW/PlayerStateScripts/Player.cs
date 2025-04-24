@@ -7,6 +7,7 @@ public class Player : Entity
     [SerializeField] internal float moveSpd;
     [SerializeField] internal float jumpPower;
     [SerializeField] internal float doubleJumpPower;
+    [SerializeField] internal float collisionJumpPower;
 
     [Header("점프조작감 관련 중력")]
     [SerializeField] internal float fallGravity;
@@ -39,7 +40,8 @@ public class Player : Entity
     [SerializeField] internal float objectJumpPower; // 기본 값 40으로 생각하고 있습니다.
     [SerializeField] internal float objectJumpTime = 0.5f; // 기본 값 0.5초로 생각하고 있습니다.
 
-
+    [Header("방향 표시")]
+    [SerializeField] internal GameObject directionArrow;
 
     internal PlayerStateMachine stateMachine { get; private set; }
 
@@ -53,7 +55,8 @@ public class Player : Entity
     internal PlayerWallSlideState wallslideState { get; private set; }
     internal PlayerWallJumpState wallJumpState { get; private set; }
     internal PlayerObjectJumpState objectJumpState {get; private set;}
-    
+    internal PlayerParryingState parryingState { get; private set; }
+    internal PlayerCollisionJumpState collisionJumpState { get; private set; }
     internal PlayerOutofFluidState outofFluidState {get; private set;}
 
     protected override void Awake()
@@ -72,6 +75,8 @@ public class Player : Entity
         wallJumpState = new PlayerWallJumpState(this, stateMachine, "WallJump");
         objectJumpState = new PlayerObjectJumpState(this, stateMachine, "Jump"); // 점프 애니메이션 그대로 사용하면
         outofFluidState = new PlayerOutofFluidState (this, stateMachine, "Die");
+        parryingState = new PlayerParryingState(this, stateMachine, "Parrying");
+        collisionJumpState = new PlayerCollisionJumpState(this, stateMachine, "Jump");
     }
 
     protected void Start()
@@ -117,6 +122,10 @@ public class Player : Entity
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
+        }
+        if (collision.gameObject.CompareTag("CollisionJump"))
+        {
+            stateMachine.ChangeState(collisionJumpState);
         }
     }
 

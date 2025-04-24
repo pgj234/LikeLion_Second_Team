@@ -29,8 +29,8 @@ public class PlayerParryingState : PlayerState
         mainCamera = Camera.main;
         parryableLayer = LayerMask.GetMask("Parryable");
         Time.timeScale = slowMotionScale;
-        SkillManager.instance.parry.DotsActive(true);
-        SkillManager.instance.parry.LineActive(true);
+        SkillManager.instance.ParrySkill.DotsActive(true);
+        SkillManager.instance.ParrySkill.LineActive(true);
         stateTimer = 0f;
         exitRequested = false;
         isParrying = false;
@@ -40,8 +40,8 @@ public class PlayerParryingState : PlayerState
     public override void Update()
     {
         base.Update();
-        SkillManager.instance.parry.UpdateDots();
-        SkillManager.instance.parry.UpdateLine();
+        SkillManager.instance.ParrySkill.UpdateDots();
+        SkillManager.instance.ParrySkill.UpdateLine();
 
         if (isParrying)
         {
@@ -96,10 +96,10 @@ public class PlayerParryingState : PlayerState
         player.anim.SetBool("ParryingReady", false);
         player.anim.SetBool("Parrying", false);
         Time.timeScale = normalTimeScale;
-        if (SkillManager.instance != null && SkillManager.instance.parry != null)
+        if (SkillManager.instance != null && SkillManager.instance.ParrySkill != null)
         {
-            SkillManager.instance.parry.DotsActive(false);
-            SkillManager.instance.parry.LineActive(false);
+            SkillManager.instance.ParrySkill.DotsActive(false);
+            SkillManager.instance.ParrySkill.LineActive(false);
         }
 
     }
@@ -110,7 +110,7 @@ public class PlayerParryingState : PlayerState
         bool parrySuccess = false;
         if (hits.Length > 0)
         {
-            Vector3 mouseWorldPos = SkillManager.instance.parry.GetMouseWorldPositionPublic();
+            Vector3 mouseWorldPos = SkillManager.instance.ParrySkill.GetMouseWorldPositionPublic();
             foreach (var hit in hits)
             {
                 Rigidbody2D rb = hit.GetComponent<Rigidbody2D>();

@@ -60,7 +60,7 @@ public class PlayerCollisionJumpState : PlayerState
             rb.gravityScale = 1f;
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePos - (Vector2)player.transform.position).normalized;
-            rb.linearVelocity = direction * player.doubleJumpPower;
+            rb.linearVelocity = direction * player.collisionJumpPower;
             hasJumped = true;
 
             // 트리거 콜라이더 비활성화
