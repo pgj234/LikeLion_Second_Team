@@ -11,7 +11,7 @@ public class PlayerObjectJumpState : PlayerState
     {
         base.Enter();
         // rb.linearVelocity = new Vector2(rb.linearVelocity.x, player.jumpPower);
-        Jumptimer = player.jumpTime;
+        Jumptimer = player.objectJumpTime;
 
         // 점프 발판을 밟은 경우 더블 점프 무조건 1회 할 수 있게 만듦
         player.DoubleJumpCount = player.MaxDoubleJumpCount;
@@ -25,8 +25,8 @@ public class PlayerObjectJumpState : PlayerState
         if (Jumptimer > 0)
         {
             // 점프 힘 보간: 점점 줄어듦
-            float t = 1 - (Jumptimer / player.jumpTime); // 0 → 1
-            float jumpForce = Mathf.Lerp(player.jumpPower, 0, t); // 점점 줄어듦
+            float t = 1 - (Jumptimer / player.objectJumpTime); // 0 → 1
+            float jumpForce = Mathf.Lerp(player.objectJumpPower, 0, t); // 점점 줄어듦
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
             Jumptimer -= Time.deltaTime;
