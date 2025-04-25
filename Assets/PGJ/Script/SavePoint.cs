@@ -4,42 +4,40 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class SavePoint : MonoBehaviour
 {
-    [SerializeField] float intensityScale;
-    [SerializeField] float scaleSize;
-    [SerializeField] float speed;
+    [SerializeField] float maxIntensity;
 
-    Vector3 originalLocalScale;
     float originalIntensity;
 
     Light2D light => GetComponent<Light2D>();
 
-    float saveEffectTime = 1;
+    float saveEffectTime = 0.15f;
     float saveEffectTimer;
 
-    bool isStop = false;
+    bool isOn = false;
 
     void Awake()
     {
-        originalLocalScale = transform.localScale;
         originalIntensity = light.intensity;
+    }
+
+    void Start()
+    {
+        light.color = Color.cyan;
+        light.enabled = false;
     }
 
     void Update()
     {
-        if (false == isStop)
-        {
-            light.intensity = originalIntensity + Mathf.Sin(Time.time * speed) * intensityScale;
-
-            transform.localScale = originalLocalScale + Vector3.one * Mathf.Sin(Time.time * speed) * scaleSize * 0.1f;
-        }
-        else
+        if (true == isOn)
         {
             saveEffectTimer -= Time.deltaTime;
 
+            light.intensity = Mathf.Lerp(light.intensity, maxIntensity, saveEffectTime * 100 * Time.deltaTime);
+
             if (saveEffectTimer < 0)
             {
-                light.color = Color.white;
-                isStop = false;
+                light.enabled = false;
+                isOn = false;
             }
         }
     }
@@ -48,17 +46,17 @@ public class SavePoint : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            if (false == isStop)
+            if (false == isOn)
             {
-                isStop = true;
+                isOn = true;
 
-                light.color = Color.yellow;
-                light.intensity = originalIntensity + intensityScale;
-                transform.localScale = originalLocalScale * 2.5f;
+                light.intensity = originalIntensity;
+
+                saveEffectTimer = saveEffectTime;
 
                 // SoundManager.instance.PlaySFX(세이브 효과음);
 
-                saveEffectTimer = saveEffectTime;
+                light.enabled = true;
             }
         }
     }
