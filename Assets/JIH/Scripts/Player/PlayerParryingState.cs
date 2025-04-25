@@ -68,7 +68,7 @@ public class PlayerParryingState : PlayerState
             return;
         }
 
-        if (InputManager.instance.leftClick)
+        if (!InputManager.instance.ParryPressed)
         {
             bool parrySuccess = PerformParry();
             Time.timeScale = normalTimeScale;

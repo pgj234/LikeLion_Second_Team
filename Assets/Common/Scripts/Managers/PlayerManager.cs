@@ -25,6 +25,10 @@ public class PlayerManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+            // 플레이어 찾기
+            player = FindFirstObjectByType<Player>();
         }
         else
         {

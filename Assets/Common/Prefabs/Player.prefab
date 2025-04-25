@@ -254,8 +254,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -435839743
+  m_SortingLayer: 4
   m_SortingOrder: -1
   m_Sprite: {fileID: 712035800519618848, guid: 37f6fb3e935a7ee4682c584380748295, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -375,11 +375,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.31284043, y: 0.11996562}
-      - {x: 0.28746313, y: 0.08630064}
+    - - {x: 0.3624439, y: 0.22995573}
+      - {x: 0.32196945, y: 0.15531424}
       - {x: 0.2963071, y: 0.043311894}
-      - {x: 0.33102763, y: 0.056547105}
-      - {x: 0.3548041, y: 0.073985994}
+      - {x: 0.2900511, y: -0.040503085}
+      - {x: 0.49067408, y: 0.086925924}
   m_UseDelaunayMesh: 0
 --- !u!1 &5448724867480904054
 GameObject:
@@ -407,8 +407,8 @@ Transform:
   m_GameObject: {fileID: 5448724867480904054}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.75, y: -5.96, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8904382019132736330}
@@ -426,13 +426,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolTime: 0
-  numberOfDots: 20
+  numberOfDots: 10
   spaceBetweenDots: 0.2
   dotPrefab: {fileID: 4145150101058812748, guid: 91fa211663e528e47a95d3f84dba9f67, type: 3}
   dotsParent: {fileID: 0}
-  lineWidth: 0.2
-  lineLength: 10
-  lineColor: {r: 0.5471698, g: 0.11172474, b: 0, a: 1}
+  directionArrow: {fileID: 6809823938211886576}
+  arrowDistance: 2
+  arrowScale: 1
 --- !u!1 &6630004332490400486
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,7 +570,7 @@ Transform:
   m_GameObject: {fileID: 6809823938211886576}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -41.886, y: -5.96, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -617,8 +617,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -435839743
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -2045278178, guid: dc6f58fa3f4349d4d93f83932c9c5384, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -773,11 +773,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParryingCheck: {fileID: 2248407409722129157}
-  ParryingCheckRadius: 0
+  ParryingCheckRadius: 1.5
   moveSpd: 5
   jumpPower: 20
   doubleJumpPower: 15
-  collisionJumpPower: 0
+  collisionJumpPower: 15
   fallGravity: 3
   JumpGravity: 1
   jumpTime: 0.2
