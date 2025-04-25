@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 
 public class EventManager : MonoBehaviour
@@ -8,8 +8,10 @@ public class EventManager : MonoBehaviour
     public PlayerEvents playerEvents;
     public EnemyEvents EnemyEvents;
 
-    // 데미지 이벤트
+    // 플레이어 데미지 이벤트
     public event Action<int> OnPlayerDamaged;
+    // 플레이어 리스폰 이벤트
+    public event Action OnPlayerRespawned;
 
     // UI 관련 이벤트
     public event Action<int> OnHealthChanged;
@@ -31,6 +33,12 @@ public class EventManager : MonoBehaviour
 
         playerEvents = new PlayerEvents();
         EnemyEvents = new EnemyEvents();
+    }
+
+    // 플레이어 리스폰 이벤트 실행 메서드
+    public void PublishPlayerRespawned()
+    {
+        OnPlayerRespawned?.Invoke();
     }
 
     // 데미지 이벤트 발생 메서드

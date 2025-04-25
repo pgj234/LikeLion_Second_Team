@@ -62,6 +62,7 @@ public class Player : Entity
     internal PlayerParryingState parryingState { get; private set; }
     internal PlayerCollisionJumpState collisionJumpState { get; private set; }
     internal PlayerOutofFluidState outofFluidState {get; private set;}
+    internal PlayerDieState playerDieState { get; private set; }
 
     protected override void Awake()
     {
@@ -81,6 +82,7 @@ public class Player : Entity
         outofFluidState = new PlayerOutofFluidState (this, stateMachine, "Die");
         parryingState = new PlayerParryingState(this, stateMachine, "Parrying");
         collisionJumpState = new PlayerCollisionJumpState(this, stateMachine, "Jump");
+        playerDieState = new PlayerDieState(this, stateMachine, "Die");
     }
 
     protected void Start()
