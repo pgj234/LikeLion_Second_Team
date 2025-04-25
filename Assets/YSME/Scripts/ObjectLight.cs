@@ -4,7 +4,6 @@ using UnityEngine.Rendering.Universal;
 
 public class ObjectLight : LightInBlackArea
 {
-    private PlayerLight player;
     [Space, Header("빛 영역 참조")]
     [SerializeField] private CircleCollider2D circle;
 
@@ -21,19 +20,11 @@ public class ObjectLight : LightInBlackArea
         circle.radius = InnerRadius + (OuterRadius - InnerRadius) / 2;
     }
 
-    void Update()
-    {
-        if (player != null)
-        {
-            player.isInLight = true;
-        }
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            player = collision.GetComponentInChildren<PlayerLight>();
+            collision.GetComponentInChildren<PlayerLight>().AddLights(this);
         }
     }
 
@@ -41,11 +32,7 @@ public class ObjectLight : LightInBlackArea
     {
         if (collision.CompareTag("Player"))
         {
-            if (player != null)
-            {
-                player.isInLight = false;
-                player = null;
-            }
+            collision.GetComponentInChildren<PlayerLight>().RemoveLights(this);
         }
     }
 }

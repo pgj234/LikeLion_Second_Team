@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
@@ -15,8 +16,10 @@ public class PlayerLight : LightInBlackArea
     private float refOuterVelocity;
     private float refInnerVelocity;
 
+    private List<BlackArea> blackAreas = new List<BlackArea>();
+    private List<ObjectLight> objectLights = new List<ObjectLight>();
+
     [Space, Header("조건")]
-    public bool isInBlackArea = false; // 빛이 줄어드는 공간에 있는지 여부
     public bool isInLight = false; // 빛을 충전할 수 있는 곳에 있는지 여부
 
     void Start()
@@ -33,7 +36,7 @@ public class PlayerLight : LightInBlackArea
 
         if (player != null) // 플레이어가 지역에 들어왔다면
         {
-            if (isInBlackArea && !isInLight) // 어둠 속에 있으면서 빛 충전을 받지 못하면
+            if (blackAreas.Count > 0 && objectLights.Count <= 0) // 어둠 속에 있으면서 빛 충전을 받지 못하면
             {
                 remainTime -= Time.deltaTime; // 남은 시간 감소
             }
@@ -52,7 +55,7 @@ public class PlayerLight : LightInBlackArea
     void UpdateScale()
     {
         float percent = 0;
-        if (isInBlackArea == true)
+        if (blackAreas.Count > 0)
         {
             percent = Mathf.Clamp01(remainTime / startTime); // 남은 시간의 비율을 구한 후
         }
@@ -63,5 +66,37 @@ public class PlayerLight : LightInBlackArea
 
         light2D.pointLightOuterRadius = Mathf.SmoothDamp(light2D.pointLightOuterRadius, OuterRadius * percent, ref refOuterVelocity, smoothTime);
         light2D.pointLightInnerRadius = Mathf.SmoothDamp(light2D.pointLightInnerRadius, InnerRadius * percent, ref refInnerVelocity, smoothTime);
+    }
+
+    public void AddArea(BlackArea area)
+    {
+        if (!blackAreas.Contains(area))
+        {
+            blackAreas.Add(area);
+        }
+    }
+
+    public void RemoveArea(BlackArea area)
+    {
+        if (blackAreas.Contains(area))
+        {
+            blackAreas.Remove(area);
+        }
+    }
+
+    public void AddLights(ObjectLight light)
+    {
+        if (!objectLights.Contains(light))
+        {
+            objectLights.Add(light);
+        }
+    }
+
+    public void RemoveLights(ObjectLight light)
+    {
+        if (objectLights.Contains(light))
+        {
+            objectLights.Remove(light);
+        }
     }
 }
