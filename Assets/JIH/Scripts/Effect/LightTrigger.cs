@@ -4,7 +4,7 @@ public class LightTrigger : MonoBehaviour
 {
 
     public string playerTag = "Player"; // 플레이어 태그
-    public Light[] lightsToTurnOn; // 켜질 라이트들 (인스펙터에서 설정)
+    public LightObject[] lightsToTurnOn; // 켜질 라이트들 (인스펙터에서 설정)
 
     private void Awake()
     {
@@ -15,12 +15,12 @@ public class LightTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag(playerTag))
         {
-            foreach (Light light in lightsToTurnOn)
+            foreach (LightObject light in lightsToTurnOn)
             {
                 if (light != null)
                 {
                     light.gameObject.SetActive(true); // 라이트 활성화
-                    var lightScript = light.GetComponent<Light>();
+                    var lightScript = light.GetComponent<LightObject>();
                     if (lightScript != null)
                     {
                         lightScript.TurnOnLight();

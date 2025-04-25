@@ -11,14 +11,14 @@ GameObject:
   - component: {fileID: 9102825358105929735}
   - component: {fileID: 3609623101866511889}
   - component: {fileID: 4910965682836081559}
-  - component: {fileID: 7540975717935078133}
+  - component: {fileID: 5448343887572010075}
   m_Layer: 0
   m_Name: Attack_Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9102825358105929735
 Transform:
   m_ObjectHideFlags: 0
@@ -139,7 +139,7 @@ PolygonCollider2D:
       - {x: 0.007986665, y: 0.13584018}
       - {x: 0.96945286, y: 2.9485655}
   m_UseDelaunayMesh: 0
---- !u!114 &7540975717935078133
+--- !u!114 &5448343887572010075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,11 +148,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1148970434165048182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef59a1c11f09cc40849ae9d2a662f0e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c256ce594c8feb4d83ebc5d2e180736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  damage: 0
+  damage: 10
   delayTime: 0.5
 --- !u!1001 &6290619619507694556
 PrefabInstance:

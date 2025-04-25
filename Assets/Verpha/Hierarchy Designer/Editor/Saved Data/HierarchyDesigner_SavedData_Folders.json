@@ -1,0 +1,58 @@
+{
+    "items": [
+        {
+            "Name": "Background",
+            "TextColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FontSize": 12,
+            "FontStyle": 0,
+            "ImageColor": {
+                "r": 1.0,
+                "g": 0.9638735055923462,
+                "b": 0.7028301954269409,
+                "a": 1.0
+            },
+            "ImageType": 0
+        },
+        {
+            "Name": "Enemy",
+            "TextColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FontSize": 12,
+            "FontStyle": 0,
+            "ImageColor": {
+                "r": 0.9622641801834106,
+                "g": 0.7761659026145935,
+                "b": 0.7761659026145935,
+                "a": 1.0
+            },
+            "ImageType": 0
+        },
+        {
+            "Name": "Player",
+            "TextColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FontSize": 12,
+            "FontStyle": 0,
+            "ImageColor": {
+                "r": 0.7122641801834106,
+                "g": 0.8973177075386047,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "ImageType": 0
+        }
+    ]
+}

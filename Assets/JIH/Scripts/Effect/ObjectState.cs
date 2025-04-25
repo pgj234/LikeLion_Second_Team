@@ -3,7 +3,6 @@ using UnityEngine;
 public class ObjectState : MonoBehaviour
 {
     public float moveSpeed;
-    public int damage;
     public virtual void OnParried()
     {
         Debug.Log("Parried");

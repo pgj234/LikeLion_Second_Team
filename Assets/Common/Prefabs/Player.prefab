@@ -375,11 +375,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.31284043, y: 0.11996562}
-      - {x: 0.28746313, y: 0.08630064}
+    - - {x: 0.3624439, y: 0.22995573}
+      - {x: 0.32196945, y: 0.15531424}
       - {x: 0.2963071, y: 0.043311894}
-      - {x: 0.33102763, y: 0.056547105}
-      - {x: 0.3548041, y: 0.073985994}
+      - {x: 0.2900511, y: -0.040503085}
+      - {x: 0.49067408, y: 0.086925924}
   m_UseDelaunayMesh: 0
 --- !u!1 &5448724867480904054
 GameObject:
@@ -776,7 +776,7 @@ MonoBehaviour:
   moveSpd: 5
   jumpPower: 20
   doubleJumpPower: 15
-  collisionJumpPower: 30
+  collisionJumpPower: 15
   fallGravity: 3
   JumpGravity: 1
   jumpTime: 0.2

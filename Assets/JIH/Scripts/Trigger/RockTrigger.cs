@@ -2,13 +2,11 @@ using UnityEngine;
 
 public class RockTrigger : MonoBehaviour
 {
+    public GameObject rock; // ë°”ìœ„ ì˜¤ë¸Œì íŠ¸
+    public Transform dropPoint; // ë¹ˆ ì˜¤ë¸Œì íŠ¸ì˜ Transform (ë–¨ì–´ì§ˆ ìœ„ì¹˜)
+    public float dropHeight = 10f; // ë°”ìœ„ê°€ ë–¨ì–´ì§€ê¸° ì‹œì‘í•  ë†’ì´
 
-    public GameObject rock; // ¹ÙÀ§ ¿ÀºêÁ§Æ®
-    public Vector2 dropPosition; // ¹ÙÀ§°¡ ¶³¾îÁú À§Ä¡ (2D)
-    public float dropHeight = 10f; // ¹ÙÀ§°¡ ¶³¾îÁö±â ½ÃÀÛÇÒ ³ôÀÌ
-    public float dropSpeed = 5f; // ¶³¾îÁö´Â ¼Óµµ (¿É¼Ç)
-
-    private bool isTriggered = false; // Áßº¹ Æ®¸®°Å ¹æÁö
+    private bool isTriggered = false; // ì¤‘ë³µ íŠ¸ë¦¬ê±° ë°©ì§€
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,24 +19,15 @@ public class RockTrigger : MonoBehaviour
 
     private void DropRock()
     {
-        if (rock == null)
-        {
-            Debug.LogError("Rock is not assigned!");
-            return;
-        }
-
-        // ¹ÙÀ§ ½ÃÀÛ À§Ä¡ ¼³Á¤ (¶³¾îÁú À§Ä¡ À§·Î)
-        Vector3 startPos = new Vector3(dropPosition.x, dropPosition.y + dropHeight, rock.transform.position.z);
-        rock.transform.position = startPos;
-
-        // ¹ÙÀ§ È°¼ºÈ­ (ºñÈ°¼ºÈ­ »óÅÂ¿´´Ù¸é)
         rock.SetActive(true);
 
-        // Rigidbody2D·Î ÀÚ¿¬½º·´°Ô ¶³¾îÁöµµ·Ï
         Rigidbody2D rb = rock.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            rb.isKinematic = false; // Áß·Â Àû¿ë
+            rb.bodyType = RigidbodyType2D.Dynamic; // ì¤‘ë ¥ ì ìš©
+            rb.gravityScale = 1f;
+            rb.linearVelocity = Vector2.zero; // ì´ˆê¸° ì†ë„ ì œê±°
         }
+        
     }
 }
