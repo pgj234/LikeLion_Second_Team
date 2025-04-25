@@ -1,5 +1,6 @@
-using UnityEngine;
+﻿using UnityEngine;
 using Unity.Cinemachine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class PlayerOutofFluidState : PlayerState
 {
@@ -12,6 +13,7 @@ public class PlayerOutofFluidState : PlayerState
     float ghostSpd = 5;
 
     bool isGhostKeyReleased;
+    int ghostFaceDir = 1;
 
     Vector2 originalLocalPos;
 
@@ -57,7 +59,10 @@ public class PlayerOutofFluidState : PlayerState
             ReturnGhost();
         }
 
-        ghost.transform.position += new Vector3(InputManager.instance.xInput, InputManager.instance.yInput) * ghostSpd * Time.deltaTime;
+        if (0 != InputManager.instance.xInput || 0 != InputManager.instance.yInput)
+        {
+            GhostMove();
+        }
     }
 
     public override void Exit()
@@ -77,5 +82,31 @@ public class PlayerOutofFluidState : PlayerState
         ghost.transform.localPosition = originalLocalPos;
 
         stateMachine.ChangeState(player.idleState);
+    }
+
+    void GhostMove()
+    {
+        ghost.transform.position += new Vector3(InputManager.instance.xInput, InputManager.instance.yInput) * ghostSpd * Time.deltaTime;
+
+        FlipController(InputManager.instance.xInput);
+    }
+
+    void FlipController(float _x)
+    {
+        if (_x > 0 && -1 == ghostFaceDir)
+        {
+            GhostFlip();
+        }
+        else if (_x < 0 && 1 == ghostFaceDir)
+        {
+            GhostFlip();
+        }
+    }
+
+    void GhostFlip()
+    {
+        ghostFaceDir = ghostFaceDir * -1;
+        ghost.transform.Rotate(0, 180, 0);
+        rb.linearVelocity = new Vector2(0, rb.linearVelocityY);
     }
 }
