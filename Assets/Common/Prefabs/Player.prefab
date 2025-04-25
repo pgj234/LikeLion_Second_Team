@@ -784,8 +784,8 @@ MonoBehaviour:
   DoubleJumpTime: 0.2
   MaxDoubleJumpCount: 1
   DoubleJumpCount: 1
-  isGrounded: 0
-  isWalled: 0
+  isGrounded: 1
+  isWalled: 1
   walljumpDirection: {x: 0, y: 1}
   wallJumpSpeed: 10
   wallJumpDuration: 0.2
