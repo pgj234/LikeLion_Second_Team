@@ -1,6 +1,21 @@
 using UnityEngine;
 using DG.Tweening;
 
+/// DOTween 애니메이션을 관리하는 매니저 클래스
+
+/// Ease 타입 설명:
+/// 1. In 타입
+///    - Ease.InQuad: 천천히 시작해서 빠르게 끝남
+///    - Ease.InBack: 천천히 시작해서 목표를 지나치고 돌아옴
+/// 
+/// 2. Out 타입
+///    - Ease.OutQuad: 빠르게 시작해서 천천히 끝남 (자연스러운 감속)
+///    - Ease.OutBack: 빠르게 시작해서 목표를 지나치고 돌아옴 (튕기는 효과)
+/// 
+/// 3. InOut 타입
+///    - Ease.InOutQuad: 천천히 시작해서 중간에 빠르게 움직이다가 천천히 끝남
+///    - Ease.InOutBack: 시작과 끝에서 목표를 지나치는 효과
+
 public class DoTweenManager : MonoBehaviour
 {
     public static DoTweenManager instance { get; private set; }
@@ -44,15 +59,33 @@ public class DoTweenManager : MonoBehaviour
         // 현재 위치에서 방향으로 2유닛 밀어내기
         Vector3 targetPosition = target.transform.position + new Vector3(direction.x, direction.y, 0) * 2f;
         
-        // 자연스러운 이동을 위한 시퀀스
+        // Sequence: 여러 애니메이션을 순차적으로 또는 동시에 실행할 수 있는 기능
+        // Append(): 시퀀스에 애니메이션을 추가 (순차 실행)
+        // Join(): 이전 애니메이션과 동시에 실행할 애니메이션 추가
+        // Prepend(): 시퀀스의 맨 앞에 애니메이션 추가
         Sequence pushSequence = DOTween.Sequence();
         
-        // 이동
+        // 이동 - Ease.OutBack을 사용하여 목표 지점을 살짝 지나쳤다가 돌아오는 효과
         pushSequence.Append(target.transform.DOMove(targetPosition, 0.5f)
             .SetEase(Ease.OutBack));
         
-        // 약간의 회전 효과 추가
+        // 회전 애니메이션을 이동과 동시에 실행 (Join 사용)
         // pushSequence.Join(target.transform.DORotate(new Vector3(0, 0, Random.Range(-15f, 15f)), 0.5f)
         //     .SetEase(Ease.OutQuad));
+    }
+
+    // 오브젝트를 자연스럽게 회전시키는 함수
+    // target: 회전시킬 오브젝트
+    // duration: 회전 시간
+    // angle: 회전할 각도 (도 단위)
+    public void RotateObject(GameObject target, float duration, float angle)
+    {
+        // 현재 회전값에 angle을 더해서 회전
+        Vector3 currentRotation = target.transform.eulerAngles;
+        Vector3 targetRotation = new Vector3(currentRotation.x, currentRotation.y, currentRotation.z + angle);
+        
+        // Ease.OutQuad를 사용하여 자연스러운 감속 효과 적용
+        target.transform.DORotate(targetRotation, duration)
+            .SetEase(Ease.OutQuad);
     }
 } 
