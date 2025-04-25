@@ -16,6 +16,7 @@ public class PlayerDieState : PlayerState
         if (InputManager.instance.rInput)
         {
             EventManager.instance.PublishPlayerRespawned();
+            EventManager.instance.PublishPlayerDamaged(0);
             player.transform.position = player.lastSavePointPos;
             stateMachine.ChangeState(player.idleState);
         }

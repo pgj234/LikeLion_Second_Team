@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 
 public class PlayerManager : MonoBehaviour
@@ -38,15 +38,22 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
+        Init();
+
+        // 이벤트 구독
+        EventManager.instance.OnPlayerRespawned += Init;
+        EventManager.instance.OnPlayerDamaged += TakeDamage;
+    }
+
+    // 초기화
+    void Init()
+    {
         currentHealth = maxHealth;
         currentStamina = maxStamina;
         CurrentHealth = currentHealth;
         MaxHealth = maxHealth;
         CurrentStamina = currentStamina;
         MaxStamina = maxStamina;
-        
-        // 이벤트 구독
-        EventManager.instance.OnPlayerDamaged += TakeDamage;
     }
 
     private void OnDestroy()
@@ -54,6 +61,7 @@ public class PlayerManager : MonoBehaviour
         // 이벤트 구독 해제
         if (EventManager.instance != null)
         {
+            EventManager.instance.OnPlayerRespawned -= Init;
             EventManager.instance.OnPlayerDamaged -= TakeDamage;
         }
     }
@@ -111,6 +119,6 @@ public class PlayerManager : MonoBehaviour
     private void Die()
     {
         // 플레이어 사망 처리
-        Debug.Log("플레이어 사망");
+        player.stateMachine.ChangeState(player.playerDieState);
     }
 }
