@@ -2,14 +2,12 @@ using UnityEngine;
 
 public class BlackArea : MonoBehaviour
 {
-    private PlayerLight player;
-
     [Header("테두리 블러 처리")]
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField, Range(0, 0.999f)] private float UpAlpha;
-    [SerializeField, Range(-1, -0.001f)] private float DownAlpha;
-    [SerializeField, Range(-1, -0.001f)] private float LeftAlpha;
-    [SerializeField, Range(0, 0.999f)] private float RightAlpha;
+    [SerializeField, Range(0, 1)] private float UpAlpha;
+    [SerializeField, Range(-1, 0)] private float DownAlpha;
+    [SerializeField, Range(-1, 0)] private float LeftAlpha;
+    [SerializeField, Range(0, 1)] private float RightAlpha;
 
     void Start()
     {
@@ -19,19 +17,11 @@ public class BlackArea : MonoBehaviour
         spriteRenderer.material.SetFloat("_RightAlpha", RightAlpha);
     }
 
-    void Update()
-    {
-        if (player != null)
-        {
-            player.isInBlackArea = true;
-        }
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            player = collision.GetComponentInChildren<PlayerLight>();
+            collision.GetComponentInChildren<PlayerLight>().AddArea(this);
         }
     }
 
@@ -39,11 +29,7 @@ public class BlackArea : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (player != null)
-            {
-                player.isInBlackArea = false;
-                player = null;
-            }
+            collision.GetComponentInChildren<PlayerLight>().RemoveArea(this);
         }
     }
 }
