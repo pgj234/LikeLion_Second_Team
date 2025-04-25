@@ -40,6 +40,11 @@ public class PlayerIdleState : PlayerState
             player.stateMachine.ChangeState(player.jumpState);
         }
 
+        //하강 감지 → 낙하 상태로 전환
+        if (rb.linearVelocityY < 0f)
+        {
+            stateMachine.ChangeState(player.fallState);
+        }
     }
 
     public override void Exit()

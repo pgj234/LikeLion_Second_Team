@@ -34,6 +34,12 @@ public class PlayerFallState : PlayerState
             player.DoubleJumpCount--;
             stateMachine.ChangeState(player.doubleJumpState);
         }
+        
+        //하강 감지 → 낙하 상태로 전환
+        if (rb.linearVelocityY < 0f)
+        {
+            stateMachine.ChangeState(player.fallState);
+        }
     }
 
     public override void Exit()

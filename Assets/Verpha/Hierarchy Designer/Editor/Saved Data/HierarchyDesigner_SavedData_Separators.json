@@ -4,15 +4,15 @@
             "Name": "Player",
             "TextColor": {
                 "r": 0.0,
-                "g": 0.5639736652374268,
-                "b": 1.0,
+                "g": 0.0,
+                "b": 0.0,
                 "a": 1.0
             },
-            "IsGradientBackground": true,
+            "IsGradientBackground": false,
             "BackgroundColor": {
-                "r": 0.4150943160057068,
-                "g": 0.4150943160057068,
-                "b": 0.4150943160057068,
+                "r": 1.0,
+                "g": 0.352830171585083,
+                "b": 0.352830171585083,
                 "a": 1.0
             },
             "BackgroundGradient": {
@@ -99,11 +99,11 @@
                 "b": 0.0,
                 "a": 1.0
             },
-            "IsGradientBackground": true,
+            "IsGradientBackground": false,
             "BackgroundColor": {
                 "r": 1.0,
-                "g": 0.5235849022865295,
-                "b": 0.5235849022865295,
+                "g": 0.7132861018180847,
+                "b": 0.5254902243614197,
                 "a": 1.0
             },
             "BackgroundGradient": {
@@ -190,11 +190,11 @@
                 "b": 0.0,
                 "a": 1.0
             },
-            "IsGradientBackground": true,
+            "IsGradientBackground": false,
             "BackgroundColor": {
-                "r": 0.5,
-                "g": 0.5,
-                "b": 0.5,
+                "r": 1.0,
+                "g": 0.9156238436698914,
+                "b": 0.4132075309753418,
                 "a": 1.0
             },
             "BackgroundGradient": {
@@ -281,11 +281,11 @@
                 "b": 0.0,
                 "a": 1.0
             },
-            "IsGradientBackground": true,
+            "IsGradientBackground": false,
             "BackgroundColor": {
-                "r": 0.5,
-                "g": 0.5,
-                "b": 0.5,
+                "r": 0.7902978658676148,
+                "g": 1.0,
+                "b": 0.50377357006073,
                 "a": 1.0
             },
             "BackgroundGradient": {
@@ -355,7 +355,7 @@
                 "atime6": 0,
                 "atime7": 0,
                 "m_Mode": 0,
-                "m_ColorSpace": 0,
+                "m_ColorSpace": -1,
                 "m_NumColorKeys": 2,
                 "m_NumAlphaKeys": 2
             },
