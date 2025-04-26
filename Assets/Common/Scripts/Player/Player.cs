@@ -23,6 +23,9 @@ public class Player : Entity
     [SerializeField] internal bool isGrounded;
     [SerializeField] internal bool isWalled;
 
+    [Header("체크 오브젝트")]
+    [SerializeField] internal GameObject groundCheck;
+    [SerializeField] internal GameObject wallCheck;
 
     [Header("벽점프 관련")]
     [SerializeField] internal Vector2 walljumpDirection;
@@ -30,6 +33,9 @@ public class Player : Entity
     [SerializeField] internal float wallJumpDuration = 0.15f;
     [SerializeField] internal float wallJumpPowerX;
     [SerializeField] internal float wallJumpPowerY;
+
+    [Header("벽 스태미나 관련")]
+    [SerializeField] internal float wallSlideStaminaCost = 5f;
 
     [Header("무적 시간 관련")]
     [SerializeField] private float invincibilityDuration = 1f;
@@ -109,14 +115,6 @@ public class Player : Entity
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
-        {
-            isWalled = true;
-        }
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
         if (collision.gameObject.CompareTag("SavePoint"))
         {
             if (lastSavePointPos != collision.transform.position)
@@ -128,14 +126,6 @@ public class Player : Entity
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
-        {
-            isWalled = false;
-        }
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
         if (collision.gameObject.CompareTag("CollisionJump"))
         {
             stateMachine.ChangeState(collisionJumpState);

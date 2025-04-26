@@ -4,6 +4,7 @@ public class PlayerWallSlideState : PlayerState
 {
     int dir;
     float bugtime;
+
     public PlayerWallSlideState(Player player, PlayerStateMachine stateMachine, string animBoolName)
         : base(player, stateMachine, animBoolName) { }
 
@@ -18,29 +19,29 @@ public class PlayerWallSlideState : PlayerState
 
     public override void Update()
     {
+        base.Update();
 
-
+        // 스태미나 감소
+        EventManager.instance.PublishStaminaChanged(-player.wallSlideStaminaCost);
 
         // 점프 입력 → 벽점프 상태로 전환
         if (InputManager.instance.jumpPressed)
         {
             stateMachine.ChangeState(player.wallJumpState);
         }
-        bugtime -= Time.deltaTime;
-        if (bugtime > 0f)
-            return;
+        // bugtime -= Time.deltaTime;
+        // if (bugtime > 0f)
+        //     return;
 
         //벽 없음 감지 → 낙하 상태로 전환
         if (!player.isWalled)
         {
-
             stateMachine.ChangeState(player.fallState);
         }
 
         //땅 감지 → idle 상태로 전환
         if (player.isGrounded)
         {
-
             stateMachine.ChangeState(player.idleState);
         }
 

@@ -35,19 +35,24 @@ public class PlayerDoubleJumpState : PlayerState
             Jumptimer = 0f;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         }
-        // 벽감지
+
+        // 벽 감지 및 입력 방향 체크
         if (player.isWalled)
         {
-            stateMachine.ChangeState(player.wallslideState);
+            // 벽이 왼쪽에 있고 왼쪽 키를 누르거나, 벽이 오른쪽에 있고 오른쪽 키를 누를 때
+            if ((player.faceDir == -1 && InputManager.instance.xInput < 0) || 
+                (player.faceDir == 1 && InputManager.instance.xInput > 0))
+            {
+                stateMachine.ChangeState(player.wallslideState);
+            }
         }
+
         //하강 감지 → 낙하 상태로 전환
         if (rb.linearVelocityY < 0f)
         {
             stateMachine.ChangeState(player.fallState);
         }
-
     }
-
 
     public override void Exit()
     {

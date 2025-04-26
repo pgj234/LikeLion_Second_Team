@@ -29,7 +29,7 @@ public class Sword : MonoBehaviour
         isSwinging = true;
 
         // 이펙트 생성
-        EffectManager.instance.SpawnSwordEffect(effectSpawnPoint.position,effectSpawnPoint.rotation, 0.5f);
+        EffectManager.instance.SpawnSwordEffect(effectSpawnPoint.position,effectSpawnPoint.rotation, 0.1f);
 
         // DOTween으로 회전 후 복귀
         swordPoint
