@@ -19,7 +19,7 @@ public class SceneMaster : MonoBehaviour
             Destroy(gameObject);
         }
 
-        cineCam = GameObject.Find("CinemachineCamera").GetComponent<CinemachineCamera>();       // 
+        cineCam = GameObject.Find("CinemachineCamera").GetComponent<CinemachineCamera>();
     }
 
     internal void SceneLoad(string _sceneName)

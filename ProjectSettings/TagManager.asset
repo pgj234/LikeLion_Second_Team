@@ -62,5 +62,8 @@ TagManager:
   - name: Player
     uniqueID: 3859127553
     locked: 0
+  - name: SortingTexture
+    uniqueID: 1147675851
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -41,11 +41,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Distortion: 1
-    - _DistortionScale: 0.05
-    - _DistortionStrength: 0.0096
-    - _Outline: 1
-    - _OutlineThickness: 0.1
+    - _Distortion: 0
+    - _DistortionScale: 5.05
+    - _DistortionStrength: 0.081
+    - _Outline: 0
+    - _OutlineThickness: 0.01
     - _Pixel_Resolution: 59
     - _Pixelation: 0
     - _Use8Directions: 1
