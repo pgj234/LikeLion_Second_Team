@@ -70,6 +70,10 @@ public class Player : Entity
     internal PlayerOutofFluidState outofFluidState {get; private set;}
     internal PlayerDieState playerDieState { get; private set; }
 
+    [Header("이펙트 생성 위치")]
+    public Transform dashEffectPoint;
+    public Transform jumpEffectPoint;
+
     protected override void Awake()
     {
         base.Awake();

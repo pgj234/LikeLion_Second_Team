@@ -36,18 +36,21 @@ public class EffectManager : MonoBehaviour
     }
 
     // 사용 예시: EffectManager.instance.SpawnDashEffect(transform.position);
-    public void SpawnSwordEffect(Vector3 position, Quaternion quaternion, float duration = 0.5f)
+    public void SpawnSwordEffect(Vector3 position, Quaternion rotation, float duration)
     {
-        SpawnEffect(swordEffectPrefab, position, quaternion, duration);
+        GameObject effect = Instantiate(swordEffectPrefab, position, rotation);
+        Destroy(effect, duration);
     }
-    public void SpawnDashEffect(Vector3 position, Quaternion quaternion, float duration = 0.5f)
+    public void SpawnDashEffect(Vector3 position, Quaternion rotation, float duration)
     {
-        SpawnEffect(dashEffectPrefab, position, quaternion, duration);
+        GameObject effect = Instantiate(dashEffectPrefab, position, rotation);
+        Destroy(effect, duration);
     }
 
-    public void SpawnJumpEffect(Vector3 position, Quaternion quaternion, float duration = 0.5f)
+    public void SpawnJumpEffect(Vector3 position, Quaternion rotation, float duration)
     {
-        SpawnEffect(jumpEffectPrefab, position, quaternion, duration);
+        GameObject effect = Instantiate(jumpEffectPrefab, position, rotation);
+        Destroy(effect, duration);
     }
 
 }

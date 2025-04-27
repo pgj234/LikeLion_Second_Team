@@ -5,6 +5,7 @@ public class Entity : MonoBehaviour
 {
     internal Animator anim { get; private set; }
     internal Rigidbody2D rb { get; private set; }
+    internal SpriteRenderer spriteRenderer { get; private set; }
     internal int faceDir { get; set; } = 1;   // 왼쪽 -1, 오른쪽 1
     [Header("Parrying Check")]
     public Transform ParryingCheck;
@@ -13,6 +14,7 @@ public class Entity : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     public virtual void SetVelocity(float _xVelocity, float _yVelocity)

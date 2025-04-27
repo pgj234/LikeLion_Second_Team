@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
+using DG.Tweening;
 
 public class PlayerDoubleJumpState : PlayerState
 {
     private float Jumptimer;
+    private Sequence rotationSequence;
+
     public PlayerDoubleJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -12,6 +15,12 @@ public class PlayerDoubleJumpState : PlayerState
         base.Enter();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, player.doubleJumpPower);
         Jumptimer = player.DoubleJumpTime;
+
+        // 스프라이트만 3바퀴 회전 (로컬 회전 사용)
+        rotationSequence = DOTween.Sequence();
+        rotationSequence.Append(player.spriteRenderer.transform.DOLocalRotate(new Vector3(0, 0, 1080), player.DoubleJumpTime, RotateMode.FastBeyond360))
+            .SetRelative(true) // 상대적 회전으로 변경
+            .SetEase(Ease.Linear); // 선형 회전으로 변경
     }
 
     public override void Update()

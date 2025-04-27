@@ -5,7 +5,7 @@ public class Sword : MonoBehaviour
 {
     public float swingAngle = 90f;              // 휘두를 각도 (예: 90도)
     public float swingDuration = 0.2f;          // 휘두르는 시간 (초)
-    public Transform effectSpawnPoint;          // 이펙트 위치
+    public GameObject slashObject;              // 활성화할 오브젝트
     public Transform swordPoint;                // 칼 회전점
 
     private bool isSwinging = false;
@@ -14,6 +14,10 @@ public class Sword : MonoBehaviour
     void Start()
     {
         originalRotation = transform.localRotation;
+        if (slashObject != null)
+        {
+            slashObject.SetActive(false);
+        }
     }
 
     void Update()
@@ -28,8 +32,13 @@ public class Sword : MonoBehaviour
     {
         isSwinging = true;
 
-        // 이펙트 생성
-        EffectManager.instance.SpawnSwordEffect(effectSpawnPoint.position,effectSpawnPoint.rotation, 0.1f);
+        // 오브젝트 활성화
+        if (slashObject != null)
+        {
+            slashObject.SetActive(true);
+            // 0.1초 후 비활성화
+            DOVirtual.DelayedCall(0.1f, () => slashObject.SetActive(false));
+        }
 
         // DOTween으로 회전 후 복귀
         swordPoint

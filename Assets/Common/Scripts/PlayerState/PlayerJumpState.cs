@@ -12,6 +12,16 @@ public class PlayerJumpState : PlayerState
         base.Enter();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, player.jumpPower);
         Jumptimer = player.jumpTime;
+
+        // 점프 이펙트 생성
+        if (player.jumpEffectPoint != null)
+        {
+            EffectManager.instance.SpawnJumpEffect(
+                player.jumpEffectPoint.position,
+                player.jumpEffectPoint.rotation,
+                0.1f
+            );
+        }
     }
 
     public override void Update()

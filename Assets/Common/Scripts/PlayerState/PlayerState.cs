@@ -46,12 +46,10 @@ public class PlayerState
         {
             player.SetVelocity(0, rb.linearVelocityY);
         }
-
     }
 
     public virtual void Exit()
     {
         player.anim.SetBool(animBoolName, false);
     }
-
 }

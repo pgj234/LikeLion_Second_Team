@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 6e4f9c32b9722a642883c8919c411d71
+guid: 5ec8f22b13dd2bd4ebe2faec89d3cb9d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8458758749086746270
-    second: SwordEffect2_0
+      213: -3725883210201413850
+    second: JumpEffect_0
+  - first:
+      213: -1224413793739604
+    second: JumpEffect_1
+  - first:
+      213: 8054864979775711276
+    second: JumpEffect_2
+  - first:
+      213: 3906736148584693245
+    second: JumpEffect_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1024
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,23 +148,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SwordEffect2_0
+      name: JumpEffect_0
       rect:
         serializedVersion: 2
-        x: 19
+        x: 0
         y: 0
-        width: 996
-        height: 1019
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e960b00144c836570800000000000000
-      internalID: 8458758749086746270
+      spriteID: 1ffa4cf4ad917c146a86b804b55e766c
+      internalID: -1040841310
       vertices: []
       indices: 
       edges: []
@@ -164,7 +173,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 21e790f6cc9a88e45b8c4b3986cede67
+    spriteID: 1bdf86ba53407f9469ad8a1069d6f430
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +183,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SwordEffect2_0: 8458758749086746270
+      JumpEffect_0: -1040841310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
