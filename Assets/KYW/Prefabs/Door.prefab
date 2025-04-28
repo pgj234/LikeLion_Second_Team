@@ -121,11 +121,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6933479998126726839}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cd1b92af4f3d845a91e2422d2a8876, type: 3}
+  m_Script: {fileID: 11500000, guid: c6099ae1058a8c8479207913192fe342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetDoor: {fileID: 6933479998126726839, guid: d3f54160e1fc1db458b0da8a5a410411, type: 3}
-  delay: 1
+  targetDoor: {fileID: 0}
+  delay: 0.5
 --- !u!61 &4923977828282850564
 BoxCollider2D:
   m_ObjectHideFlags: 0

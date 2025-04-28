@@ -167,9 +167,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4889972314795010172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c287d2550c95f904fa942154945f84d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1508c73b242bb1942b7e918401a92c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.5
-  isRotate: 0
+  isRotateX: 0
+  isRotateY: 0
+  isRotateZ: 0
+  rotateDuration: 2
   isFadeOut: 0
+  isMove: 0
+  targetTransform: {fileID: 0}
+  moveDuration: 1

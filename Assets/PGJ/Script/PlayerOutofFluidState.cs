@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using Unity.Cinemachine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class PlayerOutofFluidState : PlayerState
 {
@@ -13,7 +11,6 @@ public class PlayerOutofFluidState : PlayerState
     float ghostSpd = 5;
 
     bool isGhostKeyReleased;
-    int ghostFaceDir = 1;
 
     Vector2 originalLocalPos;
 
@@ -30,6 +27,7 @@ public class PlayerOutofFluidState : PlayerState
         isGhostKeyReleased = false;
 
         ghost = player.ghostPlayerObj;
+        ghost.transform.rotation = player.transform.rotation;
         ghost.SetActive(true);
 
         // ī�޶� ���ɿ� ���̱�
@@ -78,7 +76,7 @@ public class PlayerOutofFluidState : PlayerState
     void ReturnGhost()
     {
         // �޿;� �������� ����Ʈ������ �ָ� ������
-
+        
         ghost.transform.localPosition = originalLocalPos;
 
         stateMachine.ChangeState(player.idleState);
@@ -88,25 +86,23 @@ public class PlayerOutofFluidState : PlayerState
     {
         ghost.transform.position += new Vector3(InputManager.instance.xInput, InputManager.instance.yInput) * ghostSpd * Time.deltaTime;
 
-        FlipController(InputManager.instance.xInput);
+        FlipControl();
     }
 
-    void FlipController(float _x)
+    void FlipControl()
     {
-        if (_x > 0 && -1 == ghostFaceDir)
+        if (0 == InputManager.instance.xInput)
         {
-            GhostFlip();
+            return;
         }
-        else if (_x < 0 && 1 == ghostFaceDir)
-        {
-            GhostFlip();
-        }
-    }
 
-    void GhostFlip()
-    {
-        ghostFaceDir = ghostFaceDir * -1;
-        ghost.transform.Rotate(0, 180, 0);
-        rb.linearVelocity = new Vector2(0, rb.linearVelocityY);
+        if (0 > InputManager.instance.xInput)       // 왼쪽
+        {
+            ghost.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else if (0 < InputManager.instance.xInput)       // 오른쪽
+        {
+            ghost.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 }
