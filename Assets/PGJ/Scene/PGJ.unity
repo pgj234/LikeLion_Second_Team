@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 246015888}
   m_Layer: 0
   m_Name: 01
-  m_TagString: Untagged
+  m_TagString: SavePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -971,7 +971,7 @@ GameObject:
   - component: {fileID: 422691082}
   m_Layer: 0
   m_Name: Move_Obj_01
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

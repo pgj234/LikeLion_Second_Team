@@ -10,6 +10,7 @@ public class DashSkill : MonoBehaviour
     private Vector2 dashDirection;
     private float currentDashTimer;
     private bool isDashing;
+    private int previousExpression; // 이전 표정 저장
 
     public void StartDash(Player player, Rigidbody2D rb)
     {
@@ -27,8 +28,11 @@ public class DashSkill : MonoBehaviour
         dashDirection = new Vector2(InputManager.instance.xInput, 0).normalized;
         if (dashDirection == Vector2.zero)
             dashDirection = Vector2.right * player.faceDir;
+        
+        // 이전 표정 저장
+        previousExpression = PlayerManager.Instance.GetCurrentExpression();
         // 대시 시작 시 표정 변경
-        EventManager.instance.PublishExpressionChanged(2); // 대시 표정
+        PlayerManager.Instance.SetExpression(2); // 대시 표정
     }
 
     public void UpdateDash(Player player, Rigidbody2D rb)
@@ -48,8 +52,8 @@ public class DashSkill : MonoBehaviour
     {
         isDashing = false;
         rb.gravityScale = jumpGravity;
-        // 대시 종료 시 기본 표정으로 변경
-        EventManager.instance.PublishExpressionChanged(4); // 기본 표정
+        // 대시 종료 시 이전 표정으로 복원
+        PlayerManager.Instance.SetExpression(previousExpression);
     }
 
     public bool IsDashing()

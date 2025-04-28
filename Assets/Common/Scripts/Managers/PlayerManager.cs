@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 
 public class PlayerManager : MonoBehaviour
@@ -14,11 +14,14 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float staminaRegenRate = 5f;
     private float currentStamina;
 
+    [Header("표정 설정")]
+    private int currentExpression = 4; // 기본 표정
+
     public int CurrentHealth { get; private set; }
     public int MaxHealth { get; private set; }
     public float CurrentStamina { get; private set; }
     public float MaxStamina { get; private set; }
-
+    public int CurrentExpression { get; private set; }
 
     private void Awake()
     {
@@ -38,15 +41,24 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
+        Init();
+
+        // 이벤트 구독
+        EventManager.instance.OnPlayerRespawned += Init;
+        EventManager.instance.OnPlayerDamaged += TakeDamage;
+    }
+
+    // 초기화
+    void Init()
+    {
         currentHealth = maxHealth;
         currentStamina = maxStamina;
+        currentExpression = 4; // 기본 표정으로 초기화
         CurrentHealth = currentHealth;
         MaxHealth = maxHealth;
         CurrentStamina = currentStamina;
         MaxStamina = maxStamina;
-        
-        // 이벤트 구독
-        EventManager.instance.OnPlayerDamaged += TakeDamage;
+        CurrentExpression = currentExpression;
     }
 
     private void OnDestroy()
@@ -54,6 +66,7 @@ public class PlayerManager : MonoBehaviour
         // 이벤트 구독 해제
         if (EventManager.instance != null)
         {
+            EventManager.instance.OnPlayerRespawned -= Init;
             EventManager.instance.OnPlayerDamaged -= TakeDamage;
         }
     }
@@ -71,7 +84,7 @@ public class PlayerManager : MonoBehaviour
         
         // 체력에 따른 표정 변경 (예시)
         int expressionIndex = Mathf.Clamp(currentHealth, 0, 4);
-        EventManager.instance.PublishExpressionChanged(expressionIndex);
+        SetExpression(expressionIndex);
 
         if (currentHealth <= 0)
         {
@@ -111,6 +124,20 @@ public class PlayerManager : MonoBehaviour
     private void Die()
     {
         // 플레이어 사망 처리
-        Debug.Log("플레이어 사망");
+        player.stateMachine.ChangeState(player.playerDieState);
+    }
+
+    // 표정 변경 메서드
+    public void SetExpression(int expressionIndex)
+    {
+        currentExpression = expressionIndex;
+        CurrentExpression = currentExpression;
+        EventManager.instance.PublishExpressionChanged(expressionIndex);
+    }
+
+    // 현재 표정 가져오기
+    public int GetCurrentExpression()
+    {
+        return currentExpression;
     }
 }
