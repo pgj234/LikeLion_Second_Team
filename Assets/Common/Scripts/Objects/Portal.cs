@@ -49,7 +49,7 @@ public class Portal : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(targetSceneName))
         {
-            SceneManager.LoadScene(targetSceneName);
+            SceneChager.LoadScene(targetSceneName);
         }
         else
         {
