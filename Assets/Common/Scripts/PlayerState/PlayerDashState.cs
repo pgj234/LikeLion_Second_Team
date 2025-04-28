@@ -11,7 +11,14 @@ public class PlayerDashState : PlayerState
         base.Enter();
         SkillManager.instance.DashSkill.StartDash(player, rb);
 
-        // 대시 이펙트 생성
+        // 대시가 시작되지 않았다면 (스태미나 부족) 대시 상태를 종료
+        if (!SkillManager.instance.DashSkill.IsDashing())
+        {
+            stateMachine.ChangeState(player.idleState);
+            return;
+        }
+
+        // 대시가 실제로 시작된 경우에만 이펙트 생성
         if (player.dashEffectPoint != null)
         {
             EffectManager.instance.SpawnDashEffect(
@@ -19,12 +26,6 @@ public class PlayerDashState : PlayerState
                 player.dashEffectPoint.rotation,
                 0.1f
             );
-        }
-
-        // 대시가 시작되지 않았다면 (스태미나 부족) 대시 상태를 종료
-        if (!SkillManager.instance.DashSkill.IsDashing())
-        {
-            stateMachine.ChangeState(player.idleState);
         }
     }
 

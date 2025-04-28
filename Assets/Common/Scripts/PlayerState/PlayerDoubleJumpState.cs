@@ -16,6 +16,15 @@ public class PlayerDoubleJumpState : PlayerState
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, player.doubleJumpPower);
         Jumptimer = player.DoubleJumpTime;
 
+        // 점프 이펙트 생성
+        if (player.jumpEffectPoint != null)
+        {
+            EffectManager.instance.SpawnJumpEffect(
+                player.jumpEffectPoint.position,
+                player.jumpEffectPoint.rotation,
+                0.1f
+            );
+        }
         // 스프라이트만 3바퀴 회전 (로컬 회전 사용)
         rotationSequence = DOTween.Sequence();
         rotationSequence.Append(player.spriteRenderer.transform.DOLocalRotate(new Vector3(0, 0, 1080), player.DoubleJumpTime, RotateMode.FastBeyond360))
