@@ -37,6 +37,7 @@ public class PlayerDashState : PlayerState
         if (!SkillManager.instance.DashSkill.IsDashing())
         {
             stateMachine.ChangeState(player.fallState);
+            return;
         }
     }
 

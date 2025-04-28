@@ -62,6 +62,7 @@ public class PlayerDoubleJumpState : PlayerState
                 (player.faceDir == 1 && InputManager.instance.xInput > 0))
             {
                 stateMachine.ChangeState(player.wallslideState);
+                return;
             }
         }
 
@@ -69,6 +70,7 @@ public class PlayerDoubleJumpState : PlayerState
         if (rb.linearVelocityY < 0f)
         {
             stateMachine.ChangeState(player.fallState);
+            return;
         }
     }
 

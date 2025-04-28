@@ -32,6 +32,7 @@ public class PlayerWallJumpState : PlayerState
         if (InputManager.instance.DashPressed)
         {
             stateMachine.ChangeState(player.dashState);
+            return;
         }
         if (check == false)
         {
@@ -57,10 +58,12 @@ public class PlayerWallJumpState : PlayerState
                 (player.faceDir == 1 && InputManager.instance.xInput > 0))
             {
                 stateMachine.ChangeState(player.wallslideState);
+                return;
             }
             else
             {
                 stateMachine.ChangeState(player.fallState);
+                return;
             }
 
         }
