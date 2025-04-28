@@ -22,32 +22,40 @@ public class PlayerWallSlideState : PlayerState
         base.Update();
 
         // 스태미나 감소
-        EventManager.instance.PublishStaminaChanged(-player.wallSlideStaminaCost);
+        PlayerManager.Instance.DecreaseStamina(player.wallSlideStaminaCost);
+
+        // 스태미나가 0 이하일 때 fallState로 전환
+        if (PlayerManager.Instance.CurrentStamina <= 0)
+        {
+            stateMachine.ChangeState(player.fallState);
+            return;
+        }
 
         // 점프 입력 → 벽점프 상태로 전환
         if (InputManager.instance.jumpPressed)
         {
             stateMachine.ChangeState(player.wallJumpState);
+            return;
         }
-        // bugtime -= Time.deltaTime;
-        // if (bugtime > 0f)
-        //     return;
 
         //벽 없음 감지 → 낙하 상태로 전환
         if (!player.isWalled)
         {
             stateMachine.ChangeState(player.fallState);
+            return;
         }
 
         //땅 감지 → idle 상태로 전환
         if (player.isGrounded)
         {
             stateMachine.ChangeState(player.idleState);
+            return;
         }
 
         if (InputManager.instance.DashPressed)
         {
             stateMachine.ChangeState(player.dashState);
+            return;
         }
 
         //이동제어

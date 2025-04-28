@@ -73,7 +73,11 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
-        RegenerateStamina();
+        // 플레이어가 지상에 있을 때만 스태미나 회복
+        if (player.isGrounded)
+        {
+            RegenerateStamina();
+        }
     }
 
     public void TakeDamage(int damage)
@@ -111,14 +115,18 @@ public class PlayerManager : MonoBehaviour
         return false;
     }
 
+    public void DecreaseStamina(float amount)
+    {
+        currentStamina = Mathf.Max(0, currentStamina - amount * Time.deltaTime);
+        CurrentStamina = currentStamina;
+        EventManager.instance.PublishStaminaChanged(currentStamina);
+    }
+
     private void RegenerateStamina()
     {
-        if (currentStamina < maxStamina)
-        {
             currentStamina = Mathf.Min(maxStamina, currentStamina + staminaRegenRate * Time.deltaTime);
             CurrentStamina = currentStamina;
             EventManager.instance.PublishStaminaChanged(currentStamina);
-        }
     }
 
     private void Die()

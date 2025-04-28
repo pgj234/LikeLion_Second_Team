@@ -24,6 +24,8 @@ public class FakeDoor : MonoBehaviour
     [SerializeField] private Transform targetTransform; // 이동할 목표 지점
     [SerializeField] private float moveDuration = 1f; // 이동 시간
 
+    private Vector3 originalPosition; // 이 오브젝트의 원래 위치
+
     private void Update()
     {
         if (isPlayerInRange && InputManager.instance.upHold)
@@ -87,11 +89,18 @@ public class FakeDoor : MonoBehaviour
             }
         }
 
+        // 이 오브젝트의 원래 위치 저장
+        originalPosition = transform.position;
         // 이동 애니메이션
         if (isMove && targetTransform != null)
         {
             sequence.Join(transform.DOMove(targetTransform.position, moveDuration)
                 .SetEase(Ease.OutBack));
+            
+            // 이동이 완료된 후 타겟 위치 바꿈
+            sequence.OnComplete(() => {
+                targetTransform.position = originalPosition;
+            });
         }
     }
 } 

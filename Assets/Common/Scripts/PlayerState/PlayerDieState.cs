@@ -19,6 +19,7 @@ public class PlayerDieState : PlayerState
             EventManager.instance.PublishPlayerDamaged(0);
             player.transform.position = player.lastSavePointPos;
             stateMachine.ChangeState(player.idleState);
+            return;
         }
     }
 

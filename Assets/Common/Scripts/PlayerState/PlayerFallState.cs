@@ -20,6 +20,7 @@ public class PlayerFallState : PlayerState
         {
             player.DoubleJumpCount = player.MaxDoubleJumpCount; // 더블 점프 횟수 초기화
             stateMachine.ChangeState(player.idleState);
+            return;
         }
 
         // 벽 감지 및 입력 방향 체크
@@ -30,6 +31,7 @@ public class PlayerFallState : PlayerState
                 (player.faceDir == 1 && InputManager.instance.xInput > 0))
             {
                 stateMachine.ChangeState(player.wallslideState);
+                return;
             }
         }
 
@@ -38,6 +40,7 @@ public class PlayerFallState : PlayerState
         {
             player.DoubleJumpCount--;
             stateMachine.ChangeState(player.doubleJumpState);
+            return;
         }
     }
 

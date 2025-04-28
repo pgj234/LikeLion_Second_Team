@@ -53,6 +53,7 @@ public class PlayerJumpState : PlayerState
         {
             player.DoubleJumpCount--;//더블점프카운트--
             stateMachine.ChangeState(player.doubleJumpState);
+            return;
         }
 
         // 벽 감지 및 입력 방향 체크
@@ -63,6 +64,7 @@ public class PlayerJumpState : PlayerState
                 (player.faceDir == 1 && InputManager.instance.xInput > 0))
             {
                 stateMachine.ChangeState(player.wallslideState);
+                return;
             }
         }
 
@@ -70,6 +72,7 @@ public class PlayerJumpState : PlayerState
         if (rb.linearVelocityY < 0f)
         {
             stateMachine.ChangeState(player.fallState);
+            return;
         }
     }
 

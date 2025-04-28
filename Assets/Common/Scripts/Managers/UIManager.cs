@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using DG.Tweening;
 
 public class UIManager : MonoBehaviour
 {
@@ -98,4 +99,5 @@ public class UIManager : MonoBehaviour
             playerExpressions[expressionIndex].SetActive(true);
         }
     }
+
 }
