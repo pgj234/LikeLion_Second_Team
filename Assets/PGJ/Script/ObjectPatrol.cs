@@ -8,6 +8,11 @@ public class ObjectPatrol : MonoBehaviour
 
     bool isUp = true;
 
+    void Awake()
+    {
+        EventManager.instance.OnPlayerRespawned += InitPos;
+    }
+
     void Update()
     {
         if (transform.position.y < minHigh + 0.1f)
@@ -35,9 +40,22 @@ public class ObjectPatrol : MonoBehaviour
         {
             if (col.TryGetComponent(out Player player))
             {
-                //player.stateMachine.die
-                Debug.Log("플레이어 사망 상태");
+                // 임시로 그냥 바로 세이브 포인트로
+
+                // 데미지 이벤트 발생
+                EventManager.instance.PublishPlayerDamaged(999);
+                player.stateMachine.ChangeState(player.playerDieState);          // 사망 스테이트로
             }
         }
+    }
+
+    void OnDestroy()
+    {
+        EventManager.instance.OnPlayerRespawned -= InitPos;
+    }
+
+    void InitPos()
+    {
+        transform.position = new Vector3(0, minHigh);
     }
 }
