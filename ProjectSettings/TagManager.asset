@@ -62,6 +62,9 @@ TagManager:
   - name: Player
     uniqueID: 3859127553
     locked: 0
+  - name: Effect
+    uniqueID: 41633935
+    locked: 0
   - name: BlackArea
     uniqueID: 277551381
     locked: 0
