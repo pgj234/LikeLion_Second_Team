@@ -3679,7 +3679,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000fd8efb65019d05e6d5ad923d
+  m_ApplyToSortingLayers: 00000000fd8efb65019d05e6d5ad923dcb5b3bca
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -4230,7 +4230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2424216585279428844, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3256647743462483244, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
       propertyPath: m_Color.a
@@ -4899,7 +4899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2424216585279428844, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3256647743462483244, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
       propertyPath: m_Color.a
@@ -7714,7 +7714,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 0000000015198b10fd8efb65019d05e6
+  m_ApplyToSortingLayers: 0000000015198b10fd8efb65019d05e6cb5b3bca
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -154294,7 +154294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2424216585279428844, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3256647743462483244, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
       propertyPath: m_Color.a
