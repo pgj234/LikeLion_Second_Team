@@ -9,7 +9,7 @@ public class UIButtonHighlighter : MonoBehaviour, IPointerEnterHandler, IPointer
     {
         if (arrow != null)
             arrow.SetActive(true);
-    }S
+    }
 
     public void OnPointerExit(PointerEventData eventData)
     {
