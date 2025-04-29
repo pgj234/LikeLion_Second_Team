@@ -1376,7 +1376,7 @@ namespace Verpha.HierarchyDesigner
         #region General
         public static void CollapseAllGameObjects()
         {
-            Scene activeScene = SceneChager.GetActiveScene();
+            Scene activeScene = SceneManager.GetActiveScene();
             if (!activeScene.IsValid()) return;
 
             foreach (GameObject rootObject in activeScene.GetRootGameObjects())
@@ -1387,7 +1387,7 @@ namespace Verpha.HierarchyDesigner
 
         public static void ExpandAllGameObjects()
         {
-            Scene activeScene = SceneChager.GetActiveScene();
+            Scene activeScene = SceneManager.GetActiveScene();
             if (!activeScene.IsValid()) return;
 
             foreach (GameObject rootObject in activeScene.GetRootGameObjects())

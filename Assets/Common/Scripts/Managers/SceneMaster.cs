@@ -24,7 +24,7 @@ public class SceneMaster : MonoBehaviour
 
     internal void SceneLoad(string _sceneName)
     {
-        SceneChager.LoadScene(_sceneName);
+        SceneManager.LoadScene(_sceneName);
 
         if (0 == string.Compare(_sceneName, "PGJ"))
         {
@@ -34,6 +34,6 @@ public class SceneMaster : MonoBehaviour
 
     internal Scene CurrentSceneGet()
     {
-        return SceneChager.GetActiveScene();
+        return SceneManager.GetActiveScene();
     }
 }

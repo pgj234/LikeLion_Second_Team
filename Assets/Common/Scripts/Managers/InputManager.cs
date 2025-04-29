@@ -93,23 +93,23 @@ public class InputManager : MonoBehaviour
         // F1~F5 키를 누르면 해당 씬으로 이동
         if (Input.GetKeyDown(KeyCode.F1))
         {
-            SceneChager.LoadScene("JIH");
+            SceneManager.LoadScene("JIH");
         }
         else if (Input.GetKeyDown(KeyCode.F2))
         {
-            SceneChager.LoadScene("YSME");
+            SceneManager.LoadScene("YSME");
         }
         else if (Input.GetKeyDown(KeyCode.F3))
         {
-            SceneChager.LoadScene("PGJ");
+            SceneManager.LoadScene("PGJ");
         }
         else if (Input.GetKeyDown(KeyCode.F4))
         {
-            SceneChager.LoadScene("KYW");
+            SceneManager.LoadScene("KYW");
         }
         else if (Input.GetKeyDown(KeyCode.F5))
         {
-            SceneChager.LoadScene("NSH");
+            SceneManager.LoadScene("NSH");
         }
     }
 
