@@ -16,8 +16,8 @@ public class PlayerLight : LightInBlackArea
     private float refOuterVelocity;
     private float refInnerVelocity;
 
-    private List<BlackArea> blackAreas = new List<BlackArea>();
-    private List<ObjectLight> objectLights = new List<ObjectLight>();
+    [SerializeField] private List<BlackArea> blackAreas = new List<BlackArea>();
+    [SerializeField] private List<ObjectLight> objectLights = new List<ObjectLight>();
 
     [Space, Header("조건")]
     public bool isInLight = false; // 빛을 충전할 수 있는 곳에 있는지 여부
