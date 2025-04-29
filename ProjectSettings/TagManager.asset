@@ -53,6 +53,9 @@ TagManager:
   - name: Background
     uniqueID: 1033022933
     locked: 0
+  - name: BackEffect
+    uniqueID: 2103400083
+    locked: 0
   - name: Environment
     uniqueID: 3392887755
     locked: 0
@@ -62,7 +65,7 @@ TagManager:
   - name: Player
     uniqueID: 3859127553
     locked: 0
-  - name: Effect
+  - name: FrontEffect
     uniqueID: 41633935
     locked: 0
   - name: BlackArea
