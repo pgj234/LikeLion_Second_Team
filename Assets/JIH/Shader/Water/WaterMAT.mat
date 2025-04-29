@@ -56,8 +56,8 @@ Material:
     m_Floats:
     - _BodyTransparency: 1
     - _CausticOffsetSpeed: 1
-    - _CausticPower: 9.5
-    - _CausticScale: 10
+    - _CausticPower: 8.77
+    - _CausticScale: 7.49
     - _CausticStrength: 1
     - _DistortionOffsetSpeed: 1
     - _DistortionScale: 30
