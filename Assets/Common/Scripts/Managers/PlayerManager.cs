@@ -5,6 +5,7 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance { get; private set; }
     public Player player;
+
     [Header("체력 설정")]
     [SerializeField] private int maxHealth = 5;
     private int currentHealth;
@@ -15,8 +16,9 @@ public class PlayerManager : MonoBehaviour
     private float currentStamina;
 
     [Header("표정 설정")]
-    private int currentExpression = 4; // 기본 표정
+    [SerializeField] private int currentExpression = 4; // 기본 표정
 
+    public Vector3 PlayerPosition { get; private set; } //플레이어 위치정보
     public int CurrentHealth { get; private set; }
     public int MaxHealth { get; private set; }
     public float CurrentStamina { get; private set; }
@@ -59,6 +61,7 @@ public class PlayerManager : MonoBehaviour
         CurrentStamina = currentStamina;
         MaxStamina = maxStamina;
         CurrentExpression = currentExpression;
+        PlayerPosition = player.transform.position;
     }
 
     private void OnDestroy()
