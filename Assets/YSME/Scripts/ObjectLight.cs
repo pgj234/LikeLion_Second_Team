@@ -17,7 +17,11 @@ public class ObjectLight : LightInBlackArea
     {
         light2D.pointLightOuterRadius = OuterRadius;
         light2D.pointLightInnerRadius = Mathf.Clamp(InnerRadius, 0, OuterRadius);
-        circle.radius = InnerRadius + (OuterRadius - InnerRadius) / 2;
+    }
+
+    void Update()
+    {
+        circle.radius = light2D.pointLightInnerRadius + (light2D.pointLightOuterRadius - light2D.pointLightInnerRadius) / 2;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

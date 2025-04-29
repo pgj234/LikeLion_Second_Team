@@ -53,8 +53,11 @@ TagManager:
   - name: Background
     uniqueID: 1033022933
     locked: 0
-  - name: BlackArea
-    uniqueID: 277551381
+  - name: BackEffect
+    uniqueID: 2103400083
+    locked: 0
+  - name: Environment
+    uniqueID: 3392887755
     locked: 0
   - name: Enemy
     uniqueID: 1710984957
@@ -62,8 +65,11 @@ TagManager:
   - name: Player
     uniqueID: 3859127553
     locked: 0
-  - name: SortingTexture
-    uniqueID: 1147675851
+  - name: FrontEffect
+    uniqueID: 41633935
+    locked: 0
+  - name: BlackArea
+    uniqueID: 277551381
     locked: 0
   m_RenderingLayers:
   - Default
