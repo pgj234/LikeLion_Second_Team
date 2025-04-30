@@ -2,77 +2,121 @@ using UnityEngine;
 
 public class Ghost : MonoBehaviour
 {
-    [Header("이동 설정")]
-    [SerializeField] private float moveSpeed = 3f;
-    [SerializeField] private float detectionRange = 5f;  // 플레이어 감지 범위
+    internal SpriteRenderer spriteRenderer;
+    internal Animator animator;
+    
+    [Header("기본 설정")]
+    [SerializeField] public float moveSpeed = 3f;
+    [SerializeField] public float detectionRange = 5f;
+    [SerializeField] public int maxHealth = 3; // 최대 체력
+    [SerializeField] public float gravityScale = 1f; // 중력 크기
 
-    private SpriteRenderer spriteRenderer;
-    private bool isMovingLeft = false;
+    [Header("Angry 상태 설정")]
+    [SerializeField] public float angryDuration = 3f;
+    [SerializeField] public float angryMoveSpeed = 1f;
+
+    [Header("스턴 설정")]
+    [SerializeField] public float stunDuration = 0.5f;
+    [SerializeField] public float knockbackForce = 5f;
+
+    [Header("피격 효과")]
+    [SerializeField] public GameObject hitParticlePrefab;
+    [SerializeField] public Material stunMaterial;
+
+    internal GhostStateMachine stateMachine;
+    internal Transform detectedPlayer;
+    internal Vector2 currentDirection;
+    internal Material originalMaterial { get; private set; }
+    internal int currentHealth; // 현재 체력
+    internal Rigidbody2D rb; // Rigidbody2D 참조
 
     private void Start()
     {
         // 컴포넌트 참조
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        originalMaterial = spriteRenderer.material;
+        currentHealth = maxHealth;
+
+        // 상태 머신 초기화
+        stateMachine = new GhostStateMachine();
+        stateMachine.Initialize(new GhostIdleState(this));
     }
 
     private void Update()
     {
-        // RaycastCircle로 플레이어 감지 (태그 사용)
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRange);
-        
-        if (hitColliders.Length > 0)
+        stateMachine.Update();
+        UpdateSpriteDirection();
+    }
+
+    private void UpdateSpriteDirection()
+    {
+        if (currentDirection.x < 0)
         {
-            // 가장 가까운 플레이어 찾기
-            float closestDistance = float.MaxValue;
-            Transform closestPlayer = null;
-
-            foreach (Collider2D hitCollider in hitColliders)
-            {
-                if (hitCollider.CompareTag("Player"))
-                {
-                    float distance = Vector2.Distance(transform.position, hitCollider.transform.position);
-                    if (distance < closestDistance)
-                    {
-                        closestDistance = distance;
-                        closestPlayer = hitCollider.transform;
-                    }
-                }
-            }
-
-            if (closestPlayer != null)
-            {
-                // 플레이어 방향으로 이동
-                Vector2 direction = (closestPlayer.position - transform.position).normalized;
-                transform.position += new Vector3(direction.x, direction.y, 0) * moveSpeed * Time.deltaTime;
-
-                // 이동 방향에 따라 스프라이트 뒤집기
-                if (direction.x < 0 && !isMovingLeft)
-                {
-                    isMovingLeft = true;
-                    spriteRenderer.flipX = true;
-                }
-                else if (direction.x > 0 && isMovingLeft)
-                {
-                    isMovingLeft = false;
-                    spriteRenderer.flipX = false;
-                }
-            }
+            FlipSprite(true);
+        }
+        else if (currentDirection.x > 0)
+        {
+            FlipSprite(false);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void TakeDamage()
     {
-        if (collision.gameObject.CompareTag("Player"))
+        currentHealth--;
+        if (currentHealth <= 0)
         {
-            // 플레이어의 데미지 함수 호출
-            PlayerManager.Instance.TakeDamage(1);
+            ChangeState(new GhostDieState(this));
         }
+    }
+
+    public void SetDirection(Vector2 direction)
+    {
+        currentDirection = direction;
+    }
+
+    public bool DetectPlayer()
+    {
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRange);
+        
+        foreach (Collider2D hitCollider in hitColliders)
+        {
+            if (hitCollider.CompareTag("Player"))
+            {
+                detectedPlayer = hitCollider.transform;
+                return true;
+            }
+        }
+        
+        detectedPlayer = null;
+        return false;
+    }
+
+    public Transform GetDetectedPlayer()
+    {
+        return detectedPlayer;
+    }
+
+    public void FlipSprite(bool isLeft)
+    {
+        spriteRenderer.flipX = isLeft;
+    }
+
+    public void ChangeState(GhostState newState)
+    {
+        stateMachine.ChangeState(newState);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        stateMachine.CurrentState.OnTriggerEnter2D(other);
     }
 
     // 디버그용 기즈모
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 } 
