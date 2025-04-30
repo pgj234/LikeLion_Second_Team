@@ -27,6 +27,7 @@ public class PlayerOutofFluidState : PlayerState
         isGhostKeyReleased = false;
 
         ghost = player.ghostPlayerObj;
+        ghost.transform.localPosition = originalLocalPos;
         ghost.transform.rotation = player.transform.rotation;
         ghost.SetActive(true);
 
@@ -71,6 +72,8 @@ public class PlayerOutofFluidState : PlayerState
         SceneMaster.instance.cineCam.Follow = player.transform;
 
         ghost.SetActive(false);
+
+        ghost.transform.localPosition = originalLocalPos;
     }
 
     void ReturnGhost()
