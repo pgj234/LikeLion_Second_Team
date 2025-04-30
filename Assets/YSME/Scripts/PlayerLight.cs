@@ -47,7 +47,7 @@ public class PlayerLight : LightInBlackArea
 
             if (remainTime <= 0) // 남은 시간이 없어졌다면
             {
-                // player 죽는 함수 추가하거나 죽은 상태로 변경하기
+                player.stateMachine.ChangeState(player.playerDieState);
             }
         }
     }
