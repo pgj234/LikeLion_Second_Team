@@ -6,6 +6,7 @@ public class ObjectLight : LightInBlackArea
 {
     [Space, Header("빛 영역 참조")]
     [SerializeField] private CircleCollider2D circle;
+    [SerializeField, Range(0, 1)] private float percent;
 
     protected override void Awake()
     {
@@ -21,7 +22,7 @@ public class ObjectLight : LightInBlackArea
 
     void Update()
     {
-        circle.radius = light2D.pointLightInnerRadius + (light2D.pointLightOuterRadius - light2D.pointLightInnerRadius) / 2;
+        circle.radius = light2D.pointLightInnerRadius + (light2D.pointLightOuterRadius - light2D.pointLightInnerRadius) * percent;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

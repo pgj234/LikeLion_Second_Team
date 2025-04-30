@@ -51,6 +51,7 @@ MonoBehaviour:
   InnerRadius: 3
   isEnemy: 0
   circle: {fileID: 1149524370951518827}
+  percent: 0
 --- !u!58 &1149524370951518827
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107,7 +108,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 15198b10
+  m_ApplyToSortingLayers: 00000000d5ad923d93565f7dcb5b3bcafd8efb65019d05e68f487b0215198b10
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0

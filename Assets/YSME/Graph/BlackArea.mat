@@ -68,7 +68,7 @@ Material:
     m_Floats:
     - _DownAlpha: 0
     - _EnableExternalAlpha: 0
-    - _LeftAlpha: -0
+    - _LeftAlpha: 0
     - _RightAlpha: 1
     - _UpAlpha: 1
     - _ZWrite: 0

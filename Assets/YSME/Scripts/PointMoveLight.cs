@@ -12,7 +12,12 @@ public struct PositionAndSpeed
 
 public class PointMoveLight : MonoBehaviour
 {
-    [Header("움직임 포인트")]
+    [Header("오브젝트 설정")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Color activeColor;
+    [SerializeField] private Color deactiveColor;
+
+    [Space, Header("움직임 포인트")]
     [SerializeField] private PositionAndSpeed startPos;
     [SerializeField] private PositionAndSpeed[] movePos;
     [SerializeField] private PositionAndSpeed endPos;
@@ -77,6 +82,8 @@ public class PointMoveLight : MonoBehaviour
 
             lightObj.pointLightOuterRadius = Mathf.Lerp(0, outerRadius, percent);
             lightObj.pointLightInnerRadius = Mathf.Lerp(0, innerRadius, percent);
+
+            spriteRenderer.color = Vector4.Lerp(activeColor, deactiveColor, percent);
             yield return null;
         }
     }
@@ -92,6 +99,8 @@ public class PointMoveLight : MonoBehaviour
 
             lightObj.pointLightOuterRadius = Mathf.Lerp(outerRadius, 0, percent);
             lightObj.pointLightInnerRadius = Mathf.Lerp(innerRadius, 0, percent);
+
+            spriteRenderer.color = Vector4.Lerp(deactiveColor, activeColor, percent);
             yield return null;
         }
         lightObj.gameObject.SetActive(false);

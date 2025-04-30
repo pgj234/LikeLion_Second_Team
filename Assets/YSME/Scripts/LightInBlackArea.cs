@@ -7,8 +7,8 @@ public abstract class LightInBlackArea : MonoBehaviour
     [SerializeField] protected Light2D light2D;
 
     [Space, Header("빛(마스크) 초기 변수")]
-    [SerializeField, Range(0, 20f)] protected float OuterRadius = 5;
-    [SerializeField, Range(0, 20f)] protected float InnerRadius = 3;
+    [SerializeField, Range(0, 30f)] protected float OuterRadius = 5;
+    [SerializeField, Range(0, 30f)] protected float InnerRadius = 3;
     [SerializeField] protected bool isEnemy;
     public bool IsEnemy => isEnemy;
 
