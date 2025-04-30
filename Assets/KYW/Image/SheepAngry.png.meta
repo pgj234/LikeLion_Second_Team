@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SheepAngry_0: 1087620386278498969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
