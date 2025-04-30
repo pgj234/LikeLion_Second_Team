@@ -17,6 +17,7 @@ public abstract class GhostState
     {
         if (other.CompareTag("Sword"))
         {
+            ghost.TakeDamage();
             // 검과 충돌한 방향의 반대 방향으로 넉백
             Vector2 knockbackDirection = (ghost.transform.position - other.transform.position).normalized;
             ghost.ChangeState(new GhostStunnedState(ghost, knockbackDirection));

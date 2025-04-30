@@ -8,6 +8,8 @@ public class Ghost : MonoBehaviour
     [Header("기본 설정")]
     [SerializeField] public float moveSpeed = 3f;
     [SerializeField] public float detectionRange = 5f;
+    [SerializeField] public int maxHealth = 3; // 최대 체력
+    [SerializeField] public float gravityScale = 1f; // 중력 크기
 
     [Header("Angry 상태 설정")]
     [SerializeField] public float angryDuration = 3f;
@@ -25,13 +27,17 @@ public class Ghost : MonoBehaviour
     internal Transform detectedPlayer;
     internal Vector2 currentDirection;
     internal Material originalMaterial { get; private set; }
+    internal int currentHealth; // 현재 체력
+    internal Rigidbody2D rb; // Rigidbody2D 참조
 
     private void Start()
     {
         // 컴포넌트 참조
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         originalMaterial = spriteRenderer.material;
+        currentHealth = maxHealth;
 
         // 상태 머신 초기화
         stateMachine = new GhostStateMachine();
@@ -53,6 +59,15 @@ public class Ghost : MonoBehaviour
         else if (currentDirection.x > 0)
         {
             FlipSprite(false);
+        }
+    }
+
+    public void TakeDamage()
+    {
+        currentHealth--;
+        if (currentHealth <= 0)
+        {
+            ChangeState(new GhostDieState(this));
         }
     }
 
@@ -99,9 +114,9 @@ public class Ghost : MonoBehaviour
     }
 
     // 디버그용 기즈모
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 } 
