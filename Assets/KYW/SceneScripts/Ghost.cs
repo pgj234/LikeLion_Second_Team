@@ -2,30 +2,42 @@ using UnityEngine;
 
 public class Ghost : MonoBehaviour
 {
-    
-    public SpriteRenderer spriteRenderer;
-    public Animator animator;
+    internal SpriteRenderer spriteRenderer;
+    internal Animator animator;
     
     [Header("기본 설정")]
     [SerializeField] public float moveSpeed = 3f;
     [SerializeField] public float detectionRange = 5f;
+    [SerializeField] public int maxHealth = 3; // 최대 체력
+    [SerializeField] public float gravityScale = 1f; // 중력 크기
 
     [Header("Angry 상태 설정")]
     [SerializeField] public float angryDuration = 3f;
-    [SerializeField] public float angryMoveSpeed = 1.5f;
+    [SerializeField] public float angryMoveSpeed = 1f;
+
+    [Header("스턴 설정")]
+    [SerializeField] public float stunDuration = 0.5f;
+    [SerializeField] public float knockbackForce = 5f;
 
     [Header("피격 효과")]
     [SerializeField] public GameObject hitParticlePrefab;
+    [SerializeField] public Material stunMaterial;
 
-    private GhostStateMachine stateMachine;
-    private Transform detectedPlayer;
-    private Vector2 currentDirection;
+    internal GhostStateMachine stateMachine;
+    internal Transform detectedPlayer;
+    internal Vector2 currentDirection;
+    internal Material originalMaterial { get; private set; }
+    internal int currentHealth; // 현재 체력
+    internal Rigidbody2D rb; // Rigidbody2D 참조
 
     private void Start()
     {
         // 컴포넌트 참조
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        originalMaterial = spriteRenderer.material;
+        currentHealth = maxHealth;
 
         // 상태 머신 초기화
         stateMachine = new GhostStateMachine();
@@ -47,6 +59,15 @@ public class Ghost : MonoBehaviour
         else if (currentDirection.x > 0)
         {
             FlipSprite(false);
+        }
+    }
+
+    public void TakeDamage()
+    {
+        currentHealth--;
+        if (currentHealth <= 0)
+        {
+            ChangeState(new GhostDieState(this));
         }
     }
 
@@ -87,25 +108,15 @@ public class Ghost : MonoBehaviour
         stateMachine.ChangeState(newState);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // 플레이어의 데미지 함수 호출
-            PlayerManager.Instance.TakeDamage(1);
-        }
-        else if (collision.gameObject.CompareTag("Sword"))
-        {
-            // 검과 충돌한 방향의 반대 방향으로 넉백
-            Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized;
-            ChangeState(new GhostStunnedState(this, knockbackDirection));
-        }
+        stateMachine.CurrentState.OnTriggerEnter2D(other);
     }
 
     // 디버그용 기즈모
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 } 

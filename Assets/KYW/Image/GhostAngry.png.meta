@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GhostAngry_0: -4327991759407031436
+      GhostAngry_1: -108062762294201905
+      GhostAngry_2: -815624151794317598
+      GhostAngry_3: -8082228959478881374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SheepSad_0: 7426022650166775582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
