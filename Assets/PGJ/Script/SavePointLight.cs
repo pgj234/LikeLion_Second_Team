@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Rendering.Universal;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class SavePoint : MonoBehaviour
+public class SavePointLight : MonoBehaviour
 {
     [SerializeField] float maxIntensity;
 
