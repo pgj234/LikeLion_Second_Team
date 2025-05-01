@@ -25,7 +25,7 @@ TagManager:
   - Object
   - Parryable
   - CollisionJump
-  - 
+  - Player
   - 
   - 
   - 
@@ -58,6 +58,9 @@ TagManager:
     locked: 0
   - name: Environment
     uniqueID: 3392887755
+    locked: 0
+  - name: Ground
+    uniqueID: 2310356237
     locked: 0
   - name: Enemy
     uniqueID: 1710984957

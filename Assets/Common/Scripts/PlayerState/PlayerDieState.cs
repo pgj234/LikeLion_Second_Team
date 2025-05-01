@@ -17,6 +17,7 @@ public class PlayerDieState : PlayerState
         {
             EventManager.instance.PublishPlayerRespawned();
             EventManager.instance.PublishPlayerDamaged(0);
+            rb.linearVelocity = Vector2.zero;
             player.transform.position = player.lastSavePointPos;
             stateMachine.ChangeState(player.idleState);
             return;

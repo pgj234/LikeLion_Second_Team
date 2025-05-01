@@ -6,8 +6,8 @@ public class LaserReceiver : MonoBehaviour
 
     public void Activate()
     {
-        Debug.Log("수신기 작동됨!");
-        // 반응할거
+        // Debug.Log("수신기 작동됨!");
+        // // 반응할거
         obj.SetActive(true);
     }
 }

@@ -12,7 +12,12 @@ public struct PositionAndSpeed
 
 public class PointMoveLight : MonoBehaviour
 {
-    [Header("움직임 포인트")]
+    [Header("오브젝트 설정")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Color activeColor;
+    [SerializeField] private Color deactiveColor;
+
+    [Space, Header("움직임 포인트")]
     [SerializeField] private PositionAndSpeed startPos;
     [SerializeField] private PositionAndSpeed[] movePos;
     [SerializeField] private PositionAndSpeed endPos;
@@ -24,9 +29,28 @@ public class PointMoveLight : MonoBehaviour
     [SerializeField] private float outerRadius;
     [SerializeField] private float innerRadius;
     [SerializeField] private float readyTime;
-
-    private PositionAndSpeed prevPos;
     private bool isMoving = false;
+
+    void Start()
+    {
+        EventManager.instance.OnPlayerRespawned += Init;
+    }
+
+    void Oestroy()
+    {
+        EventManager.instance.OnPlayerRespawned -= Init;
+    }
+
+    void Init()
+    {
+        isMoving = false;
+        lightObj.gameObject.SetActive(false);
+        lightObj.transform.position = startPos.pos.position;
+        lightObj.pointLightOuterRadius = 0;
+        lightObj.pointLightInnerRadius = 0;
+
+        spriteRenderer.color = activeColor;
+    }
 
     IEnumerator StartMove()
     {
@@ -34,12 +58,12 @@ public class PointMoveLight : MonoBehaviour
         lightObj.transform.position = startPos.pos.position;
         lightObj.pointLightOuterRadius = 0;
         lightObj.pointLightInnerRadius = 0;
-        prevPos = startPos;
 
         yield return StartCoroutine(LightOn());
 
         for (int i = 0; i < movePos.Length; i++)
         {
+            if (isMoving == false) yield break;
             yield return StartCoroutine(Moving(movePos[i]));
             Debug.Log("움직임 : " + i + "번째");
         }
@@ -52,11 +76,11 @@ public class PointMoveLight : MonoBehaviour
     {
         while (true)
         {
+            if (isMoving == false) yield break;
             lightObj.transform.position = Vector3.MoveTowards(lightObj.transform.position, pos.pos.position, Time.deltaTime * pos.speed);
             yield return null;
             if (lightObj.transform.position == pos.pos.position) break;
         }
-        prevPos = pos;
     }
 
     IEnumerator EndMove()
@@ -72,11 +96,14 @@ public class PointMoveLight : MonoBehaviour
         float percent = 0;
         while (curTime < readyTime)
         {
+            if (isMoving == false) yield break;
             curTime += Time.deltaTime;
             percent = curTime / readyTime;
 
             lightObj.pointLightOuterRadius = Mathf.Lerp(0, outerRadius, percent);
             lightObj.pointLightInnerRadius = Mathf.Lerp(0, innerRadius, percent);
+
+            spriteRenderer.color = Vector4.Lerp(activeColor, deactiveColor, percent);
             yield return null;
         }
     }
@@ -87,11 +114,14 @@ public class PointMoveLight : MonoBehaviour
         float percent = 0;
         while (curTime < readyTime)
         {
+            if (isMoving == false) yield break;
             curTime += Time.deltaTime;
             percent = curTime / readyTime;
 
             lightObj.pointLightOuterRadius = Mathf.Lerp(outerRadius, 0, percent);
             lightObj.pointLightInnerRadius = Mathf.Lerp(innerRadius, 0, percent);
+
+            spriteRenderer.color = Vector4.Lerp(deactiveColor, activeColor, percent);
             yield return null;
         }
         lightObj.gameObject.SetActive(false);

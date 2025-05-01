@@ -9,6 +9,11 @@ public class Player : Entity
     [SerializeField] internal float doubleJumpPower;
     [SerializeField] internal float collisionJumpPower;
 
+    [Header("마찰력 관련")]
+    [SerializeField] private PhysicsMaterial2D defaultPhysicsMaterial;
+    [SerializeField] private PhysicsMaterial2D groundPhysicsMaterial;
+    private CapsuleCollider2D capsuleCollider;
+
     [Header("점프조작감 관련 중력")]
     [SerializeField] internal float fallGravity;
     [SerializeField] internal float JumpGravity;
@@ -78,6 +83,8 @@ public class Player : Entity
     {
         base.Awake();
 
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
+
         stateMachine = new PlayerStateMachine();
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
@@ -93,6 +100,11 @@ public class Player : Entity
         parryingState = new PlayerParryingState(this, stateMachine, "Parrying");
         collisionJumpState = new PlayerCollisionJumpState(this, stateMachine, "Jump");
         playerDieState = new PlayerDieState(this, stateMachine, "Die");
+    }
+
+    public void SetFriction(bool isGrounded)
+    {
+        capsuleCollider.sharedMaterial = isGrounded ? groundPhysicsMaterial : defaultPhysicsMaterial;
     }
 
     protected void Start()

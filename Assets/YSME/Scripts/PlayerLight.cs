@@ -28,6 +28,8 @@ public class PlayerLight : LightInBlackArea
         {
             Debug.LogError("PlayerLight에 플레이어가 등록되지 않았습니다!");
         }
+
+        EventManager.instance.OnPlayerRespawned += Init;
     }
 
     void Update()
@@ -47,9 +49,19 @@ public class PlayerLight : LightInBlackArea
 
             if (remainTime <= 0) // 남은 시간이 없어졌다면
             {
-                // player 죽는 함수 추가하거나 죽은 상태로 변경하기
+                player.stateMachine.ChangeState(player.playerDieState);
             }
         }
+    }
+
+    void Oestroy()
+    {
+        EventManager.instance.OnPlayerRespawned -= Init;
+    }
+
+    void Init()
+    {
+        remainTime = startTime;
     }
 
     void UpdateScale()

@@ -672,7 +672,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1.73, y: 0.24, z: 1}
+    m_Scale: {x: 1.73, y: 0, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -4798,9 +4798,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1033022933
-  m_SortingLayer: 1
-  m_SortingOrder: 5
+  m_SortingLayerID: 2103400083
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -4967,9 +4967,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1033022933
-  m_SortingLayer: 1
-  m_SortingOrder: 6
+  m_SortingLayerID: -902079541
+  m_SortingLayer: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: e6ecc28cfef657842b3d240aef1425f0, type: 3}
   m_Color: {r: 1, g: 0.74650204, b: 0, a: 1}
   m_FlipX: 0

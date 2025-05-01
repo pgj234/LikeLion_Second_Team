@@ -100,7 +100,7 @@ public class PlayerCollisionJumpState : PlayerState
             }
 
             // 벽 감지
-            if (player.isWalled)
+            if (player.isWalled && PlayerManager.Instance.CurrentStamina >= 25)
             {
                 stateMachine.ChangeState(player.wallslideState);
             }

@@ -22,6 +22,12 @@ public class Entity : MonoBehaviour
         rb.linearVelocity = new Vector2(_xVelocity, _yVelocity);
         FlipController(_xVelocity);
     }
+
+    public virtual Vector2 GetVelocity()
+    {
+        return rb.linearVelocity;
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(ParryingCheck.position, ParryingCheckRadius);
