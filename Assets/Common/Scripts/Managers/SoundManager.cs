@@ -4,11 +4,11 @@ public class SoundManager : MonoBehaviour
 {
     static public SoundManager instance = null;
 
-    SoundData_YSME soundData_YSME;
-    SoundData_JIH soundData_JIH;
-    SoundData_KYW soundData_KYW;
-    SoundData_NSH soundData_NSH;
-    SoundData_PGJ soundData_PGJ;
+    [SerializeField] SoundData_YSME soundData_YSME;
+    [SerializeField] SoundData_JIH soundData_JIH;
+    [SerializeField] SoundData_KYW soundData_KYW;
+    [SerializeField] SoundData_NSH soundData_NSH;
+    [SerializeField] SoundData_PGJ soundData_PGJ;
 
     AudioSource audioSource;
 
