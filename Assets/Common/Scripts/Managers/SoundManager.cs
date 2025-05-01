@@ -21,6 +21,7 @@ public class SoundManager : MonoBehaviour
 {
     static public SoundManager instance = null;
 
+
     AudioSource audioSource;
 
     [SerializeField] AudioClip[] bgmClipArray;
