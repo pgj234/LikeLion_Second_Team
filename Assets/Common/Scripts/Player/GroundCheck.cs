@@ -14,6 +14,7 @@ public class GroundCheck : MonoBehaviour
         if (collision.CompareTag("Ground"))
         {
             player.isGrounded = true;
+            player.SetFriction(true);
         }
     }
 
@@ -22,6 +23,7 @@ public class GroundCheck : MonoBehaviour
         if (collision.CompareTag("Ground"))
         {
             player.isGrounded = false;
+            player.SetFriction(false);
         }
     }
 } 
