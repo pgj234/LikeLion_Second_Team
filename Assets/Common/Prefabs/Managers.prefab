@@ -684,12 +684,18 @@ MonoBehaviour:
     dialogues:
     - leftImage: {fileID: -855298285791758126, guid: 1941796682f586c4cb3ea45137c603c3, type: 3}
       rightImage: {fileID: 6937817954938267909, guid: 6079306236d1b0d4cbbcda8aa192a69e, type: 3}
+      leftImageEffect: 0
+      rightImageEffect: 0
       text: "\uC548\uB0E5?"
     - leftImage: {fileID: -855298285791758126, guid: 1941796682f586c4cb3ea45137c603c3, type: 3}
       rightImage: {fileID: -855298285791758126, guid: 1941796682f586c4cb3ea45137c603c3, type: 3}
+      leftImageEffect: 0
+      rightImageEffect: 0
       text: "\uC548\uB1FD!"
     - leftImage: {fileID: -855298285791758126, guid: 1941796682f586c4cb3ea45137c603c3, type: 3}
       rightImage: {fileID: 6937817954938267909, guid: 6079306236d1b0d4cbbcda8aa192a69e, type: 3}
+      leftImageEffect: 0
+      rightImageEffect: 0
       text: "\uC548\uB155~"
   - storyName: 
     dialogues: []
@@ -697,6 +703,10 @@ MonoBehaviour:
   rightImage: {fileID: 3460369878472204662}
   dialogueText: {fileID: 6921207068680682315}
   storyPanel: {fileID: 6897810647301817682}
+  darkenAmount: 0.5
+  rotateDuration: 0.5
+  bounceHeight: 50
+  bounceDuration: 0.5
 --- !u!1 &2891208075509338344
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,7 +930,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3162412561448086754}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3aca4d4a763371458ddf22e6764b618, type: 3}
+  m_Script: {fileID: 11500000, guid: 523c1d2b5c81bac45bdc77521379e6be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3480614576353617942
@@ -1515,8 +1525,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b5bc6ba39c247428c0aa0582544e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgmClipArray: []
-  sfxClipArray: []
+  soundData_YSME: {fileID: 11400000, guid: 3b010fbda2d8c3248a2e391828a2ab3e, type: 2}
+  soundData_JIH: {fileID: 11400000, guid: d352fe1df32e4e84281165d080388bae, type: 2}
+  soundData_KYW: {fileID: 11400000, guid: f82585aa5d347b74b95955b2fb00c2b6, type: 2}
+  soundData_NSH: {fileID: 11400000, guid: 999663f6b8d62494e9de923c0dedc63d, type: 2}
+  soundData_PGJ: {fileID: 11400000, guid: ae152cba97d579d4fb07aa01adb67a15, type: 2}
 --- !u!1 &6094201694037269955
 GameObject:
   m_ObjectHideFlags: 0
