@@ -144,7 +144,6 @@ public class PlayerParryingState : PlayerState
         if (rb != null)
         {
             rb.gravityScale = originalGravity;
-            Debug.Log($"Gravity restored for {rb.gameObject.name}: {originalGravity}");
         }
     }
 

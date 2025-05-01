@@ -74,5 +74,8 @@ TagManager:
   - name: BlackArea
     uniqueID: 277551381
     locked: 0
+  - name: SortingTexture
+    uniqueID: 794522801
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -1,53 +1,34 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform player; // 플레이어 Transform
-    public Transform monster; // 몬스터 Transform
-    public float moveSpeed = 2f; // 카메라 이동 속도
-    public float stayDuration = 2f; // 몬스터 위치에서 머무르는 시간
+    public string playerTag = "Player";
+    public GameObject fallRock; // FallRock 오브젝트
+    public CinemachineCamera virtualCamera; // 시네머신 가상 카메라
+    private GameObject player; // 플레이어 오브젝트
+    private Transform originalFollowTarget; // 원래 Follow 타겟 (플레이어)
 
-    private Vector3 originalOffset; // 플레이어와 카메라 간 초기 오프셋
-    private bool isMovingToMonster = false;
-
-    void Start()
+    private void Start()
     {
-        // 초기 오프셋 저장 (카메라와 플레이어 간 거리)
-        originalOffset = transform.position - player.position;
+        player = GameObject.FindGameObjectWithTag(playerTag);
+        originalFollowTarget = player.transform; // 초기 Follow 타겟 저장
     }
 
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // 기본적으로 플레이어 따라가기
-        if (!isMovingToMonster)
+        if (other.CompareTag(playerTag))
         {
-            transform.position = Vector3.Lerp(transform.position, player.position + originalOffset, moveSpeed * Time.deltaTime);
+            // 카메라를 FallRock 위치로 이동
+            virtualCamera.Follow = fallRock.transform;
+
+            // 2초 후 원래 타겟(플레이어)으로 복귀
+            Invoke(nameof(ResetCameraFollow), 2f);
         }
     }
 
-    public void MoveToMonster()
+    private void ResetCameraFollow()
     {
-        if (!isMovingToMonster)
-        {
-            isMovingToMonster = true;
-            StartCoroutine(MoveCameraToMonster());
-        }
-    }
-
-    private System.Collections.IEnumerator MoveCameraToMonster()
-    {
-        // 몬스터 위치로 이동
-        Vector3 targetPos = new Vector3(monster.position.x, monster.position.y, transform.position.z);
-        while (Vector3.Distance(transform.position, targetPos) > 0.1f)
-        {
-            transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
-            yield return null;
-        }
-
-        // 몬스터 위치에서 대기
-        yield return new WaitForSeconds(stayDuration);
-
-        // 플레이어 위치로 복귀
-        isMovingToMonster = false;
+        virtualCamera.Follow = originalFollowTarget; // 플레이어로 Follow 복귀
     }
 }
