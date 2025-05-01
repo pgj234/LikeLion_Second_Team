@@ -2,35 +2,27 @@ using UnityEngine;
 
 public class ObjectDamage : MonoBehaviour
 {
-    Rigidbody2D rigid;
-    SpriteRenderer spriteRenderer;
-
-    private void Awake()
-    {
-        rigid = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.transform.CompareTag("Player"))
         {
-            // 플레이어에게 데미지를 주는 함수 호출
-            PlayerDamage player = collision.gameObject.GetComponent<PlayerDamage>();
+            Playerobjetcdead player = collision.transform.GetComponent<Playerobjetcdead>();
             if (player != null)
             {
-                Debug.Log("닿음");
-                player.OnDamaged(transform.position);
-            }
-            else
-            {
-                Debug.Log("PlayerDamage 컴포넌트가 없습니다.");
+                player.Die();
             }
         }
-        else
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("충돌한 객체는 Player가 아닙니다.");
+            Playerobjetcdead player = other.GetComponent<Playerobjetcdead>();
+            if (player != null)
+            {
+                player.Die();
+            }
         }
-    
     }
 }
