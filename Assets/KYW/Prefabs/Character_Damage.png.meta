@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 985bf4fe408fc7e4cb4f6f8d051f752d
+guid: c426bd1678e2e114fbf6c34af3205e99
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1595736872862477925
-    second: dust_0
+      213: 3589102249961614136
+    second: Character_Damage_0
+  - first:
+      213: 7714685530883778693
+    second: Character_Damage_1
+  - first:
+      213: 856237776860243222
+    second: Character_Damage_2
+  - first:
+      213: 988956380660285703
+    second: Character_Damage_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,13 +148,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dust_0
+      name: Character_Damage_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 63
         y: 0
-        width: 2048
-        height: 2048
+        width: 313
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +163,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b911a0ac4cdcad9e0800000000000000
-      internalID: -1595736872862477925
+      spriteID: 83b648ffa7d0fc130800000000000000
+      internalID: 3589102249961614136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Damage_1
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 3
+        width: 316
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5886c2ebd91101b60800000000000000
+      internalID: 7714685530883778693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Damage_2
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 4
+        width: 313
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6156605b8b7f1eb00800000000000000
+      internalID: 856237776860243222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Damage_3
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 1
+        width: 313
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701cc97a69a79bd00800000000000000
+      internalID: 988956380660285703
       vertices: []
       indices: 
       edges: []
@@ -174,7 +249,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dust_0: -1595736872862477925
+      Character_Damage_0: 3589102249961614136
+      Character_Damage_1: 7714685530883778693
+      Character_Damage_2: 856237776860243222
+      Character_Damage_3: 988956380660285703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

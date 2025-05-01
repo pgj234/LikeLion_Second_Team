@@ -43,19 +43,20 @@ public class PlayerWallJumpState : PlayerState
         }
 
 
-        if (Jumptimer <= 0f)
-        {
-            if (check == false)
-            {
-                player.SetVelocity(0, -2);
-                check = true;
-            }
-        }
+        // if (Jumptimer <= 0f)
+        // {
+        //     if (check == false)
+        //     {
+        //         player.SetVelocity(0, -2);
+        //         check = true;
+        //     }
+        // }
         if(keytimer <=0f)
         { 
             // 벽이 왼쪽에 있고 왼쪽 키를 누르거나, 벽이 오른쪽에 있고 오른쪽 키를 누를 때
-            if ((player.faceDir == -1 && InputManager.instance.xInput < 0) || 
-                (player.faceDir == 1 && InputManager.instance.xInput > 0))
+            if (((player.faceDir == -1 && InputManager.instance.xInput < 0) || 
+                (player.faceDir == 1 && InputManager.instance.xInput > 0)) && 
+                PlayerManager.Instance.CurrentStamina >= 25)
             {
                 stateMachine.ChangeState(player.wallslideState);
                 return;
