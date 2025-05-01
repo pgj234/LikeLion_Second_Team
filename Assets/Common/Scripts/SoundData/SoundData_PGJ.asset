@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e8c0f004681c64881095c8876fa753, type: 3}
   m_Name: SoundData_PGJ
   m_EditorClassIdentifier: 
-  bgmClip: []
+  bgmClip:
+  - {fileID: 8300000, guid: 3ec5dddff9322d541a9fd468be19fdaa, type: 3}
   sfxClip: []
