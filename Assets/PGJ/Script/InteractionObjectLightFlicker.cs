@@ -19,7 +19,7 @@ public class InteractionObjectLightFlicker : MonoBehaviour
         float sinValue = Mathf.Sin(Time.time * speed);
         float cosValue = Mathf.Cos(Time.time * speed);
 
-        light.intensity = originalIntensity + sinValue;
+        light.intensity = originalIntensity + sinValue + 1.5f;
 
         light.color = Color.Lerp(new Color(1, 1, sinValue), new Color(1, 1, cosValue), speed);
     }

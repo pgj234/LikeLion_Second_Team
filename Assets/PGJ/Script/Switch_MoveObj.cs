@@ -42,6 +42,8 @@ public class Switch_MoveObj : Switcher
 
     IEnumerator MoveProc()
     {
+        //SoundManager.instance.PlaySFX(SFX.);
+
         while (true)
         {
             effectObj.transform.position = Vector2.MoveTowards(effectObj.transform.position, moveTargetLocalPos, workSpd * Time.deltaTime);
