@@ -16,15 +16,19 @@ public class PlayerCollisionJumpState : PlayerState
         triggerCollider = _collider;
     }
 
+    public void StopPlayer()
+    {
+        rb.linearVelocity = Vector2.zero; // 플레이어 정지
+        rb.gravityScale = 0f; // 중력 비활성화
+    }
+
     public override void Enter()
     {
         base.Enter();
 
         if (triggerCollider != null && triggerCollider.CompareTag("CollisionJump"))
         {
-            // 속도 0으로 설정해 플레이어 고정
-            rb.linearVelocity = Vector2.zero;
-            rb.gravityScale = 0f; // 중력 비활성화
+            StopPlayer(); // 초기 정지
             isWaitingForClick = true;
 
             // 충돌한 오브젝트의 콜라이더 비활성화
@@ -44,7 +48,7 @@ public class PlayerCollisionJumpState : PlayerState
 
         if (isWaitingForClick)
         {
-            // 마우스 클릭 대기 중 플레이어 고정
+            // 정지 상태 유지
             rb.linearVelocity = Vector2.zero;
 
             // 방향 화살표 위치 및 회전 업데이트
@@ -52,7 +56,6 @@ public class PlayerCollisionJumpState : PlayerState
             {
                 Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 jumpDirection = (mousePos - (Vector2)player.transform.position).normalized;
-                // 플레이어 위치에서 2 유닛 떨어진 곳에 화살표 배치
                 player.directionArrow.transform.position = (Vector2)player.transform.position + jumpDirection * 2f;
                 float angle = Mathf.Atan2(jumpDirection.y, jumpDirection.x) * Mathf.Rad2Deg;
                 player.directionArrow.transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -114,7 +117,7 @@ public class PlayerCollisionJumpState : PlayerState
             player.directionArrow.SetActive(false);
         }
 
-        // 콜라이더 복원 (필요한 경우)
+        // 콜라이더 복원
         if (triggerCollider != null)
         {
             triggerCollider.enabled = true;

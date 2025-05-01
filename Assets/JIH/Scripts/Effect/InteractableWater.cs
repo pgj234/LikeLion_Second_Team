@@ -120,7 +120,6 @@ public class InteractableWater : MonoBehaviour
             if (i < NumOfXVertices)
             {
                 Vector3 vertex = _vertices[_topVerticesIndex[i]];
-                Debug.Log($"Collider Point {i}: {colliderPoints[i]}, Vertex: {vertex}");
             }
         }
 

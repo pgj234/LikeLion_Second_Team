@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,7 +17,12 @@ public class UIManager : MonoBehaviour
     [Header("플레이어 표정 UI")]
     [SerializeField] private List<GameObject> playerExpressions = new List<GameObject>();
 
+    [Header("설명 텍스트 UI")]
+    [SerializeField] private TextMeshProUGUI descriptionText; // 공유 텍스트
+    [SerializeField] private float fadeDuration = 0.5f; // 페이드 지속 시간
+
     private PlayerManager playerManager;
+    private int activeTriggers = 0; // 활성 트리거 수
 
     private void Awake()
     {
@@ -31,7 +37,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         playerManager = PlayerManager.Instance;
@@ -47,6 +52,17 @@ public class UIManager : MonoBehaviour
             UpdateStaminaUI(playerManager.CurrentStamina);
             UpdateExpression(4); // 기본 표정으로 설정
         }
+
+        // 설명 텍스트 초기화
+        if (descriptionText != null)
+        {
+            descriptionText.alpha = 0f;
+            descriptionText.gameObject.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("descriptionText is not assigned in UIManager!");
+        }
     }
 
     private void OnDestroy()
@@ -60,8 +76,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (playerManager != null)
         {
@@ -87,17 +102,40 @@ public class UIManager : MonoBehaviour
 
     public void UpdateExpression(int expressionIndex)
     {
-        // 모든 표정 비활성화
         foreach (var expression in playerExpressions)
         {
             expression.SetActive(false);
         }
 
-        // 선택된 표정만 활성화
         if (expressionIndex >= 0 && expressionIndex < playerExpressions.Count)
         {
             playerExpressions[expressionIndex].SetActive(true);
         }
     }
 
+    public void ShowDescription(string text)
+    {
+        if (descriptionText != null)
+        {
+            activeTriggers++;
+            descriptionText.DOKill(); // 기존 애니메이션 종료
+            descriptionText.text = text;
+            descriptionText.DOFade(1f, fadeDuration).SetEase(Ease.InQuad);
+            Debug.Log($"Showing description: {text}, Active Triggers: {activeTriggers}");
+        }
+    }
+
+    public void HideDescription()
+    {
+        if (descriptionText != null)
+        {
+            activeTriggers = Mathf.Max(0, activeTriggers - 1);
+            if (activeTriggers == 0)
+            {
+                descriptionText.DOKill();
+                descriptionText.DOFade(0f, fadeDuration).SetEase(Ease.OutQuad);
+                Debug.Log("Hiding description");
+            }
+        }
+    }
 }
