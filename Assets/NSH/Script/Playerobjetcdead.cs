@@ -6,23 +6,30 @@ public class Playerobjetcdead : MonoBehaviour
 {
     private bool isDead = false;
 
-    [Header("UI ¿ä¼Ò")]
-    public GameObject gameOverUI; // °ÔÀÓ ¿À¹ö UI (Canvas ÀÚ½ÄÀ¸·Î ¿¬°á)
-    public Button restartButton;  // Àç½ÃÀÛ ¹öÆ° (Button ÄÄÆ÷³ÍÆ®·Î ¿¬°á)
-    public Text gameOverText;     // °ÔÀÓ ¿À¹ö ÅØ½ºÆ® (Canvas ÀÚ½ÄÀ¸·Î ¿¬°á)
+    [Header("UI ìš”ì†Œ")]
+    public GameObject gameOverUI; // ê²Œì„ ì˜¤ë²„ UI (Canvas ìì‹ìœ¼ë¡œ ì—°ê²°)
+    public Button restartButton;  // ì¬ì‹œì‘ ë²„íŠ¼ (Button ì»´í¬ë„ŒíŠ¸ë¡œ ì—°ê²°)
+    public Text gameOverText;     // ê²Œì„ ì˜¤ë²„ í…ìŠ¤íŠ¸ (Canvas ìì‹ìœ¼ë¡œ ì—°ê²°)
+
+    [Header("ë¦¬ìŠ¤í° ìœ„ì¹˜")]
+    public Vector3 respawnPosition = new Vector3(-9.88f, -1.81f, 0f); // ë¦¬ìŠ¤í°í•  ìœ„ì¹˜ ì„¤ì •
+
+    private Rigidbody rb; // Rigidbody ì»´í¬ë„ŒíŠ¸
 
     private void Start()
     {
-        // °ÔÀÓ ½ÃÀÛ ½Ã UI ºñÈ°¼ºÈ­
+        rb = GetComponent<Rigidbody>(); // Rigidbody ì»´í¬ë„ŒíŠ¸ ê°€ì ¸ì˜¤ê¸°
+
+        // ê²Œì„ ì‹œì‘ ì‹œ UI ë¹„í™œì„±í™”
         if (gameOverUI != null)
         {
             gameOverUI.SetActive(false);
         }
 
-        // ¹öÆ°¿¡ ÀÌº¥Æ® Ãß°¡ (¹öÆ° Å¬¸¯ ½Ã Àç½ÃÀÛ)
+        // ë²„íŠ¼ì— ì´ë²¤íŠ¸ ì¶”ê°€ (ë²„íŠ¼ í´ë¦­ ì‹œ ì¬ì‹œì‘)
         if (restartButton != null)
         {
-            restartButton.onClick.AddListener(RestartScene);
+            restartButton.onClick.AddListener(RestartGame);
         }
     }
 
@@ -31,39 +38,70 @@ public class Playerobjetcdead : MonoBehaviour
         if (isDead) return;
 
         isDead = true;
-        Debug.Log("ÇÃ·¹ÀÌ¾î »ç¸Á");
+        Debug.Log("í”Œë ˆì´ì–´ ì‚¬ë§");
 
-        // »ç¸Á ÈÄ 1ÃÊ µÚ¿¡ °ÔÀÓ ¿À¹ö UI Ç¥½Ã
+        // ì‚¬ë§ í›„ 1ì´ˆ ë’¤ì— ê²Œì„ ì˜¤ë²„ UI í‘œì‹œ
         Invoke(nameof(ShowGameOverUI), 1f);
+
+        // ë¬¼ë¦¬ ì—”ì§„ ë©ˆì¶”ê¸° (Rigidbodyì˜ ì¤‘ë ¥ê³¼ ìƒí˜¸ì‘ìš© ì°¨ë‹¨)
+        if (rb != null)
+        {
+            rb.isKinematic = true; // ë¬¼ë¦¬ì—”ì§„ ë¹„í™œì„±í™”
+            rb.linearVelocity = Vector3.zero; // ì†ë„ ì´ˆê¸°í™”
+            rb.angularVelocity = Vector3.zero; // íšŒì „ ì†ë„ ì´ˆê¸°í™”
+        }
     }
 
     void ShowGameOverUI()
     {
-        // °ÔÀÓ ¿À¹ö UI È°¼ºÈ­
+        // ê²Œì„ ì˜¤ë²„ UI í™œì„±í™”
         if (gameOverUI != null)
         {
             gameOverUI.SetActive(true);
         }
 
-        // °ÔÀÓ ¿À¹ö ¸Ş½ÃÁö
+        // ê²Œì„ ì˜¤ë²„ ë©”ì‹œì§€
         if (gameOverText != null)
         {
-            gameOverText.text = "Á×¾ú±º ÀÚ³×...";
+            gameOverText.text = "ì£½ì—ˆêµ° ìë„¤...";
         }
     }
 
     void Update()
     {
-        // ÇÃ·¹ÀÌ¾î°¡ Á×Àº »óÅÂ¿¡¼­ R Å° ÀÔ·ÂÀ» ¹Ş¾Æ¼­ ¾À Àç½ÃÀÛ
+        // í”Œë ˆì´ì–´ê°€ ì£½ì€ ìƒíƒœì—ì„œ R í‚¤ ì…ë ¥ì„ ë°›ì•„ì„œ ë¦¬ìŠ¤í°
         if (isDead && Input.GetKeyDown(KeyCode.R))
         {
-            RestartScene();
+            RespawnPlayer();
         }
     }
 
-    void RestartScene()
+    void RespawnPlayer()
     {
-        // ÇöÀç ¾ÀÀ» Àç½ÃÀÛ
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // í”Œë ˆì´ì–´ë¥¼ ë¦¬ìŠ¤í° ìœ„ì¹˜ë¡œ ì´ë™
+        transform.position = respawnPosition;
+
+        // ë¬¼ë¦¬ ì—”ì§„ ë³µì› (Rigidbodyì˜ ì¤‘ë ¥ê³¼ ìƒí˜¸ì‘ìš© ë³µì›)
+        if (rb != null)
+        {
+            rb.isKinematic = false; // ë¬¼ë¦¬ ì—”ì§„ í™œì„±í™”
+            rb.angularVelocity = Vector3.zero; // ì†ë„ ì´ˆê¸°í™”
+            rb.angularVelocity = Vector3.zero; // íšŒì „ ì†ë„ ì´ˆê¸°í™”
+        }
+
+        // í”Œë ˆì´ì–´ ì‚¬ë§ ìƒíƒœ ì´ˆê¸°í™”
+        isDead = false;
+
+        // ê²Œì„ ì˜¤ë²„ UI ë¹„í™œì„±í™”
+        if (gameOverUI != null)
+        {
+            gameOverUI.SetActive(false);
+        }
+    }
+
+    void RestartGame()
+    {
+        // ì”¬ì„ ì¬ì‹œì‘í•˜ëŠ” ëŒ€ì‹  ë¦¬ìŠ¤í° í•¨ìˆ˜ í˜¸ì¶œ
+        RespawnPlayer();
     }
 }
