@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
 
 /// DOTween 애니메이션을 관리하는 매니저 클래스
 
@@ -49,6 +50,33 @@ public class DoTweenManager : MonoBehaviour
         // SpriteRenderer가 없는 경우 기본 페이드아웃
         target.transform.DOScale(Vector3.zero, duration)
             .OnComplete(() => target.SetActive(false));
+    }
+    // 오브젝트를 서서히 나타나게 하는 함수
+    public void FadeIn(GameObject target, float duration)
+    {
+        target.SetActive(true); // 오브젝트 활성화
+
+        // TextMeshProUGUI가 있는 경우
+        TextMeshProUGUI tmpText = target.GetComponent<TextMeshProUGUI>();
+        if (tmpText != null)
+        {
+            tmpText.alpha = 0f; // 초기 투명
+            tmpText.DOFade(1f, duration).SetEase(Ease.InQuad);
+            return;
+        }
+
+        // SpriteRenderer가 있는 경우
+        SpriteRenderer spriteRenderer = target.GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0f);
+            spriteRenderer.DOFade(1f, duration).SetEase(Ease.InQuad);
+            return;
+        }
+
+        // 기본 페이드인 (스케일 증가)
+        target.transform.localScale = Vector3.zero;
+        target.transform.DOScale(Vector3.one, duration).SetEase(Ease.InQuad);
     }
 
     // 오브젝트를 특정 방향으로 밀어내는 함수

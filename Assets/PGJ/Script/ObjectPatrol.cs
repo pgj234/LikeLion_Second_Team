@@ -12,6 +12,11 @@ public class ObjectPatrol : MonoBehaviour
 
     void Start()
     {
+        if (0 == speed)
+        {
+            return;
+        }
+
         originalPos = transform.position;
 
         EventManager.instance.OnPlayerRespawned += InitPos;
@@ -58,11 +63,21 @@ public class ObjectPatrol : MonoBehaviour
 
     void OnDestroy()
     {
+        if (0 == speed)
+        {
+            return;
+        }
+
         EventManager.instance.OnPlayerRespawned -= InitPos;
     }
 
     void InitPos()
     {
+        if (0 == speed)
+        {
+            return;
+        }
+
         isUp = false;
         transform.position = originalPos;
     }

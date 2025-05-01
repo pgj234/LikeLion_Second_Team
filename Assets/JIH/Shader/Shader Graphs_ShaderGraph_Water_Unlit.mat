@@ -53,7 +53,7 @@ Material:
     - Vector1_DD119790: 1
     m_Colors:
     - Color_4BDDB20F: {r: 0.3632075, g: 0.7009005, b: 1, a: 1}
-    - Color_A0D31A6A: {r: 0.03630634, g: 0.40510237, b: 0.108592145, a: 0.2117647}
+    - Color_A0D31A6A: {r: 0.227451, g: 0.227451, b: 0.227451, a: 0.2117647}
     - Vector2_2F7B3F9F: {r: 0.1, g: 0.05, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

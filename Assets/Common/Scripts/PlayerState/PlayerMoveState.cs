@@ -35,7 +35,7 @@ public class PlayerMoveState : PlayerState
         }
 
         //하강 감지 → 낙하 상태로 전환
-        if (rb.linearVelocityY < 0f)
+        if (rb.linearVelocityY < -2.5f)
         {
             stateMachine.ChangeState(player.fallState);
             return;
