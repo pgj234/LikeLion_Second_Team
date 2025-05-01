@@ -878,6 +878,8 @@ GameObject:
   - component: {fileID: 7653767670869146502}
   - component: {fileID: 1061643702423779080}
   - component: {fileID: 1618144783080906638}
+  - component: {fileID: 6287324970416791042}
+  - component: {fileID: 6762407331481455154}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1012,6 +1014,35 @@ MonoBehaviour:
   directionArrow: {fileID: 6809823938211886576}
   dashEffectPoint: {fileID: 2968566222072730456}
   jumpEffectPoint: {fileID: 6280411092681563327}
+--- !u!114 &6287324970416791042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7844024271734601602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5124bf5ee04b1fe40a37b286f4df06f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 0}
+  restartButton: {fileID: 0}
+  gameOverText: {fileID: 0}
+  respawnPosition: {x: -9.88, y: -1.81, z: 0}
+--- !u!114 &6762407331481455154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7844024271734601602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b49b76f7d7355c46a5281fa5b5773f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasKeyItem: 0
 --- !u!1 &8166249511589802220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1193,10 @@ PrefabInstance:
     - target: {fileID: 6818139498502380996, guid: 574752641942982478858f0a7cad1511, type: 3}
       propertyPath: m_Name
       value: PlayerLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818139498502380996, guid: 574752641942982478858f0a7cad1511, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7343086183918874615, guid: 574752641942982478858f0a7cad1511, type: 3}
       propertyPath: m_LocalScale.x
