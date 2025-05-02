@@ -881,7 +881,7 @@ GameObject:
   - component: {fileID: 6287324970416791042}
   - component: {fileID: 6762407331481455154}
   - component: {fileID: 6053408473640684649}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -993,8 +993,8 @@ MonoBehaviour:
   jumpPower: 20
   doubleJumpPower: 15
   collisionJumpPower: 15
-  defaultPhysicsMaterial: {fileID: 0}
-  groundPhysicsMaterial: {fileID: 0}
+  defaultPhysicsMaterial: {fileID: 6200000, guid: 0409cccd76ff15d4c9c126966d4b3e65, type: 2}
+  groundPhysicsMaterial: {fileID: 6200000, guid: b715326af9071e6438714e4626673606, type: 2}
   fallGravity: 3
   JumpGravity: 1
   jumpTime: 0.2
@@ -1275,6 +1275,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3575243162542478434}
     m_Modifications:
+    - target: {fileID: 1325871182812790314, guid: cea7f6c306c52ff46a303ba30531401a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325871182812790314, guid: cea7f6c306c52ff46a303ba30531401a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 41633935
+      objectReference: {fileID: 0}
     - target: {fileID: 7268033903239760777, guid: cea7f6c306c52ff46a303ba30531401a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.69
