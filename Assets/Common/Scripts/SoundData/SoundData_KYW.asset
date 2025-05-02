@@ -12,5 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69eb1c8a9af07146b95d05f8c7d5bf9, type: 3}
   m_Name: SoundData_KYW
   m_EditorClassIdentifier: 
-  bgmClip: []
-  sfxClip: []
+  bgmClip:
+  - {fileID: 0}
+  sfxClip:
+  - {fileID: 8300000, guid: 91d476c9fbbbe4a479dd38a9dea0f0e8, type: 3}
+  - {fileID: 8300000, guid: 01ba90859bfd11b41a2ba0574abde8de, type: 3}
+  - {fileID: 8300000, guid: 0e4faab8006995f4f83294cb3e562d8f, type: 3}
+  - {fileID: 8300000, guid: 93e0baff3bdc58f489e86a4266e46ec7, type: 3}
+  - {fileID: 8300000, guid: 71b2b076bd9d96640ac53bc9d6633c3a, type: 3}
+  - {fileID: 8300000, guid: 8c049b6e6d378d94d9fb50f71bd5724c, type: 3}
+  - {fileID: 8300000, guid: 11ab49f5386c32949b602340ecda560f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
