@@ -11516,6 +11516,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2218465803383108287, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922975954462823181, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922975954462823181, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335975326196600052, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 7844024271734601602, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
       propertyPath: m_Name
       value: Player
@@ -19697,7 +19713,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 277551381
   m_SortingLayer: 8
-  m_SortingOrder: 9999
+  m_SortingOrder: 9998
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.9433594, y: 0.33496094, z: 0}
   m_MaxChunkCount: 16
