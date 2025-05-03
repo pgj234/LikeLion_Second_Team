@@ -1,0 +1,867 @@
+fileFormatVersion: 2
+guid: 3f9db10927b69b544b9bde89e4ad85ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2229320125982539874
+    second: MediumSlime_Orange_0
+  - first:
+      213: 4471264730279922571
+    second: MediumSlime_Orange_1
+  - first:
+      213: -2576756913453816902
+    second: MediumSlime_Orange_2
+  - first:
+      213: -5128251972598788474
+    second: MediumSlime_Orange_3
+  - first:
+      213: -2551073974567851099
+    second: MediumSlime_Orange_4
+  - first:
+      213: 1145974376613336396
+    second: MediumSlime_Orange_5
+  - first:
+      213: 1090036197464987588
+    second: MediumSlime_Orange_6
+  - first:
+      213: -1324317054492313527
+    second: MediumSlime_Orange_7
+  - first:
+      213: 4407626712688096230
+    second: MediumSlime_Orange_8
+  - first:
+      213: 4448116021597231296
+    second: MediumSlime_Orange_9
+  - first:
+      213: 2372547554652575293
+    second: MediumSlime_Orange_10
+  - first:
+      213: 7407486844946008544
+    second: MediumSlime_Orange_11
+  - first:
+      213: -1798418142974407705
+    second: MediumSlime_Orange_12
+  - first:
+      213: -7130998164053490678
+    second: MediumSlime_Orange_13
+  - first:
+      213: 7514330267906849181
+    second: MediumSlime_Orange_14
+  - first:
+      213: -6529891265610098654
+    second: MediumSlime_Orange_15
+  - first:
+      213: -7803326151027682982
+    second: MediumSlime_Orange_16
+  - first:
+      213: 6910247810344613800
+    second: MediumSlime_Orange_17
+  - first:
+      213: 6042634243633160892
+    second: MediumSlime_Orange_18
+  - first:
+      213: -46364806957742825
+    second: MediumSlime_Orange_19
+  - first:
+      213: -779558036926686158
+    second: MediumSlime_Orange_20
+  - first:
+      213: -5499219720243866985
+    second: MediumSlime_Orange_21
+  - first:
+      213: 5040306200846221711
+    second: MediumSlime_Orange_22
+  - first:
+      213: -9085057574116219788
+    second: MediumSlime_Orange_23
+  - first:
+      213: -6674439937137916952
+    second: MediumSlime_Orange_24
+  - first:
+      213: 8644011404160280666
+    second: MediumSlime_Orange_25
+  - first:
+      213: 5423963715375237825
+    second: MediumSlime_Orange_26
+  - first:
+      213: -3964004034760330463
+    second: MediumSlime_Orange_27
+  - first:
+      213: 3503761418753060992
+    second: MediumSlime_Orange_28
+  - first:
+      213: -7753220790977638372
+    second: MediumSlime_Orange_29
+  - first:
+      213: 6013089172807181212
+    second: MediumSlime_Orange_30
+  - first:
+      213: 1159588500606245385
+    second: MediumSlime_Orange_31
+  - first:
+      213: -2377362045818324724
+    second: MediumSlime_Orange_32
+  - first:
+      213: 6514777240365802856
+    second: MediumSlime_Orange_33
+  - first:
+      213: -8111143036876226592
+    second: MediumSlime_Orange_34
+  - first:
+      213: 2672194583087388993
+    second: MediumSlime_Orange_35
+  - first:
+      213: -5169275762426394545
+    second: MediumSlime_Orange_36
+  - first:
+      213: 7890249193119893559
+    second: MediumSlime_Orange_37
+  - first:
+      213: 864348650766235971
+    second: MediumSlime_Orange_38
+  - first:
+      213: -6434375194025931234
+    second: MediumSlime_Orange_39
+  - first:
+      213: -8361523189965502607
+    second: MediumSlime_Orange_40
+  - first:
+      213: 8139671738920414195
+    second: MediumSlime_Orange_41
+  - first:
+      213: 8481668720489545959
+    second: MediumSlime_Orange_42
+  - first:
+      213: -1041514059064217746
+    second: MediumSlime_Orange_43
+  - first:
+      213: 1703925238580842749
+    second: MediumSlime_Orange_44
+  - first:
+      213: -4750625291898680139
+    second: MediumSlime_Orange_45
+  - first:
+      213: -6521123761055411677
+    second: MediumSlime_Orange_46
+  - first:
+      213: -2643918426609953477
+    second: MediumSlime_Orange_47
+  - first:
+      213: -8526563746872748623
+    second: MediumSlime_Orange_48
+  - first:
+      213: 6620062245877224867
+    second: MediumSlime_Orange_49
+  - first:
+      213: -2853465209483465333
+    second: MediumSlime_Orange_50
+  - first:
+      213: -4775877014098754891
+    second: MediumSlime_Orange_51
+  - first:
+      213: 2490773472645121180
+    second: MediumSlime_Orange_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MediumSlime_Orange_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1550
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26081d7d7d220fe10800000000000000
+      internalID: 2229320125982539874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1550
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b4119159f1d0e30800000000000000
+      internalID: 4471264730279922571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_2
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1550
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3ad0d4d358d3cd0800000000000000
+      internalID: -2576756913453816902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_3
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1550
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e8d86600ac4d8b0800000000000000
+      internalID: -5128251972598788474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1240
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aba32e7cb3c89cd0800000000000000
+      internalID: -2551073974567851099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_5
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1240
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45dcb7bf9157ef00800000000000000
+      internalID: 1145974376613336396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_6
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1240
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7d7367526902f00800000000000000
+      internalID: 1090036197464987588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_7
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1240
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9487efcc7a41f9de0800000000000000
+      internalID: -1324317054492313527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 930
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3fb4084290b2d30800000000000000
+      internalID: 4407626712688096230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_9
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 930
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8d60b54f1eabd30800000000000000
+      internalID: 4448116021597231296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_10
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 930
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36d9cf3e6bfce020800000000000000
+      internalID: 2372547554652575293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_11
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 930
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9c267f90eacc660800000000000000
+      internalID: 7407486844946008544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb84663a3cba07e0800000000000000
+      internalID: -1798418142974407705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_13
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 620
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0401a193fa990d90800000000000000
+      internalID: -7130998164053490678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_14
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 620
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99bd87e093484860800000000000000
+      internalID: 7514330267906849181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_15
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 620
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2285263ad7a2165a0800000000000000
+      internalID: -6529891265610098654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a519a7d953405b390800000000000000
+      internalID: -7803326151027682982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_17
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 310
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7f28d75c126ef50800000000000000
+      internalID: 6910247810344613800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_18
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 310
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2ad5f44dfbbd350800000000000000
+      internalID: 6042634243633160892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_19
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 310
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715443724774b5ff0800000000000000
+      internalID: -46364806957742825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c1f2f78147e25f0800000000000000
+      internalID: -779558036926686158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_21
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7929a01fcc8dea3b0800000000000000
+      internalID: -5499219720243866985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_22
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8143a4f8c3c2f540800000000000000
+      internalID: 5040306200846221711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumSlime_Orange_23
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 0
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474a4d265446be180800000000000000
+      internalID: -9085057574116219788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b5ea096160c0df24eb909f50f2ff7479
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MediumSlime_Orange_0: 2229320125982539874
+      MediumSlime_Orange_1: 4471264730279922571
+      MediumSlime_Orange_10: 2372547554652575293
+      MediumSlime_Orange_11: 7407486844946008544
+      MediumSlime_Orange_12: -1798418142974407705
+      MediumSlime_Orange_13: -7130998164053490678
+      MediumSlime_Orange_14: 7514330267906849181
+      MediumSlime_Orange_15: -6529891265610098654
+      MediumSlime_Orange_16: -7803326151027682982
+      MediumSlime_Orange_17: 6910247810344613800
+      MediumSlime_Orange_18: 6042634243633160892
+      MediumSlime_Orange_19: -46364806957742825
+      MediumSlime_Orange_2: -2576756913453816902
+      MediumSlime_Orange_20: -779558036926686158
+      MediumSlime_Orange_21: -5499219720243866985
+      MediumSlime_Orange_22: 5040306200846221711
+      MediumSlime_Orange_23: -9085057574116219788
+      MediumSlime_Orange_3: -5128251972598788474
+      MediumSlime_Orange_4: -2551073974567851099
+      MediumSlime_Orange_5: 1145974376613336396
+      MediumSlime_Orange_6: 1090036197464987588
+      MediumSlime_Orange_7: -1324317054492313527
+      MediumSlime_Orange_8: 4407626712688096230
+      MediumSlime_Orange_9: 4448116021597231296
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

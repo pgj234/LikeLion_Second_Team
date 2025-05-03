@@ -49,7 +49,7 @@ public class StepFallGround : MonoBehaviour
 
         if (originalPos != (Vector2)transform.parent.position)
         {
-            rb.MovePosition(Vector2.MoveTowards(rb.position, originalPos, Time.deltaTime * 2f));
+            rb.MovePosition(Vector2.MoveTowards(rb.position, originalPos, Time.deltaTime * 2.5f));
             //transform.parent.position = Vector2.MoveTowards(transform.position, originalPos, Time.deltaTime * 2.5f);
         }
     }
