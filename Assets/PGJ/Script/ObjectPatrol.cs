@@ -50,7 +50,7 @@ public class ObjectPatrol : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Player"))
+        if (col.CompareTag("Player"))
         {
             if (col.TryGetComponent(out Player player))
             {
