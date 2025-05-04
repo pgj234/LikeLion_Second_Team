@@ -548,10 +548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolTime: 0
-  numberOfDots: 10
-  spaceBetweenDots: 0.2
-  dotPrefab: {fileID: 4145150101058812748, guid: 91fa211663e528e47a95d3f84dba9f67, type: 3}
-  dotsParent: {fileID: 0}
+  vfxPrefab: {fileID: 240240392739025577, guid: 15d7a776d972e8b4796df88e5d3a085f, type: 3}
+  vfxParent: {fileID: 2248407409722129157}
   directionArrow: {fileID: 6809823938211886576}
   arrowDistance: 2
   arrowScale: 1

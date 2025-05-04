@@ -14,7 +14,6 @@ public class PlayerParryingState : PlayerState
     private float parryAnimationTimer = 0f;
     private bool isParrying = false;
 
-
     public PlayerParryingState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName)
         : base(_player, _stateMachine, _animBoolName)
     {
@@ -29,7 +28,7 @@ public class PlayerParryingState : PlayerState
         mainCamera = Camera.main;
         parryableLayer = LayerMask.GetMask("Parryable");
         Time.timeScale = slowMotionScale;
-        SkillManager.instance.ParrySkill.DotsActive(true);
+        SkillManager.instance.ParrySkill.VfxActive(true); // VFX 활성화
         SkillManager.instance.ParrySkill.LineActive(true);
         stateTimer = 0f;
         exitRequested = false;
@@ -40,7 +39,7 @@ public class PlayerParryingState : PlayerState
     public override void Update()
     {
         base.Update();
-        SkillManager.instance.ParrySkill.UpdateDots();
+        SkillManager.instance.ParrySkill.UpdateVfx(); // VFX 업데이트 (isParrying 중에도 호출)
         SkillManager.instance.ParrySkill.UpdateLine();
 
         if (isParrying)
@@ -98,10 +97,9 @@ public class PlayerParryingState : PlayerState
         Time.timeScale = normalTimeScale;
         if (SkillManager.instance != null && SkillManager.instance.ParrySkill != null)
         {
-            SkillManager.instance.ParrySkill.DotsActive(false);
+            SkillManager.instance.ParrySkill.VfxActive(false); // VFX 비활성화
             SkillManager.instance.ParrySkill.LineActive(false);
         }
-
     }
 
     private bool PerformParry()
@@ -146,5 +144,4 @@ public class PlayerParryingState : PlayerState
             rb.gravityScale = originalGravity;
         }
     }
-
 }
