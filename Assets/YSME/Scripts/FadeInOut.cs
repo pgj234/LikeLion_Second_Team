@@ -35,8 +35,9 @@ public class FadeInOut : MonoBehaviour
         StartCoroutine(StartFadeOut());
     }
 
-    IEnumerator StartFadeIn()
+    public IEnumerator StartFadeIn()
     {
+        gameObject.SetActive(true);
         float curTime = 0;
         float percent = 0;
         while (curTime < fadeInTime)
@@ -46,10 +47,12 @@ public class FadeInOut : MonoBehaviour
             image.color = Vector4.Lerp(fadeOutColor, fadeInColor, percent);
             yield return null;
         }
+        gameObject.SetActive(false);
     }
 
-    IEnumerator StartFadeOut()
+    public IEnumerator StartFadeOut()
     {
+        gameObject.SetActive(true);
         float curTime = 0;
         float percent = 0;
         while (curTime < fadeOutTime)
