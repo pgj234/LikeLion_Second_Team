@@ -10,15 +10,19 @@ public class SoundManager : MonoBehaviour
     [SerializeField] SoundData_NSH soundData_NSH;
     [SerializeField] SoundData_PGJ soundData_PGJ;
 
-    AudioSource audioSource;
+    AudioSource bgmAudioSource;
+    AudioSource sfxAudioSource;
 
     void Awake()
     {
         if (null == instance)
         {
             instance = this;
+
+            bgmAudioSource = transform.Find("BGM").GetComponent<AudioSource>();
+            sfxAudioSource = transform.Find("SFX").GetComponent<AudioSource>();
+
             DontDestroyOnLoad(gameObject);
-            audioSource = GetComponent<AudioSource>();
         }
         else
         {
@@ -28,65 +32,65 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBGM(BGM_PGJ bgm)
     {
-        audioSource.clip = soundData_PGJ.bgmClip[(int)bgm];
-        audioSource.Play();
+        bgmAudioSource.clip = soundData_PGJ.bgmClip[(int)bgm];
+        bgmAudioSource.Play();
     }
 
     public void PlayBGM(BGM_YSME bgm)
     {
-        audioSource.clip = soundData_YSME.bgmClip[(int)bgm];
-        audioSource.Play();
+        bgmAudioSource.clip = soundData_YSME.bgmClip[(int)bgm];
+        bgmAudioSource.Play();
     }
 
     public void PlayBGM(BGM_NSH bgm)
     {
-        audioSource.clip = soundData_NSH.bgmClip[(int)bgm];
-        audioSource.Play();
+        bgmAudioSource.clip = soundData_NSH.bgmClip[(int)bgm];
+        bgmAudioSource.Play();
     }
 
     public void PlayBGM(BGM_KYW bgm)
     {
-        audioSource.clip = soundData_KYW.bgmClip[(int)bgm];
-        audioSource.Play();
+        bgmAudioSource.clip = soundData_KYW.bgmClip[(int)bgm];
+        bgmAudioSource.Play();
     }
 
     public void PlayBGM(BGM_JIH bgm)
     {
-        audioSource.clip = soundData_JIH.bgmClip[(int)bgm];
-        audioSource.Play();
+        bgmAudioSource.clip = soundData_JIH.bgmClip[(int)bgm];
+        bgmAudioSource.Play();
     }
 
 
 
     public void StopBGM()
     {
-        audioSource.Stop();
+        bgmAudioSource.Stop();
     }
 
 
 
     public void PlaySFX(SFX_PGJ sfx)
     {
-        audioSource.PlayOneShot(soundData_PGJ.sfxClip[(int)sfx]);
+        sfxAudioSource.PlayOneShot(soundData_PGJ.sfxClip[(int)sfx]);
     }
 
     public void PlaySFX(SFX_YSME sfx)
     {
-        audioSource.PlayOneShot(soundData_YSME.sfxClip[(int)sfx]);
+        sfxAudioSource.PlayOneShot(soundData_YSME.sfxClip[(int)sfx]);
     }
 
     public void PlaySFX(SFX_NSH sfx)
     {
-        audioSource.PlayOneShot(soundData_NSH.sfxClip[(int)sfx]);
+        sfxAudioSource.PlayOneShot(soundData_NSH.sfxClip[(int)sfx]);
     }
 
     public void PlaySFX(SFX_KYW sfx)
     {
-        audioSource.PlayOneShot(soundData_KYW.sfxClip[(int)sfx]);
+        sfxAudioSource.PlayOneShot(soundData_KYW.sfxClip[(int)sfx]);
     }
 
     public void PlaySFX(SFX_JIH sfx)
     {
-        audioSource.PlayOneShot(soundData_JIH.sfxClip[(int)sfx]);
+        sfxAudioSource.PlayOneShot(soundData_JIH.sfxClip[(int)sfx]);
     }
 }
