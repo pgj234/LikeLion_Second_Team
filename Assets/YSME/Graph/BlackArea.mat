@@ -66,11 +66,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DownAlpha: 0
+    - _DownAlpha: -0.115
     - _EnableExternalAlpha: 0
-    - _LeftAlpha: 0
-    - _RightAlpha: 1
-    - _UpAlpha: 1
+    - _LeftAlpha: -0.112
+    - _RightAlpha: 0.895
+    - _UpAlpha: 0.885
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
