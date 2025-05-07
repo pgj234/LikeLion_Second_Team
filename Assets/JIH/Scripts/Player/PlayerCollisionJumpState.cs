@@ -74,6 +74,8 @@ public class PlayerCollisionJumpState : PlayerState
                 // 점프 힘 적용
                 rb.linearVelocity = jumpDirection * player.collisionJumpPower;
                 jumpTimer = player.objectJumpTime;
+
+                SoundManager.instance.PlaySFX(SFX_JIH.JumpSound);
             }
         }
         else
@@ -124,5 +126,7 @@ public class PlayerCollisionJumpState : PlayerState
         }
 
         rb.gravityScale = player.JumpGravity;
+
     }
+    
 }

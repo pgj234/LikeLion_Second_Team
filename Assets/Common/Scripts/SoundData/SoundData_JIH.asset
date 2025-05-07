@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f392a73c25efca44acc76c542f29a6e, type: 3}
   m_Name: SoundData_JIH
   m_EditorClassIdentifier: 
-  bgmClip: []
-  sfxClip: []
+  bgmClip:
+  - {fileID: 8300000, guid: 6908e724cf5e72c42bb4e4d1ed3ecc29, type: 3}
+  sfxClip:
+  - {fileID: 8300000, guid: 4ce524c7bac392d48b28198c443290be, type: 3}
+  - {fileID: 8300000, guid: bb62032a49e7e7242a1e3ef754cdce2d, type: 3}
+  - {fileID: 8300000, guid: dce6b0c879a392c4eba6064a2ca3ef47, type: 3}
+  - {fileID: 8300000, guid: 770126460fc445e4a8ff692553ecc3db, type: 3}
+  - {fileID: 8300000, guid: 829e11f9871d40349affbaadb2c313df, type: 3}
+  - {fileID: 8300000, guid: 6ae046db19c66e545ae8062363e71e2a, type: 3}
