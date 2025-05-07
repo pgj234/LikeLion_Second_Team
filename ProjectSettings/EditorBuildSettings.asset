@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/JIH/Scene/Title.unity
+    guid: c67c39ca919190c4a9272d85ce575bf4
+  - enabled: 1
+    path: Assets/YSME/Scene/Credit.unity
+    guid: 8ab3fd8b5c99a8f4e85e8f6318ae7551
+  - enabled: 1
     path: Assets/KYW/Scene/KYW.unity
     guid: 2403db1ac393b654c8d7a9d7e37d7a37
   - enabled: 1

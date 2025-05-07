@@ -29,7 +29,11 @@ public class ObjectLight : LightInBlackArea
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponentInChildren<PlayerLight>().AddLights(this);
+            PlayerLight pLight = collision.GetComponentInChildren<PlayerLight>();
+            if (pLight != null)
+            {
+                pLight.AddLights(this);
+            }
         }
     }
 
@@ -37,7 +41,11 @@ public class ObjectLight : LightInBlackArea
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponentInChildren<PlayerLight>().RemoveLights(this);
+            PlayerLight pLight = collision.GetComponentInChildren<PlayerLight>();
+            if (pLight != null)
+            {
+                pLight.RemoveLights(this);
+            }
         }
     }
 }
