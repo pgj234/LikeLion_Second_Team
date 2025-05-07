@@ -6,6 +6,7 @@ public class FallGround_Delay : MonoBehaviour
 {
     [SerializeField] float delayTime;
     [SerializeField] float shakeDuration = 0.1f;
+    [SerializeField] float dropSpd = 2.5f;
 
     Rigidbody2D rb => GetComponent<Rigidbody2D>();
 
@@ -58,6 +59,6 @@ public class FallGround_Delay : MonoBehaviour
         transform.DOKill();
 
         rb.bodyType = RigidbodyType2D.Dynamic;
-        rb.gravityScale = 2.5f;
+        rb.gravityScale = dropSpd;
     }
 }
