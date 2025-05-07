@@ -14,6 +14,7 @@ public class RockTrigger : MonoBehaviour
         {
             isTriggered = true;
             DropRock();
+            SoundManager.instance.PlaySFX(SFX_JIH.RockFallSound);
         }
     }
 
