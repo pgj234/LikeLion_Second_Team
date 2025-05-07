@@ -5,6 +5,7 @@ public class MagmaShot : MonoBehaviour
 {
     [Header("발사 오브젝트 설정")]
     [SerializeField] GameObject shotObj;
+    [SerializeField] float firstDelay;
     [SerializeField] float shotPower;
     [SerializeField] float shotDelayTime;
 
@@ -31,7 +32,7 @@ public class MagmaShot : MonoBehaviour
     void Init()
     {
         isOn = false; 
-        shotDelayTimer = shotDelayTime;
+        shotDelayTimer = firstDelay;
     }
 
     void Update()
