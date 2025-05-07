@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73d7144a401551499f19ca2471ec3f1, type: 3}
   m_Name: SoundData_YSME
   m_EditorClassIdentifier: 
-  bgmClip: []
+  bgmClip:
+  - {fileID: 8300000, guid: 425c3113848cccb41b0c490f68f4d4cd, type: 3}
   sfxClip: []
