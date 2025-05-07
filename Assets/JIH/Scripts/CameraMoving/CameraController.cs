@@ -4,31 +4,31 @@ using Unity.Cinemachine;
 public class CameraController : MonoBehaviour
 {
     public string playerTag = "Player";
-    public GameObject fallRock; // FallRock ¿ÀºêÁ§Æ®
-    public CinemachineCamera virtualCamera; // ½Ã³×¸Ó½Å °¡»ó Ä«¸Þ¶ó
-    private GameObject player; // ÇÃ·¹ÀÌ¾î ¿ÀºêÁ§Æ®
-    private Transform originalFollowTarget; // ¿ø·¡ Follow Å¸°Ù (ÇÃ·¹ÀÌ¾î)
+    public GameObject fallRock; // FallRock ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    public CinemachineCamera virtualCamera; // ï¿½Ã³×¸Ó½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½
+    private GameObject player; // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    private Transform originalFollowTarget; // ï¿½ï¿½ï¿½ï¿½ Follow Å¸ï¿½ï¿½ (ï¿½Ã·ï¿½ï¿½Ì¾ï¿½)
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag(playerTag);
-        originalFollowTarget = player.transform; // ÃÊ±â Follow Å¸°Ù ÀúÀå
+        originalFollowTarget = player.transform; // ï¿½Ê±ï¿½ Follow Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(playerTag))
         {
-            // Ä«¸Þ¶ó¸¦ FallRock À§Ä¡·Î ÀÌµ¿
+            // Ä«ï¿½Þ¶ï¿½ FallRock ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½
             virtualCamera.Follow = fallRock.transform;
 
-            // 2ÃÊ ÈÄ ¿ø·¡ Å¸°Ù(ÇÃ·¹ÀÌ¾î)À¸·Î º¹±Í
-            Invoke(nameof(ResetCameraFollow), 2f);
+            // 2ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½(ï¿½Ã·ï¿½ï¿½Ì¾ï¿½)ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            Invoke(nameof(ResetCameraFollow), 3f);
         }
     }
 
     private void ResetCameraFollow()
     {
-        virtualCamera.Follow = originalFollowTarget; // ÇÃ·¹ÀÌ¾î·Î Follow º¹±Í
+        virtualCamera.Follow = originalFollowTarget; // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ Follow ï¿½ï¿½ï¿½ï¿½
     }
 }

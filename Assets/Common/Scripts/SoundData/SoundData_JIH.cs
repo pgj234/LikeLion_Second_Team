@@ -3,12 +3,18 @@
 // BGM 목록 enum (배열에 넣은 순서대로)
 public enum BGM_JIH
 {
-    
+    BGM1,
 }
 
 // SFX 목록 enum (배열에 넣은 순서대로)
 public enum SFX_JIH
 {
+    HitGround,
+    JumpSound,
+    BirdSound,
+    OwlSound,
+    MeteorSound,
+    RockFallSound,
 
 }
 
