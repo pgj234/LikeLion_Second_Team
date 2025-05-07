@@ -7,6 +7,7 @@ public class FallingPlatform : MonoBehaviour
     [SerializeField] private float shakeDuration = 1f;    // 흔들리는 시간
     [SerializeField] private float fallSpeed = 5f;        // 떨어지는 속도
     [SerializeField] private float shakeIntensity = 0.1f; // 흔들림 강도
+    [SerializeField] private GameObject fallingParticle;  // 떨어질 때 생성할 파티클
 
     private bool isShaking = false;
     private bool isFalling = false;
@@ -26,11 +27,11 @@ public class FallingPlatform : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            if (collision.gameObject.TryGetComponent(out Player player))
+            if (collision.TryGetComponent(out Player player))
             {
                 if (player.stateMachine.currentState == player.idleState || 
                     player.stateMachine.currentState == player.moveState)
@@ -55,7 +56,16 @@ public class FallingPlatform : MonoBehaviour
                 isShaking = false;
                 isFalling = true;
                 velocity = Vector2.down * fallSpeed;
+                CreateFallingParticle();
             });
+    }
+
+    private void CreateFallingParticle()
+    {
+        if (fallingParticle != null)
+        {
+            Instantiate(fallingParticle, transform.position, Quaternion.identity);
+        }
     }
 
     private void OnDrawGizmos()
