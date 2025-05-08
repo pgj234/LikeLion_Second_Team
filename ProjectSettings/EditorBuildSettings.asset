@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/NSH/Scene/NSH.unity
     guid: 2faeddac967426e4aa9823f395b63528
+  - enabled: 1
+    path: Assets/Common/Scene/Team9.unity
+    guid: 3f0b37f12d4bdf0448245c9244a1f7e8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
