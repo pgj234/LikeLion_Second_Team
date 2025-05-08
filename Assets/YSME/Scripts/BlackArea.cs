@@ -21,7 +21,11 @@ public class BlackArea : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponentInChildren<PlayerLight>().AddArea(this);
+            PlayerLight pLight = collision.GetComponentInChildren<PlayerLight>();
+            if (pLight != null)
+            {
+                pLight.AddArea(this);
+            }
         }
     }
 
@@ -29,7 +33,11 @@ public class BlackArea : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponentInChildren<PlayerLight>().RemoveArea(this);
+            PlayerLight pLight = collision.GetComponentInChildren<PlayerLight>();
+            if (pLight != null)
+            {
+                pLight.RemoveArea(this);
+            }
         }
     }
 }
