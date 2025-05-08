@@ -112,12 +112,13 @@ public class InputManager : MonoBehaviour
             SceneManager.LoadScene("NSH");
         }
     }
-
+    [ContextMenu("인풋멈추기")]
     public void InputStop()
     {
         inputEnabled = false;
+        InputInit();
     }
-
+    [ContextMenu("인풋시작")]
     public void InputStart()
     {
         inputEnabled = true;
