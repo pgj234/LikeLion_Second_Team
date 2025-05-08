@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDieState : PlayerState
 {
@@ -15,11 +16,19 @@ public class PlayerDieState : PlayerState
     {
         if (InputManager.instance.rInput)
         {
-            EventManager.instance.PublishPlayerRespawned();
-            EventManager.instance.PublishPlayerDamaged(0);
-            rb.linearVelocity = Vector2.zero;
-            player.transform.position = player.lastSavePointPos;
-            stateMachine.ChangeState(player.idleState);
+            if (0 == string.Compare(SceneManager.GetActiveScene().name, "Team9"))
+            {
+                SceneManager.LoadScene("Team9");
+            }
+            else
+            {
+                EventManager.instance.PublishPlayerRespawned();
+                EventManager.instance.PublishPlayerDamaged(0);
+                rb.linearVelocity = Vector2.zero;
+                player.transform.position = player.lastSavePointPos;
+                stateMachine.ChangeState(player.idleState);
+            }
+
             return;
         }
     }

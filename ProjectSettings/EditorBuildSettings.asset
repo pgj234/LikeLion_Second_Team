@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/PGJ/Scene/PGJ.unity
     guid: 83b3340546920064e9873fcee002c12a
   - enabled: 1
+    path: Assets/PGJ/Scene/PGJ_End.unity
+    guid: 1b366f79c125ab249a24d0a252f65284
+  - enabled: 1
     path: Assets/NSH/Scene/NSH.unity
     guid: 2faeddac967426e4aa9823f395b63528
   m_configObjects:
