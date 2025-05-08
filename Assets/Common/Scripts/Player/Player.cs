@@ -1,5 +1,6 @@
 ﻿using Unity.VisualScripting;
 using UnityEngine;
+using DG.Tweening;
 
 public class Player : Entity
 {
@@ -158,5 +159,31 @@ public class Player : Entity
         // 무적 시간 시작
         IsInvincible = true;
         invincibilityTimer = invincibilityDuration;
+
+        // 깜빡임 효과 시작
+        StartBlinking();
     }
+
+    private void StartBlinking()
+    {
+        // 새로운 깜빡임 시퀀스 생성
+        var sequence = DOTween.Sequence();
+        
+        // 무적 시간 동안 반복
+        float blinkDuration = 0.2f; // 한 번 깜빡이는 시간
+        int blinkCount = Mathf.CeilToInt(invincibilityDuration / blinkDuration);
+        
+        for (int i = 0; i < blinkCount; i++)
+        {
+            sequence.Append(spriteRenderer.DOFade(0.3f, blinkDuration / 2))
+                   .Append(spriteRenderer.DOFade(1f, blinkDuration / 2));
+        }
+
+        // 시퀀스가 끝나면 알파값을 1로 복구
+        sequence.OnComplete(() => {
+            spriteRenderer.DOFade(1f, 0.1f);
+            IsInvincible = false;
+        });
+    }
+
 }

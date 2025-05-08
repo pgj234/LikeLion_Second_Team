@@ -21,7 +21,6 @@ public class FallingRock : MonoBehaviour
         initialPosition = transform.position;
         playerMask = LayerMask.GetMask("Player");
         moveDirection = detectionDirection.normalized;
-        Debug.Log($"FallingRock 초기화: 초기 위치 = {initialPosition}");
     }
 
     private void Update()
@@ -43,17 +42,8 @@ public class FallingRock : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, detectionDistance, playerMask);
         
-        // 레이캐스트 디버그
-        Debug.DrawRay(transform.position, moveDirection * detectionDistance, Color.yellow);
-        
-        if (hit.collider != null)
-        {
-            Debug.Log($"레이캐스트 감지: {hit.collider.name}, 레이어: {hit.collider.gameObject.layer}");
-        }
-        
         if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Player") && !isShaking && !isFalling)
         {
-            Debug.Log("플레이어 감지됨! 흔들림 시작");
             StartShaking();
         }
     }
@@ -62,7 +52,6 @@ public class FallingRock : MonoBehaviour
     {
         isShaking = true;
         shakeTimer = shakeDuration;
-        Debug.Log($"흔들림 시작: 지속시간 = {shakeDuration}초");
     }
 
     private void Shake()
@@ -76,7 +65,6 @@ public class FallingRock : MonoBehaviour
         {
             isShaking = false;
             isFalling = true;
-            Debug.Log("흔들림 종료, 이동 시작");
         }
     }
 
@@ -85,11 +73,21 @@ public class FallingRock : MonoBehaviour
         transform.Translate((Vector3)moveDirection * fallSpeed * Time.deltaTime);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (collision.gameObject.TryGetComponent(out Player player))
+            {
+                player.Damaged(1);
+            }
+        }
+    }
+
     private void OnDrawGizmos()
     {
         // 감지 거리와 방향을 시각화
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + (Vector3)(detectionDirection.normalized * detectionDistance));
-        
     }
 } 
