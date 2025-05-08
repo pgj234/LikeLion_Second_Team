@@ -126,6 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetDoor: {fileID: 0}
   delay: 0.5
+  fadeDuration: 0.5
+  isCrazy: 0
 --- !u!61 &4923977828282850564
 BoxCollider2D:
   m_ObjectHideFlags: 0

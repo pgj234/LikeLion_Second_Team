@@ -22,6 +22,7 @@ public class Log : MonoBehaviour
     {
         if (collision.CompareTag("Sword") && !isShaking)
         {
+            SoundManager.instance.PlaySFX(SFX_KYW.DDok2);
             Shake();
             TakeDamage();
         }

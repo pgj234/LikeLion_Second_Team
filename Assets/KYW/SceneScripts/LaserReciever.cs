@@ -9,5 +9,6 @@ public class LaserReceiver : MonoBehaviour
         // Debug.Log("수신기 작동됨!");
         // // 반응할거
         obj.SetActive(true);
+        SoundManager.instance.PlaySFX(SFX_KYW.CandleLight);
     }
 }

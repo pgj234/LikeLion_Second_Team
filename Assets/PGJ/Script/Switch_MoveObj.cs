@@ -46,11 +46,11 @@ public class Switch_MoveObj : Switcher
 
         while (true)
         {
-            effectObj.transform.position = Vector2.MoveTowards(effectObj.transform.position, moveTargetLocalPos, workSpd * Time.deltaTime);
+            effectObj.transform.localPosition = Vector2.MoveTowards(effectObj.transform.localPosition, moveTargetLocalPos, workSpd * Time.deltaTime);
             
             yield return null;
 
-            if (moveTargetLocalPos == (Vector2)effectObj.transform.position)
+            if (moveTargetLocalPos == (Vector2)effectObj.transform.localPosition)
             {
                 break;
             }

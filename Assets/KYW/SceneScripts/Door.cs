@@ -28,6 +28,7 @@ public class Door : MonoBehaviour
             {
                 // 문 열기 애니메이션 재생
                 animator.SetTrigger("DoorOpen");
+                SoundManager.instance.PlaySFX(SFX_KYW.DoorUnlock);
                 TeleportPlayer();
                 timer = 0f;
             }
