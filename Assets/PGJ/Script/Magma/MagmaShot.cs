@@ -21,7 +21,6 @@ public class MagmaShot : MonoBehaviour
 
     GameObject createObj;
 
-    internal bool isOn;
     float shotDelayTimer;
 
     void Awake()
@@ -31,17 +30,11 @@ public class MagmaShot : MonoBehaviour
 
     void Init()
     {
-        isOn = false; 
         shotDelayTimer = firstDelay;
     }
 
     void Update()
     {
-        if (false == isOn)
-        {
-            return;
-        }
-
         shotDelayTimer -= Time.deltaTime;
 
         if (shotDelayTimer < 0)
