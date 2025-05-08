@@ -343,6 +343,7 @@ MonoBehaviour:
     fallGravity: 2.5
     fallMass: 200
     rotationPower: 0
+  Loop: 0
 --- !u!61 &401731259
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45709,9 +45710,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 12383554}
     m_Modifications:
     - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: onObjectArray.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: onMagmaShotArray.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onObjectArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 908499176}
     - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: 'onMagmaShotArray.Array.data[0]'
       value: 
@@ -45811,6 +45820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagmaShotObj
       objectReference: {fileID: 0}
+    - target: {fileID: 752470254682925, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
       propertyPath: moaAngle
       value: 33.4
@@ -45871,6 +45884,11 @@ PrefabInstance:
 --- !u!4 &908499175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1277039675307518013, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
+  m_PrefabInstance: {fileID: 908499174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &908499176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 752470254682925, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
   m_PrefabInstance: {fileID: 908499174}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1094100014
@@ -46191,7 +46209,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
   m_PrefabInstance: {fileID: 908499174}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 908499176}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9633196ccf74f8748ab008b91bbe069a, type: 3}
