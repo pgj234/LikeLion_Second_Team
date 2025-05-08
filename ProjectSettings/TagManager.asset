@@ -13,6 +13,7 @@ TagManager:
   - SavePoint
   - PlayerGhost
   - GhostAvailablePoint
+  - Metaball_liquid
   layers:
   - Default
   - TransparentFX
@@ -26,8 +27,8 @@ TagManager:
   - Parryable
   - CollisionJump
   - Player
-  - 
-  - 
+  - Lava
+  - LavaBox
   - 
   - 
   - 

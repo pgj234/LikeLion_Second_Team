@@ -10,6 +10,7 @@ public class GhostAngryState : GhostState
 
     public override void Enter()
     {
+        SoundManager.instance.PlaySFX(SFX_KYW.GhostChoir);
         // Angry 애니메이션 재생
         ghost.animator.SetBool("IsAngry", true);
     }
