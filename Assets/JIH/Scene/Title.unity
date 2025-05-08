@@ -1330,8 +1330,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Exit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93ef68cbee635fd4a9332cac2775636d, type: 2}
-  m_sharedMaterial: {fileID: 1750287594412276410, guid: 93ef68cbee635fd4a9332cac2775636d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d751b866785e20d43bdf06773dbf8dbf, type: 2}
+  m_sharedMaterial: {fileID: 2945096039084829826, guid: d751b866785e20d43bdf06773dbf8dbf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1553,8 +1553,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93ef68cbee635fd4a9332cac2775636d, type: 2}
-  m_sharedMaterial: {fileID: 1750287594412276410, guid: 93ef68cbee635fd4a9332cac2775636d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d751b866785e20d43bdf06773dbf8dbf, type: 2}
+  m_sharedMaterial: {fileID: 2945096039084829826, guid: d751b866785e20d43bdf06773dbf8dbf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1768,7 +1768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2802561025629182370, guid: b7ace69b94e5a6a42ad51bcd54248df1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3197018466531191653, guid: b7ace69b94e5a6a42ad51bcd54248df1, type: 3}
       propertyPath: fadeInTime
@@ -2980,8 +2980,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Option
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93ef68cbee635fd4a9332cac2775636d, type: 2}
-  m_sharedMaterial: {fileID: 1750287594412276410, guid: 93ef68cbee635fd4a9332cac2775636d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d751b866785e20d43bdf06773dbf8dbf, type: 2}
+  m_sharedMaterial: {fileID: 2945096039084829826, guid: d751b866785e20d43bdf06773dbf8dbf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3477,8 +3477,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93ef68cbee635fd4a9332cac2775636d, type: 2}
-  m_sharedMaterial: {fileID: 1750287594412276410, guid: 93ef68cbee635fd4a9332cac2775636d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d751b866785e20d43bdf06773dbf8dbf, type: 2}
+  m_sharedMaterial: {fileID: 2945096039084829826, guid: d751b866785e20d43bdf06773dbf8dbf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
