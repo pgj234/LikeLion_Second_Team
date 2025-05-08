@@ -3,7 +3,7 @@
 // BGM 목록 enum (배열에 넣은 순서대로)
 public enum BGM_YSME
 {
-    
+    BGM1
 }
 
 // SFX 목록 enum (배열에 넣은 순서대로)
