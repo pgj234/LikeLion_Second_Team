@@ -1,39 +1,64 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Collections;
 
 public class FallTileTrigger : MonoBehaviour
 {
-    public Tilemap fallTilemap;  // 사라지는 타일맵
+    [SerializeField] float delayTime;
+    [SerializeField] float shakeDuration = 0.1f;
 
-    private bool hasFallen = false;
+    Rigidbody2D rb => GetComponent<Rigidbody2D>();
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    float timer;
+
+    bool isOn = false;
+
+    void Awake()
     {
-        if (!hasFallen && collision.CompareTag("Player"))
-        {
-            hasFallen = true;
-            RemoveAllTiles();
-        }
+        timer = delayTime;
     }
 
-    private void RemoveAllTiles()
+    void OnCollisionStay2D(Collision2D col)
     {
-        BoundsInt bounds = fallTilemap.cellBounds;
-
-        // 모든 타일을 바로 제거
-        for (int y = bounds.yMin; y < bounds.yMax; y++)
+        if (true == isOn)
         {
-            for (int x = bounds.xMin; x < bounds.xMax; x++)
+            return;
+        }
+
+        if (col.gameObject.CompareTag("Player"))
+        {
+            if (col.gameObject.TryGetComponent(out Player player))
             {
-                Vector3Int pos = new Vector3Int(x, y, 0);
-                if (fallTilemap.HasTile(pos))
+                if (player.stateMachine.currentState == player.idleState || player.stateMachine.currentState == player.moveState)
                 {
-                    fallTilemap.SetTile(pos, null);
+                    isOn = true;
+
+                    StartCoroutine(FallProc());
                 }
             }
         }
+    }
 
-        // 타일이 다 사라지면, 오브젝트 비활성화 (선택 사항)
-        gameObject.SetActive(false);
+    IEnumerator FallProc()
+    {
+        transform.DOShakePosition(shakeDuration, new Vector2(0.1f, 0), fadeOut: false).SetEase(Ease.InOutCirc).SetLoops(-1, LoopType.Yoyo);
+
+        while (true)
+        {
+            timer -= Time.deltaTime;
+
+            if (timer < 0)
+            {
+                break;
+            }
+
+            yield return null;
+        }
+
+        transform.DOKill();
+
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.gravityScale = 2.5f;
     }
 }

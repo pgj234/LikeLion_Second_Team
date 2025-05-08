@@ -1,14 +1,16 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class ShakeTriggerZone : MonoBehaviour
 {
-    public CameraShakeCinemachine cameraShake;
+    public CinemachineImpulseSource impulseSource;
+    public float shakeStrength = 1f;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            cameraShake.StrongShake();
+            impulseSource.GenerateImpulseAt(transform.position, Vector3.one * shakeStrength);
         }
     }
 }

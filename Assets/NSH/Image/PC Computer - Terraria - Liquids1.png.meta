@@ -1,0 +1,6890 @@
+fileFormatVersion: 2
+guid: aee34d7aab16eed4aabb73dba7bbd458
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3896818485082510667
+    second: PC Computer - Terraria - Liquids1_0
+  - first:
+      213: -6900544375715594304
+    second: PC Computer - Terraria - Liquids1_1
+  - first:
+      213: 6728931264127845955
+    second: PC Computer - Terraria - Liquids1_2
+  - first:
+      213: 3332001963401484406
+    second: PC Computer - Terraria - Liquids1_3
+  - first:
+      213: -818200895417074030
+    second: PC Computer - Terraria - Liquids1_4
+  - first:
+      213: 4629945635062298118
+    second: PC Computer - Terraria - Liquids1_5
+  - first:
+      213: 5671157417956909103
+    second: PC Computer - Terraria - Liquids1_6
+  - first:
+      213: -1789388859552435637
+    second: PC Computer - Terraria - Liquids1_7
+  - first:
+      213: -5517527752490169273
+    second: PC Computer - Terraria - Liquids1_8
+  - first:
+      213: 9045063034463080432
+    second: PC Computer - Terraria - Liquids1_9
+  - first:
+      213: -5781209436741946986
+    second: PC Computer - Terraria - Liquids1_10
+  - first:
+      213: -1689603579699593433
+    second: PC Computer - Terraria - Liquids1_11
+  - first:
+      213: -7598517698921754080
+    second: PC Computer - Terraria - Liquids1_12
+  - first:
+      213: 8151640982641832082
+    second: PC Computer - Terraria - Liquids1_13
+  - first:
+      213: -8477526307573632831
+    second: PC Computer - Terraria - Liquids1_14
+  - first:
+      213: -4213397094034703201
+    second: PC Computer - Terraria - Liquids1_15
+  - first:
+      213: -6007036428029981137
+    second: PC Computer - Terraria - Liquids1_16
+  - first:
+      213: 5756648575708896290
+    second: PC Computer - Terraria - Liquids1_17
+  - first:
+      213: 1663322451808688350
+    second: PC Computer - Terraria - Liquids1_18
+  - first:
+      213: 5727766687028160364
+    second: PC Computer - Terraria - Liquids1_19
+  - first:
+      213: -4438078431251395277
+    second: PC Computer - Terraria - Liquids1_20
+  - first:
+      213: -5196449459862123850
+    second: PC Computer - Terraria - Liquids1_21
+  - first:
+      213: -7958153614434286034
+    second: PC Computer - Terraria - Liquids1_22
+  - first:
+      213: 6640238872121761296
+    second: PC Computer - Terraria - Liquids1_23
+  - first:
+      213: -5401599986481351609
+    second: PC Computer - Terraria - Liquids1_24
+  - first:
+      213: -6182002457500953530
+    second: PC Computer - Terraria - Liquids1_25
+  - first:
+      213: -8996085001248926279
+    second: PC Computer - Terraria - Liquids1_26
+  - first:
+      213: -1026054202093407994
+    second: PC Computer - Terraria - Liquids1_27
+  - first:
+      213: -7177074428441071420
+    second: PC Computer - Terraria - Liquids1_28
+  - first:
+      213: 5921667853781090621
+    second: PC Computer - Terraria - Liquids1_29
+  - first:
+      213: -2188001698979342861
+    second: PC Computer - Terraria - Liquids1_30
+  - first:
+      213: 310049311896669930
+    second: PC Computer - Terraria - Liquids1_31
+  - first:
+      213: -681336986060157976
+    second: PC Computer - Terraria - Liquids1_32
+  - first:
+      213: -8858176293304396711
+    second: PC Computer - Terraria - Liquids1_33
+  - first:
+      213: -2916559319154310258
+    second: PC Computer - Terraria - Liquids1_34
+  - first:
+      213: 791021203696176232
+    second: PC Computer - Terraria - Liquids1_35
+  - first:
+      213: 1445318139345532421
+    second: PC Computer - Terraria - Liquids1_36
+  - first:
+      213: -5393506592204280435
+    second: PC Computer - Terraria - Liquids1_37
+  - first:
+      213: -1232344833294539578
+    second: PC Computer - Terraria - Liquids1_38
+  - first:
+      213: 5047512191571064480
+    second: PC Computer - Terraria - Liquids1_39
+  - first:
+      213: -7837547562050695555
+    second: PC Computer - Terraria - Liquids1_40
+  - first:
+      213: -6272936666551473367
+    second: PC Computer - Terraria - Liquids1_41
+  - first:
+      213: -8829913715294397149
+    second: PC Computer - Terraria - Liquids1_42
+  - first:
+      213: 317587374325479027
+    second: PC Computer - Terraria - Liquids1_43
+  - first:
+      213: -8326002272078371575
+    second: PC Computer - Terraria - Liquids1_44
+  - first:
+      213: 8219507576721161243
+    second: PC Computer - Terraria - Liquids1_45
+  - first:
+      213: -8796941437808176715
+    second: PC Computer - Terraria - Liquids1_46
+  - first:
+      213: -4327387952397250145
+    second: PC Computer - Terraria - Liquids1_47
+  - first:
+      213: 3469969047469738116
+    second: PC Computer - Terraria - Liquids1_48
+  - first:
+      213: 6727988071178190125
+    second: PC Computer - Terraria - Liquids1_49
+  - first:
+      213: -8417594677316942392
+    second: PC Computer - Terraria - Liquids1_50
+  - first:
+      213: -8352986386274638926
+    second: PC Computer - Terraria - Liquids1_51
+  - first:
+      213: -6959453668705647188
+    second: PC Computer - Terraria - Liquids1_52
+  - first:
+      213: -4394395272225816722
+    second: PC Computer - Terraria - Liquids1_53
+  - first:
+      213: -575717523358311355
+    second: PC Computer - Terraria - Liquids1_54
+  - first:
+      213: -7690470408802754176
+    second: PC Computer - Terraria - Liquids1_55
+  - first:
+      213: -575511371723443057
+    second: PC Computer - Terraria - Liquids1_56
+  - first:
+      213: 1445799797565772350
+    second: PC Computer - Terraria - Liquids1_57
+  - first:
+      213: -1230268893080888578
+    second: PC Computer - Terraria - Liquids1_58
+  - first:
+      213: 373847104911208354
+    second: PC Computer - Terraria - Liquids1_59
+  - first:
+      213: 7767339701257924818
+    second: PC Computer - Terraria - Liquids1_60
+  - first:
+      213: 9177880195275631337
+    second: PC Computer - Terraria - Liquids1_61
+  - first:
+      213: 7327598721270024321
+    second: PC Computer - Terraria - Liquids1_62
+  - first:
+      213: 3709108002252639188
+    second: PC Computer - Terraria - Liquids1_63
+  - first:
+      213: -5978448937967872081
+    second: PC Computer - Terraria - Liquids1_64
+  - first:
+      213: 8382720535502228818
+    second: PC Computer - Terraria - Liquids1_65
+  - first:
+      213: 584229538661008014
+    second: PC Computer - Terraria - Liquids1_66
+  - first:
+      213: -6747344143745902407
+    second: PC Computer - Terraria - Liquids1_67
+  - first:
+      213: 892333761713554200
+    second: PC Computer - Terraria - Liquids1_68
+  - first:
+      213: -2680425536952366537
+    second: PC Computer - Terraria - Liquids1_69
+  - first:
+      213: -4283865746149051237
+    second: PC Computer - Terraria - Liquids1_70
+  - first:
+      213: -6590030191286480286
+    second: PC Computer - Terraria - Liquids1_71
+  - first:
+      213: 4582210159692384299
+    second: PC Computer - Terraria - Liquids1_72
+  - first:
+      213: 2510253521278315638
+    second: PC Computer - Terraria - Liquids1_73
+  - first:
+      213: 8866997336881733347
+    second: PC Computer - Terraria - Liquids1_74
+  - first:
+      213: 6968567664986505181
+    second: PC Computer - Terraria - Liquids1_75
+  - first:
+      213: -359649872932501853
+    second: PC Computer - Terraria - Liquids1_76
+  - first:
+      213: -8601620230103873915
+    second: PC Computer - Terraria - Liquids1_77
+  - first:
+      213: -6093509905824285164
+    second: PC Computer - Terraria - Liquids1_78
+  - first:
+      213: -6010214541567472765
+    second: PC Computer - Terraria - Liquids1_79
+  - first:
+      213: 7562448687080734009
+    second: PC Computer - Terraria - Liquids1_80
+  - first:
+      213: 2837392028975287299
+    second: PC Computer - Terraria - Liquids1_81
+  - first:
+      213: -1800766717971154858
+    second: PC Computer - Terraria - Liquids1_82
+  - first:
+      213: -1362851547664891264
+    second: PC Computer - Terraria - Liquids1_83
+  - first:
+      213: -232598941803786638
+    second: PC Computer - Terraria - Liquids1_84
+  - first:
+      213: -467852747165594730
+    second: PC Computer - Terraria - Liquids1_85
+  - first:
+      213: 6219916677672881708
+    second: PC Computer - Terraria - Liquids1_86
+  - first:
+      213: -2121634337178498301
+    second: PC Computer - Terraria - Liquids1_87
+  - first:
+      213: -2317394646218791122
+    second: PC Computer - Terraria - Liquids1_88
+  - first:
+      213: -2762843843371336059
+    second: PC Computer - Terraria - Liquids1_89
+  - first:
+      213: -6339191775139357968
+    second: PC Computer - Terraria - Liquids1_90
+  - first:
+      213: 3460823655344982674
+    second: PC Computer - Terraria - Liquids1_91
+  - first:
+      213: -4172446885889041782
+    second: PC Computer - Terraria - Liquids1_92
+  - first:
+      213: -7666784562457308038
+    second: PC Computer - Terraria - Liquids1_93
+  - first:
+      213: 7900774243412147244
+    second: PC Computer - Terraria - Liquids1_94
+  - first:
+      213: 5393606673333449692
+    second: PC Computer - Terraria - Liquids1_95
+  - first:
+      213: -4247124894825534366
+    second: PC Computer - Terraria - Liquids1_96
+  - first:
+      213: 638702722541218431
+    second: PC Computer - Terraria - Liquids1_97
+  - first:
+      213: -4886878703075888465
+    second: PC Computer - Terraria - Liquids1_98
+  - first:
+      213: -5800971911783183834
+    second: PC Computer - Terraria - Liquids1_99
+  - first:
+      213: -4578895668527082595
+    second: PC Computer - Terraria - Liquids1_100
+  - first:
+      213: 7943042987589301269
+    second: PC Computer - Terraria - Liquids1_101
+  - first:
+      213: 1109676604636855301
+    second: PC Computer - Terraria - Liquids1_102
+  - first:
+      213: -482836982285828000
+    second: PC Computer - Terraria - Liquids1_103
+  - first:
+      213: -2308758547415559363
+    second: PC Computer - Terraria - Liquids1_104
+  - first:
+      213: 3050337193066403597
+    second: PC Computer - Terraria - Liquids1_105
+  - first:
+      213: -3418365826521321637
+    second: PC Computer - Terraria - Liquids1_106
+  - first:
+      213: -2996468304299726
+    second: PC Computer - Terraria - Liquids1_107
+  - first:
+      213: 2447660370230394079
+    second: PC Computer - Terraria - Liquids1_108
+  - first:
+      213: 5823877390746290829
+    second: PC Computer - Terraria - Liquids1_109
+  - first:
+      213: 6883388337890051706
+    second: PC Computer - Terraria - Liquids1_110
+  - first:
+      213: 3524924362743198033
+    second: PC Computer - Terraria - Liquids1_111
+  - first:
+      213: 2291082144264195553
+    second: PC Computer - Terraria - Liquids1_112
+  - first:
+      213: -6617289159505481860
+    second: PC Computer - Terraria - Liquids1_113
+  - first:
+      213: -2736207340310689636
+    second: PC Computer - Terraria - Liquids1_114
+  - first:
+      213: 8194568794099655307
+    second: PC Computer - Terraria - Liquids1_115
+  - first:
+      213: 428220383109759719
+    second: PC Computer - Terraria - Liquids1_116
+  - first:
+      213: -5360078740765886979
+    second: PC Computer - Terraria - Liquids1_117
+  - first:
+      213: -5829691994651768606
+    second: PC Computer - Terraria - Liquids1_118
+  - first:
+      213: -3319280179045369473
+    second: PC Computer - Terraria - Liquids1_119
+  - first:
+      213: 8529672595635346831
+    second: PC Computer - Terraria - Liquids1_120
+  - first:
+      213: -1325843984727271012
+    second: PC Computer - Terraria - Liquids1_121
+  - first:
+      213: 3087019545188019945
+    second: PC Computer - Terraria - Liquids1_122
+  - first:
+      213: -7456425043253247836
+    second: PC Computer - Terraria - Liquids1_123
+  - first:
+      213: -2462056895530686150
+    second: PC Computer - Terraria - Liquids1_124
+  - first:
+      213: -3141531396463758104
+    second: PC Computer - Terraria - Liquids1_125
+  - first:
+      213: 2960532837728572615
+    second: PC Computer - Terraria - Liquids1_126
+  - first:
+      213: -1486612072479243529
+    second: PC Computer - Terraria - Liquids1_127
+  - first:
+      213: -7898557647970755216
+    second: PC Computer - Terraria - Liquids1_128
+  - first:
+      213: -1212326729082251727
+    second: PC Computer - Terraria - Liquids1_129
+  - first:
+      213: 4786506103187226678
+    second: PC Computer - Terraria - Liquids1_130
+  - first:
+      213: -5778694843502607184
+    second: PC Computer - Terraria - Liquids1_131
+  - first:
+      213: -8830567968473412950
+    second: PC Computer - Terraria - Liquids1_132
+  - first:
+      213: 4778410123346173364
+    second: PC Computer - Terraria - Liquids1_133
+  - first:
+      213: 8878741069204536162
+    second: PC Computer - Terraria - Liquids1_134
+  - first:
+      213: -8521539515880752287
+    second: PC Computer - Terraria - Liquids1_135
+  - first:
+      213: -1586854664679793814
+    second: PC Computer - Terraria - Liquids1_136
+  - first:
+      213: 1304131426447885826
+    second: PC Computer - Terraria - Liquids1_137
+  - first:
+      213: -7592752859445403771
+    second: PC Computer - Terraria - Liquids1_138
+  - first:
+      213: 79117787850360015
+    second: PC Computer - Terraria - Liquids1_139
+  - first:
+      213: 4092269160040377185
+    second: PC Computer - Terraria - Liquids1_140
+  - first:
+      213: -7140009124583253200
+    second: PC Computer - Terraria - Liquids1_141
+  - first:
+      213: 1857829721148253873
+    second: PC Computer - Terraria - Liquids1_142
+  - first:
+      213: 7325532222695381193
+    second: PC Computer - Terraria - Liquids1_143
+  - first:
+      213: -8835130244510823807
+    second: PC Computer - Terraria - Liquids1_144
+  - first:
+      213: 8557818531030330111
+    second: PC Computer - Terraria - Liquids1_145
+  - first:
+      213: -4386694984812622704
+    second: PC Computer - Terraria - Liquids1_146
+  - first:
+      213: -4202322483123714101
+    second: PC Computer - Terraria - Liquids1_147
+  - first:
+      213: -1590114886115334752
+    second: PC Computer - Terraria - Liquids1_148
+  - first:
+      213: -3575901522564406393
+    second: PC Computer - Terraria - Liquids1_149
+  - first:
+      213: -41555218728557399
+    second: PC Computer - Terraria - Liquids1_150
+  - first:
+      213: 3052862089159884339
+    second: PC Computer - Terraria - Liquids1_151
+  - first:
+      213: -6134702740914200236
+    second: PC Computer - Terraria - Liquids1_152
+  - first:
+      213: 1531420452723918409
+    second: PC Computer - Terraria - Liquids1_153
+  - first:
+      213: 6117818378575772799
+    second: PC Computer - Terraria - Liquids1_154
+  - first:
+      213: -1509267408242925253
+    second: PC Computer - Terraria - Liquids1_155
+  - first:
+      213: 2520488137824956642
+    second: PC Computer - Terraria - Liquids1_156
+  - first:
+      213: 2171545342390153609
+    second: PC Computer - Terraria - Liquids1_157
+  - first:
+      213: 6951969105211831378
+    second: PC Computer - Terraria - Liquids1_158
+  - first:
+      213: -1603467473539961075
+    second: PC Computer - Terraria - Liquids1_159
+  - first:
+      213: -6046351895372457125
+    second: PC Computer - Terraria - Liquids1_160
+  - first:
+      213: 1035520637172181437
+    second: PC Computer - Terraria - Liquids1_161
+  - first:
+      213: 2539187396178804957
+    second: PC Computer - Terraria - Liquids1_162
+  - first:
+      213: 5088990750764423297
+    second: PC Computer - Terraria - Liquids1_163
+  - first:
+      213: 5988760950435805819
+    second: PC Computer - Terraria - Liquids1_164
+  - first:
+      213: -2632965295654651982
+    second: PC Computer - Terraria - Liquids1_165
+  - first:
+      213: -5857811402653946985
+    second: PC Computer - Terraria - Liquids1_166
+  - first:
+      213: 2262273501451693061
+    second: PC Computer - Terraria - Liquids1_167
+  - first:
+      213: 2014238592466811069
+    second: PC Computer - Terraria - Liquids1_168
+  - first:
+      213: 117118617633969746
+    second: PC Computer - Terraria - Liquids1_169
+  - first:
+      213: 4997331584669098453
+    second: PC Computer - Terraria - Liquids1_170
+  - first:
+      213: -7357791037642183251
+    second: PC Computer - Terraria - Liquids1_171
+  - first:
+      213: 5723321192174481449
+    second: PC Computer - Terraria - Liquids1_172
+  - first:
+      213: 6864910214566146921
+    second: PC Computer - Terraria - Liquids1_173
+  - first:
+      213: -3814046864779172343
+    second: PC Computer - Terraria - Liquids1_174
+  - first:
+      213: 21384685019772445
+    second: PC Computer - Terraria - Liquids1_175
+  - first:
+      213: 178107251882211003
+    second: PC Computer - Terraria - Liquids1_176
+  - first:
+      213: 3723262196807171680
+    second: PC Computer - Terraria - Liquids1_177
+  - first:
+      213: -3879426744616984544
+    second: PC Computer - Terraria - Liquids1_178
+  - first:
+      213: 8739424401619254090
+    second: PC Computer - Terraria - Liquids1_179
+  - first:
+      213: 921357618948507138
+    second: PC Computer - Terraria - Liquids1_180
+  - first:
+      213: 540033794746142828
+    second: PC Computer - Terraria - Liquids1_181
+  - first:
+      213: 8466512035631195099
+    second: PC Computer - Terraria - Liquids1_182
+  - first:
+      213: -7861317623628766720
+    second: PC Computer - Terraria - Liquids1_183
+  - first:
+      213: 3886825878518402539
+    second: PC Computer - Terraria - Liquids1_184
+  - first:
+      213: -3136509422212293700
+    second: PC Computer - Terraria - Liquids1_185
+  - first:
+      213: -2970400119593015912
+    second: PC Computer - Terraria - Liquids1_186
+  - first:
+      213: -7542259634769621782
+    second: PC Computer - Terraria - Liquids1_187
+  - first:
+      213: -5402410221345404762
+    second: PC Computer - Terraria - Liquids1_188
+  - first:
+      213: 7977025077322771268
+    second: PC Computer - Terraria - Liquids1_189
+  - first:
+      213: -3931309141959785747
+    second: PC Computer - Terraria - Liquids1_190
+  - first:
+      213: -7761973566553774406
+    second: PC Computer - Terraria - Liquids1_191
+  - first:
+      213: -3849938278369778659
+    second: PC Computer - Terraria - Liquids1_192
+  - first:
+      213: -1893566689029137778
+    second: PC Computer - Terraria - Liquids1_193
+  - first:
+      213: -6874943476276269441
+    second: PC Computer - Terraria - Liquids1_194
+  - first:
+      213: -6070121370059609319
+    second: PC Computer - Terraria - Liquids1_195
+  - first:
+      213: 8546307888668441505
+    second: PC Computer - Terraria - Liquids1_196
+  - first:
+      213: 1750274330252806774
+    second: PC Computer - Terraria - Liquids1_197
+  - first:
+      213: -7062717217222020947
+    second: PC Computer - Terraria - Liquids1_198
+  - first:
+      213: 783174839197013829
+    second: PC Computer - Terraria - Liquids1_199
+  - first:
+      213: -1035736313726657975
+    second: PC Computer - Terraria - Liquids1_200
+  - first:
+      213: -6414507463885009274
+    second: PC Computer - Terraria - Liquids1_201
+  - first:
+      213: 5696976247581739340
+    second: PC Computer - Terraria - Liquids1_202
+  - first:
+      213: -8624778464116133642
+    second: PC Computer - Terraria - Liquids1_203
+  - first:
+      213: 3545379341471620453
+    second: PC Computer - Terraria - Liquids1_204
+  - first:
+      213: -2445286184449625315
+    second: PC Computer - Terraria - Liquids1_205
+  - first:
+      213: 8894616082151754542
+    second: PC Computer - Terraria - Liquids1_206
+  - first:
+      213: 1686632182606474111
+    second: PC Computer - Terraria - Liquids1_207
+  - first:
+      213: -5476583840307677864
+    second: PC Computer - Terraria - Liquids1_208
+  - first:
+      213: 4175278806251856674
+    second: PC Computer - Terraria - Liquids1_209
+  - first:
+      213: -999755729618527102
+    second: PC Computer - Terraria - Liquids1_210
+  - first:
+      213: 8438487483234196724
+    second: PC Computer - Terraria - Liquids1_211
+  - first:
+      213: 8197622659982691870
+    second: PC Computer - Terraria - Liquids1_212
+  - first:
+      213: 3009208953015226595
+    second: PC Computer - Terraria - Liquids1_213
+  - first:
+      213: -3240660306356328466
+    second: PC Computer - Terraria - Liquids1_214
+  - first:
+      213: -2044671553021783018
+    second: PC Computer - Terraria - Liquids1_215
+  - first:
+      213: -7970338302622082556
+    second: PC Computer - Terraria - Liquids1_216
+  - first:
+      213: -6603402503024867087
+    second: PC Computer - Terraria - Liquids1_217
+  - first:
+      213: -1019436379414697545
+    second: PC Computer - Terraria - Liquids1_218
+  - first:
+      213: -8543771256113046592
+    second: PC Computer - Terraria - Liquids1_219
+  - first:
+      213: 7323422831928140947
+    second: PC Computer - Terraria - Liquids1_220
+  - first:
+      213: -3644921067171448578
+    second: PC Computer - Terraria - Liquids1_221
+  - first:
+      213: 4796195751862007617
+    second: PC Computer - Terraria - Liquids1_222
+  - first:
+      213: -1081071749933137812
+    second: PC Computer - Terraria - Liquids1_223
+  - first:
+      213: 7754880767661297469
+    second: PC Computer - Terraria - Liquids1_224
+  - first:
+      213: 7352198397457191716
+    second: PC Computer - Terraria - Liquids1_225
+  - first:
+      213: 4492347151842612508
+    second: PC Computer - Terraria - Liquids1_226
+  - first:
+      213: -7778559206659069506
+    second: PC Computer - Terraria - Liquids1_227
+  - first:
+      213: -5256732949043867528
+    second: PC Computer - Terraria - Liquids1_228
+  - first:
+      213: -6700710646596433878
+    second: PC Computer - Terraria - Liquids1_229
+  - first:
+      213: 2968828741416746117
+    second: PC Computer - Terraria - Liquids1_230
+  - first:
+      213: 449596719880619767
+    second: PC Computer - Terraria - Liquids1_231
+  - first:
+      213: 3617745134893436934
+    second: PC Computer - Terraria - Liquids1_232
+  - first:
+      213: -5235984511569659612
+    second: PC Computer - Terraria - Liquids1_233
+  - first:
+      213: -8081355761924358863
+    second: PC Computer - Terraria - Liquids1_234
+  - first:
+      213: -5090118159827035562
+    second: PC Computer - Terraria - Liquids1_235
+  - first:
+      213: 7353328328516720231
+    second: PC Computer - Terraria - Liquids1_236
+  - first:
+      213: 2429685732692720735
+    second: PC Computer - Terraria - Liquids1_237
+  - first:
+      213: 5312288467042054671
+    second: PC Computer - Terraria - Liquids1_238
+  - first:
+      213: 6483340580118282277
+    second: PC Computer - Terraria - Liquids1_239
+  - first:
+      213: -4474532237860147579
+    second: PC Computer - Terraria - Liquids1_240
+  - first:
+      213: 8425392444442736109
+    second: PC Computer - Terraria - Liquids1_241
+  - first:
+      213: 7575432659839446408
+    second: PC Computer - Terraria - Liquids1_242
+  - first:
+      213: 368709878981929952
+    second: PC Computer - Terraria - Liquids1_243
+  - first:
+      213: 5158253850668691479
+    second: PC Computer - Terraria - Liquids1_244
+  - first:
+      213: -849407458292513381
+    second: PC Computer - Terraria - Liquids1_245
+  - first:
+      213: 8587853819767114820
+    second: PC Computer - Terraria - Liquids1_246
+  - first:
+      213: 5971464143259377922
+    second: PC Computer - Terraria - Liquids1_247
+  - first:
+      213: -3434565525779400475
+    second: PC Computer - Terraria - Liquids1_248
+  - first:
+      213: -2691652743459033170
+    second: PC Computer - Terraria - Liquids1_249
+  - first:
+      213: -6622747255346894438
+    second: PC Computer - Terraria - Liquids1_250
+  - first:
+      213: 6214972884258668557
+    second: PC Computer - Terraria - Liquids1_251
+  - first:
+      213: -5433914724700803260
+    second: PC Computer - Terraria - Liquids1_252
+  - first:
+      213: -7865546304365431508
+    second: PC Computer - Terraria - Liquids1_253
+  - first:
+      213: -2534426171423325257
+    second: PC Computer - Terraria - Liquids1_254
+  - first:
+      213: -6723025688792921951
+    second: PC Computer - Terraria - Liquids1_255
+  - first:
+      213: 6804224160881730657
+    second: PC Computer - Terraria - Liquids1_256
+  - first:
+      213: 5872890554190819713
+    second: PC Computer - Terraria - Liquids1_257
+  - first:
+      213: -3565050989571387924
+    second: PC Computer - Terraria - Liquids1_258
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59e77d622845b2478433a752ad75766
+      internalID: -1467827755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91263dd55a15464e8c622127043d434
+      internalID: 807258210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b64c9a52216e5f4fb7644a5f6a24665
+      internalID: -653320505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add1ee86fe4c3154fae7cdfa3f81c5c6
+      internalID: -2110933363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58d885fa5ea40a47a5a890d05879799
+      internalID: -1897049825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_5
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445f13aae43f52043a80b5a609908657
+      internalID: 1419485709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_6
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4677dee2eab6a0642bf46b622980cdbf
+      internalID: 1007566674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_7
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468ef137610c53a44b565d18647cae94
+      internalID: -1369327728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_8
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57adf81def59a6d41b0a62b08e02c429
+      internalID: 731417378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_9
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17689fceddfafd8468cb1b75bdc9fafc
+      internalID: -189278859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_10
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0131b34842d92a94593916b977946d6a
+      internalID: 32295370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_11
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3d2d75486ef904d872bca160dfa2db
+      internalID: -452779633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_12
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8787b504b434dc478622a12d8c6387e
+      internalID: -281297458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a831a3d0120fd114da0e99ab51b24bf7
+      internalID: 1624237815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12d176ed7fdc0542b0d93fda7b3b7dd
+      internalID: -1031402066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_15
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ee8c0ca7d03a549861422e6d888d9b
+      internalID: 1167203178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_16
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a7a5054642a2946a0be24ae0fee1b9
+      internalID: -1378777971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_17
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fa36feffce0274a80d3dad7374f608
+      internalID: 302785095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_18
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa08cbfce6f7e244294ee32f1c562047
+      internalID: 2136089662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_19
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e09638910db814cab074bdf84ba877
+      internalID: -442460496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_20
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac9f36318c11eb4f8b7e1ba73bbc24f
+      internalID: -2122048983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_21
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebd330dc4ec7e240b9e4b8067c69487
+      internalID: 1297100549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_22
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57bf2d0ba0ecfc40874a3df66de40cd
+      internalID: -2006289645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_23
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ac726949b84f048855a90ffd0dcee9
+      internalID: -1748248164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_24
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f680ce31852ecbf4093c3df9c8195e5e
+      internalID: 716319343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_25
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8655574d27d7146ab5f06252f4a851
+      internalID: 1671400248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_26
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1ed4613d14c3c4fbece856c1081686
+      internalID: 301975813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_27
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f167f52418a904ab150968abebcbe9
+      internalID: 547065708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_28
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2706407093913842af0a9912427ad28
+      internalID: 302887364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_29
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f960cbde2fa7541b4eb1a20ee0903e
+      internalID: 469586873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_30
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36882774c710cf4c938e227768dd720
+      internalID: 704232515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_31
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067d13ad7b70fc34fbe8110e23bcd01b
+      internalID: 1444616566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_32
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d045f9f93cbef34b9437d1c5da69c1a
+      internalID: -1012780533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_33
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53691bc023fa13a45bc81adc45130058
+      internalID: -883848258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_34
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0891b53a0bf8c95418ef3689c33f22c8
+      internalID: -2036070783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_35
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37857bcfdfd8f0548bd79697166876eb
+      internalID: -136274637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_36
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4fba9d83ebb2241bf1eb73c00c0aac
+      internalID: -653430750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_37
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d5c77a06c54ce429fdc143cbbb1c22
+      internalID: 1454066541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_38
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f0df8c19ad17648bb67ba231933a34
+      internalID: -972321301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_39
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32169d8ebe4582f419b670097b34d110
+      internalID: 118417534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_40
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa3791fadeb903478490a52c6d1b47c
+      internalID: -1110638590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_41
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4d2ffab37e389418d9614d1328def1
+      internalID: -933075890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_42
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8fe1d34222cb74db21fa3d39d0a16a
+      internalID: -294125463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_43
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589b07ac1347cfe49bd00e5139491ef8
+      internalID: -1647928730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_44
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1c65f262e02ad43af8e93c432f3a97
+      internalID: -1653792776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_45
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11529db324113c640b301b17d4904a28
+      internalID: 1234817162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_46
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3509f325747606343b77980eb4d55d8d
+      internalID: 139669100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_47
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb828b8fd8f1984dadbbcb1ee8ed362
+      internalID: -2074002164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_48
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f1473df2109c24ca72c48ca9ec85e6
+      internalID: -1133492801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_49
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5060882185efc754c8f6d2f0929cc1ad
+      internalID: -492484708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_50
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02055a20a26dc674aaffa66fcfd6d0db
+      internalID: -1624668300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_51
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd72a608abf53f42921c9243201d50f
+      internalID: 215579858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_52
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90aa400e37a472644932356d50baca48
+      internalID: 849308055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_53
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7044dbc50f6704a92c6c26c1510a49
+      internalID: -717173484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_54
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b579d482f2502b419c401a2a8f8cb16
+      internalID: 681233821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_55
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fe4ceeac834c148a16350d7229ed49
+      internalID: -581888906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_56
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e02175b1556ba49af37d31b651f255
+      internalID: 1402560713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_57
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5294e4e59159843a71db5feaf05710
+      internalID: -1421324681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_58
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a36c3421a30fe748a173dc8a38526e8
+      internalID: 2043198758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_59
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f07f4f7b91c823428fb2686b781c656
+      internalID: -1454563375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_60
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae4ea79775e5b945842eb1dfdb4e10a
+      internalID: 2103062045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_61
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6804df7447673649a85a1b78b874628
+      internalID: 1202938399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_62
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3de5c0002e847f4b809013231160685
+      internalID: -383414549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_63
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f9cc8f51dc8d543b4968c7ca5c5547
+      internalID: -1495861996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_64
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35218555c1abf64aa263bd7c87451e4
+      internalID: -231650700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_65
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba77cc051dacf44a90044567d3e63be
+      internalID: -1555179802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_66
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2144b66ee58d94e9b1266c35a11049
+      internalID: -412566303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_67
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c71239b2a6f9a458d5791f070904f2
+      internalID: -1651826472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_68
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913f70d6332aa904f9ac9b8befbf3b46
+      internalID: -1779804909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_69
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d4b23150af173448fe12ebdad9a887
+      internalID: 459788040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_70
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3056d5db92226b4cb5ab1057da6f6ea
+      internalID: -2046653438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_71
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d195670f4de193e45bf9cdcebd92ed2c
+      internalID: 984654487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_72
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319c651bf69915543a0886491dcc2278
+      internalID: -1537632114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_73
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284b54f89dafd8944a39aac87781620e
+      internalID: -595759984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_74
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9c1e8c72710b2478f44d647d1275a3
+      internalID: 851674110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_75
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c6aea2250041a4996b10d5380511ce
+      internalID: -176806301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_76
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5542fae448c05624c9e1302f79843455
+      internalID: -862499842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_77
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6a1f6b75ea6f94b97152176f39a3a5
+      internalID: -847110885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_78
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66857b0c883de6d49a815580f3310bf8
+      internalID: -1348659804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_79
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b085fe4f854583846927db7e285da40d
+      internalID: -1064960165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_80
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726131caa0486d640b946aebcf26a351
+      internalID: -1480129451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_81
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28a18ea07b062d4abd31d4fa7b99e8e
+      internalID: 922169619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_82
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb01beaaaa39a1448baef0bad67ad25
+      internalID: 598681232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_83
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af67d3218c9bbcb4199030d1a3c2541b
+      internalID: -145636099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_84
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223121c2843ac554eaa53dfb30371aba
+      internalID: 1524879767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_85
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed23bc8217c87a24992742c423f83411
+      internalID: -1065024104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_86
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f442c7f060d9ad844a5c24f205db84f8
+      internalID: -279994767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_87
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a3d032e02b0084ea7bb27f45f44b74
+      internalID: -2082416805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_88
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1090ce5fbba2b4c44b5dbdaff336a7ee
+      internalID: 1720832701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_89
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f748c23ae53a48419ea333f98edea8a
+      internalID: -1829071372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_90
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6225fc07a35ac5c43bf9fa968d6d240e
+      internalID: -712250285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_91
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe6e61c4ea4d6d4eab25d323b75022c
+      internalID: 734680114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_92
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2edd51f363bd6498e4d5b69e91f266
+      internalID: -1055811293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_93
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d165d9a486382184b928d9b0205e0e38
+      internalID: -984436084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_94
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22f660f247e864419ea78ab4c475fa7
+      internalID: -726654471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_95
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f7eb400b2b0db41a627936f5f93ab3
+      internalID: 1046614947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_96
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e597d155e0b46354d8d3b300c27ddee4
+      internalID: -930718003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_97
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad12a41357393dc4981d1681e1c588e8
+      internalID: -574532716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_98
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe7815504641e9478163ab35f6d76be
+      internalID: 2107174579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_99
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0effbd3962493469058cb771aac549
+      internalID: -1095315917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_100
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba244af0c133cd14fbab74595c878009
+      internalID: 1880907085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_101
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8d3b0ecda4b6747a9573e8ba109381
+      internalID: 994042089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_102
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b0cb6e443ad2a469cbbb37534f4258
+      internalID: -312982407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_103
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf93e1d6f6919674ba467025dff37cbd
+      internalID: -1938465151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_104
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11500f4f4b9bbcf48b49b2077d35ad11
+      internalID: 1168910686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_105
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e40ee35effb735498bc44ac333d941c
+      internalID: 1857913464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_106
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce85881595b02b541a6afb96dbe7d1a8
+      internalID: 509510909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_107
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3370e956cddd8ef4793b040f1b204a6a
+      internalID: 1513817289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_108
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716c73b65ef9cd749a0c78bf1aec9c02
+      internalID: -367654926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_109
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3a653a1b399a64e88bae008980537f
+      internalID: 306018066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_110
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5b36bb7ffb7d34fb74e89c4249adde
+      internalID: 247496594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_111
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c89293f10cc5ee4b9eb6f8c1260e78c
+      internalID: 1914071294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_112
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9002724a8e225d4bb27f9a12c93e203
+      internalID: -192890925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_113
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e62074da54215f44982ee478ce018dc
+      internalID: 558880163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_114
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8c165dc3a0c27459bf36e9c0b3b071
+      internalID: -1183366285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_115
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbe956ebdc7f51498d739270dc910bb
+      internalID: 692782220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_116
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d51a54d016c6042bd272165a3bef52
+      internalID: -1190967279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_117
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9f32ded05ef484d8f547599500a757
+      internalID: 1562187717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_118
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d4586a444154c46afcc90324177d61
+      internalID: -146957545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_119
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11033f8219915a644a6cda7957496980
+      internalID: -843586067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_120
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230f3f718d6b0624788102e29eec46d5
+      internalID: -1800624992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_121
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6207b13c4de87c940983edbeff3c32c0
+      internalID: -1609848059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_122
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed0c8ec31ff59e4fb63ee55234e0b7b
+      internalID: 1511675907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_123
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3db980239a7b64ea90c862b1c7bd5d
+      internalID: -817199088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_124
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f4144c63006784a9d07f06114e42f8
+      internalID: 1453434551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_125
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505f2ad4b60bf9948b78d646aafa7963
+      internalID: 1713807352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_126
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450f367c4b2c80845a226e8f371db18c
+      internalID: -17701790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_127
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cd48c6688ddd94891095af1b3fd7df
+      internalID: 1793374973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_128
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e77ee3c48e0997439f9b2b4ae42d4b2
+      internalID: -1278177180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_129
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fad6898d6e2734d93fb0d3c7e2dbb6
+      internalID: -1047563882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_130
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060738904e4999e48925d4dad2d09c50
+      internalID: -2077297775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_131
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10216e209550d74c85b1d6d8c3cae4d
+      internalID: 1870022050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_132
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e5dea9dd856c3408f33d4e421016be
+      internalID: 1389609984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_133
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a03ee2bd15e7b419199a06fe28527b
+      internalID: 1786611626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_134
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa92d75ad31c2fd48865abff752a997e
+      internalID: -2126500191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_135
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3131e49fcb29d646b5efc5d352e9f52
+      internalID: -842262444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_136
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30749508aab4a0845bdf812659b9eb41
+      internalID: 1376602489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_137
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c97ee1350eda949ab1f8ba4fac7512
+      internalID: -1535638621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_138
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce1c73c034f80447aab8df2a9382545
+      internalID: -1703421346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_139
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ded8b91bc1e774cae5bcc662d9437a
+      internalID: -768225444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_140
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e304254ccbfc3204da3f0e897c0e6804
+      internalID: -211755468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_141
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2601831c72c4ff54e9185eb12c500849
+      internalID: -1134561863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_142
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530178c0ed5a214418ac5b927aa77480
+      internalID: 435909917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_143
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9651fd4dc91357d40b31e11b10049718
+      internalID: 1792788032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_144
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d970c8a62fa26e44ae32cc806991732
+      internalID: 1653854083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_145
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ad4b62c7ac0844599a791ab117dfd4
+      internalID: -1115801957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_146
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33e3bea5d9f26f4e814b21f35c07366
+      internalID: 1746924892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_147
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e22e883e8e9164793aa67892641f65
+      internalID: 490858853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_148
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63b8ad7e5f80ac4e8c1f2ff28f407c7
+      internalID: 1781972716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_149
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d646287824d104583d3605250baffe
+      internalID: 78763192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_150
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7481d6b58d8c44086ff8ce85d99b0f
+      internalID: 112060043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_151
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48ca5c8065eed446af815bf5258de10
+      internalID: 1903886845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_152
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 7
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f13a29d8a48ba44593a599bfb3b1d21
+      internalID: 958606475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_153
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9929588afef301a40add39acfb7af047
+      internalID: -1086535003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_154
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224dbcb8debecc6419391ce4482d93f9
+      internalID: 1404928438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_155
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824635fdb6076764fa285574984aa928
+      internalID: -1301610623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_156
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab5c72c9ad004c419f5ed306e239333
+      internalID: -1724875932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_157
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fb1f33596e6464fa629f270bb10fa3
+      internalID: -2030393252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_158
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8146337b4a5e7dd48bac17b5daf56340
+      internalID: 204321513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_159
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2041a16ffee211b4cb636d1e63e6d8a5
+      internalID: -1463088289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_160
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b256ae09a910f7440ad0dd9cbf965928
+      internalID: 1652507686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_161
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a30f034e1569442bec7bcad499be0e
+      internalID: 1835744341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_162
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e63d843ab9a6040bdac38d0198711a
+      internalID: -459797094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_163
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2adafae527abe74e91ef6f67d4ec0c5
+      internalID: 767633723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_164
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df733a50f42656419cc6f2a4cfbd2a8
+      internalID: -1619019169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_165
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea6bffdb82938646a41d268682cf2da
+      internalID: -322085065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_166
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0321027d55550af4484f8c7a041efe53
+      internalID: 405630049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_167
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19c5aad66e6ea640bccd0f4aed2264f
+      internalID: 522055520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_168
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fef2d5e54865a4ab793796cf5f66bc
+      internalID: -1114090804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_169
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc100dd9ce3be34eada98e700144205
+      internalID: -290138833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_170
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c898c5e68d61dc479e34f5c7102ce14
+      internalID: -1627955601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_171
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90020ff76e592648a01447932a1c0a7
+      internalID: -44853086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_172
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac8c40865cc86045b2118d688298bc1
+      internalID: -789482261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_173
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e603e08e6fafa41b51c5885e7a806e
+      internalID: 916124843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_174
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecc9d0b7481ee643bd31fbbd9e07318
+      internalID: -1741483829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_175
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1fa63e539be9e478e8b762519e8b5e
+      internalID: 1664986171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_176
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5eae932700d4148bfbce24c12ac59d
+      internalID: -417839804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_177
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0465eeee8a05304fb9c50694c69725f
+      internalID: 1923489557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_178
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71999468fc50a784f98ccb63eb05c224
+      internalID: -854785231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_179
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8620a18983e11754eb14dbc853b1f9b3
+      internalID: -1903623293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_180
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254b426b14b497340a9ad3f650e08e21
+      internalID: 540762246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_181
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1442ca707dbea844cafc1583087ba5ca
+      internalID: 284585574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_182
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12de5cf0c670bff45b19549819096e61
+      internalID: 1220187273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_183
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf47c93cae611e4395c0702ea8c65e0
+      internalID: -1377869942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_184
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139e06a2a13bdf0448dabc34443c5483
+      internalID: -379184265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_185
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ffa00b62ad30a4a884e708047f4e60
+      internalID: 858498586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_186
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b1aaa16f5315c428d68625b5e51700
+      internalID: 1251465752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_187
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b3ccd8ad9d8cd45b98eb18032d85bc
+      internalID: 1927538940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_188
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719d66f5627e7df43b17bcdc293ee37a
+      internalID: -1872918592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_189
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd41076f164a9048a3941c011d53887
+      internalID: 2067186623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_190
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd5eb91b497135469cc2b0f16c2ad87
+      internalID: -430981598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_191
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f063b7494e30194c8dda9ceac83b7c1
+      internalID: 1727492887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_192
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f7bd1bec179d34788fe043fcad5283
+      internalID: 377336198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_193
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bd4228c44fb3d4b981df4cde943f97
+      internalID: 515444061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_194
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f93f30f59925b42b1b14595976c635
+      internalID: -1489241128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_195
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4f3faba541b2647a27afc41976700c
+      internalID: 1106308222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_196
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f157a4b5ba8d0c4e8fab3fde627fa80
+      internalID: 197075392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_197
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7ddea0172d4c04ca62c94e4378df2a
+      internalID: 862043893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_198
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e55d5d582c22f479870ff804925f3b
+      internalID: -1496463267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_199
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbfee45f88294b4aabeaa8f8c7b6d05
+      internalID: -219349612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_200
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cda1ac2032d1b4fa8a92ee97dd5b9f
+      internalID: -896649570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_201
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750bbfbb35d6d434b941369589a60c99
+      internalID: -949445377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_202
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76229fb09b865714c9c07a32215feeeb
+      internalID: 974495452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_203
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e5519e6a3b4c747b2415c064eb05ce
+      internalID: 165840766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_204
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0174e0574bc153a42addc8cc709f5dbe
+      internalID: -1362487239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_205
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3440aaf8930a1749a14fdb52b43d93e
+      internalID: 1891286630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_206
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db447fb96cf0fc43a0dc0acbf1e7d16
+      internalID: -386724043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_207
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1c588ed16239942a7c35080fd9f8b6
+      internalID: 850102529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_208
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 5
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40718ab13ee813c40a8b579117fc8d52
+      internalID: -1769579074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_209
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e703c162085604ba4c2dbab8af2920
+      internalID: -1098561792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_210
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6a1eff32cc5664f857dda6d74ea9e0
+      internalID: -919350741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_211
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0976dc46c690e324a803fe525704bcf8
+      internalID: -1760517189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_212
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605efaa14135ea44a8264bf419a17970
+      internalID: -470264407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_213
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd45ce8b4ca8964ab2e447fd97c195a
+      internalID: 1493604408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_214
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8fbe23d13c4e44fa52aff8aa03865d
+      internalID: -1023239816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_215
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab7b87fcbea95345a499109dc9c8cdd
+      internalID: -516542869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_216
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe56296e5ae69245bf8485192aaa590
+      internalID: -980517143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_217
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10889d0e9154ff04c9a496dc4fda8a09
+      internalID: 1488337356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_218
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bdeed548ae77041a303edd0864bd77
+      internalID: -2093914559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_219
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278fadf8b8605854db265eb310bbaa9d
+      internalID: -225755471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_220
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305ad519e9450794295a6e792817115e
+      internalID: 1045061257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_221
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b038039fc7ff7b4eb81b8e796d3c740
+      internalID: 1443555973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_222
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378f43d07798c9745a1249366022ce22
+      internalID: 2006306503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_223
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fb78a1506492149a159d3fedbb3bd7
+      internalID: -822081049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_224
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e0efbd853b548448ef7bd2fe2bb7df
+      internalID: 1763154472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_225
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af367fd9a07dd7745ba2edbab27faa6f
+      internalID: -1925526366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_226
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20ea8082451ea74bb820a97ea7243b4
+      internalID: -1185673180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_227
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36be923f55e0a2840847ee3082d50923
+      internalID: -1012784886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_228
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffded48d244aece42843902cbabcb838
+      internalID: 1544539224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_229
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a7b34c1c8b0ea499471dddb4487409
+      internalID: 1356721758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_230
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51722802242d1a94da3d1b01e8005a7e
+      internalID: -112635556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_231
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc0e9996bdd6b641a04f205c80a8d2c
+      internalID: -1877328825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_232
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa68dd5bf826844ebbb9a83a1aca49d
+      internalID: 1810780009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_233
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d28356fe33c2d24680c56c1b5a4dfe5
+      internalID: 1225915312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_234
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd99e030f9fbf74f8c41dcb593fd926
+      internalID: 1713241452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_235
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c64e2429cb0c048ba7c4e5c373e0ec
+      internalID: -320411957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_236
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d696a3584815f4a8596e43df1a78e4
+      internalID: 468603407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_237
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c499fb07c7cb7ad459c27c25b311b8d0
+      internalID: -615224438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_238
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592482dc785d5d0479decbcdc0da14ff
+      internalID: -1658996743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_239
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c7b8276a3e4994d997abaa82d28836
+      internalID: -932470224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_240
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 0
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f24c6487d50c7e4aaa9c016b5842f50
+      internalID: -1111890283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_241
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2346a102d7e32744eb3c1c541fee82e3
+      internalID: -52323520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_242
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53486ae2cc18f684890d6b3a40412f2d
+      internalID: -92121527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_243
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5907d226ead3662418ce6eb2017be4e5
+      internalID: 254653722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_244
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d805e73bc9862324ea6d7a45c9f2efc7
+      internalID: 297715471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_245
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f047924b9997c8488c787608046c6ea
+      internalID: -2021965590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_246
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 17
+        width: 33
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a62d23da9a51684298d8aca61220bf9
+      internalID: -1708044661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_247
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 15
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a279a0938b8b3f468678d4dd51afbb0
+      internalID: 1507355159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_248
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 13
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac021d714f694ab4ebede5308c3f4ddb
+      internalID: -1017618872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_249
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 7
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d96e223147ff94eb1ffd8f2c8c0965
+      internalID: -336794009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_250
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 9
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ff1364151144d4da044f018b5668fb
+      internalID: -2131740334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_251
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 15
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5d383aeafabe340be324a54872ac68
+      internalID: -2012345531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_252
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 5
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2881844fa457e45458573e96663b047d
+      internalID: 1058956535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_253
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 5
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebc0a913de29c64e87b0810395ad5a4
+      internalID: 13814097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_254
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 5
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5757c70af63a64dbf4d3fc66a09e83
+      internalID: 194839774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_255
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 11
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73dc6395aae19b43916931fa980e8eb
+      internalID: 1915448435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_256
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 11
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2af672f36acf44d89ccc5e7147c1e6
+      internalID: -1272969528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_257
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 11
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9dd2e23e4bfbe448e3615247970786
+      internalID: -942698533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Terraria - Liquids1_258
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 11
+        width: 29
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea411f750b1e6b488e7c3881e70def7
+      internalID: 1493746804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 46743872e62631b4189cf3664f07b09f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PC Computer - Terraria - Liquids1_0: -1467827755
+      PC Computer - Terraria - Liquids1_1: 807258210
+      PC Computer - Terraria - Liquids1_10: 32295370
+      PC Computer - Terraria - Liquids1_100: 1880907085
+      PC Computer - Terraria - Liquids1_101: 994042089
+      PC Computer - Terraria - Liquids1_102: -312982407
+      PC Computer - Terraria - Liquids1_103: -1938465151
+      PC Computer - Terraria - Liquids1_104: 1168910686
+      PC Computer - Terraria - Liquids1_105: 1857913464
+      PC Computer - Terraria - Liquids1_106: 509510909
+      PC Computer - Terraria - Liquids1_107: 1513817289
+      PC Computer - Terraria - Liquids1_108: -367654926
+      PC Computer - Terraria - Liquids1_109: 306018066
+      PC Computer - Terraria - Liquids1_11: -452779633
+      PC Computer - Terraria - Liquids1_110: 247496594
+      PC Computer - Terraria - Liquids1_111: 1914071294
+      PC Computer - Terraria - Liquids1_112: -192890925
+      PC Computer - Terraria - Liquids1_113: 558880163
+      PC Computer - Terraria - Liquids1_114: -1183366285
+      PC Computer - Terraria - Liquids1_115: 692782220
+      PC Computer - Terraria - Liquids1_116: -1190967279
+      PC Computer - Terraria - Liquids1_117: 1562187717
+      PC Computer - Terraria - Liquids1_118: -146957545
+      PC Computer - Terraria - Liquids1_119: -843586067
+      PC Computer - Terraria - Liquids1_12: -281297458
+      PC Computer - Terraria - Liquids1_120: -1800624992
+      PC Computer - Terraria - Liquids1_121: -1609848059
+      PC Computer - Terraria - Liquids1_122: 1511675907
+      PC Computer - Terraria - Liquids1_123: -817199088
+      PC Computer - Terraria - Liquids1_124: 1453434551
+      PC Computer - Terraria - Liquids1_125: 1713807352
+      PC Computer - Terraria - Liquids1_126: -17701790
+      PC Computer - Terraria - Liquids1_127: 1793374973
+      PC Computer - Terraria - Liquids1_128: -1278177180
+      PC Computer - Terraria - Liquids1_129: -1047563882
+      PC Computer - Terraria - Liquids1_13: 1624237815
+      PC Computer - Terraria - Liquids1_130: -2077297775
+      PC Computer - Terraria - Liquids1_131: 1870022050
+      PC Computer - Terraria - Liquids1_132: 1389609984
+      PC Computer - Terraria - Liquids1_133: 1786611626
+      PC Computer - Terraria - Liquids1_134: -2126500191
+      PC Computer - Terraria - Liquids1_135: -842262444
+      PC Computer - Terraria - Liquids1_136: 1376602489
+      PC Computer - Terraria - Liquids1_137: -1535638621
+      PC Computer - Terraria - Liquids1_138: -1703421346
+      PC Computer - Terraria - Liquids1_139: -768225444
+      PC Computer - Terraria - Liquids1_14: -1031402066
+      PC Computer - Terraria - Liquids1_140: -211755468
+      PC Computer - Terraria - Liquids1_141: -1134561863
+      PC Computer - Terraria - Liquids1_142: 435909917
+      PC Computer - Terraria - Liquids1_143: 1792788032
+      PC Computer - Terraria - Liquids1_144: 1653854083
+      PC Computer - Terraria - Liquids1_145: -1115801957
+      PC Computer - Terraria - Liquids1_146: 1746924892
+      PC Computer - Terraria - Liquids1_147: 490858853
+      PC Computer - Terraria - Liquids1_148: 1781972716
+      PC Computer - Terraria - Liquids1_149: 78763192
+      PC Computer - Terraria - Liquids1_15: 1167203178
+      PC Computer - Terraria - Liquids1_150: 112060043
+      PC Computer - Terraria - Liquids1_151: 1903886845
+      PC Computer - Terraria - Liquids1_152: 958606475
+      PC Computer - Terraria - Liquids1_153: -1086535003
+      PC Computer - Terraria - Liquids1_154: 1404928438
+      PC Computer - Terraria - Liquids1_155: -1301610623
+      PC Computer - Terraria - Liquids1_156: -1724875932
+      PC Computer - Terraria - Liquids1_157: -2030393252
+      PC Computer - Terraria - Liquids1_158: 204321513
+      PC Computer - Terraria - Liquids1_159: -1463088289
+      PC Computer - Terraria - Liquids1_16: -1378777971
+      PC Computer - Terraria - Liquids1_160: 1652507686
+      PC Computer - Terraria - Liquids1_161: 1835744341
+      PC Computer - Terraria - Liquids1_162: -459797094
+      PC Computer - Terraria - Liquids1_163: 767633723
+      PC Computer - Terraria - Liquids1_164: -1619019169
+      PC Computer - Terraria - Liquids1_165: -322085065
+      PC Computer - Terraria - Liquids1_166: 405630049
+      PC Computer - Terraria - Liquids1_167: 522055520
+      PC Computer - Terraria - Liquids1_168: -1114090804
+      PC Computer - Terraria - Liquids1_169: -290138833
+      PC Computer - Terraria - Liquids1_17: 302785095
+      PC Computer - Terraria - Liquids1_170: -1627955601
+      PC Computer - Terraria - Liquids1_171: -44853086
+      PC Computer - Terraria - Liquids1_172: -789482261
+      PC Computer - Terraria - Liquids1_173: 916124843
+      PC Computer - Terraria - Liquids1_174: -1741483829
+      PC Computer - Terraria - Liquids1_175: 1664986171
+      PC Computer - Terraria - Liquids1_176: -417839804
+      PC Computer - Terraria - Liquids1_177: 1923489557
+      PC Computer - Terraria - Liquids1_178: -854785231
+      PC Computer - Terraria - Liquids1_179: -1903623293
+      PC Computer - Terraria - Liquids1_18: 2136089662
+      PC Computer - Terraria - Liquids1_180: 540762246
+      PC Computer - Terraria - Liquids1_181: 284585574
+      PC Computer - Terraria - Liquids1_182: 1220187273
+      PC Computer - Terraria - Liquids1_183: -1377869942
+      PC Computer - Terraria - Liquids1_184: -379184265
+      PC Computer - Terraria - Liquids1_185: 858498586
+      PC Computer - Terraria - Liquids1_186: 1251465752
+      PC Computer - Terraria - Liquids1_187: 1927538940
+      PC Computer - Terraria - Liquids1_188: -1872918592
+      PC Computer - Terraria - Liquids1_189: 2067186623
+      PC Computer - Terraria - Liquids1_19: -442460496
+      PC Computer - Terraria - Liquids1_190: -430981598
+      PC Computer - Terraria - Liquids1_191: 1727492887
+      PC Computer - Terraria - Liquids1_192: 377336198
+      PC Computer - Terraria - Liquids1_193: 515444061
+      PC Computer - Terraria - Liquids1_194: -1489241128
+      PC Computer - Terraria - Liquids1_195: 1106308222
+      PC Computer - Terraria - Liquids1_196: 197075392
+      PC Computer - Terraria - Liquids1_197: 862043893
+      PC Computer - Terraria - Liquids1_198: -1496463267
+      PC Computer - Terraria - Liquids1_199: -219349612
+      PC Computer - Terraria - Liquids1_2: -653320505
+      PC Computer - Terraria - Liquids1_20: -2122048983
+      PC Computer - Terraria - Liquids1_200: -896649570
+      PC Computer - Terraria - Liquids1_201: -949445377
+      PC Computer - Terraria - Liquids1_202: 974495452
+      PC Computer - Terraria - Liquids1_203: 165840766
+      PC Computer - Terraria - Liquids1_204: -1362487239
+      PC Computer - Terraria - Liquids1_205: 1891286630
+      PC Computer - Terraria - Liquids1_206: -386724043
+      PC Computer - Terraria - Liquids1_207: 850102529
+      PC Computer - Terraria - Liquids1_208: -1769579074
+      PC Computer - Terraria - Liquids1_209: -1098561792
+      PC Computer - Terraria - Liquids1_21: 1297100549
+      PC Computer - Terraria - Liquids1_210: -919350741
+      PC Computer - Terraria - Liquids1_211: -1760517189
+      PC Computer - Terraria - Liquids1_212: -470264407
+      PC Computer - Terraria - Liquids1_213: 1493604408
+      PC Computer - Terraria - Liquids1_214: -1023239816
+      PC Computer - Terraria - Liquids1_215: -516542869
+      PC Computer - Terraria - Liquids1_216: -980517143
+      PC Computer - Terraria - Liquids1_217: 1488337356
+      PC Computer - Terraria - Liquids1_218: -2093914559
+      PC Computer - Terraria - Liquids1_219: -225755471
+      PC Computer - Terraria - Liquids1_22: -2006289645
+      PC Computer - Terraria - Liquids1_220: 1045061257
+      PC Computer - Terraria - Liquids1_221: 1443555973
+      PC Computer - Terraria - Liquids1_222: 2006306503
+      PC Computer - Terraria - Liquids1_223: -822081049
+      PC Computer - Terraria - Liquids1_224: 1763154472
+      PC Computer - Terraria - Liquids1_225: -1925526366
+      PC Computer - Terraria - Liquids1_226: -1185673180
+      PC Computer - Terraria - Liquids1_227: -1012784886
+      PC Computer - Terraria - Liquids1_228: 1544539224
+      PC Computer - Terraria - Liquids1_229: 1356721758
+      PC Computer - Terraria - Liquids1_23: -1748248164
+      PC Computer - Terraria - Liquids1_230: -112635556
+      PC Computer - Terraria - Liquids1_231: -1877328825
+      PC Computer - Terraria - Liquids1_232: 1810780009
+      PC Computer - Terraria - Liquids1_233: 1225915312
+      PC Computer - Terraria - Liquids1_234: 1713241452
+      PC Computer - Terraria - Liquids1_235: -320411957
+      PC Computer - Terraria - Liquids1_236: 468603407
+      PC Computer - Terraria - Liquids1_237: -615224438
+      PC Computer - Terraria - Liquids1_238: -1658996743
+      PC Computer - Terraria - Liquids1_239: -932470224
+      PC Computer - Terraria - Liquids1_24: 716319343
+      PC Computer - Terraria - Liquids1_240: -1111890283
+      PC Computer - Terraria - Liquids1_241: -52323520
+      PC Computer - Terraria - Liquids1_242: -92121527
+      PC Computer - Terraria - Liquids1_243: 254653722
+      PC Computer - Terraria - Liquids1_244: 297715471
+      PC Computer - Terraria - Liquids1_245: -2021965590
+      PC Computer - Terraria - Liquids1_246: -1708044661
+      PC Computer - Terraria - Liquids1_247: 1507355159
+      PC Computer - Terraria - Liquids1_248: -1017618872
+      PC Computer - Terraria - Liquids1_249: -336794009
+      PC Computer - Terraria - Liquids1_25: 1671400248
+      PC Computer - Terraria - Liquids1_250: -2131740334
+      PC Computer - Terraria - Liquids1_251: -2012345531
+      PC Computer - Terraria - Liquids1_252: 1058956535
+      PC Computer - Terraria - Liquids1_253: 13814097
+      PC Computer - Terraria - Liquids1_254: 194839774
+      PC Computer - Terraria - Liquids1_255: 1915448435
+      PC Computer - Terraria - Liquids1_256: -1272969528
+      PC Computer - Terraria - Liquids1_257: -942698533
+      PC Computer - Terraria - Liquids1_258: 1493746804
+      PC Computer - Terraria - Liquids1_26: 301975813
+      PC Computer - Terraria - Liquids1_27: 547065708
+      PC Computer - Terraria - Liquids1_28: 302887364
+      PC Computer - Terraria - Liquids1_29: 469586873
+      PC Computer - Terraria - Liquids1_3: -2110933363
+      PC Computer - Terraria - Liquids1_30: 704232515
+      PC Computer - Terraria - Liquids1_31: 1444616566
+      PC Computer - Terraria - Liquids1_32: -1012780533
+      PC Computer - Terraria - Liquids1_33: -883848258
+      PC Computer - Terraria - Liquids1_34: -2036070783
+      PC Computer - Terraria - Liquids1_35: -136274637
+      PC Computer - Terraria - Liquids1_36: -653430750
+      PC Computer - Terraria - Liquids1_37: 1454066541
+      PC Computer - Terraria - Liquids1_38: -972321301
+      PC Computer - Terraria - Liquids1_39: 118417534
+      PC Computer - Terraria - Liquids1_4: -1897049825
+      PC Computer - Terraria - Liquids1_40: -1110638590
+      PC Computer - Terraria - Liquids1_41: -933075890
+      PC Computer - Terraria - Liquids1_42: -294125463
+      PC Computer - Terraria - Liquids1_43: -1647928730
+      PC Computer - Terraria - Liquids1_44: -1653792776
+      PC Computer - Terraria - Liquids1_45: 1234817162
+      PC Computer - Terraria - Liquids1_46: 139669100
+      PC Computer - Terraria - Liquids1_47: -2074002164
+      PC Computer - Terraria - Liquids1_48: -1133492801
+      PC Computer - Terraria - Liquids1_49: -492484708
+      PC Computer - Terraria - Liquids1_5: 1419485709
+      PC Computer - Terraria - Liquids1_50: -1624668300
+      PC Computer - Terraria - Liquids1_51: 215579858
+      PC Computer - Terraria - Liquids1_52: 849308055
+      PC Computer - Terraria - Liquids1_53: -717173484
+      PC Computer - Terraria - Liquids1_54: 681233821
+      PC Computer - Terraria - Liquids1_55: -581888906
+      PC Computer - Terraria - Liquids1_56: 1402560713
+      PC Computer - Terraria - Liquids1_57: -1421324681
+      PC Computer - Terraria - Liquids1_58: 2043198758
+      PC Computer - Terraria - Liquids1_59: -1454563375
+      PC Computer - Terraria - Liquids1_6: 1007566674
+      PC Computer - Terraria - Liquids1_60: 2103062045
+      PC Computer - Terraria - Liquids1_61: 1202938399
+      PC Computer - Terraria - Liquids1_62: -383414549
+      PC Computer - Terraria - Liquids1_63: -1495861996
+      PC Computer - Terraria - Liquids1_64: -231650700
+      PC Computer - Terraria - Liquids1_65: -1555179802
+      PC Computer - Terraria - Liquids1_66: -412566303
+      PC Computer - Terraria - Liquids1_67: -1651826472
+      PC Computer - Terraria - Liquids1_68: -1779804909
+      PC Computer - Terraria - Liquids1_69: 459788040
+      PC Computer - Terraria - Liquids1_7: -1369327728
+      PC Computer - Terraria - Liquids1_70: -2046653438
+      PC Computer - Terraria - Liquids1_71: 984654487
+      PC Computer - Terraria - Liquids1_72: -1537632114
+      PC Computer - Terraria - Liquids1_73: -595759984
+      PC Computer - Terraria - Liquids1_74: 851674110
+      PC Computer - Terraria - Liquids1_75: -176806301
+      PC Computer - Terraria - Liquids1_76: -862499842
+      PC Computer - Terraria - Liquids1_77: -847110885
+      PC Computer - Terraria - Liquids1_78: -1348659804
+      PC Computer - Terraria - Liquids1_79: -1064960165
+      PC Computer - Terraria - Liquids1_8: 731417378
+      PC Computer - Terraria - Liquids1_80: -1480129451
+      PC Computer - Terraria - Liquids1_81: 922169619
+      PC Computer - Terraria - Liquids1_82: 598681232
+      PC Computer - Terraria - Liquids1_83: -145636099
+      PC Computer - Terraria - Liquids1_84: 1524879767
+      PC Computer - Terraria - Liquids1_85: -1065024104
+      PC Computer - Terraria - Liquids1_86: -279994767
+      PC Computer - Terraria - Liquids1_87: -2082416805
+      PC Computer - Terraria - Liquids1_88: 1720832701
+      PC Computer - Terraria - Liquids1_89: -1829071372
+      PC Computer - Terraria - Liquids1_9: -189278859
+      PC Computer - Terraria - Liquids1_90: -712250285
+      PC Computer - Terraria - Liquids1_91: 734680114
+      PC Computer - Terraria - Liquids1_92: -1055811293
+      PC Computer - Terraria - Liquids1_93: -984436084
+      PC Computer - Terraria - Liquids1_94: -726654471
+      PC Computer - Terraria - Liquids1_95: 1046614947
+      PC Computer - Terraria - Liquids1_96: -930718003
+      PC Computer - Terraria - Liquids1_97: -574532716
+      PC Computer - Terraria - Liquids1_98: 2107174579
+      PC Computer - Terraria - Liquids1_99: -1095315917
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
