@@ -25,6 +25,7 @@ public class MirrorEtc : MonoBehaviour
     {
         if (!isTriggered && other.CompareTag("Sword"))
         {
+            SoundManager.instance.PlaySFX(SFX_KYW.BreakMirror);
             // 색상을 빨간색으로 변경
             if (spriteRenderer != null)
             {

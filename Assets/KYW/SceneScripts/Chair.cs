@@ -13,10 +13,16 @@ public class Chair : MonoBehaviour
     [SerializeField] private float shakeAmount = 0.1f; // 흔들림 강도
     [SerializeField] private float shakeSpeed = 2f; // 흔들림 속도
 
+    [Header("플레이어 감지 설정")]
+    [SerializeField] private float detectionRadius = 5f; // 플레이어 감지 범위
+
     private int currentWaypointIndex = 0;
     private bool isMoving = false;
     private Vector3 originalPosition;
     private float shakeTimer = 0f;
+    private float soundTimer = 0f;
+    private float soundInterval = 1f; // 소리 재생 간격
+    private Transform playerTransform;
 
     private void Start()
     {
@@ -36,6 +42,38 @@ public class Chair : MonoBehaviour
             float offsetX = Mathf.Sin(shakeTimer) * shakeAmount;
             float offsetY = Mathf.Cos(shakeTimer * 0.5f) * shakeAmount;
             transform.position = originalPosition + new Vector3(offsetX, offsetY, 0);
+
+            // 플레이어 감지 및 소리 재생
+            CheckPlayerAndPlaySound();
+        }
+    }
+
+    private void CheckPlayerAndPlaySound()
+    {
+        // 플레이어 찾기
+        if (playerTransform == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                playerTransform = player.transform;
+            }
+        }
+
+        // 플레이어가 감지 범위 안에 있는지 확인
+        if (playerTransform != null)
+        {
+            float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+            
+            if (distanceToPlayer <= detectionRadius)
+            {
+                soundTimer += Time.deltaTime;
+                if (soundTimer >= soundInterval)
+                {
+                    SoundManager.instance.PlaySFX(SFX_KYW.KwangKwang);
+                    soundTimer = 0f;
+                }
+            }
         }
     }
 
@@ -79,5 +117,9 @@ public class Chair : MonoBehaviour
             Gizmos.DrawLine(current, next);
             Gizmos.DrawWireSphere(current, 0.2f);
         }
+
+        // 플레이어 감지 범위 표시
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 } 

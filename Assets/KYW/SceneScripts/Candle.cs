@@ -28,6 +28,7 @@ public class Candle : MonoBehaviour
     {
         isActivated = true;
         childObject.SetActive(true);
+        SoundManager.instance.PlaySFX(SFX_KYW.CandleLight);
     }
 
     // 디버그용 기즈모

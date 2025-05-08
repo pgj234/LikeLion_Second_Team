@@ -35,6 +35,7 @@ public class Picture : MonoBehaviour
         Vector2 randomDirection = new Vector2(Mathf.Cos(randomAngle * Mathf.Deg2Rad), Mathf.Sin(randomAngle * Mathf.Deg2Rad));
         Vector3 targetPosition = transform.position + new Vector3(randomDirection.x, randomDirection.y, 0) * randomDistance;
 
+        SoundManager.instance.PlaySFX(SFX_KYW.DDok2);
         // 랜덤한 위치로 이동
         transform.DOMove(targetPosition, moveDuration)
             .SetEase(Ease.OutBack)
