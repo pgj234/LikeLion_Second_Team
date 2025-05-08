@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1722154845391000281}
   - component: {fileID: 3115183387523068864}
   m_Layer: 0
-  m_Name: MagmaShotSwitchObj
+  m_Name: ObjectSwitchObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
