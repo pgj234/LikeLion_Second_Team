@@ -42,6 +42,7 @@ public class MagmaShot : MonoBehaviour
             shotDelayTimer = shotDelayTime;
 
             createObj = Instantiate(shotObj, transform.position, Quaternion.identity);
+            Debug.Log(createObj.transform.position);
             ranAngle = Random.Range(moaAngle * -0.5f, moaAngle * 0.5f);
             rad = ranAngle * Mathf.Deg2Rad;
 
