@@ -5,6 +5,7 @@ public class MovingLava : MonoBehaviour
     public static MovingLava Instance { get; private set; }
 
     [SerializeField] private float speed = 2f;
+    private Vector3 moveDirection = Vector3.right;  // 이동 방향
 
     private void Awake()
     {
@@ -19,7 +20,8 @@ public class MovingLava : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        // position을 직접 변경하면 자식 오브젝트도 자동으로 따라감
+        transform.position += moveDirection * speed * Time.deltaTime;
     }
 
     // 외부에서 속도 변경
@@ -32,5 +34,11 @@ public class MovingLava : MonoBehaviour
     public float GetSpeed()
     {
         return speed;
+    }
+
+    // 이동 방향 변경
+    public void SetMoveDirection(Vector3 direction)
+    {
+        moveDirection = direction.normalized;
     }
 } 
