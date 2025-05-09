@@ -7,15 +7,25 @@ public class TrailColliderSpawner2D : MonoBehaviour
     [SerializeField] float spacing;           // 콜라이더 간격
     [SerializeField] float lifetime;
 
-    //[SerializeField] Transform colliderObjBasketTr;
-
     Vector2 lastSpawnPos;
 
     float angle;
 
     void Start()
     {
+        EventManager.instance.OnPlayerRespawned += Destroy;
+
         lastSpawnPos = transform.position;
+    }
+
+    internal void Destroy()
+    {
+        Destroy(gameObject);
+    }
+
+    void OnDestroy()
+    {
+        EventManager.instance.OnPlayerRespawned -= Destroy;
     }
 
     void Update()
@@ -36,6 +46,6 @@ public class TrailColliderSpawner2D : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
         GameObject col = Instantiate(colliderPrefab, pos, rotation);
-        Destroy(col, lifetime);
+        col.GetComponent<MagmaTrailCollider>().StartProc(lifetime);
     }
 }
