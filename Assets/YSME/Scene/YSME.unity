@@ -1624,7 +1624,7 @@ Tilemap:
       - {fileID: 21300002, guid: 73398d231c2af4d46bd9cf4c231f519e, type: 3}
       - {fileID: 21300004, guid: 73398d231c2af4d46bd9cf4c231f519e, type: 3}
       - {fileID: 21300006, guid: 73398d231c2af4d46bd9cf4c231f519e, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 110, y: -14, z: 0}
@@ -6081,7 +6081,7 @@ Transform:
   m_GameObject: {fileID: 590557436}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 152.9, y: 15.1, z: -10}
+  m_LocalPosition: {x: 2.64, y: -8.05, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9342,7 +9342,7 @@ PrefabInstance:
     - target: {fileID: 428183637239314084, guid: 3bbf1c3da9734274cba4c612074106d2, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 7578649553193390201, guid: 2fd726cd0500e104b8aa82b67559906d, type: 2}
+      objectReference: {fileID: -8018922397533259316, guid: 2fd726cd0500e104b8aa82b67559906d, type: 2}
     - target: {fileID: 825801349787350437, guid: 3bbf1c3da9734274cba4c612074106d2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10039,11 +10039,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8904382019132736330, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 152.9
+      value: 2.64
       objectReference: {fileID: 0}
     - target: {fileID: 8904382019132736330, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.1
+      value: -8.05
       objectReference: {fileID: 0}
     - target: {fileID: 8904382019132736330, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13935,7 +13935,7 @@ Transform:
   m_GameObject: {fileID: 1964530533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 150.91832, y: 15.100002, z: -10}
+  m_LocalPosition: {x: 2.64, y: -8.05, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
