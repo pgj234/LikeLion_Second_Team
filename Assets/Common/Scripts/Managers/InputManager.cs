@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using Unity.Cinemachine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class InputManager : MonoBehaviour
 {
     public static InputManager instance;
+
+    Player player;
 
     public float xInput { get; private set; }
     public float yInput { get; private set; }
@@ -39,6 +42,11 @@ public class InputManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        player = FindObjectOfType<Player>();
     }
 
     private void Update()
@@ -77,7 +85,6 @@ public class InputManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             // Player의 Damaged 함수 호출
-            Player player = FindObjectOfType<Player>();
             if (player != null)
             {
                 player.Damaged(1); // 1 데미지
@@ -90,28 +97,93 @@ public class InputManager : MonoBehaviour
 
         }
 
-        // F1~F5 키를 누르면 해당 씬으로 이동
+        // F1~F5 키를 누르면 해당 씬으로 이동 (Team9 씬 일때는 로딩과 함께 지역 이동)
         if (Input.GetKeyDown(KeyCode.F1))
         {
-            SceneManager.LoadScene("JIH");
+            if (0 == string.Compare(SceneManager.GetActiveScene().name, "Team9"))
+            {
+                FinalSceneLoad();
+            }
+            else
+            {
+                SceneManager.LoadScene("PGJ");
+            }
         }
         else if (Input.GetKeyDown(KeyCode.F2))
         {
-            SceneManager.LoadScene("YSME");
+            if (0 == string.Compare(SceneManager.GetActiveScene().name, "Team9"))
+            {
+                SceneMaster.instance.cineCam.GetComponent<CinemachineConfiner2D>().enabled = false;
+                player.transform.localPosition = new Vector2(118, 31.5f);
+                Invoke("CinemachineON", 1);
+            }
+            else
+            {
+                SceneManager.LoadScene("JIH");
+            }
         }
         else if (Input.GetKeyDown(KeyCode.F3))
         {
-            SceneManager.LoadScene("PGJ");
+            if (0 == string.Compare(SceneManager.GetActiveScene().name, "Team9"))
+            {
+                SceneMaster.instance.cineCam.GetComponent<CinemachineConfiner2D>().enabled = false;
+                player.transform.localPosition = new Vector2(227, 39.2f);
+                Invoke("CinemachineON", 1);
+            }
+            else
+            {
+                SceneManager.LoadScene("KYW");
+            }
         }
         else if (Input.GetKeyDown(KeyCode.F4))
         {
-            SceneManager.LoadScene("KYW");
+            if (0 == string.Compare(SceneManager.GetActiveScene().name, "Team9"))
+            {
+                SceneMaster.instance.cineCam.GetComponent<CinemachineConfiner2D>().enabled = false;
+                player.transform.localPosition = new Vector2(329, 42.2f);
+                Invoke("CinemachineON", 1);
+            }
+            else
+            {
+                SceneManager.LoadScene("NSH");
+            }
         }
         else if (Input.GetKeyDown(KeyCode.F5))
         {
-            SceneManager.LoadScene("NSH");
+            if (0 == string.Compare(SceneManager.GetActiveScene().name, "Team9"))
+            {
+                SceneMaster.instance.cineCam.GetComponent<CinemachineConfiner2D>().enabled = false;
+                player.transform.localPosition = new Vector2(552, 94);
+                Invoke("CinemachineON", 1);
+            }
+            else
+            {
+                SceneManager.LoadScene("YSME");
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.F12))
+        {
+            FinalSceneLoad();
         }
     }
+
+    void CinemachineON()
+    {
+        SceneMaster.instance.cineCam.GetComponent<CinemachineConfiner2D>().enabled = true;
+        SceneMaster.instance.cineCam.gameObject.SetActive(false);
+        SceneMaster.instance.cineCam.gameObject.SetActive(true);
+    }
+
+    void FinalSceneLoad()
+    {
+        SceneManager.LoadScene("Team9");
+        SceneManager.LoadScene("Final_2 1111", LoadSceneMode.Additive);
+        SceneManager.LoadScene("JIH_Final 1111", LoadSceneMode.Additive);
+        SceneManager.LoadScene("KYW_FinalLava1111", LoadSceneMode.Additive);
+        SceneManager.LoadScene("PGJ_Final 1111", LoadSceneMode.Additive);
+        SceneManager.LoadScene("YSME_Final 1111", LoadSceneMode.Additive);
+    }
+
     [ContextMenu("인풋멈추기")]
     public void InputStop()
     {
