@@ -32,6 +32,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Common/Scene/Team9.unity
     guid: 3f0b37f12d4bdf0448245c9244a1f7e8
+  - enabled: 1
+    path: Assets/Common/Scene/Final_2 1111.unity
+    guid: 6e3a1bcd0c5e3154f9aca8941c5dd904
+  - enabled: 1
+    path: Assets/Common/Scene/JIH_Final 1111.unity
+    guid: 9e658df2c35342040bf08f89c5e5393d
+  - enabled: 1
+    path: Assets/Common/Scene/KYW_FinalLava1111.unity
+    guid: ca094b472d17eb144a500d0096b61992
+  - enabled: 1
+    path: Assets/Common/Scene/PGJ_Final 1111.unity
+    guid: 3e208c759e73b6647840e1ca9cb38d3f
+  - enabled: 1
+    path: Assets/Common/Scene/YSME_Final 1111.unity
+    guid: c74aa6a43b1736a4e96f12121f48edda
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

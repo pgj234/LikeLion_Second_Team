@@ -19,6 +19,11 @@ public class PlayerDieState : PlayerState
             if (0 == string.Compare(SceneManager.GetActiveScene().name, "Team9"))
             {
                 SceneManager.LoadScene("Team9");
+                SceneManager.LoadScene("Final_2 1111", LoadSceneMode.Additive);
+                SceneManager.LoadScene("JIH_Final 1111", LoadSceneMode.Additive);
+                SceneManager.LoadScene("KYW_FinalLava1111", LoadSceneMode.Additive);
+                SceneManager.LoadScene("PGJ_Final 1111", LoadSceneMode.Additive);
+                SceneManager.LoadScene("YSME_Final 1111", LoadSceneMode.Additive);
             }
             else
             {
