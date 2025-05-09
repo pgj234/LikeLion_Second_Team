@@ -43,39 +43,39 @@ public class Chair : MonoBehaviour
             float offsetY = Mathf.Cos(shakeTimer * 0.5f) * shakeAmount;
             transform.position = originalPosition + new Vector3(offsetX, offsetY, 0);
 
-            // 플레이어 감지 및 소리 재생
-            CheckPlayerAndPlaySound();
+            // // 플레이어 감지 및 소리 재생
+            // CheckPlayerAndPlaySound();
         }
     }
 
-    private void CheckPlayerAndPlaySound()
-    {
-        // 플레이어 찾기
-        if (playerTransform == null)
-        {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null)
-            {
-                playerTransform = player.transform;
-            }
-        }
+    // private void CheckPlayerAndPlaySound()
+    // {
+    //     // 플레이어 찾기
+    //     if (playerTransform == null)
+    //     {
+    //         GameObject player = GameObject.FindGameObjectWithTag("Player");
+    //         if (player != null)
+    //         {
+    //             playerTransform = player.transform;
+    //         }
+    //     }
 
-        // 플레이어가 감지 범위 안에 있는지 확인
-        if (playerTransform != null)
-        {
-            float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+    //     // 플레이어가 감지 범위 안에 있는지 확인
+    //     if (playerTransform != null)
+    //     {
+    //         float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
             
-            if (distanceToPlayer <= detectionRadius)
-            {
-                soundTimer += Time.deltaTime;
-                if (soundTimer >= soundInterval)
-                {
-                    SoundManager.instance.PlaySFX(SFX_KYW.KwangKwang);
-                    soundTimer = 0f;
-                }
-            }
-        }
-    }
+    //         if (distanceToPlayer <= detectionRadius)
+    //         {
+    //             soundTimer += Time.deltaTime;
+    //             if (soundTimer >= soundInterval)
+    //             {
+    //                 SoundManager.instance.PlaySFX(SFX_KYW.KwangKwang);
+    //                 soundTimer = 0f;
+    //             }
+    //         }
+    //     }
+    // }
 
     private void MoveToNextWaypoint()
     {
@@ -118,8 +118,8 @@ public class Chair : MonoBehaviour
             Gizmos.DrawWireSphere(current, 0.2f);
         }
 
-        // 플레이어 감지 범위 표시
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+        // // 플레이어 감지 범위 표시
+        // Gizmos.color = Color.yellow;
+        // Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 } 

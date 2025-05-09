@@ -183,4 +183,20 @@ public class StoryManager : MonoBehaviour
         }
         Debug.LogWarning($"스토리 '{storyName}'을 찾을 수 없습니다.");
     }
+
+    // 현재 실행 중인 스토리의 이름을 반환하는 함수
+    public string GetCurrentStoryName()
+    {
+        if (currentStoryIndex >= 0 && currentStoryIndex < stories.Length)
+        {
+            return stories[currentStoryIndex].storyName;
+        }
+        return null;
+    }
+
+    // 스토리가 실행 중인지 확인하는 함수
+    public bool IsStoryActive()
+    {
+        return isStoryActive;
+    }
 } 
