@@ -23,6 +23,21 @@ public class CameraProduction : MonoBehaviour
     [SerializeField] private bool Loop = false;
     private bool alreadyPlayed = false;
 
+    void Start()
+    {
+        EventManager.instance.OnPlayerRespawned += OnPlayerDied;
+    }
+
+    void OnDestroy()
+    {
+        EventManager.instance.OnPlayerRespawned -= OnPlayerDied;
+    }
+
+    public void OnPlayerDied()
+    {
+        alreadyPlayed = false;
+    }
+
     public void StartProduction()
     {
         StartCoroutine(TriggerProduction());

@@ -11,6 +11,16 @@ public class ObejctSwitch : MonoBehaviour
 
     bool switchOn = false;
 
+    void Start()
+    {
+        EventManager.instance.OnPlayerRespawned += OnPlayerDied;
+    }
+
+    void OnDestroy()
+    {
+        EventManager.instance.OnPlayerRespawned -= OnPlayerDied;
+    }
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
@@ -26,14 +36,19 @@ public class ObejctSwitch : MonoBehaviour
 
     void SwitchProc()
     {
-        for (int i=0; i< onObjectArray.Length; i++)
+        for (int i = 0; i < onObjectArray.Length; i++)
         {
             onObjectArray[i].SetActive(true);
         }
 
-        for (int i = 0; i< offObjectArray.Length; i++)
+        for (int i = 0; i < offObjectArray.Length; i++)
         {
             offObjectArray[i].SetActive(false);
         }
+    }
+
+    public void OnPlayerDied()
+    {
+        switchOn = false;
     }
 }
