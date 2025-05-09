@@ -167,6 +167,7 @@ Transform:
   - {fileID: 1096683181}
   - {fileID: 611294812}
   - {fileID: 550572159}
+  - {fileID: 1359830392}
   - {fileID: 772167699}
   - {fileID: 1030336923}
   m_Father: {fileID: 0}
@@ -89084,7 +89085,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: onObjectArray.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: offObjectArray.Array.size
@@ -89152,11 +89153,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.31
+      value: 43.29
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.57
+      value: 17.18
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -104700,7 +104701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
       propertyPath: firstDelay
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
       propertyPath: shotDelayTime
@@ -120909,6 +120910,132 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1277039675307518013, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
   m_PrefabInstance: {fileID: 1347300363}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1359830391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 12383554}
+    m_Modifications:
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: onObjectArray.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: offObjectArray.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: onMagmaShotArray.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onObjectArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 872091830}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onObjectArray.Array.data[1]'
+      value: 
+      objectReference: {fileID: 872091830}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onObjectArray.Array.data[2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onObjectArray.Array.data[3]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onObjectArray.Array.data[4]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onObjectArray.Array.data[5]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onObjectArray.Array.data[6]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onObjectArray.Array.data[7]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'offObjectArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 736536776}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'offObjectArray.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1465318919}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'offObjectArray.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1283984009}
+    - target: {fileID: 3115183387523068864, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: 'onMagmaShotArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1773640415}
+    - target: {fileID: 4797819014435408643, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_Name
+      value: MagmaShotSwitchObj (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 51.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+--- !u!4 &1359830392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
+  m_PrefabInstance: {fileID: 1359830391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1416160521
 GameObject:
   m_ObjectHideFlags: 0
@@ -135686,7 +135813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
       propertyPath: firstDelay
-      value: 0
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
       propertyPath: shotDelayTime
