@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Switch_MoveObj : Switcher
 {
@@ -42,7 +43,10 @@ public class Switch_MoveObj : Switcher
 
     IEnumerator MoveProc()
     {
-        //SoundManager.instance.PlaySFX(SFX.);
+        if (0 == string.Compare(SceneManager.GetActiveScene().name, "PGJ"))
+        {
+            SoundManager.instance.PlaySFX(SFX_PGJ.Leaf);
+        }
 
         while (true)
         {

@@ -12,7 +12,7 @@ public class NextScene_PGJ : MonoBehaviour
         {
             if (0 == string.Compare(targetSceneName, "PGJ_End"))
             {
-                SoundManager.instance.PlaySFX(SFX_PGJ.Wind);
+                SoundManager.instance.PlaySFX(SFX_PGJ.ExitComplete);
             }
 
             fadeController.FadeOutAndLoad(targetSceneName);

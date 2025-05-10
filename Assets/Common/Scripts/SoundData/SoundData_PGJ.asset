@@ -15,7 +15,11 @@ MonoBehaviour:
   bgmClip:
   - {fileID: 8300000, guid: 3ec5dddff9322d541a9fd468be19fdaa, type: 3}
   sfxClip:
-  - {fileID: 8300000, guid: 3220df8b4a4e241b9b1833cd386bfe98, type: 3}
+  - {fileID: 8300000, guid: 417894b6c837f7d4bb8002fb9ae2cd83, type: 3}
   - {fileID: 8300000, guid: bf03cbd4d29789847b331f50d334d50a, type: 3}
   - {fileID: 8300000, guid: 73adcb4a7b227432a984158822a575e5, type: 3}
   - {fileID: 8300000, guid: ea6190085e532954aac88653c3c8bfc9, type: 3}
+  - {fileID: 8300000, guid: 8e70de8f1f3be0d489ba92f345a83d75, type: 3}
+  - {fileID: 8300000, guid: 45453e328d13f384b948c1c83146bb18, type: 3}
+  - {fileID: 8300000, guid: df9372204fe3c51468f11cad56338ff2, type: 3}
+  - {fileID: 8300000, guid: 45b44f3d43ac01440afb2f6bacb6aca8, type: 3}
