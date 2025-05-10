@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgmClip:
   - {fileID: 8300000, guid: 3ec5dddff9322d541a9fd468be19fdaa, type: 3}
-  sfxClip: []
+  sfxClip:
+  - {fileID: 8300000, guid: 3220df8b4a4e241b9b1833cd386bfe98, type: 3}
+  - {fileID: 8300000, guid: bf03cbd4d29789847b331f50d334d50a, type: 3}
+  - {fileID: 8300000, guid: 73adcb4a7b227432a984158822a575e5, type: 3}
+  - {fileID: 8300000, guid: ea6190085e532954aac88653c3c8bfc9, type: 3}

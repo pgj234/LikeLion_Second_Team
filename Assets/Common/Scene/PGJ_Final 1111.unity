@@ -67817,7 +67817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e9f49c47c6b16489381864401a079a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationVectorPos: {x: -23, y: -7, z: 0}
+  destinationVectorPos: {x: -25, y: -7, z: 0}
 --- !u!61 &913275966
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68534,7 +68534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e9f49c47c6b16489381864401a079a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationVectorPos: {x: -23, y: -7, z: 0}
+  destinationVectorPos: {x: -17, y: -15.5, z: 0}
 --- !u!114 &948351315
 MonoBehaviour:
   m_ObjectHideFlags: 0

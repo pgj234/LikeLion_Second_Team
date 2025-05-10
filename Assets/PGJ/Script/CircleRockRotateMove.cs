@@ -30,7 +30,7 @@ public class CircleRockRotateMove : MonoBehaviour
         {
             grounded = true;
             rb.bodyType = RigidbodyType2D.Static;
-            //SoundManager.instance.PlaySFX(SFX_PGJ.용암에 돌 떨어지는 소리);
+            SoundManager.instance.PlaySFX(SFX_PGJ.StoneFallImpact);
 
             StartCoroutine(Proc());
         }
@@ -38,6 +38,8 @@ public class CircleRockRotateMove : MonoBehaviour
 
     IEnumerator Proc()
     {
+        SoundManager.instance.PlaySFX(SFX_PGJ.StoneMove);
+
         while (true)
         {
             yield return null;
@@ -56,6 +58,6 @@ public class CircleRockRotateMove : MonoBehaviour
             }
         }
 
-        //SoundManager.instance.PlaySFX(SFX_PGJ.바위와 바위가 부딪히는 소리);
+        SoundManager.instance.PlaySFX(SFX_PGJ.StoneCrash);
     }
 }
