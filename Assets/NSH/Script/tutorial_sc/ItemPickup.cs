@@ -6,9 +6,10 @@ public class ItemPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            SoundManager.instance.PlaySFX(SFX_KYW.TwinkleSound);            //ë©”í…Œì˜¤ì†Œë¦¬
             GameState.Instance.hasKeyItem = true;
             Destroy(gameObject);
-            Debug.Log("¾ÆÀÌÅÛ È¹µæ!");
+            Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¹ï¿½ï¿½!");
         }
     }
 }

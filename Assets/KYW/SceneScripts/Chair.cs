@@ -38,6 +38,7 @@ public class Chair : MonoBehaviour
         if (!isMoving)
         {
             // 흔들림 효과 적용
+            SoundManager.instance.PlaySFX(SFX_KYW.ChairShiver);
             shakeTimer += Time.deltaTime * shakeSpeed;
             float offsetX = Mathf.Sin(shakeTimer) * shakeAmount;
             float offsetY = Mathf.Cos(shakeTimer * 0.5f) * shakeAmount;
