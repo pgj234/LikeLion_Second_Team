@@ -108,4 +108,4 @@ MonoBehaviour:
   waitTime: 1
   shakeAmount: 0.1
   shakeSpeed: 100
-  detectionRadius: 8
+  detectionRadius: 7

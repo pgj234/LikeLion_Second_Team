@@ -9,6 +9,7 @@ public class JumpingPlatform : MonoBehaviour
         {
             Debug.Log("점프 발판 밟음");
             player.stateMachine.ChangeState(player.objectJumpState);
+            SoundManager.instance.PlaySFX(SFX_KYW.JumpPlatform);
         }
     }
 }

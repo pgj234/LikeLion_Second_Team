@@ -33,7 +33,7 @@ public class FakeDoor : MonoBehaviour
             timer += Time.deltaTime;
             if (timer >= delay)
             {
-                SoundManager.instance.PlaySFX(SFX_KYW.DDok2);
+                SoundManager.instance.PlaySFX(SFX_KYW.ChildLaugh, 1f,1f,0.5f,1.5f);
                 PlayAnimations();
                 timer = 0f;
             }
