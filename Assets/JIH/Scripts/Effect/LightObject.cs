@@ -4,17 +4,17 @@ using UnityEngine.Rendering.Universal;
 
 public class LightObject : LightCollisionState
 {
-    private ParticleSystem particleSystem; // ÀÚ½Ä ¿ÀºêÁ§Æ®ÀÇ ÆÄÆ¼Å¬ ½Ã½ºÅÛ (¹Ì»ç¿ë, È£È¯¼º À¯Áö)
-    private Light2D lightComponent; // URP Light2D ÄÄÆ÷³ÍÆ®
-    private Collider2D lightCollider; // Collider2D ÂüÁ¶
+    private ParticleSystem particleSystem; // ï¿½Ú½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½Æ¼Å¬ ï¿½Ã½ï¿½ï¿½ï¿½ (ï¿½Ì»ï¿½ï¿½, È£È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
+    private Light2D lightComponent; // URP Light2D ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    private Collider2D lightCollider; // Collider2D ï¿½ï¿½ï¿½ï¿½
     private bool isLightOn = false;
-    public float delayTime = 0.5f; // ºû ÄÑÁü µô·¹ÀÌ ½Ã°£ (LightGroupTrigger¿¡¼­ »ç¿ë)
-    private float fadeDuration = 1f; // ÆäÀÌµå ÀÎ/¾Æ¿ô ½Ã°£ (ÃÊ)
-    private const float damageThreshold = 0.5f; // LightCollisionState¿Í µ¿±âÈ­
+    public float delayTime = 0.5f; // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ (LightGroupTriggerï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½)
+    private float fadeDuration = 1f; // ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½/ï¿½Æ¿ï¿½ ï¿½Ã°ï¿½ (ï¿½ï¿½)
+    private const float damageThreshold = 0.5f; // LightCollisionStateï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­
 
     private void OnEnable()
     {
-        // GameObject È°¼ºÈ­ ½Ã ÃÊ±âÈ­
+        // GameObject È°ï¿½ï¿½È­ ï¿½ï¿½ ï¿½Ê±ï¿½È­
         InitializeComponents();
     }
 
@@ -51,18 +51,18 @@ public class LightObject : LightCollisionState
         }
 
         isLightOn = false;
-        lightComponent.enabled = true; // Ç×»ó È°¼ºÈ­, intensity·Î Á¦¾î
+        lightComponent.enabled = true; // ï¿½×»ï¿½ È°ï¿½ï¿½È­, intensityï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         lightComponent.intensity = 0f;
         if (lightCollider != null)
         {
-            lightCollider.enabled = false; // ÃÊ±â »óÅÂ: Collider ºñÈ°¼ºÈ­
+            lightCollider.enabled = false; // ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½ï¿½: Collider ï¿½ï¿½È°ï¿½ï¿½È­
             Debug.Log($"Initialized {gameObject.name}: Collider disabled, intensity: {lightComponent.intensity}");
         }
     }
 
     public override void Update()
     {
-        // LightCollisionStateÀÇ intensity º¯µ¿ ¹æÁö
+        // LightCollisionStateï¿½ï¿½ intensity ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
 
     public void TurnOnLight()
@@ -78,7 +78,7 @@ public class LightObject : LightCollisionState
                     return;
                 }
             }
-            StopAllCoroutines(); // ±âÁ¸ ÆäÀÌµå ÁßÁö
+            StopAllCoroutines(); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½
             StartCoroutine(FadeIn());
         }
     }
@@ -101,7 +101,7 @@ public class LightObject : LightCollisionState
             elapsed += Time.deltaTime;
             float t = elapsed / fadeDuration;
             lightComponent.intensity = Mathf.Lerp(startIntensity, targetIntensity, t);
-            // Collider µ¿±âÈ­
+            // Collider ï¿½ï¿½ï¿½ï¿½È­
             if (lightCollider != null && lightComponent.intensity >= damageThreshold && !lightCollider.enabled)
             {
                 lightCollider.enabled = true;
@@ -131,7 +131,7 @@ public class LightObject : LightCollisionState
                     return;
                 }
             }
-            StopAllCoroutines(); // ±âÁ¸ ÆäÀÌµå ÁßÁö
+            StopAllCoroutines(); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½
             StartCoroutine(FadeOut());
         }
     }
@@ -154,7 +154,7 @@ public class LightObject : LightCollisionState
             elapsed += Time.deltaTime;
             float t = elapsed / fadeDuration;
             lightComponent.intensity = Mathf.Lerp(startIntensity, targetIntensity, t);
-            // Collider µ¿±âÈ­
+            // Collider ï¿½ï¿½ï¿½ï¿½È­
             if (lightCollider != null && lightComponent.intensity < damageThreshold && lightCollider.enabled)
             {
                 lightCollider.enabled = false;

@@ -13,6 +13,7 @@ public class PlayerWallJumpState : PlayerState
     {
         base.Enter();
 
+        SoundManager.instance.PlaySFX(SFX_KYW.WallJumpSound);
         Jumptimer = player.wallJumpDuration;
         keytimer = 0.3f;
         check = false;

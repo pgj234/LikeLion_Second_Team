@@ -29,7 +29,8 @@ public class Sword : MonoBehaviour
     }
 
     void StartSwing()
-    {
+    {        
+        SoundManager.instance.PlaySFX(SFX_KYW.SwordSound);
         isSwinging = true;
 
         // 오브젝트 활성화

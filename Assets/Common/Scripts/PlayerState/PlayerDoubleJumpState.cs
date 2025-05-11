@@ -19,6 +19,7 @@ public class PlayerDoubleJumpState : PlayerState
         // 점프 이펙트 생성
         if (player.jumpEffectPoint != null)
         {
+            SoundManager.instance.PlaySFX(SFX_KYW.JumpSound);
             EffectManager.instance.SpawnJumpEffect(
                 player.jumpEffectPoint.position,
                 player.jumpEffectPoint.rotation,
