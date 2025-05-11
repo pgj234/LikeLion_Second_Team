@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class MovingLavaTrigger : MonoBehaviour
 {
+    [SerializeField] GameObject beforeTriggerObj = null;
     [SerializeField] MovingLava movingLava;
     [SerializeField] float targetLavaSpd;
 
@@ -21,9 +22,14 @@ public class MovingLavaTrigger : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            Proc();
+            if (null != beforeTriggerObj)
+            {
+                beforeTriggerObj.SetActive(false);
+            }
 
             boxCol.enabled = false;
+
+            Proc();
         }
     }
 
@@ -41,22 +47,29 @@ public class MovingLavaTrigger : MonoBehaviour
     {
         if (true == chaseOk)
         {
-            // 이미 추격 x좌표를 넘지 않았을 때만 추적
-            if (movingLava.transform.position.x < new Vector2(transform.position.x - 90, transform.position.y).x)
+            if (0 == string.Compare(gameObject.name, "06"))
             {
-                movingLava.parentMoveSpeed = 0;
-
-                while (true)
+                movingLava.transform.position = new Vector3(-386.3f, movingLava.transform.position.y, movingLava.transform.position.z);
+            }
+            else
+            {
+                // 이미 추격 x좌표를 넘지 않았을 때만 추적
+                if (movingLava.transform.position.x < new Vector2(transform.position.x - 87, transform.position.y).x)
                 {
-                    yield return null;
+                    movingLava.parentMoveSpeed = 0;
 
-                    Vector3 chasePos = new Vector2(transform.position.x - 90, transform.position.y);
-
-                    movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 20 * Time.deltaTime);
-
-                    if (chasePos == movingLava.transform.position)
+                    while (true)
                     {
-                        break;
+                        yield return null;
+
+                        Vector3 chasePos = new Vector2(transform.position.x - 87, movingLava.transform.position.y);
+
+                        movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 20 * Time.deltaTime);
+
+                        if (chasePos == movingLava.transform.position)
+                        {
+                            break;
+                        }
                     }
                 }
             }
