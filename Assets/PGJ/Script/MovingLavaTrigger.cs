@@ -67,7 +67,7 @@ public class MovingLavaTrigger : MonoBehaviour
                     yield return null;
 
                     Vector3 chasePos = new Vector3(-386.3f, movingLava.transform.position.y, movingLava.transform.position.z);
-                    movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 40 * Time.deltaTime);
+                    movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 12 * Time.deltaTime);
 
                     if (chasePos == movingLava.transform.position)
                     {

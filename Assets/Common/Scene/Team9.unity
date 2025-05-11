@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 24666449}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 10
+  targetLavaSpd: 7
   chaseOk: 1
 --- !u!61 &11808263
 BoxCollider2D:
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 956660700}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 6.5
+  targetLavaSpd: 5.5
   chaseOk: 1
 --- !u!61 &24666452
 BoxCollider2D:
@@ -1449,7 +1449,7 @@ Transform:
   m_GameObject: {fileID: 419099327}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 217.76242, y: 40.66519, z: -100}
+  m_LocalPosition: {x: 540.57776, y: 96.6, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2093,7 +2093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1010930888}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 8
+  targetLavaSpd: 6
   chaseOk: 1
 --- !u!61 &484637581
 BoxCollider2D:
@@ -2349,11 +2349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8904382019132736330, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 217.8
+      value: 540.6
       objectReference: {fileID: 0}
     - target: {fileID: 8904382019132736330, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40.1
+      value: 96.6
       objectReference: {fileID: 0}
     - target: {fileID: 8904382019132736330, guid: 56c90018a11e3554f9b88730e13de192, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4876,7 +4876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 2146831487}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 15
+  targetLavaSpd: 16
   chaseOk: 1
 --- !u!61 &956660703
 BoxCollider2D:
@@ -4956,7 +4956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 11808260}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 13
+  targetLavaSpd: 12
   chaseOk: 1
 --- !u!61 &1010930890
 BoxCollider2D:
@@ -5121,7 +5121,7 @@ Transform:
   m_GameObject: {fileID: 1032991072}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 217.77777, y: 40.1, z: -100}
+  m_LocalPosition: {x: 540.57776, y: 96.6, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5174,7 +5174,7 @@ Transform:
   m_GameObject: {fileID: 1033856327}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -266.08, y: -103.99, z: 0}
+  m_LocalPosition: {x: -264.06, y: -103.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5194,7 +5194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1672959236}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 11
+  targetLavaSpd: 9.7
   chaseOk: 1
 --- !u!61 &1033856330
 BoxCollider2D:
@@ -6512,7 +6512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1705137184}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 1.3
+  targetLavaSpd: 0.84
   chaseOk: 0
 --- !u!61 &1672959239
 BoxCollider2D:
@@ -6745,8 +6745,8 @@ PolygonCollider2D:
       - {x: 471.7612, y: 58.306503}
       - {x: 481.8223, y: 58.436504}
       - {x: 481.85, y: 39.358253}
-      - {x: 273.96396, y: 39.364006}
-      - {x: 274.02625, y: 1.3498306}
+      - {x: 270.5, y: 39.364006}
+      - {x: 270.5, y: 1.3498306}
       - {x: 217.11768, y: 1.3653564}
       - {x: 217.21777, y: 38.073547}
       - {x: 77.87323, y: 38.003376}
@@ -7379,7 +7379,7 @@ Transform:
   m_GameObject: {fileID: 2146831487}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -200.54, y: -89.52, z: 0}
+  m_LocalPosition: {x: -210.5, y: -103.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7399,8 +7399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1033856327}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 3
-  chaseOk: 1
+  targetLavaSpd: 4
+  chaseOk: 0
 --- !u!61 &2146831490
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7445,7 +7445,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 20, y: 1}
+  m_Size: {x: 1, y: 5}
   m_EdgeRadius: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
