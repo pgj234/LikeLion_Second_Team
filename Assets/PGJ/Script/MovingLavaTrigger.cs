@@ -13,6 +13,8 @@ public class MovingLavaTrigger : MonoBehaviour
 
     BoxCollider2D boxCol;
 
+    float minusX = 87;
+
     bool isSpecial_06 = false;
 
     void Awake()
@@ -22,9 +24,17 @@ public class MovingLavaTrigger : MonoBehaviour
 
     void Start()
     {
-        if (0 == string.Compare(gameObject.name, "06"))
+        if (0 == string.Compare(gameObject.name, "01"))
+        {
+            minusX = 85;
+        }
+        else if (0 == string.Compare(gameObject.name, "06"))
         {
             isSpecial_06 = true;
+        }
+        else if (0 == string.Compare(gameObject.name, "12"))
+        {
+            minusX = 40;
         }
     }
 
@@ -35,6 +45,11 @@ public class MovingLavaTrigger : MonoBehaviour
             if (null != beforeTriggerObj)
             {
                 beforeTriggerObj.SetActive(false);
+            }
+
+            if (0 == string.Compare(gameObject.name, "21"))
+            {
+                movingLava.GetComponent<BoxCollider2D>().enabled = false;
             }
 
             boxCol.enabled = false;
@@ -78,14 +93,16 @@ public class MovingLavaTrigger : MonoBehaviour
             else
             {
                 // 이미 추격 x좌표를 넘지 않았을 때만 추적
-                if (movingLava.transform.position.x < new Vector2(transform.position.x - 87, transform.position.y).x)
+                if (movingLava.transform.position.x < new Vector2(transform.position.x - minusX, transform.position.y).x)
                 {
+                    Vector3 chasePos = Vector2.one;
+
                     while (true)
                     {
                         yield return null;
 
-                        Vector3 chasePos = new Vector2(transform.position.x - 87, movingLava.transform.position.y);
-                        movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 17 * Time.deltaTime);
+                        chasePos = new Vector2(transform.position.x - minusX, movingLava.transform.position.y);
+                        movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 16 * Time.deltaTime);
 
                         if (chasePos == movingLava.transform.position)
                         {
