@@ -18,9 +18,9 @@ public class InputManager : MonoBehaviour
     public bool fInputReleased { get; private set; }
     public bool rInput { get; private set; }
 
-    public bool jumpPressed { get; private set; }    
-    public bool jumpHold { get; private set; }      
-    public bool jumpReleased { get; private set; }  
+    public bool jumpPressed { get; private set; }
+    public bool jumpHold { get; private set; }
+    public bool jumpReleased { get; private set; }
 
     public bool DashPressed { get; private set; }
     public bool ParryPressed { get; set; }
@@ -219,5 +219,18 @@ public class InputManager : MonoBehaviour
     public bool IsInputEnabled()
     {
         return inputEnabled;
+    }
+
+    public void SetXInput(float x)
+    {
+        xInput = x;
+    }
+    public void SetYInput(float y)
+    {
+        yInput = y;
+    }
+    public void SetFInput(bool input)
+    {
+        fInput = input;
     }
 }

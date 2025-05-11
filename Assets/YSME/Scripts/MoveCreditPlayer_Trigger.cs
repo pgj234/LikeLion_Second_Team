@@ -1,0 +1,77 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class MoveCreditPlayer_Trigger : MonoBehaviour
+{
+    private InputManager input;
+
+    [SerializeField] public string triggerTag = "Player";
+
+    [SerializeField] public UnityEvent<float> floatFunction1;
+    [SerializeField] private float value1;
+    [SerializeField] private float delay1 = 0;
+    [SerializeField] public UnityEvent<float> floatFunction2;
+    [SerializeField] private float value2;
+    [SerializeField] private float delay2 = 0;
+    [SerializeField] public UnityEvent<bool> boolFunction;
+    [SerializeField] private bool boolValue;
+    [SerializeField] private float delay3 = 0;
+
+    void Start()
+    {
+        input = InputManager.instance;
+    }
+
+    void Update()
+    {
+
+        floatFunction1?.Invoke(value1);
+        floatFunction2?.Invoke(value2);
+
+    }
+
+    void Triggered()
+    {
+        StartCoroutine(TriggerFunction1(delay1));
+        StartCoroutine(TriggerFunction2(delay2));
+        StartCoroutine(TriggerFunction3(delay3));
+    }
+
+    IEnumerator TriggerFunction1(float time)
+    {
+        yield return new WaitForSeconds(time);
+        floatFunction1?.Invoke(value1);
+    }
+    IEnumerator TriggerFunction2(float time)
+    {
+        yield return new WaitForSeconds(time);
+        floatFunction2?.Invoke(value2);
+    }
+    IEnumerator TriggerFunction3(float time)
+    {
+        yield return new WaitForSeconds(time);
+        boolFunction?.Invoke(boolValue);
+    }
+
+    public void ChangeXInput(float x)
+    {
+        input.SetXInput(x);
+    }
+    public void ChangeYInput(float y)
+    {
+        input.SetYInput(y);
+    }
+    public void ChangeFInput(bool f)
+    {
+        input.SetFInput(f);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag(triggerTag))
+        {
+            Triggered();
+        }
+    }
+}
