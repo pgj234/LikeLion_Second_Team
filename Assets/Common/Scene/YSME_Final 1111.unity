@@ -104277,6 +104277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlackArea
       objectReference: {fileID: 0}
+    - target: {fileID: 2424216585279428844, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3256647743462483244, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
       propertyPath: m_Color.b
       value: 0.13725491
@@ -104288,6 +104292,14 @@ PrefabInstance:
     - target: {fileID: 3256647743462483244, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
       propertyPath: m_Color.r
       value: 0.10588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256647743462483244, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256647743462483244, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 277551381
       objectReference: {fileID: 0}
     - target: {fileID: 5596814631914027895, guid: 16f43f430e7bf6144868d4af6d3786c1, type: 3}
       propertyPath: m_LocalScale.x
