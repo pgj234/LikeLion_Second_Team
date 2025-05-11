@@ -62,6 +62,7 @@ public class FallingPlatform : MonoBehaviour
 
     private void CreateFallingParticle()
     {
+        SoundManager.instance.PlaySFX(SFX_KYW.GroundBreak, 0.3f);
         if (fallingParticle != null)
         {
             Instantiate(fallingParticle, transform.position, Quaternion.identity);
