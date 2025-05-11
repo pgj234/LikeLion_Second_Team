@@ -56,7 +56,6 @@ public class ObjectPatrol : MonoBehaviour
             {
                 // 데미지 이벤트 발생
                 EventManager.instance.PublishPlayerDamaged(999);
-                player.stateMachine.ChangeState(player.playerDieState);          // 사망 스테이트로
             }
         }
     }
