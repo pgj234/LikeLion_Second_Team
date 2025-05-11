@@ -53,7 +53,7 @@ public class SavePointLight : MonoBehaviour
 
                 saveEffectTimer = saveEffectTime;
 
-                // SoundManager.instance.PlaySFX(세이브 효과음);
+                 SoundManager.instance.PlaySFX(SFX_PGJ.SavePoint);
 
                 light.enabled = true;
             }

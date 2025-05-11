@@ -9,22 +9,6 @@ public class LavaSpeedTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            // 위치 변경
-            if (changePosition && targetTransform != null)
-            {
-                MovingLava.Instance.transform.position = targetTransform.position;
-            }
-            
-            // 속도 변경
-            if (changeSpeed)
-            {
-                MovingLava.Instance.SetSpeed(speed);
-            }
-            
-            // 트리거 비활성화
-            gameObject.SetActive(false);
-        }
+
     }
 } 

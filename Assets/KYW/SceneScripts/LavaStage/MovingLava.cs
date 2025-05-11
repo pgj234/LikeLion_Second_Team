@@ -1,44 +1,38 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MovingLava : MonoBehaviour
 {
-    public static MovingLava Instance { get; private set; }
+    [SerializeField] internal float parentMoveSpeed = 2f; // 부모의 이동 속도
+    private Rigidbody2D rb;
 
-    [SerializeField] private float speed = 2f;
-    private Vector3 moveDirection = Vector3.right;  // 이동 방향
+    bool playerDie = false;
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (true == playerDie)
         {
-            Destroy(gameObject);
             return;
         }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+
+        // 부모를 오른쪽으로 이동
+        rb.MovePosition(rb.position + Vector2.right * parentMoveSpeed * Time.fixedDeltaTime);
     }
 
-    private void Update()
+    void OnTriggerEnter2D(Collider2D col)
     {
-        // position을 직접 변경하면 자식 오브젝트도 자동으로 따라감
-        transform.position += moveDirection * speed * Time.deltaTime;
-    }
-
-    // 외부에서 속도 변경
-    public void SetSpeed(float newSpeed)
-    {
-        speed = newSpeed;
-    }
-
-    // 현재 속도 반환
-    public float GetSpeed()
-    {
-        return speed;
-    }
-
-    // 이동 방향 변경
-    public void SetMoveDirection(Vector3 direction)
-    {
-        moveDirection = direction.normalized;
+        if (col.CompareTag("Player"))
+        {
+            if (col.TryGetComponent(out Player player))
+            {
+                playerDie = true;
+                GetComponent<BoxCollider2D>().enabled = false;
+                EventManager.instance.PublishPlayerDamaged(999);
+            }
+        }
     }
 } 
