@@ -1033,7 +1033,7 @@ GameObject:
   - component: {fileID: 491823789}
   - component: {fileID: 491823788}
   - component: {fileID: 491823787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13020,9 +13020,9 @@ GameObject:
   - component: {fileID: 1810856880}
   - component: {fileID: 1810856879}
   - component: {fileID: 1810856878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform_2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
