@@ -233,4 +233,8 @@ public class InputManager : MonoBehaviour
     {
         fInput = input;
     }
+    public void SetFReleaseInput(bool input)
+    {
+        fInputReleased = input;
+    }
 }
