@@ -12,7 +12,7 @@ public class MovingLava : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (true == playerDie)
         {
@@ -20,7 +20,7 @@ public class MovingLava : MonoBehaviour
         }
 
         // 부모를 오른쪽으로 이동
-        rb.MovePosition(rb.position + Vector2.right * parentMoveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + Vector2.right * parentMoveSpeed * Time.deltaTime);
     }
 
     void OnTriggerEnter2D(Collider2D col)
