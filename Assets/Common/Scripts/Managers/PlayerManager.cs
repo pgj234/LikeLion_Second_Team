@@ -61,7 +61,10 @@ public class PlayerManager : MonoBehaviour
         CurrentStamina = currentStamina;
         MaxStamina = maxStamina;
         CurrentExpression = currentExpression;
-        PlayerPosition = player.transform.position;
+        if (player != null)
+        {
+            PlayerPosition = player.transform.position;
+        }
     }
 
     private void OnDestroy()
@@ -77,7 +80,7 @@ public class PlayerManager : MonoBehaviour
     private void Update()
     {
         // 플레이어가 지상에 있을 때만 스태미나 회복
-        if (player.isGrounded)
+        if (player != null && player.isGrounded)
         {
             RegenerateStamina();
         }
@@ -88,7 +91,7 @@ public class PlayerManager : MonoBehaviour
         currentHealth = Mathf.Max(0, currentHealth - damage);
         CurrentHealth = currentHealth;
         EventManager.instance.PublishHealthChanged(currentHealth);
-        
+
         // 체력에 따른 표정 변경 (예시)
         int expressionIndex = Mathf.Clamp(currentHealth, 0, 4);
         SetExpression(expressionIndex);
@@ -127,9 +130,9 @@ public class PlayerManager : MonoBehaviour
 
     private void RegenerateStamina()
     {
-            currentStamina = Mathf.Min(maxStamina, currentStamina + staminaRegenRate * Time.deltaTime);
-            CurrentStamina = currentStamina;
-            EventManager.instance.PublishStaminaChanged(currentStamina);
+        currentStamina = Mathf.Min(maxStamina, currentStamina + staminaRegenRate * Time.deltaTime);
+        CurrentStamina = currentStamina;
+        EventManager.instance.PublishStaminaChanged(currentStamina);
     }
 
     private void Die()
