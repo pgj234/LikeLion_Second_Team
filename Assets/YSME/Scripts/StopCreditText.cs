@@ -19,7 +19,7 @@ public class StopCreditText : MonoBehaviour
     IEnumerator FadeOut()
     {
         yield return new WaitForSeconds(fadeTime);
-        StartCoroutine(Volume(1, 0, 4));
+        StartCoroutine(Volume(1, 0, 3));
         yield return StartCoroutine(fade.StartFadeOut());
         SceneManager.LoadScene(sceneName);
     }
