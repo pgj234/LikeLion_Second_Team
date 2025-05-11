@@ -16,6 +16,7 @@ public class HeartEat : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            SoundManager.instance.PlaySFX(SFX_KYW.TwinkleSound);
             PlayerManager.Instance.Heal(1);
             Destroy(gameObject);
         }
