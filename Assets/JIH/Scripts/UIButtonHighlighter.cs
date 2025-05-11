@@ -7,6 +7,7 @@ public class UIButtonHighlighter : MonoBehaviour, IPointerEnterHandler, IPointer
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        SoundManager.instance.PlaySFX(SFX_KYW.TiltleHover);
         if (arrow != null)
             arrow.SetActive(true);
     }

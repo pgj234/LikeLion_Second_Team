@@ -43,6 +43,7 @@ public class TitleManager : MonoBehaviour
 
     void SceneStart(string sceneName)
     {
+        SoundManager.instance.PlaySFX(SFX_KYW.TiltleClick);
         StartCoroutine(SceneStartCoroutine(sceneName));
     }
     IEnumerator SceneStartCoroutine(string sceneName)
@@ -53,6 +54,7 @@ public class TitleManager : MonoBehaviour
 
     void ExitGame()
     {
+        SoundManager.instance.PlaySFX(SFX_KYW.TiltleClick);      
         StartCoroutine(ExitGameCoroutine());
     }
     IEnumerator ExitGameCoroutine()
@@ -63,6 +65,7 @@ public class TitleManager : MonoBehaviour
 
     void OpenOption()
     {
+        SoundManager.instance.PlaySFX(SFX_KYW.TiltleClick);
         if (OptionManager.instance != null)
         {
             OptionManager.instance.ActivePausePanel();
