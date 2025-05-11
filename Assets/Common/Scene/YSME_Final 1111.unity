@@ -98686,11 +98686,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.29
+      value: 47.47
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.18
+      value: 16.96
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -120021,6 +120021,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
+      propertyPath: shotObj
+      value: 
+      objectReference: {fileID: 1220214824538471290, guid: 314d6481b56e4cf4d8afea259dd0b480, type: 3}
     - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
       propertyPath: moaAngle
       value: 33.4
@@ -149500,6 +149504,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
+      propertyPath: shotObj
+      value: 
+      objectReference: {fileID: 1220214824538471290, guid: 314d6481b56e4cf4d8afea259dd0b480, type: 3}
+    - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
       propertyPath: moaAngle
       value: 33.4
       objectReference: {fileID: 0}
@@ -149730,15 +149738,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 15.53
+      value: 21.92
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.31
+      value: 54.88
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.57
+      value: 16.87
       objectReference: {fileID: 0}
     - target: {fileID: 5795177916969808167, guid: b6b91e982629c69489b06e00d028c27c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -149798,6 +149806,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
+      propertyPath: shotObj
+      value: 
+      objectReference: {fileID: 1220214824538471290, guid: 314d6481b56e4cf4d8afea259dd0b480, type: 3}
     - target: {fileID: 557820071416338647, guid: b9c4f1b3aaf130049ae7a4029ab8837f, type: 3}
       propertyPath: moaAngle
       value: 33.4

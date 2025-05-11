@@ -14,9 +14,12 @@ public class MoveCreditPlayer_Trigger : MonoBehaviour
     [SerializeField] public UnityEvent<float> floatFunction2;
     [SerializeField] private float value2;
     [SerializeField] private float delay2 = 0;
-    [SerializeField] public UnityEvent<bool> boolFunction;
-    [SerializeField] private bool boolValue;
+    [SerializeField] public UnityEvent<bool> boolFunction1;
+    [SerializeField] private bool boolValue1;
     [SerializeField] private float delay3 = 0;
+    [SerializeField] public UnityEvent<bool> boolFunction2;
+    [SerializeField] private bool boolValue2;
+    [SerializeField] private float delay4 = 0;
 
     void Start()
     {
@@ -25,10 +28,6 @@ public class MoveCreditPlayer_Trigger : MonoBehaviour
 
     void Update()
     {
-
-        floatFunction1?.Invoke(value1);
-        floatFunction2?.Invoke(value2);
-
     }
 
     void Triggered()
@@ -36,6 +35,7 @@ public class MoveCreditPlayer_Trigger : MonoBehaviour
         StartCoroutine(TriggerFunction1(delay1));
         StartCoroutine(TriggerFunction2(delay2));
         StartCoroutine(TriggerFunction3(delay3));
+        StartCoroutine(TriggerFunction4(delay4));
     }
 
     IEnumerator TriggerFunction1(float time)
@@ -51,7 +51,12 @@ public class MoveCreditPlayer_Trigger : MonoBehaviour
     IEnumerator TriggerFunction3(float time)
     {
         yield return new WaitForSeconds(time);
-        boolFunction?.Invoke(boolValue);
+        boolFunction1?.Invoke(boolValue1);
+    }
+    IEnumerator TriggerFunction4(float time)
+    {
+        yield return new WaitForSeconds(time);
+        boolFunction2?.Invoke(boolValue2);
     }
 
     public void ChangeXInput(float x)
@@ -65,6 +70,10 @@ public class MoveCreditPlayer_Trigger : MonoBehaviour
     public void ChangeFInput(bool f)
     {
         input.SetFInput(f);
+    }
+    public void ChangeFInputRelease(bool f)
+    {
+        input.SetFReleaseInput(f);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
