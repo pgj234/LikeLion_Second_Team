@@ -1,21 +1,19 @@
 using UnityEngine;
 
 public class VerticalMove : MonoBehaviour
-{
-
-    public float speed = 5f; // ¾Æ·¡·Î ÀÌµ¿ ¼Óµµ
-    public float lifetime = 5f; // »èÁ¦±îÁö ½Ã°£ (5ÃÊ)
+{    public float speed = 5f; // ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ ï¿½Óµï¿½
+    public float lifetime = 5f; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ (5ï¿½ï¿½)
 
     void Start()
     {
-        // 5ÃÊ ÈÄ ¿ÀºêÁ§Æ® »èÁ¦
+        // 5ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
         Destroy(gameObject, lifetime);
         SoundManager.instance.PlaySFX(SFX_JIH.MeteorSound);
     }
 
     void Update()
     {
-        // À§¿¡¼­ ¾Æ·¡·Î ÀÌµ¿ (yÃà °¨¼Ò)
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ (yï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
         transform.Translate(Vector2.down * speed * Time.deltaTime);
     }
 }

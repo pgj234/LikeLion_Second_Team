@@ -21,6 +21,7 @@ public class PlayerDashState : PlayerState
         // 대시가 실제로 시작된 경우에만 이펙트 생성
         if (player.dashEffectPoint != null)
         {
+            SoundManager.instance.PlaySFX(SFX_KYW.DashSound);
             EffectManager.instance.SpawnDashEffect(
                 player.dashEffectPoint.position,
                 player.dashEffectPoint.rotation,

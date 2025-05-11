@@ -13,6 +13,7 @@ public class PlayerJumpState : PlayerState
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, player.jumpPower);
         Jumptimer = player.jumpTime;
 
+        SoundManager.instance.PlaySFX(SFX_KYW.JumpSound);
         // 점프 이펙트 생성
         if (player.jumpEffectPoint != null)
         {
