@@ -453,6 +453,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 0
 --- !u!66 &103760599
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -1551,6 +1552,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 1
 --- !u!66 &248491973
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -63010,6 +63012,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 0
 --- !u!66 &530504736
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -63879,6 +63882,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 0
 --- !u!66 &693215619
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -64432,6 +64436,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 0
 --- !u!66 &708203069
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -65847,6 +65852,7 @@ MonoBehaviour:
   delayTime: 1.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 0
 --- !u!61 &895076148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67805,6 +67811,7 @@ MonoBehaviour:
   delayTime: 4
   shakeDuration: 0.15
   dropSpd: 2.5
+  soundOK: 0
 --- !u!114 &913275965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67917,6 +67924,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 1
 --- !u!66 &935641231
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -68550,6 +68558,7 @@ MonoBehaviour:
   delayTime: 4
   shakeDuration: 0.15
   dropSpd: 2.5
+  soundOK: 0
 --- !u!66 &948351316
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -72598,6 +72607,7 @@ MonoBehaviour:
   delayTime: 4
   shakeDuration: 0.15
   dropSpd: 2.5
+  soundOK: 0
 --- !u!114 &1052385810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72736,6 +72746,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 1
 --- !u!66 &1074098157
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -73294,6 +73305,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 1
 --- !u!66 &1111548290
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -73847,6 +73859,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 1
 --- !u!66 &1122840351
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -74400,6 +74413,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 0
 --- !u!66 &1135859231
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -79148,6 +79162,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 0
 --- !u!61 &1690869288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -79937,6 +79952,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 0
 --- !u!66 &1834116972
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -80570,6 +80586,7 @@ MonoBehaviour:
   delayTime: 3.5
   shakeDuration: 0.15
   dropSpd: 2.5
+  soundOK: 0
 --- !u!66 &1845522908
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -81575,6 +81592,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 1
 --- !u!66 &1865946397
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -82482,6 +82500,7 @@ MonoBehaviour:
   delayTime: 0.5
   shakeDuration: 0.1
   dropSpd: 2.5
+  soundOK: 1
 --- !u!66 &1978489967
 CompositeCollider2D:
   m_ObjectHideFlags: 0

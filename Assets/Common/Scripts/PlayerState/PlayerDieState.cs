@@ -25,12 +25,14 @@ public class PlayerDieState : PlayerState
                 SceneManager.LoadScene("PGJ_Final 1111", LoadSceneMode.Additive);
                 SceneManager.LoadScene("YSME_Final 1111", LoadSceneMode.Additive);
             }
-
-            EventManager.instance.PublishPlayerRespawned();
-            EventManager.instance.PublishPlayerDamaged(0);
-            rb.linearVelocity = Vector2.zero;
-            player.transform.position = player.lastSavePointPos;
-            stateMachine.ChangeState(player.idleState);
+            else
+            {
+                EventManager.instance.PublishPlayerRespawned();
+                PlayerManager.Instance.Heal(999);
+                rb.linearVelocity = Vector2.zero;
+                player.transform.position = player.lastSavePointPos;
+                stateMachine.ChangeState(player.idleState);
+            }
 
             return;
         }

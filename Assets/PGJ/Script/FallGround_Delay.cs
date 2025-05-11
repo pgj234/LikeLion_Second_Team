@@ -8,6 +8,9 @@ public class FallGround_Delay : MonoBehaviour
     [SerializeField] float shakeDuration = 0.1f;
     [SerializeField] float dropSpd = 2.5f;
 
+    [Space(10)]
+    [SerializeField] bool soundOK = false;
+
     Rigidbody2D rb => GetComponent<Rigidbody2D>();
 
     float timer;
@@ -60,5 +63,10 @@ public class FallGround_Delay : MonoBehaviour
 
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = dropSpd;
+
+        if (true == soundOK)
+        {
+            SoundManager.instance.PlaySFX(SFX_KYW.GroundBreak, 0.3f);
+        }
     }
 }
