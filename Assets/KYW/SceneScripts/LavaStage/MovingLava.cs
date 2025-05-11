@@ -14,7 +14,7 @@ public class MovingLava : MonoBehaviour
 
     private void Update()
     {
-        if (true == playerDie)
+        if (true == playerDie || 0 == parentMoveSpeed)
         {
             return;
         }

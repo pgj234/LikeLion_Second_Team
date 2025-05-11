@@ -13,9 +13,19 @@ public class MovingLavaTrigger : MonoBehaviour
 
     BoxCollider2D boxCol;
 
+    bool isSpecial_06 = false;
+
     void Awake()
     {
         boxCol = GetComponent<BoxCollider2D>();
+    }
+
+    void Start()
+    {
+        if (0 == string.Compare(gameObject.name, "06"))
+        {
+            isSpecial_06 = true;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -47,24 +57,35 @@ public class MovingLavaTrigger : MonoBehaviour
     {
         if (true == chaseOk)
         {
-            if (0 == string.Compare(gameObject.name, "06"))
+            movingLava.parentMoveSpeed = 0;
+
+            // 06번 스페셜
+            if (true == isSpecial_06)
             {
-                movingLava.transform.position = new Vector3(-386.3f, movingLava.transform.position.y, movingLava.transform.position.z);
+                while (true)
+                {
+                    yield return null;
+
+                    Vector3 chasePos = new Vector3(-386.3f, movingLava.transform.position.y, movingLava.transform.position.z);
+                    movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 40 * Time.deltaTime);
+
+                    if (chasePos == movingLava.transform.position)
+                    {
+                        break;
+                    }
+                }
             }
             else
             {
                 // 이미 추격 x좌표를 넘지 않았을 때만 추적
                 if (movingLava.transform.position.x < new Vector2(transform.position.x - 87, transform.position.y).x)
                 {
-                    movingLava.parentMoveSpeed = 0;
-
                     while (true)
                     {
                         yield return null;
 
                         Vector3 chasePos = new Vector2(transform.position.x - 87, movingLava.transform.position.y);
-
-                        movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 20 * Time.deltaTime);
+                        movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 17 * Time.deltaTime);
 
                         if (chasePos == movingLava.transform.position)
                         {
