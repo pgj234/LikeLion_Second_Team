@@ -288,7 +288,7 @@ MonoBehaviour:
   optionButton: {fileID: 580094903}
   exitButton: {fileID: 478425811}
   fadeInOut: {fileID: 1852891388}
-  startSceneName: NSH
+  startSceneName: PGJ
   creditSceneName: Credit
 --- !u!4 &297023765
 Transform:
