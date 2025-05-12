@@ -1,5 +1,4 @@
-using UnityEditor.TerrainTools;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
 public class ObjectLight : LightInBlackArea

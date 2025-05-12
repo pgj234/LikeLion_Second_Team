@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -26,11 +26,11 @@ public class Playerobjetcdead : MonoBehaviour
             gameOverUI.SetActive(false);
         }
 
-        // 버튼에 이벤트 추가 (버튼 클릭 시 재시작)
-        if (restartButton != null)
-        {
-            restartButton.onClick.AddListener(RestartGame);
-        }
+        //// 버튼에 이벤트 추가 (버튼 클릭 시 재시작)
+        //if (restartButton != null)
+        //{
+        //    restartButton.onClick.AddListener(RestartGame);
+        //}
     }
 
     public void Die()
@@ -67,14 +67,14 @@ public class Playerobjetcdead : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        // 플레이어가 죽은 상태에서 R 키 입력을 받아서 리스폰
-        if (isDead && Input.GetKeyDown(KeyCode.R))
-        {
-            RespawnPlayer();
-        }
-    }
+    //void Update()
+    //{
+    //    // 플레이어가 죽은 상태에서 R 키 입력을 받아서 리스폰
+    //    if (Input.GetKeyDown(KeyCode.R))
+    //    {
+    //        RespawnPlayer();
+    //    }
+    //}
 
     void RespawnPlayer()
     {
@@ -99,9 +99,9 @@ public class Playerobjetcdead : MonoBehaviour
         }
     }
 
-    void RestartGame()
-    {
-        // 씬을 재시작하는 대신 리스폰 함수 호출
-        RespawnPlayer();
-    }
+    //void RestartGame()
+    //{
+    //    // 씬을 재시작하는 대신 리스폰 함수 호출
+    //    RespawnPlayer();
+    //}
 }

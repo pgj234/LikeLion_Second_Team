@@ -111,6 +111,7 @@ public class Player : Entity
     protected void Start()
     {
         stateMachine.Init(idleState);
+        lastSavePointPos = transform.position;
     }
 
     protected void Update()

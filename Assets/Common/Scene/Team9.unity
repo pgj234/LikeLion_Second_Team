@@ -500,7 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1547033042}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 4.18
+  targetLavaSpd: 4.2
   chaseOk: 1
 --- !u!61 &134422319
 BoxCollider2D:

@@ -288,7 +288,7 @@ MonoBehaviour:
   optionButton: {fileID: 580094903}
   exitButton: {fileID: 478425811}
   fadeInOut: {fileID: 1852891388}
-  startSceneName: PGJ
+  startSceneName: NSH
   creditSceneName: Credit
 --- !u!4 &297023765
 Transform:
@@ -3379,11 +3379,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96

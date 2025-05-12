@@ -80425,6 +80425,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1841352360159047271, guid: 3bbf1c3da9734274cba4c612074106d2, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 6908e724cf5e72c42bb4e4d1ed3ecc29, type: 3}
+    - target: {fileID: 1841352360159047271, guid: 3bbf1c3da9734274cba4c612074106d2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6908e724cf5e72c42bb4e4d1ed3ecc29, type: 3}
     - target: {fileID: 3589882559214523047, guid: 3bbf1c3da9734274cba4c612074106d2, type: 3}
       propertyPath: m_Resource
       value: 
@@ -172057,7 +172065,6 @@ GameObject:
   m_Component:
   - component: {fileID: 887255538}
   - component: {fileID: 887255537}
-  - component: {fileID: 887255536}
   - component: {fileID: 887255539}
   - component: {fileID: 887255541}
   m_Layer: 0
@@ -172067,14 +172074,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &887255536
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887255535}
-  m_Enabled: 1
 --- !u!20 &887255537
 Camera:
   m_ObjectHideFlags: 0
@@ -172135,7 +172134,7 @@ Transform:
   m_GameObject: {fileID: 887255535}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.591249, y: -0.74755, z: -10}
+  m_LocalPosition: {x: -10.333318, y: -0.74688005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -182578,8 +182577,8 @@ PolygonCollider2D:
       - {x: 157.78827, y: 49.99385}
       - {x: 63.970993, y: 49.55565}
       - {x: 63.949097, y: 10.456602}
-      - {x: -21.341728, y: 10.480917}
-      - {x: -21.212833, y: -6.809031}
+      - {x: -21, y: 10.480917}
+      - {x: -21, y: -6.809031}
       - {x: 10.828712, y: -6.6245275}
       - {x: 59.367813, y: -6.3450265}
       - {x: 96.89165, y: -6.188141}
@@ -182649,13 +182648,14 @@ CompositeCollider2D:
         Y: 495556480
       - X: 639490944
         Y: 104566024
-      - X: -213417280
+      - X: -210000000
         Y: 104809168
-      - X: -212128336
+      - X: -210000000
         Y: -68090312
   m_CompositePaths:
     m_Paths:
-    - - {x: 59.367817, y: -6.3450265}
+    - - {x: 10.828712, y: -6.6245275}
+      - {x: 59.367817, y: -6.3450265}
       - {x: 96.89165, y: -6.188141}
       - {x: 110.029915, y: -6.214828}
       - {x: 110.029655, y: 10.140137}
@@ -182665,8 +182665,8 @@ CompositeCollider2D:
       - {x: 157.78825, y: 49.99385}
       - {x: 63.970997, y: 49.55562}
       - {x: 63.949062, y: 10.456602}
-      - {x: -21.341728, y: 10.480887}
-      - {x: -21.212805, y: -6.8090315}
+      - {x: -21, y: 10.480887}
+      - {x: -20.999971, y: -6.8090315}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0

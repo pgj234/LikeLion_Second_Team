@@ -1,12 +1,9 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class DescriptionTrigger : MonoBehaviour
 {
-    public string description = "ÀÌ ¹ÙÀ§´Â ¿À·¡µÈ À¯¹°ÀÔ´Ï´Ù."; // Ç¥½ÃÇÒ ¼³¸í
-    public void Awake()
-    {
-        SoundManager.instance.PlayBGM(BGM_JIH.BGM1);
-    }
+    public string description = "ì´ ë°”ìœ„ëŠ” ì˜¤ë˜ëœ ìœ ë¬¼ì…ë‹ˆë‹¤."; // í‘œì‹œí•  ì„¤ëª…
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log($"Trigger Enter on {gameObject.name}, Collider: {other.name}, Tag: {other.tag}");
