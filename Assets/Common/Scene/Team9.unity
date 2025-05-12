@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 24666449}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 7.82
+  targetLavaSpd: 13.7
   chaseOk: 1
 --- !u!61 &11808263
 BoxCollider2D:
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 956660700}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 2.8
+  targetLavaSpd: 3.4
   chaseOk: 1
 --- !u!61 &24666452
 BoxCollider2D:
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1547033042}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 4.2
+  targetLavaSpd: 4.6
   chaseOk: 1
 --- !u!61 &134422319
 BoxCollider2D:
@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1010930888}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 4.03
+  targetLavaSpd: 9.85
   chaseOk: 1
 --- !u!61 &484637581
 BoxCollider2D:
@@ -2320,7 +2320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 484637578}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 7.8
+  targetLavaSpd: 10
   chaseOk: 1
 --- !u!61 &497430707
 BoxCollider2D:
@@ -3089,7 +3089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1396368700}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 8.4
+  targetLavaSpd: 11.5
   chaseOk: 1
 --- !u!61 &643272762
 BoxCollider2D:
@@ -4508,7 +4508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 2014158717}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 15
+  targetLavaSpd: 20
   chaseOk: 1
 --- !u!61 &833735975
 BoxCollider2D:
@@ -5118,7 +5118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 2146831487}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 14.05
+  targetLavaSpd: 23.23
   chaseOk: 1
 --- !u!61 &956660703
 BoxCollider2D:
@@ -5198,7 +5198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 11808260}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 8.87
+  targetLavaSpd: 17
   chaseOk: 1
 --- !u!61 &1010930890
 BoxCollider2D:
@@ -5436,7 +5436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1672959236}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 9.13
+  targetLavaSpd: 15.8
   chaseOk: 1
 --- !u!61 &1033856330
 BoxCollider2D:
@@ -5531,7 +5531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 134422316}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 5
+  targetLavaSpd: 5.5
   chaseOk: 1
 --- !u!61 &1110627397
 BoxCollider2D:
@@ -5626,7 +5626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1110627394}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 11.72
+  targetLavaSpd: 20
   chaseOk: 1
 --- !u!61 &1142577090
 BoxCollider2D:
@@ -5894,7 +5894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 497430705}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 8
+  targetLavaSpd: 10.5
   chaseOk: 1
 --- !u!61 &1292149653
 BoxCollider2D:
@@ -6261,7 +6261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1292149651}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 8.2
+  targetLavaSpd: 11
   chaseOk: 1
 --- !u!61 &1396368702
 BoxCollider2D:
@@ -6650,7 +6650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 537468675}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 10.3
+  targetLavaSpd: 10.7
   chaseOk: 1
 --- !u!61 &1547033044
 BoxCollider2D:
@@ -7498,7 +7498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 0}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 12.4
+  targetLavaSpd: 14.1
   chaseOk: 0
 --- !u!61 &1801611271
 BoxCollider2D:
@@ -7941,7 +7941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1142577087}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 10.17
+  targetLavaSpd: 16
   chaseOk: 1
 --- !u!61 &1948252000
 BoxCollider2D:
@@ -8036,7 +8036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 2033531114}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 10.37
+  targetLavaSpd: 16.5
   chaseOk: 1
 --- !u!61 &2014158720
 BoxCollider2D:
@@ -8131,7 +8131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 643272760}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 8.75
+  targetLavaSpd: 13
   chaseOk: 1
 --- !u!61 &2033531117
 BoxCollider2D:
@@ -8267,7 +8267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeTriggerObj: {fileID: 1033856327}
   movingLava: {fileID: 1308340773}
-  targetLavaSpd: 3.95
+  targetLavaSpd: 4
   chaseOk: 0
 --- !u!61 &2146831490
 BoxCollider2D:

@@ -20841,7 +20841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveObject: {fileID: 644633265}
-  moveSpeed: 80
+  moveSpeed: 120
   isMoving: 1
 --- !u!1 &660232160
 GameObject:

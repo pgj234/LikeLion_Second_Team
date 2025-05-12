@@ -13,7 +13,7 @@ public class MovingLavaTrigger : MonoBehaviour
 
     BoxCollider2D boxCol;
 
-    float minusX = 87;
+    float minusX = 80;
 
     bool isSpecial_06 = false;
 
@@ -26,15 +26,27 @@ public class MovingLavaTrigger : MonoBehaviour
     {
         if (0 == string.Compare(gameObject.name, "01"))
         {
-            minusX = 85;
+            minusX = 82;
+        }
+        else if (0 == string.Compare(gameObject.name, "03 - 2"))
+        {
+            minusX = 75;
+        }
+        else if (0 == string.Compare(gameObject.name, "04"))
+        {
+            minusX = 65;
         }
         else if (0 == string.Compare(gameObject.name, "06"))
         {
             isSpecial_06 = true;
         }
+        else if (0 == string.Compare(gameObject.name, "10"))
+        {
+            minusX = 60;
+        }
         else if (0 == string.Compare(gameObject.name, "12"))
         {
-            minusX = 40;
+            minusX = 30;
         }
     }
 
@@ -102,9 +114,9 @@ public class MovingLavaTrigger : MonoBehaviour
                         yield return null;
 
                         chasePos = new Vector2(transform.position.x - minusX, movingLava.transform.position.y);
-                        movingLava.transform.position = Vector2.MoveTowards(movingLava.transform.position, chasePos, 16 * Time.deltaTime);
+                        movingLava.transform.position = Vector2.Lerp(movingLava.transform.position, chasePos, 1.2f * Time.deltaTime);
 
-                        if (chasePos == movingLava.transform.position)
+                        if (chasePos.x - 0.5f < movingLava.transform.position.x)
                         {
                             break;
                         }
